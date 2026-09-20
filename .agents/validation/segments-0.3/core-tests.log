@@ -1,0 +1,64 @@
+Building for debugging...
+[1 / 10]
+[2 / 11] HeartProCore
+[4 / 13] HeartProCore
+[7 / 13] HeartProCore
+[10 / 13] HeartProCoreTests-product
+[12 / 15] HeartProCoreTests-product
+[18 / 20] HeartProCoreTests-product
+Build complete! (1.89秒)
+Test Suite 'All tests' started at 2026-09-18 04:22:27.390.
+Test Suite 'All tests' passed at 2026-09-18 04:22:27.392.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test delineationMatchesKnownBoundariesAtMultipleSamplingRates() started.
+◇ Test noRRIntervalBridgesMissingSignal() started.
+◇ Test dailyGroupingUsesCalendarAcrossDST() started.
+◇ Test STSamplesDoNotIncludeTWaveAndUnseparatedUIsUnavailable() started.
+◇ Test displacedSTUsesRawBaselineWithoutForcingJToZero() started.
+◇ Test noiseConfinedToTWaveDoesNotBecomeAQTMeasurement() started.
+◇ Test envelopePreservesNarrowExtrema() started.
+◇ Test oldNotesDecodeAndDurationHasAnExplicitEnd() started.
+◇ Test absentWavesDoNotReceiveFabricatedIntervals() started.
+◇ Test gapsRejectAffectedBeatsAndNeverJoinPPOrTP() started.
+◇ Test inversionAndDCOffsetPreserveTimesAndSignedVoltages() started.
+◇ Test syntheticExperienceHasThreeTodayRecordsAndNeverRealData() started.
+◇ Test invalidAndFlatSignalsNeverProduceAHealthyResult() started.
+◇ Test truncatedRisingTIsNotReportedAsAPeak() started.
+◇ Test hrvUsesSampleDeviationAndAdjacentPairs() started.
+◇ Test overlappingTAndUnstableBaselineSuppressMeasurements() started.
+◇ Test productionScoresAreNeverSynthesizedAndEmptyDaysAreNotZero() started.
+◇ Test qtcUsesPairedQTAndRRAndRejectsUnstableRhythm() started.
+◇ Test repeatedShortLongSequencesAreDescriptiveCandidates() started.
+◇ Test detectorHandlesBothPolarities() started.
+◇ Test segmentStorageRoundTripsAndOldAnalysisStillDecodes() started.
+◇ Test rrPairsDoNotCrossRejectedSignalAndNeverBecomeNN() started.
+◇ Test morphologyRejectsFlatAndDetectsIsolatedAmplitudeChange() started.
+◇ Test lowSamplingRateAndFlatSignalsHaveExplicitUnavailableResults() started.
+✔ Test dailyGroupingUsesCalendarAcrossDST() passed after 0.790 seconds.
+✔ Test oldNotesDecodeAndDurationHasAnExplicitEnd() passed after 0.790 seconds.
+✔ Test envelopePreservesNarrowExtrema() passed after 0.790 seconds.
+✔ Test noRRIntervalBridgesMissingSignal() passed after 0.790 seconds.
+✔ Test hrvUsesSampleDeviationAndAdjacentPairs() passed after 0.790 seconds.
+✔ Test STSamplesDoNotIncludeTWaveAndUnseparatedUIsUnavailable() passed after 0.790 seconds.
+✔ Test productionScoresAreNeverSynthesizedAndEmptyDaysAreNotZero() passed after 0.790 seconds.
+✔ Test gapsRejectAffectedBeatsAndNeverJoinPPOrTP() passed after 0.790 seconds.
+✔ Test truncatedRisingTIsNotReportedAsAPeak() passed after 0.790 seconds.
+✔ Test noiseConfinedToTWaveDoesNotBecomeAQTMeasurement() passed after 0.790 seconds.
+✔ Test invalidAndFlatSignalsNeverProduceAHealthyResult() passed after 0.790 seconds.
+✔ Test qtcUsesPairedQTAndRRAndRejectsUnstableRhythm() passed after 0.790 seconds.
+✔ Test repeatedShortLongSequencesAreDescriptiveCandidates() passed after 0.790 seconds.
+✔ Test absentWavesDoNotReceiveFabricatedIntervals() passed after 0.790 seconds.
+✔ Test lowSamplingRateAndFlatSignalsHaveExplicitUnavailableResults() passed after 0.790 seconds.
+✔ Test detectorHandlesBothPolarities() passed after 0.797 seconds.
+✔ Test rrPairsDoNotCrossRejectedSignalAndNeverBecomeNN() passed after 0.809 seconds.
+✔ Test displacedSTUsesRawBaselineWithoutForcingJToZero() passed after 0.817 seconds.
+✔ Test inversionAndDCOffsetPreserveTimesAndSignedVoltages() passed after 0.828 seconds.
+✔ Test segmentStorageRoundTripsAndOldAnalysisStillDecodes() passed after 0.829 seconds.
+✔ Test overlappingTAndUnstableBaselineSuppressMeasurements() passed after 0.845 seconds.
+✔ Test morphologyRejectsFlatAndDetectsIsolatedAmplitudeChange() passed after 0.937 seconds.
+✔ Test delineationMatchesKnownBoundariesAtMultipleSamplingRates() passed after 0.988 seconds.
+✔ Test syntheticExperienceHasThreeTodayRecordsAndNeverRealData() passed after 1.600 seconds.
+✔ Test run with 24 tests in 0 suites passed after 1.600 seconds.

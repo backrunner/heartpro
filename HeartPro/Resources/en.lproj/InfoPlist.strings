@@ -1,0 +1,2 @@
+"NSHealthShareUsageDescription" = "HeartPro reads your heart rate, ECGs and heart rate variability (HRV) to show daily summaries, trends and original waveforms. All analysis stays on your device and is for reference only.";
+"NSHealthUpdateUsageDescription" = "Only when you choose to save symptoms, HeartPro adds the symptoms you record as separate entries in Apple Health.";

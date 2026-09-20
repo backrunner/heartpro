@@ -1,0 +1,53 @@
+Building for debugging...
+[1 / 1]
+[11 / 22] HeartProCoreTests-product
+[13 / 24] HeartProCoreTests-product
+[17 / 23] HeartProCoreTests-product
+[19 / 23] HeartProCoreTests-product
+Build complete! (2.29秒)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test gradualBaselineDriftIsNotTreatedAsHighFrequencyNoise() started.
+◇ Test fasterSeparateWavesAreNotRejectedByAnEmptyBaselineWindow() started.
+✘ Test fasterSeparateWavesAreNotRejectedByAnEmptyBaselineWindow() recorded an issue at SegmentTests.swift:217:13: Expectation failed: stat.count >= 10
+↳ .qrsDuration at 100.0 bpm: ["Occurrences: 13. The waveform around this beat is incomplete, or part of the signal is unclear.", "Occurrences: 1. The reference baseline is unstable or there is too much interference for a clear measurement."]
+↳ stat.count >= 10 → false
+↳   stat.count → 0
+✘ Test fasterSeparateWavesAreNotRejectedByAnEmptyBaselineWindow() recorded an issue at SegmentTests.swift:218:13: Expectation failed: stat.median
+↳ stat.median → nil
+↳   stat → SegmentStatistic(metric: HeartProCore.SegmentMetric.qrsDuration, count: 0, total: 14, median: nil, minimum: nil, maximum: nil, p10: nil, p90: nil)
+↳     metric → .qrsDuration
+↳     count → 0
+↳     total → 14
+↳     median → nil
+↳     minimum → nil
+↳     maximum → nil
+↳     p10 → nil
+↳     p90 → nil
+↳   median → nil
+✘ Test fasterSeparateWavesAreNotRejectedByAnEmptyBaselineWindow() failed after 0.091 seconds with 2 issues.
+✘ Test gradualBaselineDriftIsNotTreatedAsHighFrequencyNoise() recorded an issue at SegmentTests.swift:233:9: Expectation failed: stat.count >= 10
+↳ .pDuration: 3
+↳ stat.count >= 10 → false
+↳   stat.count → 3
+✘ Test gradualBaselineDriftIsNotTreatedAsHighFrequencyNoise() recorded an issue at SegmentTests.swift:233:9: Expectation failed: stat.count >= 10
+↳ .qtDuration: 0
+↳ stat.count >= 10 → false
+↳   stat.count → 0
+✘ Test gradualBaselineDriftIsNotTreatedAsHighFrequencyNoise() recorded an issue at SegmentTests.swift:234:9: Expectation failed: stat.median
+↳ stat.median → nil
+↳   stat → SegmentStatistic(metric: HeartProCore.SegmentMetric.qtDuration, count: 0, total: 14, median: nil, minimum: nil, maximum: nil, p10: nil, p90: nil)
+↳     metric → .qtDuration
+↳     count → 0
+↳     total → 14
+↳     median → nil
+↳     minimum → nil
+↳     maximum → nil
+↳     p10 → nil
+↳     p90 → nil
+↳   median → nil
+✘ Test gradualBaselineDriftIsNotTreatedAsHighFrequencyNoise() failed after 0.121 seconds with 3 issues.
+✘ Test run with 2 tests in 0 suites failed after 0.121 seconds with 5 issues.
+Note: Some test targets reported failures:
+  - HeartProCoreTests (Swift Testing)

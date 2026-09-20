@@ -1,0 +1,8 @@
+node_modules/
+.svelte-kit/
+.svedocs/
+build/
+test-results/
+playwright-report/
+.wrangler/
+.dev.vars*

@@ -1,0 +1,28 @@
+515|Recording notes|記録メモ|기록 메모|Aufzeichnungsnotizen|Notas del registro
+516|ECG recording report|心電図記録レポート|심전도 기록 보고서|EKG-Aufzeichnungsbericht|Informe del registro de ECG
+517|Print at actual size (100%)|実際のサイズ（100%）で印刷|실제 크기(100%)로 인쇄|In Originalgröße (100 %) drucken|Imprimir a tamaño real (100 %)
+518|Analysis summary|解析概要|분석 요약|Analyseübersicht|Resumen del análisis
+519|Signal coverage|信号の解析可能割合|분석 가능한 신호 비율|Signalabdeckung|Cobertura de señal
+520|Analyzed duration|解析対象時間|분석 시간|Analysierte Dauer|Duración analizada
+521|Metric|指標|지표|Messgröße|Parámetro
+522|Result|結果|결과|Ergebnis|Resultado
+523|RR standard deviation|RR間隔の標準偏差|RR 간격 표준편차|RR-Standardabweichung|Desviación estándar de RR
+524|RMS of successive RR differences|隣接RR間隔差の二乗平均平方根|인접 RR 간격 차이의 제곱평균제곱근|Quadratischer Mittelwert aufeinanderfolgender RR-Differenzen|Raíz cuadrática media de diferencias RR sucesivas
+525|RR statistics do not exclude non-sinus beats and are not normal-beat HRV measures.|RR統計から非洞性拍動を除外していないため、正常拍動のHRV指標としては扱いません。|RR 통계에서 비동성 심박을 제외하지 않았으므로 정상 심박 HRV 지표로 사용하지 않습니다.|Die RR-Statistik schließt nicht-sinusale Schläge nicht aus und ist kein HRV-Maß normaler Herzschläge.|Las estadísticas RR no excluyen latidos no sinusales y no constituyen medidas de VFC de latidos normales.
+526|Detected beats: {0}; included in analysis: {1}.|検出拍動数：{0}、解析対象：{1}。|검출 심박: {0}회, 분석 포함: {1}회.|Erkannte Schläge: {0}; in die Analyse einbezogen: {1}.|Latidos detectados: {0}; incluidos en el análisis: {1}.
+527|Flagged beats: {0}. Each beat is counted once.|マークされた拍動：{0}。同じ拍動は1回のみ計数。|표시된 심박: {0}회. 같은 심박은 한 번만 계산합니다.|Markierte Schläge: {0}. Jeder Schlag wird einmal gezählt.|Latidos marcados: {0}. Cada latido se cuenta una sola vez.
+528|Type|種類|유형|Typ|Tipo
+529|Measurement evidence|測定根拠|측정 근거|Messgrundlage|Datos de medición
+530|Automatic flags require review against the original ECG. The rhythm score does not assess heart health.|自動マークは原波形との照合が必要です。リズムスコアは心臓の健康状態を評価するものではありません。|자동 표시는 원본 심전도와 대조하여 확인해야 합니다. 리듬 점수는 심장 건강 상태를 평가하지 않습니다.|Automatische Markierungen sind anhand des Original-EKGs zu prüfen. Der Rhythmuswert bewertet nicht die Herzgesundheit.|Las marcas automáticas requieren revisión en el ECG original. La puntuación del ritmo no evalúa la salud del corazón.
+531|Waveform events|波形イベント|파형 변화|Kurvenereignisse|Eventos de la señal
+532|Range is the minimum to maximum in this recording, not a clinical reference interval. The central 80% is P10–P90.|範囲は本記録の最小値から最大値で、臨床的な基準範囲ではありません。中央80%はP10–P90です。|범위는 이 기록의 최솟값부터 최댓값이며 임상 참고 범위가 아닙니다. 중앙 80%는 P10–P90입니다.|Der Bereich umfasst Minimum bis Maximum dieser Aufzeichnung, keinen klinischen Referenzbereich. Die mittleren 80 % entsprechen P10–P90.|El rango abarca del mínimo al máximo del registro; no es un intervalo clínico de referencia. El 80 % central corresponde a P10–P90.
+533|Measurement|測定項目|측정 항목|Messung|Medición
+534|Range|範囲|범위|Bereich|Rango
+535|Valid / total|測定可 / 全体|유효 / 전체|Gültig / gesamt|Válidos / total
+536|Reasons for missing values|欠測理由|측정값 누락 사유|Gründe für fehlende Werte|Motivos de valores ausentes
+537|Sampling rate|サンプリング周波数|샘플링 주파수|Abtastrate|Frecuencia de muestreo
+538|Analysis version|解析バージョン|분석 버전|Analyseversion|Versión del análisis
+539|Suspected premature beat (wide QRS)|期外収縮疑い（幅広いQRS）|조기 박동 의심(넓은 QRS)|Verdacht auf Extrasystole (breiter QRS)|Posible extrasístole (QRS ancho)
+540|Suspected premature beat (narrow QRS)|期外収縮疑い（狭いQRS）|조기 박동 의심(좁은 QRS)|Verdacht auf Extrasystole (schmaler QRS)|Posible extrasístole (QRS estrecho)
+541|Suspected premature beat (unclassified)|期外収縮疑い（未分類）|조기 박동 의심(미분류)|Verdacht auf Extrasystole (nicht klassifiziert)|Posible extrasístole (sin clasificar)
+542|Preceding RR {0} ms; reference RR {1} ms; following RR {2} ms. Estimated QRS duration {3} ms; correlation coefficient {4}.|直前RR {0} ms、基準RR {1} ms、直後RR {2} ms。推定QRS幅 {3} ms、相関係数 {4}。|직전 RR {0} ms, 기준 RR {1} ms, 직후 RR {2} ms. 추정 QRS 기간 {3} ms, 상관계수 {4}.|Vorheriges RR {0} ms; Referenz-RR {1} ms; folgendes RR {2} ms. Geschätzte QRS-Dauer {3} ms; Korrelationskoeffizient {4}.|RR previo {0} ms; RR de referencia {1} ms; RR posterior {2} ms. Duración estimada del QRS {3} ms; coeficiente de correlación {4}.

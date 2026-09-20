@@ -1,0 +1,2 @@
+"NSHealthShareUsageDescription" = "HeartPro는 일상 심박수, 심전도, 심박변이도(HRV)를 읽어 일일 요약, 추세, 원본 파형을 표시합니다. 모든 분석은 기기에서만 수행되며 결과는 참고용입니다.";
+"NSHealthUpdateUsageDescription" = "증상 저장을 선택한 경우에만 HeartPro가 기록한 증상을 별도 항목으로 Apple 건강에 저장합니다.";

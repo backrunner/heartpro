@@ -1,0 +1,69 @@
+{
+  "bundle_id": "com.alkinum.heartpro",
+  "version": "0.6.0",
+  "build": "1",
+  "xcresult": "TestResults/AppStore-iphone-6.9-20260921-020915.xcresult",
+  "data": "synthetic, labelled in the app",
+  "images": [
+    {
+      "file": "en-history.webp",
+      "dimensions": [
+        880,
+        1912
+      ],
+      "sha256": "49dd1740eddc286448ddfe710cfb65144437724f5973bd76c3afd404b1269523",
+      "source": "AppStore/screenshots/iphone-6.9/en-01-history.png",
+      "source_sha256": "dda54e49be6732a29f276f90c265be544ddce1bf843693f00c5f82a0993a7181"
+    },
+    {
+      "file": "en-trends.webp",
+      "dimensions": [
+        880,
+        1912
+      ],
+      "sha256": "696f9af071d84b506fca32ff4337ddcc52746790b45f6d655da1943023a3eddc",
+      "source": "AppStore/screenshots/iphone-6.9/en-03-trends.png",
+      "source_sha256": "50a35a1e130c5c7d308fd8f5476e33977af3390deec6e998c76dc827951c03b4"
+    },
+    {
+      "file": "en-waveform.webp",
+      "dimensions": [
+        880,
+        1912
+      ],
+      "sha256": "0db9f1da12221cf78a537276d02fb2d21d061d387cda56080e011e3431cc2ea9",
+      "source": "AppStore/screenshots/iphone-6.9/en-04-waveform.png",
+      "source_sha256": "15e18b5c92936d8ae9a58d5e40742ea3a30597ae5fe76fa339d59c68fc05db95"
+    },
+    {
+      "file": "zh-Hans-history.webp",
+      "dimensions": [
+        880,
+        1912
+      ],
+      "sha256": "bf0f36edfb13f816c343bdd38920c6d57ad8c1a269d2ccace22641e045a65be6",
+      "source": "AppStore/screenshots/iphone-6.9/zh-Hans-01-history.png",
+      "source_sha256": "d15c08cddb7b21516b14626fbdb8b721d77af7efc299a9846c198ca5dcdfd6ae"
+    },
+    {
+      "file": "zh-Hans-trends.webp",
+      "dimensions": [
+        880,
+        1912
+      ],
+      "sha256": "70c4a050663ba4ccec480cf2e27d34cf7cba017b280014ef4858320ef65973ff",
+      "source": "AppStore/screenshots/iphone-6.9/zh-Hans-03-trends.png",
+      "source_sha256": "f0252cac14030defe010025e6867e348ad5b0ccf9db45a82382e6abda1a3161d"
+    },
+    {
+      "file": "zh-Hans-waveform.webp",
+      "dimensions": [
+        880,
+        1912
+      ],
+      "sha256": "a8d43ddee853dfbadcdd0592b9e0cc2ede7760a0ca00f9d75a75a1bf4bd93ce5",
+      "source": "AppStore/screenshots/iphone-6.9/zh-Hans-04-waveform.png",
+      "source_sha256": "52b1a004743bfd6963ed105d2a55b33feaea68bd64df167782cf60490157f75e"
+    }
+  ]
+}

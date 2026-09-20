@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0752C8A037663933F9050D80 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BF578CC29E8E0BC8EAD9F /* InsightsView.swift */; };
+		0B1B6AEC4D0DD5BF5A1250D6 /* ReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC35CB44DBD17AE8245E64F /* ReportTests.swift */; };
+		232EFAD08EC9062AB1D9F1E5 /* HeartProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F68F4163446F328AE1140 /* HeartProUITests.swift */; };
+		23305C20CFD525ECA6AE742D /* AuthorizationLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5145C8B4EA541AFB74DE76C /* AuthorizationLandingView.swift */; };
+		27BF5F734E6123DACD158276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41297A1B6FDA8BA63683B14 /* Assets.xcassets */; };
+		385DACE3DB950E49BCCC7C47 /* ReportExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF1C47D8EDC9705CA6F6AB /* ReportExporter.swift */; };
+		3BB9831B886CF0FE041DF9D8 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2685328AB5F8B9B49316FBA /* DesignSystem.swift */; };
+		433AC5ACAFCB0C33A63353A1 /* RhythmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6BB0F9CC58B36656FE8966 /* RhythmUITests.swift */; };
+		47D06FD5126F51EF339BB683 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6DF917DED6F0FC492B72B7A /* InfoPlist.strings */; };
+		48C2DB58A499E146813D588B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CAE2210088C24645D7D92A /* SettingsView.swift */; };
+		4E81262945317B6C4EC53144 /* EctopyPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DAA3B61A4A3529CBD728B3 /* EctopyPanel.swift */; };
+		5050417C566B75D3F1424D75 /* ECGNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9F48A33904E3741F7C9B2 /* ECGNotes.swift */; };
+		57542A0D4700BC426F22D200 /* LocalizationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A7DA47D8387FB0E2C7939 /* LocalizationUITests.swift */; };
+		5A2604E2935C26D143639334 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7AAF0EA31C6EAFAD12281 /* TimelineView.swift */; };
+		5B4F3928CAA540A4BE2BA61E /* SegmentAnalysisPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B7D1857DEA2D21DB5F72C /* SegmentAnalysisPanel.swift */; };
+		5CF8EA41F23414FAB7EBBBE8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2884B7D0B7D28BCD42C3FADB /* PrivacyInfo.xcprivacy */; };
+		6F19F156671522BAE2096CAC /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B5DAA7E050C6341045F6E /* AppModel.swift */; };
+		821BA3BC1C676F6FCDC48CFE /* ECGRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435013A9B4DEF4032EC03DA0 /* ECGRepository.swift */; };
+		897F6F1D240BCE3C9073F8CD /* ECGDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175752BFD2CE1C1F6DB9E39A /* ECGDetailView.swift */; };
+		8B942712D77E20C3C94CFB80 /* ReportContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6D5B8D77A0669ED0B7CBE /* ReportContents.swift */; };
+		8F294903B4305B67A5BDD844 /* UsageGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6E58FC3DFBFA0635F64DAB /* UsageGuideUITests.swift */; };
+		8FEB43520682FE47C0752E66 /* HeartProCore in Frameworks */ = {isa = PBXBuildFile; productRef = A497C214CE2697489C62FCDB /* HeartProCore */; };
+		9AD62BEDCE85E1EBEC8F85AF /* AppStoreScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222337F81F3550F2902508F /* AppStoreScreenshotTests.swift */; };
+		A107C533DC3BC3991EE375A9 /* AnalysisPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A48E5DDDE85725718F4961 /* AnalysisPanels.swift */; };
+		C70D2DB7BF2477BAA1647CF9 /* HealthKitGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5586D6BF2372B267BD59AF53 /* HealthKitGateway.swift */; };
+		C7D0104A96097799F45DD16F /* FullWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24013C506B7D117F9B066A21 /* FullWaveformView.swift */; };
+		CB459A5C90F700BB13C019C0 /* HeartProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB48BACB953C8DFEF38BA31 /* HeartProApp.swift */; };
+		D0866E830E6749A7F8F2131A /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E36A6DFD11312ECD6AFEDF /* WaveformView.swift */; };
+		D3443659947239007B62996C /* PDFReportLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3DF47EFCEA22503A932FA /* PDFReportLayout.swift */; };
+		E5384B3DCDE9529481471AAD /* UsageGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D623D86F0BB61E72D9D525 /* UsageGuideView.swift */; };
+		EAB52A8385F7EA7896AEE884 /* HeartHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48100119397E212A08335C31 /* HeartHealthUITests.swift */; };
+		F056CCC4974F3CA7EB1439F2 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D374736F197E6FD729E0EB /* RepositoryTests.swift */; };
+		F9D601484B3BAC1455D46982 /* OnboardingDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E99E061EB9ADA4277051A6 /* OnboardingDesign.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCB2290B0DD4A07E71423E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF291C77870BD9A6EB706F87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DCFE5EF69A7DD108D33A5CA;
+			remoteInfo = HeartPro;
+		};
+		EA351C323E712962FF87CAAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF291C77870BD9A6EB706F87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DCFE5EF69A7DD108D33A5CA;
+			remoteInfo = HeartPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D627DEAAFD24935F69D770B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1222337F81F3550F2902508F /* AppStoreScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreScreenshotTests.swift; sourceTree = "<group>"; };
+		13CAE2210088C24645D7D92A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		159A7DA47D8387FB0E2C7939 /* LocalizationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationUITests.swift; sourceTree = "<group>"; };
+		175752BFD2CE1C1F6DB9E39A /* ECGDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGDetailView.swift; sourceTree = "<group>"; };
+		17EF1C47D8EDC9705CA6F6AB /* ReportExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExporter.swift; sourceTree = "<group>"; };
+		24013C506B7D117F9B066A21 /* FullWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWaveformView.swift; sourceTree = "<group>"; };
+		25E99E061EB9ADA4277051A6 /* OnboardingDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDesign.swift; sourceTree = "<group>"; };
+		2884B7D0B7D28BCD42C3FADB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		298BF578CC29E8E0BC8EAD9F /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		35E36A6DFD11312ECD6AFEDF /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		42D34FE92CE5DEEAACDB75D5 /* HeartPro.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HeartPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		435013A9B4DEF4032EC03DA0 /* ECGRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGRepository.swift; sourceTree = "<group>"; };
+		48100119397E212A08335C31 /* HeartHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartHealthUITests.swift; sourceTree = "<group>"; };
+		501B5DAA7E050C6341045F6E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		513F68F4163446F328AE1140 /* HeartProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartProUITests.swift; sourceTree = "<group>"; };
+		51DF777E59C71CFDA7A768CE /* HeartProCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HeartProCore; path = Packages/HeartProCore; sourceTree = SOURCE_ROOT; };
+		5586D6BF2372B267BD59AF53 /* HealthKitGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitGateway.swift; sourceTree = "<group>"; };
+		5F403C12FC842A3999ABE6BA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5FE7AAF0EA31C6EAFAD12281 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		7F6E58FC3DFBFA0635F64DAB /* UsageGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGuideUITests.swift; sourceTree = "<group>"; };
+		93D623D86F0BB61E72D9D525 /* UsageGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGuideView.swift; sourceTree = "<group>"; };
+		98E9F48A33904E3741F7C9B2 /* ECGNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGNotes.swift; sourceTree = "<group>"; };
+		9985D58A5404F535419EA6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9B7BAABA0228AE2353E98EE8 /* HeartProUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HeartProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CB619DF18C06A130F677B6 /* HeartProTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HeartProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE3DA38AAC17E941D64BD98 /* HeartPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartPro.entitlements; sourceTree = "<group>"; };
+		ACDCAD855BB9B50E28C1002E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1A48E5DDDE85725718F4961 /* AnalysisPanels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisPanels.swift; sourceTree = "<group>"; };
+		C3BA02C34541A80F5946D164 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C4F3DF47EFCEA22503A932FA /* PDFReportLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReportLayout.swift; sourceTree = "<group>"; };
+		CAB6D5B8D77A0669ED0B7CBE /* ReportContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportContents.swift; sourceTree = "<group>"; };
+		DFC35CB44DBD17AE8245E64F /* ReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTests.swift; sourceTree = "<group>"; };
+		E41297A1B6FDA8BA63683B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E865A2CEE3B5A43C1F0D23FA /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED6BB0F9CC58B36656FE8966 /* RhythmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmUITests.swift; sourceTree = "<group>"; };
+		EFB48BACB953C8DFEF38BA31 /* HeartProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartProApp.swift; sourceTree = "<group>"; };
+		F2685328AB5F8B9B49316FBA /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		F2D374736F197E6FD729E0EB /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		F4DAA3B61A4A3529CBD728B3 /* EctopyPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EctopyPanel.swift; sourceTree = "<group>"; };
+		F5145C8B4EA541AFB74DE76C /* AuthorizationLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationLandingView.swift; sourceTree = "<group>"; };
+		FA8B7D1857DEA2D21DB5F72C /* SegmentAnalysisPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentAnalysisPanel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00F03D8D2DACA12372A6076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEB43520682FE47C0752E66 /* HeartProCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03DF0F45B8178FAE3302BB05 /* HeartProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1222337F81F3550F2902508F /* AppStoreScreenshotTests.swift */,
+				48100119397E212A08335C31 /* HeartHealthUITests.swift */,
+				513F68F4163446F328AE1140 /* HeartProUITests.swift */,
+				159A7DA47D8387FB0E2C7939 /* LocalizationUITests.swift */,
+				ED6BB0F9CC58B36656FE8966 /* RhythmUITests.swift */,
+				7F6E58FC3DFBFA0635F64DAB /* UsageGuideUITests.swift */,
+			);
+			path = HeartProUITests;
+			sourceTree = "<group>";
+		};
+		1DF177B58CFB6DA7D1A69FAF = {
+			isa = PBXGroup;
+			children = (
+				AFA28BFB700598FA04B83000 /* HeartPro */,
+				9603227259F71F8999E762AA /* HeartProTests */,
+				03DF0F45B8178FAE3302BB05 /* HeartProUITests */,
+				466D6C99900ED5411E397FFB /* Packages */,
+				A5BD4362AE7E2EFF115D583B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		294FE6196AA0E30C63824802 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E41297A1B6FDA8BA63683B14 /* Assets.xcassets */,
+				2884B7D0B7D28BCD42C3FADB /* PrivacyInfo.xcprivacy */,
+				B6DF917DED6F0FC492B72B7A /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C51469C8FF245AEEB444449 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B1A48E5DDDE85725718F4961 /* AnalysisPanels.swift */,
+				F5145C8B4EA541AFB74DE76C /* AuthorizationLandingView.swift */,
+				175752BFD2CE1C1F6DB9E39A /* ECGDetailView.swift */,
+				98E9F48A33904E3741F7C9B2 /* ECGNotes.swift */,
+				F4DAA3B61A4A3529CBD728B3 /* EctopyPanel.swift */,
+				298BF578CC29E8E0BC8EAD9F /* InsightsView.swift */,
+				FA8B7D1857DEA2D21DB5F72C /* SegmentAnalysisPanel.swift */,
+				13CAE2210088C24645D7D92A /* SettingsView.swift */,
+				5FE7AAF0EA31C6EAFAD12281 /* TimelineView.swift */,
+				93D623D86F0BB61E72D9D525 /* UsageGuideView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		4519BFA972CDA3627AFA9BEC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				501B5DAA7E050C6341045F6E /* AppModel.swift */,
+				EFB48BACB953C8DFEF38BA31 /* HeartProApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		466D6C99900ED5411E397FFB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				51DF777E59C71CFDA7A768CE /* HeartProCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		9603227259F71F8999E762AA /* HeartProTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFC35CB44DBD17AE8245E64F /* ReportTests.swift */,
+				F2D374736F197E6FD729E0EB /* RepositoryTests.swift */,
+			);
+			path = HeartProTests;
+			sourceTree = "<group>";
+		};
+		9B0D665DDE5FDAC2A0FA46D6 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				F2685328AB5F8B9B49316FBA /* DesignSystem.swift */,
+				24013C506B7D117F9B066A21 /* FullWaveformView.swift */,
+				25E99E061EB9ADA4277051A6 /* OnboardingDesign.swift */,
+				35E36A6DFD11312ECD6AFEDF /* WaveformView.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		A5BD4362AE7E2EFF115D583B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42D34FE92CE5DEEAACDB75D5 /* HeartPro.app */,
+				A8CB619DF18C06A130F677B6 /* HeartProTests.xctest */,
+				9B7BAABA0228AE2353E98EE8 /* HeartProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFA28BFB700598FA04B83000 /* HeartPro */ = {
+			isa = PBXGroup;
+			children = (
+				AAE3DA38AAC17E941D64BD98 /* HeartPro.entitlements */,
+				4519BFA972CDA3627AFA9BEC /* App */,
+				E70509A1FB436B4F7597C653 /* Data */,
+				9B0D665DDE5FDAC2A0FA46D6 /* Design */,
+				2C51469C8FF245AEEB444449 /* Features */,
+				294FE6196AA0E30C63824802 /* Resources */,
+			);
+			path = HeartPro;
+			sourceTree = "<group>";
+		};
+		E70509A1FB436B4F7597C653 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				435013A9B4DEF4032EC03DA0 /* ECGRepository.swift */,
+				5586D6BF2372B267BD59AF53 /* HealthKitGateway.swift */,
+				C4F3DF47EFCEA22503A932FA /* PDFReportLayout.swift */,
+				CAB6D5B8D77A0669ED0B7CBE /* ReportContents.swift */,
+				17EF1C47D8EDC9705CA6F6AB /* ReportExporter.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DCFE5EF69A7DD108D33A5CA /* HeartPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0B9DDD85DF8F3D0B1048F08 /* Build configuration list for PBXNativeTarget "HeartPro" */;
+			buildPhases = (
+				1B92E735237AC4F03D216C26 /* Sources */,
+				BE050F09F46AA4FBED87D52A /* Resources */,
+				D00F03D8D2DACA12372A6076 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartPro;
+			packageProductDependencies = (
+				A497C214CE2697489C62FCDB /* HeartProCore */,
+			);
+			productName = HeartPro;
+			productReference = 42D34FE92CE5DEEAACDB75D5 /* HeartPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		749FCA55E6AECE7C64752862 /* HeartProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC29CEB4AD53108D3D4552F /* Build configuration list for PBXNativeTarget "HeartProUITests" */;
+			buildPhases = (
+				3BD80F9163671850014E4EBB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F1D2AE78B35EEE0D759109C /* PBXTargetDependency */,
+			);
+			name = HeartProUITests;
+			packageProductDependencies = (
+			);
+			productName = HeartProUITests;
+			productReference = 9B7BAABA0228AE2353E98EE8 /* HeartProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		74C00B3CA837E0585369235C /* HeartProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740A2059F3629361C99182BB /* Build configuration list for PBXNativeTarget "HeartProTests" */;
+			buildPhases = (
+				9DD70F457EBFE419C0E55FCC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3CD60D23BF72D42B21D0563 /* PBXTargetDependency */,
+			);
+			name = HeartProTests;
+			packageProductDependencies = (
+			);
+			productName = HeartProTests;
+			productReference = A8CB619DF18C06A130F677B6 /* HeartProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF291C77870BD9A6EB706F87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					749FCA55E6AECE7C64752862 = {
+						TestTargetID = 6DCFE5EF69A7DD108D33A5CA;
+					};
+				};
+			};
+			buildConfigurationList = 390978899017B97BF8178574 /* Build configuration list for PBXProject "HeartPro" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+				es,
+				ja,
+				ko,
+				"zh-Hans",
+			);
+			mainGroup = 1DF177B58CFB6DA7D1A69FAF;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1EECE175C14230FA533C5463 /* XCLocalSwiftPackageReference "Packages/HeartProCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A5BD4362AE7E2EFF115D583B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DCFE5EF69A7DD108D33A5CA /* HeartPro */,
+				74C00B3CA837E0585369235C /* HeartProTests */,
+				749FCA55E6AECE7C64752862 /* HeartProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE050F09F46AA4FBED87D52A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27BF5F734E6123DACD158276 /* Assets.xcassets in Resources */,
+				47D06FD5126F51EF339BB683 /* InfoPlist.strings in Resources */,
+				5CF8EA41F23414FAB7EBBBE8 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B92E735237AC4F03D216C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A107C533DC3BC3991EE375A9 /* AnalysisPanels.swift in Sources */,
+				6F19F156671522BAE2096CAC /* AppModel.swift in Sources */,
+				23305C20CFD525ECA6AE742D /* AuthorizationLandingView.swift in Sources */,
+				3BB9831B886CF0FE041DF9D8 /* DesignSystem.swift in Sources */,
+				897F6F1D240BCE3C9073F8CD /* ECGDetailView.swift in Sources */,
+				5050417C566B75D3F1424D75 /* ECGNotes.swift in Sources */,
+				821BA3BC1C676F6FCDC48CFE /* ECGRepository.swift in Sources */,
+				4E81262945317B6C4EC53144 /* EctopyPanel.swift in Sources */,
+				C7D0104A96097799F45DD16F /* FullWaveformView.swift in Sources */,
+				C70D2DB7BF2477BAA1647CF9 /* HealthKitGateway.swift in Sources */,
+				CB459A5C90F700BB13C019C0 /* HeartProApp.swift in Sources */,
+				0752C8A037663933F9050D80 /* InsightsView.swift in Sources */,
+				F9D601484B3BAC1455D46982 /* OnboardingDesign.swift in Sources */,
+				D3443659947239007B62996C /* PDFReportLayout.swift in Sources */,
+				8B942712D77E20C3C94CFB80 /* ReportContents.swift in Sources */,
+				385DACE3DB950E49BCCC7C47 /* ReportExporter.swift in Sources */,
+				5B4F3928CAA540A4BE2BA61E /* SegmentAnalysisPanel.swift in Sources */,
+				48C2DB58A499E146813D588B /* SettingsView.swift in Sources */,
+				5A2604E2935C26D143639334 /* TimelineView.swift in Sources */,
+				E5384B3DCDE9529481471AAD /* UsageGuideView.swift in Sources */,
+				D0866E830E6749A7F8F2131A /* WaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BD80F9163671850014E4EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD62BEDCE85E1EBEC8F85AF /* AppStoreScreenshotTests.swift in Sources */,
+				EAB52A8385F7EA7896AEE884 /* HeartHealthUITests.swift in Sources */,
+				232EFAD08EC9062AB1D9F1E5 /* HeartProUITests.swift in Sources */,
+				57542A0D4700BC426F22D200 /* LocalizationUITests.swift in Sources */,
+				433AC5ACAFCB0C33A63353A1 /* RhythmUITests.swift in Sources */,
+				8F294903B4305B67A5BDD844 /* UsageGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DD70F457EBFE419C0E55FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1B6AEC4D0DD5BF5A1250D6 /* ReportTests.swift in Sources */,
+				F056CCC4974F3CA7EB1439F2 /* RepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F1D2AE78B35EEE0D759109C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DCFE5EF69A7DD108D33A5CA /* HeartPro */;
+			targetProxy = BCB2290B0DD4A07E71423E9B /* PBXContainerItemProxy */;
+		};
+		E3CD60D23BF72D42B21D0563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DCFE5EF69A7DD108D33A5CA /* HeartPro */;
+			targetProxy = EA351C323E712962FF87CAAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6DF917DED6F0FC492B72B7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D627DEAAFD24935F69D770B /* de */,
+				9985D58A5404F535419EA6EB /* en */,
+				E865A2CEE3B5A43C1F0D23FA /* es */,
+				5F403C12FC842A3999ABE6BA /* ja */,
+				ACDCAD855BB9B50E28C1002E /* ko */,
+				C3BA02C34541A80F5946D164 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B0691C552CFB8561B34BBD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alkinum.HeartProUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartPro;
+			};
+			name = Release;
+		};
+		1BDF9356BA546825FB830652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alkinum.HeartProUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartPro;
+			};
+			name = Debug;
+		};
+		3B232F35CD30246AF3AAC88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		5D7542C04CEE8A8903F57474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeartPro/HeartPro.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HeartPro;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "HeartPro reads your heart rate, ECGs and heart rate variability (HRV) to show daily summaries, trends and original waveforms. All analysis stays on your device and is for reference only.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Only when you choose to save symptoms, HeartPro adds the symptoms you record as separate entries in Apple Health.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alkinum.heartpro;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		699578B3DD7C5F4E6B1A85EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alkinum.HeartProTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartPro.app/HeartPro";
+			};
+			name = Debug;
+		};
+		8D4C0750D9F8E118721840A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.6.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		D54E8D7774F5B640C2333337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeartPro/HeartPro.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HeartPro;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "HeartPro reads your heart rate, ECGs and heart rate variability (HRV) to show daily summaries, trends and original waveforms. All analysis stays on your device and is for reference only.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Only when you choose to save symptoms, HeartPro adds the symptoms you record as separate entries in Apple Health.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alkinum.heartpro;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF579BE284094962CA066113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alkinum.HeartProTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartPro.app/HeartPro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		390978899017B97BF8178574 /* Build configuration list for PBXProject "HeartPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D4C0750D9F8E118721840A0 /* Debug */,
+				3B232F35CD30246AF3AAC88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		740A2059F3629361C99182BB /* Build configuration list for PBXNativeTarget "HeartProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				699578B3DD7C5F4E6B1A85EF /* Debug */,
+				FF579BE284094962CA066113 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B0B9DDD85DF8F3D0B1048F08 /* Build configuration list for PBXNativeTarget "HeartPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7542C04CEE8A8903F57474 /* Debug */,
+				D54E8D7774F5B640C2333337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CBC29CEB4AD53108D3D4552F /* Build configuration list for PBXNativeTarget "HeartProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDF9356BA546825FB830652 /* Debug */,
+				0B0691C552CFB8561B34BBD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1EECE175C14230FA533C5463 /* XCLocalSwiftPackageReference "Packages/HeartProCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/HeartProCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A497C214CE2697489C62FCDB /* HeartProCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeartProCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FF291C77870BD9A6EB706F87 /* Project object */;
+}

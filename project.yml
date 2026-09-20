@@ -1,0 +1,63 @@
+name: HeartPro
+options:
+  bundleIdPrefix: com.alkinum
+  deploymentTarget:
+    iOS: '18.0'
+  xcodeVersion: '27.0'
+  developmentLanguage: en
+packages:
+  HeartProCore:
+    path: Packages/HeartProCore
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    SWIFT_STRICT_CONCURRENCY: complete
+    MARKETING_VERSION: '0.6.0'
+    CURRENT_PROJECT_VERSION: '1'
+targets:
+  HeartPro:
+    type: application
+    platform: iOS
+    sources: [HeartPro]
+    dependencies:
+      - package: HeartProCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.alkinum.heartpro
+        TARGETED_DEVICE_FAMILY: '1,2'
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: HeartPro
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.healthcare-fitness
+        INFOPLIST_KEY_NSHealthShareUsageDescription: HeartPro reads your heart rate, ECGs and heart rate variability (HRV) to show daily summaries, trends and original waveforms. All analysis stays on your device and is for reference only.
+        INFOPLIST_KEY_NSHealthUpdateUsageDescription: Only when you choose to save symptoms, HeartPro adds the symptoms you record as separate entries in Apple Health.
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        CODE_SIGN_ENTITLEMENTS: HeartPro/HeartPro.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  HeartProTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [HeartProTests]
+    dependencies:
+      - target: HeartPro
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+  HeartProUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [HeartProUITests]
+    dependencies:
+      - target: HeartPro
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  HeartPro:
+    build:
+      targets:
+        HeartPro: all
+    test:
+      targets: [HeartProTests, HeartProUITests]

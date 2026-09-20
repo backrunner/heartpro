@@ -1,0 +1,2 @@
+"NSHealthShareUsageDescription" = "HeartPro 读取你的日常心率、心电图和心率变异性（HRV），用于每日概览、趋势和原始波形展示。所有分析仅在设备上进行，结果仅供参考。";
+"NSHealthUpdateUsageDescription" = "只有在你选择写回时，HeartPro 才会将你记录的症状作为独立记录保存到 Apple 健康。";

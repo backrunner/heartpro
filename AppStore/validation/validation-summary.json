@@ -1,0 +1,15 @@
+{
+  "status": "not_validated",
+  "app_version": "0.6.0",
+  "bundle_id": "com.alkinum.heartpro",
+  "independent_watch_records": 0,
+  "independent_watch_participants": 0,
+  "protocol_approved_by": null,
+  "acceptance_criteria_reference": null,
+  "dataset_authorization_reference": null,
+  "blinded_annotations_reference": null,
+  "frozen_source_manifest": null,
+  "report_reference": null,
+  "clinical_reviewer_signoff": null,
+  "note": "Counts describe this release evidence package, not all development activity. Synthetic/unit tests and public Holter comparisons are not independent Watch validation."
+}

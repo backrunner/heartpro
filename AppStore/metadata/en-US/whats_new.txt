@@ -1,0 +1,1 @@
+First App Store release: ECG history, daily summaries and trends, waveform inspection, local estimates, notes and PDF reports.

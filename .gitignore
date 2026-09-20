@@ -1,0 +1,13 @@
+.DS_Store
+.build/
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+TestResults/
+
+DerivedData-*/
+__pycache__/
+*.py[cod]
+HeartPro-AppStore-*-preparation.zip

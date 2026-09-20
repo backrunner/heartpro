@@ -1,0 +1,4722 @@
+[
+  {
+    "id": 0,
+    "source": "心电波形，{0} 至 {1} 秒",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 1,
+    "source": "电压刻度，单位毫伏，标签间隔 {0} 毫伏",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 2,
+    "source": "原始心电图",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 3,
+    "source": "{0} 秒",
+    "files": [
+      "HeartPro/Design/WaveformView.swift",
+      "HeartPro/Features/ECGDetailView.swift",
+      "HeartPro/Features/SegmentAnalysisPanel.swift",
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 4,
+    "source": "缩小波形",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 5,
+    "source": "放大波形",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 6,
+    "source": "双点测量",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 7,
+    "source": "波形开头",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 8,
+    "source": "波形末尾",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 9,
+    "source": "研究性 R 峰",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 10,
+    "source": "波形选项",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 11,
+    "source": "依次轻点波形上的两个位置",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 12,
+    "source": "再轻点一个位置完成测量",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 13,
+    "source": "手动采样点测量，不自动识别波段边界。",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 14,
+    "source": "等比例缩放",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 15,
+    "source": "定位 {0} s",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 16,
+    "source": "清除",
+    "files": [
+      "HeartPro/Design/WaveformView.swift"
+    ]
+  },
+  {
+    "id": 17,
+    "source": "已展开",
+    "files": [
+      "HeartPro/Design/DesignSystem.swift"
+    ]
+  },
+  {
+    "id": 18,
+    "source": "已收起",
+    "files": [
+      "HeartPro/Design/DesignSystem.swift"
+    ]
+  },
+  {
+    "id": 19,
+    "source": "完成",
+    "files": [
+      "HeartPro/Design/DesignSystem.swift",
+      "HeartPro/Features/InsightsView.swift",
+      "HeartPro/Features/SegmentAnalysisPanel.swift",
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 20,
+    "source": "仅供参考，不能用于医疗用途",
+    "files": [
+      "HeartPro/Design/DesignSystem.swift"
+    ]
+  },
+  {
+    "id": 21,
+    "source": "不能替代医生诊断，也不能排除心脏问题",
+    "files": [
+      "HeartPro/Design/DesignSystem.swift"
+    ]
+  },
+  {
+    "id": 22,
+    "source": "所有数据，仅在你的设备上",
+    "files": [
+      "HeartPro/App/AppModel.swift"
+    ]
+  },
+  {
+    "id": 23,
+    "source": "正在读取最近的心电图…",
+    "files": [
+      "HeartPro/App/AppModel.swift"
+    ]
+  },
+  {
+    "id": 24,
+    "source": "已索引 {0} 条心电图",
+    "files": [
+      "HeartPro/App/AppModel.swift"
+    ]
+  },
+  {
+    "id": 25,
+    "source": "正在整理波形，已处理 {0} 条",
+    "files": [
+      "HeartPro/App/AppModel.swift"
+    ]
+  },
+  {
+    "id": 26,
+    "source": "已更新 {0} 条记录",
+    "files": [
+      "HeartPro/App/AppModel.swift"
+    ]
+  },
+  {
+    "id": 27,
+    "source": "整理已暂停，下次打开继续",
+    "files": [
+      "HeartPro/App/AppModel.swift"
+    ]
+  },
+  {
+    "id": 28,
+    "source": "同步暂未完成",
+    "files": [
+      "HeartPro/App/AppModel.swift"
+    ]
+  },
+  {
+    "id": 29,
+    "source": "请等待症状写入完成后再清理。",
+    "files": [
+      "HeartPro/App/AppModel.swift"
+    ]
+  },
+  {
+    "id": 30,
+    "source": "健康数据已隐藏",
+    "files": [
+      "HeartPro/App/HeartProApp.swift"
+    ]
+  },
+  {
+    "id": 31,
+    "source": "暂时无法打开本地资料",
+    "files": [
+      "HeartPro/App/HeartProApp.swift"
+    ]
+  },
+  {
+    "id": 32,
+    "source": "请解锁设备后重新打开。\n{0}",
+    "files": [
+      "HeartPro/App/HeartProApp.swift"
+    ]
+  },
+  {
+    "id": 33,
+    "source": "心电",
+    "files": [
+      "HeartPro/App/HeartProApp.swift"
+    ]
+  },
+  {
+    "id": 34,
+    "source": "趋势",
+    "files": [
+      "HeartPro/App/HeartProApp.swift",
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 35,
+    "source": "提示",
+    "files": [
+      "HeartPro/App/HeartProApp.swift"
+    ]
+  },
+  {
+    "id": 36,
+    "source": "知道了",
+    "files": [
+      "HeartPro/App/HeartProApp.swift"
+    ]
+  },
+  {
+    "id": 37,
+    "source": "Apple Watch 心电记录与统计",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 38,
+    "source": "数据来源",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 39,
+    "source": "连接 / 管理健康授权",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 40,
+    "source": "同步全部可读取 ECG",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 41,
+    "source": "重试未完成的分析",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 42,
+    "source": "读取 Apple 健康 SDNN",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 43,
+    "source": "读取状态",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 44,
+    "source": "演示模式",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 45,
+    "source": "退出演示，查看我的数据",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 46,
+    "source": "体验合成演示",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 47,
+    "source": "合成演示与真实记录隔离。演示分数不是个人健康评估，演示备忘不会写入健康。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 48,
+    "source": "方法与隐私",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 49,
+    "source": "本地处理，无需账号，无广告",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 50,
+    "source": "分析能力与限制",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 51,
+    "source": "数据保护与管理",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 52,
+    "source": "应用版本",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 53,
+    "source": "0.3.0（开发预览）",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 54,
+    "source": "清空 HeartPro 本地数据",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 55,
+    "source": "不会删除 Apple 原始心电图，也不会删除已写入健康的独立症状。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 56,
+    "source": "设置",
+    "files": [
+      "HeartPro/Features/SettingsView.swift",
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 57,
+    "source": "清空所有本地心电副本、分析与备忘？此操作不能撤销。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 58,
+    "source": "清空本地数据",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 59,
+    "source": "当前提供",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 60,
+    "source": "查看 Apple 健康中的心电图、分类和心率，按日期回看历史与趋势。你也可以添加备忘、选择将症状保存到健康 App，或导出 PDF。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 61,
+    "source": "应用会估算每次心跳的波峰、间隔和波形变化。你可以按段查看结果、回到原图核对，也可以自己选两个点测量时间和电压差。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 62,
+    "source": "尚不提供医学判断",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 63,
+    "source": "自动测量尚未经过真实 Apple Watch 数据的准确度验证，不能判断心电是否正常。看不清的波段会说明原因并留空；U 波目前还不能可靠识别。应用不提供健康评分、早搏类型或基于已确认正常心跳的 HRV。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 64,
+    "source": "单导联不能可靠识别或排除心梗、心肌缺血。应用不能用于医疗用途，不能替代医生诊断。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 65,
+    "source": "参考依据",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 66,
+    "source": "Apple Watch ECG 使用说明",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 67,
+    "source": "HealthKit 心电数据说明",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 68,
+    "source": "HRV 指标与参考值综述",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 69,
+    "source": "分析方法",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 70,
+    "source": "留在设备上",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 71,
+    "source": "心电副本、统计与备忘保存在受系统文件保护的本地目录，不使用 CloudKit，也不上传到分析服务。应用自建资料目录排除系统云备份。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 72,
+    "source": "HealthKit 不能告知应用你是否拒绝了读取权限，因此“暂无记录”不表示从未测量。撤销权限也不会自动移除已保存的本地副本。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 73,
+    "source": "你的选择",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 74,
+    "source": "只有你明确开启写回时，受支持症状才写入 Apple 健康。自由文本保留在本地，原始 ECG 始终只读。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 75,
+    "source": "PDF 仅在主动生成后通过系统分享。导出的文件可能包含敏感健康信息，交由接收方或其他应用后不再受 HeartPro 管理。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 76,
+    "source": "清空本地数据会删除本地备忘，请先导出需要的内容。Apple 健康中的原始数据及独立症状不会被删除。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 77,
+    "source": "数据保护",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 78,
+    "source": "持续 {0} 分钟",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 79,
+    "source": "本地已保存，健康写入未完成\n{0}",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 80,
+    "source": "发生时间",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 81,
+    "source": "持续时间",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 82,
+    "source": "未记录",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 83,
+    "source": "{0} 分钟",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 84,
+    "source": "快速记录",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 85,
+    "source": "可多选",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 86,
+    "source": "不适程度",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 87,
+    "source": "轻微",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 88,
+    "source": "中等",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 89,
+    "source": "明显",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 90,
+    "source": "如有持续胸痛、明显气短或晕厥，请立即寻求急救帮助，不要等待本应用分析。",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 91,
+    "source": "补充说明",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 92,
+    "source": "例如：午后喝过咖啡，静坐时感觉心跳明显…",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 93,
+    "source": "演示备忘只在本次体验中保留，不会写入健康。",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 94,
+    "source": "同时记录到 Apple 健康",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 95,
+    "source": "仅写入你选定的受支持症状、程度与时间，来源为 HeartPro。自由文本保留在本地，不会修改原始 ECG 或它的备注。",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 96,
+    "source": "将写入：",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 97,
+    "source": "已写入健康的症状在此保留原状；你可以继续编辑本地文字。需要更改这些症状时，请在健康 App 中管理。",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 98,
+    "source": "重试未完成的健康写入",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 99,
+    "source": "删除本地备忘",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 100,
+    "source": "添加备忘",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift",
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 101,
+    "source": "编辑备忘",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 102,
+    "source": "取消",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 103,
+    "source": "保存",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 104,
+    "source": "删除本地备忘？已写入 Apple 健康的独立症状会保留。",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 105,
+    "source": "正在准备合成演示…",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 106,
+    "source": "心电记录",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 107,
+    "source": "共 {0} 条",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 108,
+    "source": "暂无可读取的心电图",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 109,
+    "source": "在 Apple Watch 上完成 ECG 测量，并等待同步到 iPhone。也可以在健康中检查 HeartPro 的读取权限。",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 110,
+    "source": "合成示例",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift",
+      "HeartPro/Features/InsightsView.swift",
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 111,
+    "source": "合成示例，不代表你的健康数据",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 112,
+    "source": "同步心电图",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 113,
+    "source": "导入心电记录",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 114,
+    "source": "读取 Apple Watch 已同步的 ECG",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 115,
+    "source": "合成波形示意",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 116,
+    "source": "完整的 ECG 历史与原始波形",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 117,
+    "source": "心率趋势与每条 ECG 的备忘",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 118,
+    "source": "本地处理，无需账号",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 119,
+    "source": "连接 Apple 健康",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 120,
+    "source": "先体验示例",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 121,
+    "source": "仅会请求必要的读取权限。原始心电图不会被修改。",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 122,
+    "source": "今日概览",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 123,
+    "source": "{0} 条{1}",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 124,
+    "source": "{0}/{1} 已分析",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 125,
+    "source": "条",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 126,
+    "source": "心率中位数",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 127,
+    "source": "演示参考分",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift",
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 128,
+    "source": "秒",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 129,
+    "source": "记录时长",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 130,
+    "source": "合成分类：",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 131,
+    "source": "Apple 分类：",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 132,
+    "source": "心电参考分：暂不可评估",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 133,
+    "source": "今天暂无可读取记录",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 134,
+    "source": "仅基于当天已记录 ECG，不代表全天监测",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 135,
+    "source": "类似 I 导联",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift",
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 136,
+    "source": "波形待整理",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 137,
+    "source": "波形暂不可读取",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 138,
+    "source": "Apple 分类",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift",
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 139,
+    "source": "{0} 演示参考分",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 140,
+    "source": "{0}% 可分析",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 141,
+    "source": "等待分析",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift",
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 142,
+    "source": "分析未完成",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 143,
+    "source": "波形暂不可用",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 144,
+    "source": "重新读取",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 145,
+    "source": "正在读取完整心电图…",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 146,
+    "source": "心电详情",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 147,
+    "source": "分享心电报告",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 148,
+    "source": "生成心电 PDF",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 149,
+    "source": "合成分类",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 150,
+    "source": "记录中的平均心率",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 151,
+    "source": "RR 中位数",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 152,
+    "source": "个",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 153,
+    "source": "识别到的 R 波峰",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 154,
+    "source": "本次心率范围",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 155,
+    "source": "心电参考分",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 156,
+    "source": "暂不提供",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 157,
+    "source": "重新分析",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 158,
+    "source": "这是用于体验功能的示例，不是你的健康数据。",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 159,
+    "source": "上方分类来自 Apple，下面的测量由应用估算。目前不提供健康评分。",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 160,
+    "source": "可用于分析的时长",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 161,
+    "source": "0 秒",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 162,
+    "source": "心率与节律",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 163,
+    "source": "RR 间期",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift",
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 164,
+    "source": "测得的 RR 间隔",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 165,
+    "source": "时间",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift",
+      "HeartPro/Features/ECGDetailView.swift",
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 166,
+    "source": "时间（秒）",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift",
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 167,
+    "source": "RR 是相邻两个 R 波峰之间的时间。图上的每个点代表一次间隔，标出的变化不等于房颤或早搏。",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 168,
+    "source": "可以回看的变化",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 169,
+    "source": "点击查看原图",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 170,
+    "source": "目前测得的心跳间隔少于 12 个，还不够比较哪些变化更突出。",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 171,
+    "source": "没有标出与多数心跳明显不同的片段",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 172,
+    "source": "这些变化来自整条记录中可分析的部分，也可能由干扰或识别误差造成。有标记不等于异常，没有标记也不能排除问题。",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 173,
+    "source": "分析方法与限制",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 174,
+    "source": "应用会估算波峰位置、心跳间隔和波形变化，并标出值得回看的片段。它还不能确定早搏类型，也不能诊断房颤等疾病。",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 175,
+    "source": "Apple Watch 只有一个观察心脏电活动的角度，也就是单导联，不能可靠识别或排除心梗、心肌缺血。自动测量尚未经过真实 Watch 数据的准确度验证，不用于判断心电是否正常。",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 176,
+    "source": "分析版本：{0}",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift",
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 177,
+    "source": "未分析",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift",
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 178,
+    "source": "本次备忘",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 179,
+    "source": "{0} 条",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift",
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 180,
+    "source": "添加",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 181,
+    "source": "添加症状或测量背景",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 182,
+    "source": "仅关联这条心电记录",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 183,
+    "source": "日",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 184,
+    "source": "周",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 185,
+    "source": "月",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 186,
+    "source": "年",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 187,
+    "source": "参考分",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 188,
+    "source": "心率",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 189,
+    "source": "健康 SDNN",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 190,
+    "source": "分",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 191,
+    "source": "今天",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 192,
+    "source": "本周",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 193,
+    "source": "本月",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 194,
+    "source": "今年",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 195,
+    "source": "查看方式",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 196,
+    "source": "当日",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 197,
+    "source": "每日心电",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 198,
+    "source": "心电趋势",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 199,
+    "source": "选择日期",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 200,
+    "source": "前一天或上一时段",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 201,
+    "source": "后一天或下一时段",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 202,
+    "source": "当日概览",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 203,
+    "source": "当日心电",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 204,
+    "source": "这一天还没有记录",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 205,
+    "source": "没有记录的日期不会记为 0 分。左右切换日期，查看其他心电图。",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 206,
+    "source": "时间范围",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 207,
+    "source": "Apple 健康 SDNN",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 208,
+    "source": "{0}中位数",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 209,
+    "source": "还没有可比较的数据",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 210,
+    "source": "真实记录的参考分尚待验证。你可以先查看心率，或体验明确标记的演示趋势。",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 211,
+    "source": "这段时间没有此指标的可读取样本。",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 212,
+    "source": "日期",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 213,
+    "source": "连续段",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 214,
+    "source": "{0}趋势，{1} 个有效数据点",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 215,
+    "source": "{0} 条 SDNN",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 216,
+    "source": "{0} 条 ECG",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 217,
+    "source": "按记录展示",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 218,
+    "source": "按月汇总",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 219,
+    "source": "按日汇总",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 220,
+    "source": "正在读取 HRV…",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 221,
+    "source": "读取 Apple 健康的 HRV",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 222,
+    "source": "系统 SDNN 单独展示，不与短时 ECG 的 RR 波动混算。记录时长、姿势、呼吸和来源都会影响结果。",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 223,
+    "source": "空缺保留为空，不补零、不推测未记录的时间。",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 224,
+    "source": "心电分段分析",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 225,
+    "source": "了解分段测量",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 226,
+    "source": "自动估算，仅供参考",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 227,
+    "source": "{0} 次心跳",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 228,
+    "source": "这些数字怎么看",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 229,
+    "source": "这条记录大约每 {0} ms 采样一次。采样间隔不等于测量误差。",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 230,
+    "source": "参考范围用于帮助理解，不能直接套用来判断手表心电是否正常。没有测量结果，也不代表这段波形不存在。",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 231,
+    "source": "阅读 MSD 的心电图介绍",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 232,
+    "source": "{0}/{1} 次可测",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 233,
+    "source": "暂不支持自动测量",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 234,
+    "source": "展开查看原因",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 235,
+    "source": "Fridericia 中位数",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 236,
+    "source": "中位数",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 237,
+    "source": "图表指标",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 238,
+    "source": "记录时间（秒）",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 239,
+    "source": "每次心跳的{0}，无法测量的位置留空",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 240,
+    "source": "查看每次心跳",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 241,
+    "source": "为什么暂时无法测量",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 242,
+    "source": "分布与波形细节",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 243,
+    "source": "中间 80% 范围 {0}–{1} {2}",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 244,
+    "source": "{0} 次",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 245,
+    "source": "如何理解与测量",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 246,
+    "source": "暂不支持",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift",
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 247,
+    "source": "暂时无法测量",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift",
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 248,
+    "source": "范围 {0}–{1} {2}",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 249,
+    "source": "上一次心跳",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 250,
+    "source": "选择心跳",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 251,
+    "source": "第 {0} 次心跳（{1} 秒）",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 252,
+    "source": "第 {0}/{1} 次",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 253,
+    "source": "下一次心跳",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 254,
+    "source": "起点",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 255,
+    "source": "终点",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 256,
+    "source": "电压",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift",
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 257,
+    "source": "连续片段",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 258,
+    "source": "起",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 259,
+    "source": "终",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 260,
+    "source": "红线是原始波形，虚线标出估计的开始和结束位置。看不清的位置不会标出。",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 261,
+    "source": "开始时间",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 262,
+    "source": "结束时间",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 263,
+    "source": "波峰时间",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 264,
+    "source": "在完整心电图中查看",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 265,
+    "source": "测量方法",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 266,
+    "source": "心跳间隔与 HRV",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 267,
+    "source": "了解心跳间隔与 HRV",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 268,
+    "source": "间隔波动",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 269,
+    "source": "相邻间隔变化",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 270,
+    "source": "前一次间隔（ms）",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 271,
+    "source": "后一次间隔（ms）",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 272,
+    "source": "相邻 RR 散点图",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 273,
+    "source": "本次 RR 统计，不能直接当作 HRV。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 274,
+    "source": "Apple 健康 HRV",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 275,
+    "source": "查看 SDNN 趋势",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 276,
+    "source": "这里的数字代表什么",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 277,
+    "source": "间隔波动：记录中 RR 间隔的标准差，表示心跳间隔分散的程度。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 278,
+    "source": "相邻间隔变化：相邻 RR 差值的均方根，表示前后两次间隔相差多少。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 279,
+    "source": "散点图比较了 {0} 对相邻间隔，信号中断的地方已跳过。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 280,
+    "source": "为什么不直接叫 HRV",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 281,
+    "source": "这些计算还没有确认哪些属于正常心跳，因此不标作正常心跳的 SDNN 或 RMSSD。手表约 30 秒的心电，也不能与五分钟或全天的 HRV 直接比较。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 282,
+    "source": "Apple 健康中的 HRV 使用 SDNN。你可以单独查看它的趋势；它与本次心电的计算来源不同。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 283,
+    "source": "需要至少 12 次波形清楚、完整的心跳，才能画出对比用的参考波形。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 284,
+    "source": "R 波幅度中位数",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 285,
+    "source": "次",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 286,
+    "source": "参与对比的心跳",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 287,
+    "source": "振幅",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 288,
+    "source": "本次记录的典型波形",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 289,
+    "source": "了解波形对比",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 290,
+    "source": "相对 R 峰",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 291,
+    "source": "相对 R 峰（ms）",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 292,
+    "source": "仅对比 R 峰附近，不代表完整心跳。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 293,
+    "source": "心跳波形对比",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 294,
+    "source": "查看 R 波幅度与典型波形",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 295,
+    "source": "把每次心跳的 R 峰对齐，就可以比较附近波形的高度和形状。参考波形取各位置的中位数，帮助你看清这条记录的典型形状。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 296,
+    "source": "对比范围是 R 峰前 120 ms 到后 160 ms，不包含完整的 P、T 波，也不是 QRS 持续时间的测量。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 297,
+    "source": "接触和姿势变化也可能改变波形。波形相似或不同，都不能单独用来判断心电是否正常。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 298,
+    "source": "此设备暂不支持 Apple 健康。你仍可以体验演示或查看已保存的记录。",
+    "files": [
+      "HeartPro/Data/HealthKitGateway.swift"
+    ]
+  },
+  {
+    "id": 299,
+    "source": "这条心电图当前不可读取。请检查 Apple 健康中的记录和读取权限。",
+    "files": [
+      "HeartPro/Data/HealthKitGateway.swift"
+    ]
+  },
+  {
+    "id": 300,
+    "source": "没有获得此症状的写入权限。本地备忘已保留。",
+    "files": [
+      "HeartPro/Data/HealthKitGateway.swift"
+    ]
+  },
+  {
+    "id": 301,
+    "source": "HeartPro  ·  单导联心电记录",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 302,
+    "source": "{0}{1} · {2} 秒 · {3} bpm · {4}",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 303,
+    "source": "合成演示 · ",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 304,
+    "source": "25 mm/s · 10 mm/mV · 请按 100% 实际大小打印 · 第 {0} 页",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 305,
+    "source": "类似 I 导联 · {0}–{1} 秒",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 306,
+    "source": "仅供参考，不能用于医疗用途；不能替代诊断或排除心梗、心肌缺血。",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 307,
+    "source": "分析版本：{0} · 原始 ECG 只读 · 暂不提供健康评分",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 308,
+    "source": "HeartPro · 记录统计",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 309,
+    "source": "可用于分析的时长：{0}% · {1} 秒",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 310,
+    "source": "识别到的 R 波峰：{0} 个 · RR：{1} 个",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 311,
+    "source": "RR 中位数：{0} ms",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 312,
+    "source": "间隔的整体波动（RR 标准差）：{0} ms",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 313,
+    "source": "相邻间隔的变化（RR 差值均方根）：{0} ms",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 314,
+    "source": "这里还未区分正常心跳与其他类型，不能直接当作 HRV。",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 315,
+    "source": "标出的波形变化：{0} 项",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 316,
+    "source": "各段位置和时间由应用估算，目前不提供健康评分。",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 317,
+    "source": "仅供参考，不能用于医疗用途；标出的变化不等于疾病诊断。",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 318,
+    "source": "HeartPro · 可以回看的变化（续）",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 319,
+    "source": "{0} · 识别到 {1} 次心跳\n",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 320,
+    "source": "合成演示",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift",
+      "Packages/HeartProCore/Sources/HeartProCore/DemoData.swift"
+    ]
+  },
+  {
+    "id": 321,
+    "source": "单导联记录",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 322,
+    "source": "这些数字怎么看\n",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 323,
+    "source": "中位数 {0} {1}；最低–最高 {2}–{3} {4}；中间 80% 范围 {5}–{6} {7}",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 324,
+    "source": "暂时无法测量的原因：",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 325,
+    "source": "测量方法：",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 326,
+    "source": "HeartPro · 心电分段分析",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 327,
+    "source": " · 持续 {0} 分钟",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 328,
+    "source": "HeartPro · 本地备忘",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 329,
+    "source": "用户主观记录 · 仅供参考，不能用于医疗用途",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 330,
+    "source": "自动估算，尚未经过真实 Watch 数据验证 · 仅供参考，不能用于医疗用途",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 331,
+    "source": "窦性心律",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 332,
+    "source": "房颤分类",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 333,
+    "source": "心率偏高",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 334,
+    "source": "心率偏低",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 335,
+    "source": "未能分类",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 336,
+    "source": "记录质量不佳",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 337,
+    "source": "无分类信息",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 338,
+    "source": "无明显不适",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 339,
+    "source": "心悸",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 340,
+    "source": "漏跳感",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 341,
+    "source": "胸闷 / 胸痛",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 342,
+    "source": "气短",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 343,
+    "source": "头晕",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 344,
+    "source": "晕厥",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 345,
+    "source": "疲劳",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 346,
+    "source": "运动后",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 347,
+    "source": "咖啡因",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 348,
+    "source": "压力较大",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 349,
+    "source": "睡眠不足",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/Models.swift"
+    ]
+  },
+  {
+    "id": 350,
+    "source": "P 波",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 351,
+    "source": "PR 间期",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 352,
+    "source": "PR 段",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 353,
+    "source": "QRS 波群",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 354,
+    "source": "ST 段 / J 点",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 355,
+    "source": "T 波",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 356,
+    "source": "QT 间期",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 357,
+    "source": "QTc（校正 QT）",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 358,
+    "source": "TP 段",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 359,
+    "source": "RR / PP 间期",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 360,
+    "source": "U 波",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 361,
+    "source": "P 波反映心房的电活动，通常出现在 QRS 波群之前。这里看它持续多久、波峰有多高，以及波形朝上还是朝下。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 362,
+    "source": "从 P 波开始到 QRS 波群开始，称为 PR 间期。这段时间帮助我们观察电信号从心房传到心室的过程。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 363,
+    "source": "P 波结束后，到 QRS 波群开始前的短间隔。这里看它持续多久，以及波形相对参考水平线的位置。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 364,
+    "source": "QRS 通常是心电图里较高、较尖的一组波形，反映心室的电活动。这里看整组持续多久，以及 Q、R、S 各部分的大小。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 365,
+    "source": "ST 段位于 QRS 和 T 波之间，QRS 结束的位置叫 J 点。这里看波形相对参考水平线偏高还是偏低，以及变化的方向。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 366,
+    "source": "T 波反映心室电活动的恢复过程。这里看它持续多久、波峰大小，以及前后两部分的形状。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 367,
+    "source": "从 QRS 开始到 T 波结束，称为 QT 间期。它包括心室电活动开始到恢复的整个过程。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 368,
+    "source": "心率快慢会影响 QT。QTc 根据心跳间隔作了换算，便于比较。下面列出两种常用算法，结果可能略有差别。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 369,
+    "source": "一次心跳的 T 波结束，到下一次 P 波开始的间隔。这段波形通常比较平缓，可用来确定测量时的参考水平线。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 370,
+    "source": "RR 是相邻两个 R 波峰之间的时间，PP 则看相邻两个 P 波峰。它们分别反映心室和心房电活动的间隔。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 371,
+    "source": "U 波有时出现在 T 波之后，通常很小，也容易与旁边的波形混在一起。目前应用还不能可靠地单独识别它。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 372,
+    "source": "成人 P 波常用参考为短于 120 ms。波峰的大小还与记录的导联有关。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 373,
+    "source": "成人常用参考为 120–200 ms。年龄、心率和测量方法都会影响结果。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 374,
+    "source": "PR 段通常接近参考水平线。参考线的位置和信号处理方式会影响测量。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 375,
+    "source": "成人 QRS 常用参考为短于 120 ms。Q、R、S 的识别还需要结合原波形复核。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 376,
+    "source": "接触、姿势和信号处理都可能改变 ST 的样子。手表心电不能据此判断或排除心肌缺血。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 377,
+    "source": "从不同导联看，T 波的方向和大小可能不同，不能只凭一个数值判断是否正常。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 378,
+    "source": "QT 会随心率变化，不能用一个固定范围判断所有记录。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 379,
+    "source": "心率很快或很慢时，校正的偏差可能更大。解读还需结合年龄、性别和所用方法。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 380,
+    "source": "心跳较快时，这段间隔可能很短，甚至难以与相邻波形分开。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 381,
+    "source": "这些数字描述心跳间隔的变化，尚未区分正常心跳与其他类型，不能直接当作 HRV。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 382,
+    "source": "没有测量结果，不代表这条记录中没有 U 波。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 383,
+    "source": "测量 P 波的开始、结束和峰值位置。波形太小、起止位置不清，或与旁边的波形重叠时，会留空相应数值。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 384,
+    "source": "使用同一次心跳的 P 波起点和 QRS 起点。任一位置不清楚时，不计算 PR 间期。PR 间期包括 P 波本身和后面的 PR 段。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 385,
+    "source": "从 P 波终点量到 QRS 起点；电位是这段波形相对局部 TP 参考线的平均值。正数表示在参考线上方，负数表示在下方。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 386,
+    "source": "先估计 QRS 的开始和结束，再寻找主峰前后的反向波形，作为 Q、S 的候选。数值保留原来的正负方向；如果主峰朝下，Q、R、S 的命名需要人工复核。单导联无法判断电轴或胸前导联的 R 波变化。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 387,
+    "source": "以 QRS 终点估计 J 点，再测量其后 60 和 80 ms 的电位。变化速率由这两个位置的电位差计算；正值表示向上，负值表示向下。如果已接近 T 波，就不再把该处当作 ST 测量。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 388,
+    "source": "分别寻找 T 波的开始、峰值和结束。前后时长比 = 起点到峰值的时间 ÷ 峰值到终点的时间。两部分长度相近时，比值接近 1；有多个波峰时需要结合原图查看。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 389,
+    "source": "每次心跳单独测量：从这一次 QRS 的起点，到同一次 T 波的终点，再汇总结果。T 波终点不清时，不计算 QT。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 390,
+    "source": "使用同一次心跳的 QT 和紧邻前一次的 RR，均以秒代入：Fridericia = QT / RR^(1/3)；Bazett = QT / √RR。当前算法要求相关 RR 连续、相邻变化不超过 10%，且间隔为 500–1500 ms。这是算法的适用条件，不是正常范围。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 391,
+    "source": "从本次 T 波终点量到下一次 P 波起点。任一位置不清、信号中断，或间隔短于 40 ms 时不测量。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 392,
+    "source": "RR 和 PP 分别使用各自的相邻波峰计算，不互相替代，也不跨过信号中断的地方拼接。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 393,
+    "source": "目前无法可靠地把 U 波与 T 波末尾或下一次 P 波分开。可以打开单次心跳，查看原始波形。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 394,
+    "source": "P 波持续时间",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 395,
+    "source": "P 波幅度",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 396,
+    "source": "PR 段持续时间",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 397,
+    "source": "PR 段电位",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 398,
+    "source": "QRS 持续时间",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 399,
+    "source": "Q 波幅度（估计）",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 400,
+    "source": "Q 波持续时间（估计）",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 401,
+    "source": "R 主峰幅度",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 402,
+    "source": "QRS 开始到 R 峰的时间",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 403,
+    "source": "S 波幅度（估计）",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 404,
+    "source": "S 波持续时间（估计）",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 405,
+    "source": "ST 段持续时间",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 406,
+    "source": "J 点电位",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 407,
+    "source": "J 点后 60 ms 的电位",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 408,
+    "source": "J 点后 80 ms 的电位",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 409,
+    "source": "ST 电位变化速率",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 410,
+    "source": "T 波持续时间",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 411,
+    "source": "T 波幅度",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 412,
+    "source": "T 波前后时长比",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 413,
+    "source": "TP 段持续时间",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 414,
+    "source": "PP 间期",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 415,
+    "source": "U 波幅度",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 416,
+    "source": "倍",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 417,
+    "source": "暂无可用于测量的心跳",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 418,
+    "source": "{0} 次心跳中，{1} 次可测",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 419,
+    "source": "这些数值由应用自动估算，准确度尚未经过真实 Apple Watch 数据验证，不能据此判断心电是否正常。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 420,
+    "source": "ms 是毫秒，1000 ms 等于 1 秒。mV 是毫伏，用来表示波形相对参考水平线的高低；正数在上方，负数在下方。\n中位数是把测量值从小到大排列后，处于中间的数值。它不是平均值。\n最低–最高展示所有测量值的范围；中间 80% 范围（P10–P90）去掉两端各 10% 的分布，便于看出数值集中在哪里。两者都不是正常范围。\n测量次数以应用识别到的心跳为准，可能有漏检。没有结果的心跳不会填成 0，也不会计入统计。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 421,
+    "source": "{0} 次：{1}",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 422,
+    "source": "没有找到足够清楚的心跳波峰，暂时无法分段测量。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 423,
+    "source": "这条记录不够细（采样率低于 200 Hz），暂时无法准确找到波形的起止位置。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 424,
+    "source": "这段心跳间隔超出当前算法可处理的范围，也可能是波峰识别不准。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 425,
+    "source": "这次心跳附近的波形不完整，或有一段信号不清楚。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 426,
+    "source": "波形的参考水平线不够稳定，或干扰较多，暂时测不清。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 427,
+    "source": "主要波峰不够突出，难以与干扰区分。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 428,
+    "source": "QRS 附近的波形抖动较多，暂时找不准开始和结束的位置。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 429,
+    "source": "QRS 的开始或结束不清楚，也可能是几个波峰连在了一起。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 430,
+    "source": "这段波形的长度超出算法可处理的范围，暂时不能确认它是 P 波。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 431,
+    "source": "这个位置已接近 T 波，无法单独测量 ST。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 432,
+    "source": "P 波太小、起止位置不清，或与旁边的波形重叠。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 433,
+    "source": "没有分辨出这部分波形，因此没有填写数值。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 434,
+    "source": "T 波太小、起止位置不清，或与下一次心跳的波形重叠；记录不完整也会影响测量。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 435,
+    "source": "看不清 T 波从哪里开始，因此无法确定 ST 的测量位置。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 436,
+    "source": "还缺少这次心跳的 QT，或附近连续、稳定的心跳间隔，暂时无法校正。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 437,
+    "source": "QT 的结束位置不清，或附近心跳间隔不符合校正条件。具体条件见「测量方法」。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 438,
+    "source": "看不清这次 T 波的结束或下次 P 波的开始，也可能是中间有信号缺口。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 439,
+    "source": "缺少上一次心跳、P 波不清楚，或两次心跳之间有信号缺口。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 440,
+    "source": "目前还不能可靠地把 U 波与 T 波分开。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 441,
+    "source": "需要的起止位置还不够清楚，暂时无法测量。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 442,
+    "source": "主峰朝上；Q、S 按它前后朝下的部分估计。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 443,
+    "source": "主峰朝下，保留了原来的方向；Q、R、S 的识别需要结合原图复核。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 444,
+    "source": "可能同时有朝上和朝下的部分，或不止一个波峰；起止位置需要结合原图查看。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 445,
+    "source": "有些片段的信号不够清楚，统计时已跳过。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 446,
+    "source": "这些片段通过了应用的信号检查；这不代表心电正常，也不代表每个波段都能测清。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 447,
+    "source": "这次心跳的间隔与多数不同",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 448,
+    "source": "出现一短一长的心跳间隔",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 449,
+    "source": "一短一长的间隔连续出现",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 450,
+    "source": "这个波峰的大小与多数不同",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 451,
+    "source": "这次波形的形状与多数不同",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 452,
+    "source": "两次波峰相隔 {0}",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 453,
+    "source": "间隔为 {0} ms；与本次记录的中位数相比，前一次较短，后一次较长。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 454,
+    "source": "至少连续出现了 3 组。这个变化本身不能确定是否有早搏。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 455,
+    "source": "相对附近参考线的波峰幅度为 {0}",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 456,
+    "source": "R 峰附近这小段波形，与本次记录中其他心跳的典型形状不同。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 457,
+    "source": "采样频率缺失或无效。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SignalAnalyzer.swift"
+    ]
+  },
+  {
+    "id": 458,
+    "source": "波形中有无效电压或不连续的时间顺序。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SignalAnalyzer.swift"
+    ]
+  },
+  {
+    "id": 459,
+    "source": "波形尚未完整读取，请重试。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SignalAnalyzer.swift"
+    ]
+  },
+  {
+    "id": 460,
+    "source": "记录太短，无法完成参考统计。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SignalAnalyzer.swift"
+    ]
+  },
+  {
+    "id": 461,
+    "source": "语言",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 462,
+    "source": "应用语言",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 463,
+    "source": "跟随系统的 App 语言设置，可在系统设置中更改。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 464,
+    "source": "将写入：{0}",
+    "files": [
+      "HeartPro/Features/ECGNotes.swift"
+    ]
+  },
+  {
+    "id": 465,
+    "source": "QTc（Fridericia）",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 466,
+    "source": "QTc（Bazett）",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 467,
+    "source": "波峰朝上",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 468,
+    "source": "波峰朝下",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 469,
+    "source": "上方分类来自 Apple，下面的测量由应用估算。",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 470,
+    "source": "左右切换日期，查看其他心电图。",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 471,
+    "source": "合成演示与真实记录隔离。演示数据用于体验功能，演示备忘不会写入健康。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 472,
+    "source": "自动测量尚未经过真实 Apple Watch 数据的准确度验证，不能判断心电是否正常。看不清的波段会说明原因并留空。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 473,
+    "source": "分析版本：{0}；原始 ECG 只读",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 474,
+    "source": "各段位置和时间由应用估算。",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 475,
+    "source": "HeartPro — 早搏候选与节律",
+    "files": [
+      "HeartPro/Data/ReportExporter.swift"
+    ]
+  },
+  {
+    "id": 476,
+    "source": "早搏候选与节律",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 477,
+    "source": "检测与评分规则",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 478,
+    "source": "分数表示未被规则标记的心跳比例，不代表健康程度。",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 479,
+    "source": "本次没有标出早搏候选",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 480,
+    "source": "查看其余 {0} 次",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 481,
+    "source": "宽窄分类描述波形特征，不等于已经确认心搏起源。单导联中看不清 P 波时，不推断房性或室性来源。",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 482,
+    "source": "规则版本：{0}",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 483,
+    "source": "节律参考分",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 484,
+    "source": "早搏候选",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 485,
+    "source": "节律参考分 {0}",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 486,
+    "source": "这次心跳中，没有找到与相邻波形清楚分开的 U 波候选。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 487,
+    "source": "这个小波形没有在足够多次心跳中重复，暂不作为 U 波候选。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
+    ]
+  },
+  {
+    "id": 488,
+    "source": "宽波群早搏候选",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 489,
+    "source": "窄波群早搏候选",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 490,
+    "source": "早搏候选，类型待复核",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 491,
+    "source": "清晰信号不足 20 秒或不足整条记录的 80%，这次不计算分数。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 492,
+    "source": "可复核心跳不足 15 次，或有较多心跳无法可靠比较，这次不计算分数。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 493,
+    "source": "稳定的参考心跳不足，本次不计算分数。仅在时序和形态同时支持时标出早搏候选。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 494,
+    "source": "心跳间隔变化较大，超出这套评分规则的适用范围。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 495,
+    "source": "Apple 将这条记录归为房颤或质量不佳，本次不套用早搏分类与节律评分。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 496,
+    "source": "{0} 次已识别心跳中，{1} 次可复核",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 497,
+    "source": "{0} 次可复核心跳，{1} 次被标记；同一次心跳只计一次。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 498,
+    "source": "节律参考分 = 100 ×（1 − 被标记心跳数 ÷ 可复核心跳数），四舍五入。标记包括早搏候选、明显的间隔变化或局部形态变化；早搏后的停顿不重复计数。它描述本条记录中未被规则标记的比例，不是心脏健康分，100 分也不代表心电正常。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 499,
+    "source": "至少需要 20 秒清晰信号、80% 信号覆盖、15 次可复核心跳，以及 8 次稳定的参考心跳。可复核比例需达到非边缘心跳的 80%。信号不足不扣分；PR、QT 缺值和 HRV 高低也不参与加减分。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 500,
+    "source": "先与附近心跳比较：提前超过 15% 且至少 80 ms，再检查后续间隔是否延长，或 QRS 是否变宽并改变形态。宽波群候选要求局部宽度至少 120 ms、比参考宽 20%，且模板相关度低于 0.90。窄波群候选要求宽度小于 120 ms、相关度至少 0.90，并伴随后续间隔延长。这些是研究规则，不能单凭它们确认房早或室早。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 501,
+    "source": "自动识别可能漏报或误报，候选需要结合原图确认。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 502,
+    "source": "节律参考分：{0} / 100",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 503,
+    "source": "本次早搏候选：{0} 次",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 504,
+    "source": "{0} 秒：{1}。{2}",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 505,
+    "source": "前一间隔 {0} ms，附近参考 {1} ms，后一间隔 {2} ms。局部 QRS 宽度约 {3} ms，模板相关度 {4}。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 506,
+    "source": "U 波候选",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 507,
+    "source": "T 波之后重复出现的小波形，可能是 U 波。这里只显示与 T 波和下一次 P 波分开的候选，仍需结合原图确认。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 508,
+    "source": "小波形也可能来自干扰或 T 波的另一部分；候选不代表已经确认 U 波。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 509,
+    "source": "要求 T 波已回到基线，候选与下一次 P 波分开，持续 40–140 ms，幅度不超过 T 波的四分之一，并在至少三次心跳中以相近位置重复。融合或只有一次的小波形不输出结果。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 510,
+    "source": "U 波候选幅度",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 511,
+    "source": "{0}（开发预览）",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 512,
+    "source": "可能漏检或误判，评分不代表健康状况。",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 513,
+    "source": "详细规则",
+    "files": [
+      "HeartPro/Features/EctopyPanel.swift"
+    ]
+  },
+  {
+    "id": 514,
+    "source": "比附近心跳提前 {0} 秒",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/RhythmText.swift"
+    ]
+  },
+  {
+    "id": 515,
+    "source": "记录备忘",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 516,
+    "source": "心电记录报告",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 517,
+    "source": "按实际大小（100%）打印",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 518,
+    "source": "分析摘要",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 519,
+    "source": "信号覆盖率",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 520,
+    "source": "分析时长",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 521,
+    "source": "指标",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 522,
+    "source": "结果",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 523,
+    "source": "RR 标准差",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 524,
+    "source": "相邻 RR 差值均方根",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 525,
+    "source": "RR 统计未排除非窦性心搏，不作为正常心搏 HRV 指标。",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 526,
+    "source": "共识别 {0} 个心搏，{1} 个纳入分析。",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 527,
+    "source": "标记 {0} 个心搏，同一心搏不重复计数。",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 528,
+    "source": "类型",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 529,
+    "source": "测量依据",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 530,
+    "source": "自动标记需结合原始波形核查。节律评分不用于评价心脏健康状况。",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 531,
+    "source": "波形事件",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 532,
+    "source": "范围为本次记录的最小值至最大值，不是临床参考区间。中间 80% 范围为 P10–P90。",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 533,
+    "source": "测量项目",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 534,
+    "source": "范围",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 535,
+    "source": "有效 / 总数",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 536,
+    "source": "缺失原因",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 537,
+    "source": "采样频率",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 538,
+    "source": "分析版本",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 539,
+    "source": "疑似早搏（宽 QRS）",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 540,
+    "source": "疑似早搏（窄 QRS）",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 541,
+    "source": "疑似早搏（未分型）",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 542,
+    "source": "前序 RR {0} ms；参考 RR {1} ms；后续 RR {2} ms。QRS 估计时限 {3} ms；相关系数 {4}。",
+    "files": [
+      "HeartPro/Data/ReportContents.swift"
+    ]
+  },
+  {
+    "id": 543,
+    "source": "连接日常心率与 HRV",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 544,
+    "source": "按日期查找",
+    "files": [
+      "HeartPro/Features/TimelineView.swift",
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 545,
+    "source": "全部记录",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 546,
+    "source": "了解每日心脏健康",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 547,
+    "source": "心率、心电图与 HRV，一次连接",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 548,
+    "source": "日常心率：查看每天的变化与趋势",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 549,
+    "source": "心电图：回看原始波形与每次测量",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 550,
+    "source": "HRV：了解心率变异性的长期变化",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 551,
+    "source": "将一次请求心率、心电图和 HRV 的读取权限，你可以分别选择。数据仅在设备上处理。",
+    "files": [
+      "HeartPro/Features/TimelineView.swift",
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 552,
+    "source": "今日心脏健康",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 553,
+    "source": "日常平均心率",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 554,
+    "source": "日常心率范围 {0}–{1} bpm",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 555,
+    "source": "心率与 HRV 来自健康中的可读取样本；没有记录的时间不作推测。",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 556,
+    "source": "部分信号不清晰",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 557,
+    "source": "{0} 处变化可回看",
+    "files": [
+      "HeartPro/Features/TimelineView.swift"
+    ]
+  },
+  {
+    "id": 558,
+    "source": "日常心率",
+    "files": [
+      "HeartPro/Features/InsightsView.swift",
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 559,
+    "source": "每日心脏健康",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 560,
+    "source": "心脏健康趋势",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 561,
+    "source": "按小时汇总",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 562,
+    "source": "圆点表示时段平均值，竖线表示最低到最高；活动和休息都会影响心率。",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 563,
+    "source": "时段平均心率的中位数",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 564,
+    "source": "{0} 个日常心率时段",
+    "files": [
+      "HeartPro/Features/InsightsView.swift"
+    ]
+  },
+  {
+    "id": 565,
+    "source": "基于 {0} 次清晰测量",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 566,
+    "source": "本次中位数偏离参考范围",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 567,
+    "source": "仅供理解测量值，不代表诊断；持续偏离或伴不适时应由医生评估。",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 568,
+    "source": "本次测量范围 {0}–{1} {2}",
+    "files": [
+      "HeartPro/Features/SegmentAnalysisPanel.swift"
+    ]
+  },
+  {
+    "id": 569,
+    "source": "本次 ECG 的 HRV",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift",
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 570,
+    "source": "超短时估算",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 571,
+    "source": "Poincaré 聚集图",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 572,
+    "source": "纳入连续 {0} 秒、{1} 个间隔；{2} 个间隔未纳入。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 573,
+    "source": "每个点连接前后两次心跳间隔；点越集中，间隔越相近。虚线椭圆表示一个标准差的分布，不是正常范围。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 574,
+    "source": "超短时 HRV 没有统一正常区间。呼吸、姿势、睡眠和压力都会影响数值，建议在相似条件下比较。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 575,
+    "source": "SDNN 描述间隔的总体分散程度；RMSSD 描述相邻间隔的变化。SD1 和 SD2 分别表示聚集图横跨和沿着对角线的分散程度。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 576,
+    "source": "仅在来源为窦性心律且信号与节律满足条件时计算。排除被标记的心跳及其相邻间隔后，使用最长的连续片段，不跨空缺拼接或补值。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 577,
+    "source": "筛选规则不能确认正常心跳，也可能漏检不规则节律；这些结果是研究性估算，不能用于诊断或与标准五分钟 HRV 等同。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 578,
+    "source": "成人参考：P 波 < 120 ms",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 579,
+    "source": "参考范围来自常规心电图；手表单导联的边界估算可能有偏差。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 580,
+    "source": "测量值达到或超过参考上限。可能与心房传导变慢有关，也可能是噪声或 P 波边界识别偏差；反复出现时可请医生复核心电图。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 581,
+    "source": "成人参考：PR 120–200 ms",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 582,
+    "source": "年龄、心率及药物会影响 PR，参考范围不能单独用于诊断。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 583,
+    "source": "测量值低于参考范围。可能与传导较快、预激或起点识别偏差有关，需结合 P 波与 QRS 形态复核。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 584,
+    "source": "测量值高于参考范围。迷走神经张力、部分减慢心率的药物或房室传导延迟都可能影响 PR；请结合原图和用药情况复核。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 585,
+    "source": "成人参考：QRS < 120 ms",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 586,
+    "source": "常见 QRS 约 70–100 ms；小于 120 ms 仅表示未达到常用增宽界限，不表示心电正常。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 587,
+    "source": "测量值达到或超过常用增宽界限。可能与心室传导延迟、起搏或不同起源的心跳有关，也可能是边界识别误差；需结合完整心电图复核。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 588,
+    "source": "成人 QTc：男性约 350–450 ms；女性约 360–460 ms",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 589,
+    "source": "需结合性别、年龄和校正公式判断。QTc 偏长可能与药物、电解质或遗传因素有关；偏短也可能与电解质或遗传因素有关。心率及 T 波终点误差会改变估算结果。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 590,
+    "source": "成人静息参考：RR 600–1000 ms（60–100 bpm）",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 591,
+    "source": "仅适用于成人安静状态。呼吸、运动、睡眠、体能和药物都可能改变心跳间隔。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 592,
+    "source": "间隔较短表示心率较快。运动、紧张、咖啡因、发热等都可能造成变化；若静息时持续偏快或伴不适，可咨询医生。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 593,
+    "source": "间隔较长表示心率较慢。睡眠、较好的体能、药物或传导变化都可能造成变化；漏检波峰也会拉长间隔，需要复核原图。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 594,
+    "source": "没有适用于本次单导联测量的统一正常区间",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
+    ]
+  },
+  {
+    "id": 595,
+    "source": "已测量 {0} 次；另有 {1} 次因边界不清等原因未纳入",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 596,
+    "source": "等待完整 ECG 分析后计算 HRV。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/ECGHRV.swift"
+    ]
+  },
+  {
+    "id": 597,
+    "source": "本次来源分类不是窦性心律，暂不估算 HRV。仍可查看上方 RR 间隔。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/ECGHRV.swift"
+    ]
+  },
+  {
+    "id": 598,
+    "source": "清晰信号不足，暂不估算 HRV。请保持静止、贴合手表后重新测量。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/ECGHRV.swift"
+    ]
+  },
+  {
+    "id": 599,
+    "source": "本次节律或波形不够稳定，暂不估算 HRV，避免把不规则心跳当作心率变异性。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/ECGHRV.swift"
+    ]
+  },
+  {
+    "id": 600,
+    "source": "剔除干扰和待复核心跳后，需要至少 20 秒且包含 20 个连续间隔才能估算 HRV。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/ECGHRV.swift"
+    ]
+  },
+  {
+    "id": 601,
+    "source": "基于本次 ECG 筛选后的连续间隔估算；自动筛选不能确认每次心跳均正常。约 30 秒的结果不与五分钟、全天或 Apple 健康 SDNN 直接比较。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/ECGHRV.swift"
+    ]
+  },
+  {
+    "id": 602,
+    "source": "健康数据",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 603,
+    "source": "健康授权",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 604,
+    "source": "同步记录",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 605,
+    "source": "帮助",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 606,
+    "source": "使用指南",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 607,
+    "source": "体验示例",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 608,
+    "source": "关于",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 609,
+    "source": "心电分析和备忘留在此设备上，HeartPro 不会上传这些数据。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 610,
+    "source": "你可以随时在 Apple 健康中更改授权。已导入的记录可在这里清空。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 611,
+    "source": "只有你选择保存到 Apple 健康时，症状才会写入；文字备忘留在 HeartPro。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 612,
+    "source": "报告由你选择是否分享，请留意接收人。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 613,
+    "source": "先看今天，再看趋势",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 614,
+    "source": "找到一条心电，读懂一次测量",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 615,
+    "source": "看懂心跳的细节",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 616,
+    "source": "了解 HRV，留下一点背景",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 617,
+    "source": "快速了解今天的心率、HRV 和心电记录。轻点卡片可查看每日详情。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 618,
+    "source": "按周、月或年观察变化。先看自己一段时间的走势，不必只盯着某一次高低。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 619,
+    "source": "在心电记录上方轻点日历，直接找到某一天，再切换前一天或后一天。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 620,
+    "source": "打开记录",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 621,
+    "source": "轻点整张卡片查看详情。右上角的箭头表示可以进入下一页。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 622,
+    "source": "心跳有变化",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 623,
+    "source": "表示有些心跳的间隔或形状与其他心跳不同。进入详情可在原图中查看，不代表已经发现疾病。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 624,
+    "source": "放大查看波形，轻点标记找到对应心跳，也可以选择两个点测量。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 625,
+    "source": "分段测量与波形对比",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 626,
+    "source": "轻点模块右上角的加号展开。分段测量提供参考范围和偏离原因；波形对比帮助你看清心跳的形状。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 627,
+    "source": "节律分析",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 628,
+    "source": "查看心跳间隔、节奏变化和提前出现的心跳线索。自动分析只能帮助回看，不能代替诊断。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 629,
+    "source": "30 秒心电也能估算 HRV。聚集图中每个点代表相邻的两次心跳间隔；越集中，间隔越接近，并非越集中就越健康。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 630,
+    "source": "备忘与分享",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 631,
+    "source": "记下运动、睡眠或不适，帮助理解测量时的状态。需要时可导出报告。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 632,
+    "source": "随时再看",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 633,
+    "source": "模块旁的信息按钮有更详细的说明。也可以在设置中重新打开使用指南。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 634,
+    "source": "上一步",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 635,
+    "source": "开始使用",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 636,
+    "source": "下一步",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 637,
+    "source": "关闭",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 638,
+    "source": "{0} 秒估算",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 639,
+    "source": "使用 {0} 秒清晰信号，{1} 个心跳间隔",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 640,
+    "source": "30 秒心电也能估算 HRV。排除干扰和有变化的心跳后，SDNN 使用本次保留的全部间隔；RMSSD 和聚集图只使用原本相邻的间隔，不跨空缺连接。",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 641,
+    "source": "这次清晰的心跳间隔不足。保持静止、贴合手表，再测一次 30 秒心电。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/ECGHRV.swift"
+    ]
+  },
+  {
+    "id": 642,
+    "source": "这是本次短时测量的 HRV 估算，适合与相同时长、相似状态下的记录比较。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/ECGHRV.swift"
+    ]
+  },
+  {
+    "id": 643,
+    "source": "更了解自己的心跳",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 644,
+    "source": "把 Apple 健康里的记录放在一起，轻松回看每天的变化。",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 645,
+    "source": "查看每天的心跳快慢和长期变化。",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 646,
+    "source": "按日期查找，放大看清每次心电图。",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 647,
+    "source": "心率变异性（HRV）",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 648,
+    "source": "了解心跳间隔的变化，和过去的自己比较。",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 649,
+    "source": "下一步会请你允许读取这三类记录，你可以分别选择。",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 650,
+    "source": "仅供参考，不能替代医生诊断。",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 651,
+    "source": "正在连接…",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 652,
+    "source": "先看看示例",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 653,
+    "source": "数据留在你的设备上",
+    "files": [
+      "HeartPro/Features/AuthorizationLandingView.swift"
+    ]
+  },
+  {
+    "id": 654,
+    "source": "看懂心跳变化，记下测量时的状态",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 655,
+    "source": "需要留意的提示",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 656,
+    "source": "Apple 提示心率偏高、偏低或房颤时，卡片会突出显示。进入详情可查看原始分类和测量结果。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 657,
+    "source": "全屏查看心电图",
+    "files": [
+      "HeartPro/Design/FullWaveformView.swift"
+    ]
+  },
+  {
+    "id": 658,
+    "source": "退出全屏",
+    "files": [
+      "HeartPro/Design/FullWaveformView.swift"
+    ]
+  },
+  {
+    "id": 659,
+    "source": "波段与间隔",
+    "files": [
+      "HeartPro/Design/FullWaveformView.swift"
+    ]
+  },
+  {
+    "id": 660,
+    "source": "平均心率",
+    "files": [
+      "HeartPro/Features/ECGDetailView.swift"
+    ]
+  },
+  {
+    "id": 661,
+    "source": "更多指标",
+    "files": [
+      "HeartPro/Features/AnalysisPanels.swift"
+    ]
+  },
+  {
+    "id": 662,
+    "source": "已测量 {0} 次",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 663,
+    "source": "已测量 {0} 次，{1} 次未纳入",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
+  },
+  {
+    "id": 664,
+    "source": "轻点右上角可横屏全屏查看。顶部标出测得的波段与间隔，轻点可查看时长；也能放大或用尺子选择两点测量。",
+    "files": [
+      "HeartPro/Features/UsageGuideView.swift"
+    ]
+  },
+  {
+    "id": 665,
+    "source": "支持与联系",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 666,
+    "source": "隐私政策",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 667,
+    "source": "无需账号，没有广告或跟踪。健康数据不通过 HeartPro 同步到 iCloud，也不会用于营销。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 668,
+    "source": "临时报告在下次打开应用时清理超过 24 小时的副本；清空本地数据也会删除这些副本。已分享的文件由接收人管理。",
+    "files": [
+      "HeartPro/Features/SettingsView.swift"
+    ]
+  },
+  {
+    "id": 669,
+    "source": "请在作出医疗决定前咨询医生。",
+    "files": [
+      "HeartPro/Design/DesignSystem.swift"
+    ]
+  }
+]

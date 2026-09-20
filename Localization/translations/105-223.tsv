@@ -1,0 +1,119 @@
+105|Preparing demo data…|デモデータを準備中…|데모 데이터 준비 중…|Demodaten werden vorbereitet …|Preparando datos de demostración…
+106|ECG records|心電図の記録|심전도 기록|EKG-Aufzeichnungen|Registros de ECG
+107|Records: {0}|全{0}件|총 {0}개|Aufzeichnungen: {0}|Registros: {0}
+108|No ECGs available|読み取れる心電図がありません|불러올 심전도가 없습니다|Keine EKGs verfügbar|No hay ECG disponibles
+109|Record an ECG on Apple Watch and let it sync to your iPhone. You can also check HeartPro's read permissions in Health.|Apple Watchで心電図を記録し、iPhoneへの同期をお待ちください。ヘルスケアでHeartProの読み取り権限も確認できます。|Apple Watch에서 심전도를 측정한 후 iPhone에 동기화될 때까지 기다려 주세요. 건강 앱에서 HeartPro의 읽기 권한도 확인할 수 있습니다.|Zeichne ein EKG auf der Apple Watch auf und warte auf die Synchronisierung mit dem iPhone. Prüfe bei Bedarf die Leseberechtigung von HeartPro in Health.|Registra un ECG en el Apple Watch y espera a que se sincronice con el iPhone. También puedes comprobar los permisos de lectura de HeartPro en Salud.
+110|Synthetic example|合成サンプル|합성 예시|Synthetisches Beispiel|Ejemplo sintético
+111|Synthetic example, not your health data|合成サンプルであり、あなたの健康データではありません|합성 예시이며 사용자의 건강 데이터가 아닙니다|Synthetisches Beispiel, keine persönlichen Gesundheitsdaten|Ejemplo sintético, no son tus datos de salud
+112|Sync ECGs|心電図を同期|심전도 동기화|EKGs synchronisieren|Sincronizar ECG
+113|Import ECG records|心電図を読み込む|심전도 기록 가져오기|EKGs importieren|Importar registros de ECG
+114|Read ECGs synced from Apple Watch|Apple Watchから同期した心電図を読み込み|Apple Watch에서 동기화된 심전도 불러오기|Synchronisierte Apple Watch EKGs laden|Leer ECG sincronizados del Apple Watch
+115|Synthetic waveform example|合成波形のサンプル|합성 파형 예시|Synthetische Beispielkurve|Ejemplo de onda sintética
+116|Full ECG history and original waveforms|心電図の全履歴と元の波形|전체 심전도 기록과 원본 파형|Vollständiger EKG-Verlauf und Originalkurven|Historial completo de ECG y ondas originales
+117|Heart rate trends and notes for each ECG|心拍数の推移と心電図ごとのメモ|심박수 추세와 각 심전도의 메모|Herzfrequenztrends und Notizen je EKG|Tendencias de frecuencia cardíaca y notas por ECG
+118|On-device processing, no account needed|端末内で処理、アカウント不要|기기 내 처리, 계정 불필요|Verarbeitung auf dem Gerät, ohne Konto|Procesamiento local, sin cuenta
+119|Connect to Apple Health|ヘルスケアに接続|Apple 건강 연결|Apple Health verbinden|Conectar con Salud de Apple
+120|Try an example|サンプルを試す|예시 체험|Beispiel ansehen|Probar un ejemplo
+121|Only necessary read permissions are requested. Original ECGs are not modified.|必要な読み取り権限のみを求めます。元の心電図は変更しません。|필요한 읽기 권한만 요청합니다. 원본 심전도는 변경하지 않습니다.|Es werden nur nötige Leseberechtigungen angefragt. Original-EKGs bleiben unverändert.|Solo se solicitan los permisos de lectura necesarios. Los ECG originales no se modifican.
+122|Today's overview|今日の概要|오늘의 요약|Heutige Übersicht|Resumen de hoy
+123|{1}: {0}|{1}：{0}件|{1}: {0}개|{1}: {0}|{1}: {0}
+124|{0}/{1} analyzed|{0}/{1}件を分析済み|{0}/{1}개 분석 완료|{0}/{1} analysiert|{0}/{1} analizados
+125|records|件|개|Einträge|registros
+126|Median heart rate|心拍数の中央値|심박수 중앙값|Mediane Herzfrequenz|Frecuencia cardíaca mediana
+127|Demo score|デモスコア|데모 점수|Demowert|Puntuación de demo
+128|s|秒|초|s|s
+129|Recording duration|記録時間|기록 시간|Aufzeichnungsdauer|Duración del registro
+130|Demo classification: |デモ分類：|데모 분류: |Demo-Klassifikation: |Clasificación de demo: 
+131|Apple classification: |Appleの分類：|Apple 분류: |Apple-Klassifikation: |Clasificación de Apple: 
+132|ECG score is not available|心電図スコアは提供していません|심전도 점수는 제공하지 않습니다|EKG-Bewertung nicht verfügbar|Puntuación de ECG no disponible
+133|No available records today|今日は読み取れる記録がありません|오늘 불러올 기록이 없습니다|Heute keine Aufzeichnungen verfügbar|No hay registros disponibles hoy
+134|Based on ECGs recorded that day, not continuous monitoring|その日に記録した心電図に基づきます。終日のモニタリングではありません。|해당 날짜에 기록한 심전도 기준이며 종일 모니터링이 아닙니다|Basiert auf EKGs dieses Tages, keine durchgehende Überwachung|Basado en los ECG de ese día, no en una monitorización continua
+135|Similar to Lead I|I誘導に相当|유도 I과 유사|Ähnlich Ableitung I|Similar a la derivación I
+136|Waveform pending|波形を準備中|파형 준비 대기|Kurve wird vorbereitet|Onda pendiente
+137|Waveform cannot be read right now|現在、波形を読み取れません|현재 파형을 불러올 수 없습니다|Kurve derzeit nicht lesbar|No se puede leer la onda ahora
+138|Apple classification|Appleの分類|Apple 분류|Apple-Klassifikation|Clasificación de Apple
+139|Demo score: {0}|デモスコア：{0}|데모 점수: {0}|Demowert: {0}|Puntuación de demo: {0}
+140|{0}% usable|{0}%が分析可能|{0}% 분석 가능|{0}% nutzbar|{0}% utilizable
+141|Awaiting analysis|分析待ち|분석 대기 중|Analyse ausstehend|Pendiente de análisis
+142|Analysis incomplete|分析は未完了です|분석 미완료|Analyse unvollständig|Análisis incompleto
+143|Waveform unavailable|波形を表示できません|파형을 표시할 수 없습니다|Kurve nicht verfügbar|Onda no disponible
+144|Read again|再読み込み|다시 불러오기|Erneut laden|Volver a leer
+145|Reading the full ECG…|心電図全体を読み込み中…|전체 심전도를 불러오는 중…|Vollständiges EKG wird geladen …|Leyendo el ECG completo…
+146|ECG details|心電図の詳細|심전도 상세|EKG-Details|Detalles del ECG
+147|Share ECG report|心電図レポートを共有|심전도 보고서 공유|EKG-Bericht teilen|Compartir informe de ECG
+148|Create ECG PDF|心電図PDFを作成|심전도 PDF 생성|EKG-PDF erstellen|Crear PDF del ECG
+149|Demo classification|デモ分類|데모 분류|Demo-Klassifikation|Clasificación de demo
+150|Average heart rate in this record|記録中の平均心拍数|이 기록의 평균 심박수|Mittlere Herzfrequenz dieser Aufzeichnung|Frecuencia cardíaca media del registro
+151|Median RR|RRの中央値|RR 중앙값|Medianes RR|RR mediano
+152|peaks|個|개|Spitzen|picos
+153|R peaks identified|検出したR波ピーク|식별된 R파 정점|Erkannte R-Zacken|Picos R identificados
+154|Heart rate range|心拍数の範囲|심박수 범위|Herzfrequenzbereich|Rango de frecuencia cardíaca
+155|ECG score|心電図スコア|심전도 점수|EKG-Bewertung|Puntuación de ECG
+156|Not available|提供していません|제공되지 않음|Nicht verfügbar|No disponible
+157|Analyze again|再分析|다시 분석|Erneut analysieren|Volver a analizar
+158|This example lets you explore the app. It is not your health data.|機能を試すためのサンプルです。あなたの健康データではありません。|기능 체험을 위한 예시이며 사용자의 건강 데이터가 아닙니다.|Dieses Beispiel dient zum Kennenlernen der App. Es sind nicht deine Gesundheitsdaten.|Este ejemplo permite explorar la app. No son tus datos de salud.
+159|The classification above comes from Apple. Measurements below are estimated by the app. Health scores are not currently provided.|上の分類はAppleによるものです。以下の測定値はアプリの推定で、健康スコアは現在提供していません。|위 분류는 Apple에서 제공하며 아래 측정값은 앱이 추정합니다. 현재 건강 점수는 제공하지 않습니다.|Die Klassifikation stammt von Apple. Die folgenden Messwerte sind Schätzungen der App. Gesundheitsbewertungen werden derzeit nicht angeboten.|La clasificación anterior procede de Apple. Las mediciones siguientes son estimaciones de la app. No se ofrecen puntuaciones de salud.
+160|Usable recording time|分析に使える時間|분석 가능한 기록 시간|Nutzbare Aufzeichnungszeit|Tiempo de registro utilizable
+161|0 s|0秒|0초|0 s|0 s
+162|Heart rate and rhythm|心拍数とリズム|심박수와 리듬|Herzfrequenz und Rhythmus|Frecuencia y ritmo cardíacos
+163|RR interval|RR間隔|RR 간격|RR-Intervall|Intervalo RR
+164|RR intervals measured|測定できたRR間隔|측정 가능한 RR 간격|Gemessene RR-Intervalle|Intervalos RR medidos
+165|Time|時間|시간|Zeit|Tiempo
+166|Time (s)|時間（秒）|시간(초)|Zeit (s)|Tiempo (s)
+167|RR is the time between two consecutive R peaks. Each dot represents one interval. Highlighted changes do not mean atrial fibrillation or premature beats.|RRは隣り合うR波ピークの時間差です。点はそれぞれ1つの間隔を表します。変化の印は心房細動や期外収縮を意味しません。|RR은 연속된 두 R파 정점 사이의 시간입니다. 각 점은 하나의 간격을 나타냅니다. 표시된 변화가 심방세동이나 조기 박동을 뜻하지는 않습니다.|RR ist die Zeit zwischen zwei aufeinanderfolgenden R-Zacken. Jeder Punkt steht für ein Intervall. Markierte Änderungen bedeuten nicht automatisch Vorhofflimmern oder Extrasystolen.|RR es el tiempo entre dos picos R consecutivos. Cada punto representa un intervalo. Los cambios marcados no significan fibrilación auricular ni latidos prematuros.
+168|Changes to review|見返せる変化|다시 볼 변화|Änderungen zum Nachsehen|Cambios para revisar
+169|Tap to view the original|タップして元の波形へ|탭하여 원본 보기|Tippen für Originalkurve|Toca para ver el original
+170|Fewer than 12 heartbeat intervals were measured. There is not enough data to compare which changes stand out.|測定できた心拍間隔が12個未満のため、目立つ変化を比較するにはデータが足りません。|측정 가능한 심박 간격이 12개 미만이므로 두드러진 변화를 비교할 데이터가 부족합니다.|Es wurden weniger als 12 Herzschlagintervalle gemessen. Das reicht noch nicht, um auffällige Änderungen zu vergleichen.|Se han medido menos de 12 intervalos entre latidos. No hay datos suficientes para comparar qué cambios destacan.
+171|No segments stood out from most other beats|多数の心拍と大きく異なる区間はマークされませんでした|대부분의 심박과 뚜렷이 다른 구간은 표시되지 않았습니다|Keine Abschnitte wichen deutlich von den meisten Herzschlägen ab|No se marcaron segmentos muy distintos de la mayoría de los latidos
+172|These changes come from usable parts of the record and may also reflect interference or detection errors. A marker does not confirm an abnormality, and no markers cannot rule out a problem.|記録の分析可能な部分から見つけた変化で、干渉や検出誤差による場合もあります。印があっても異常とは限らず、印がなくても問題を否定できません。|이 변화는 분석 가능한 기록 구간에서 확인한 것으로 간섭이나 인식 오류 때문일 수도 있습니다. 표시가 있다고 이상이 확정되는 것은 아니며 표시가 없어도 문제를 배제할 수 없습니다.|Diese Änderungen stammen aus nutzbaren Teilen der Aufzeichnung und können auch durch Störungen oder Erkennungsfehler entstehen. Eine Markierung bestätigt keine Auffälligkeit; fehlende Markierungen schließen Probleme nicht aus.|Estos cambios proceden de las partes utilizables del registro y pueden deberse a interferencias o errores de detección. Una marca no confirma una anomalía y su ausencia no descarta problemas.
+173|Methods and limitations|分析方法と限界|분석 방법 및 한계|Methoden und Grenzen|Métodos y limitaciones
+174|The app estimates peaks, heartbeat intervals and waveform changes, then marks parts worth reviewing. It cannot yet identify premature beat types or diagnose conditions such as atrial fibrillation.|ピーク、心拍間隔、波形の変化を推定し、見返すための印を付けます。期外収縮の種類を特定したり、心房細動などを診断したりすることはできません。|앱은 정점, 심박 간격, 파형 변화를 추정하고 다시 볼 구간을 표시합니다. 조기 박동 유형을 확인하거나 심방세동 같은 질환을 진단할 수는 없습니다.|Die App schätzt Spitzen, Herzschlagintervalle und Kurvenänderungen und markiert Abschnitte zum Nachsehen. Sie kann weder Extrasystolentypen bestimmen noch Erkrankungen wie Vorhofflimmern diagnostizieren.|La app estima picos, intervalos y cambios de onda, y marca partes para revisar. Aún no puede identificar tipos de latidos prematuros ni diagnosticar afecciones como la fibrilación auricular.
+175|Apple Watch observes the heart's electrical activity from one angle, called a single lead. It cannot reliably detect or rule out a heart attack or myocardial ischemia. Automatic measurements have not been validated on real Watch data and cannot determine whether an ECG is normal.|Apple Watchは単一誘導という1つの角度から心臓の電気活動を記録します。心筋梗塞や心筋虚血を確実に検出・否定できません。自動測定は実際のWatchデータで精度を検証しておらず、正常かどうかの判断には使えません。|Apple Watch는 단일 유도라는 하나의 각도에서 심장의 전기 활동을 기록합니다. 심근경색이나 심근허혈을 신뢰성 있게 확인하거나 배제할 수 없습니다. 자동 측정은 실제 Watch 데이터로 검증되지 않았으며 정상 여부를 판단하는 데 사용할 수 없습니다.|Die Apple Watch erfasst die elektrische Herzaktivität aus einem Blickwinkel, einer einzelnen Ableitung. Damit lassen sich Herzinfarkt oder Myokardischämie nicht zuverlässig erkennen oder ausschließen. Automatische Messungen sind nicht an echten Watch-Daten validiert und können ein EKG nicht als normal bewerten.|El Apple Watch observa la actividad eléctrica cardíaca desde un solo ángulo, una derivación. No permite detectar ni descartar de forma fiable un infarto o isquemia miocárdica. Las mediciones automáticas no se han validado con datos reales del Watch y no determinan si un ECG es normal.
+176|Analysis version: {0}|分析バージョン：{0}|분석 버전: {0}|Analyseversion: {0}|Versión del análisis: {0}
+177|Not analyzed|未分析|분석 전|Nicht analysiert|Sin analizar
+178|Notes for this ECG|この心電図のメモ|이 심전도의 메모|Notizen zu diesem EKG|Notas de este ECG
+179|Entries: {0}|{0}件|{0}개|Einträge: {0}|Entradas: {0}
+180|Add|追加|추가|Hinzufügen|Añadir
+181|Add symptoms or recording context|症状や測定時の状況を追加|증상 또는 측정 상황 추가|Symptome oder Messumstände ergänzen|Añadir síntomas o contexto
+182|Linked only to this ECG|この心電図のみに関連付け|이 심전도에만 연결됨|Nur mit diesem EKG verknüpft|Vinculado solo a este ECG
+183|Day|日|일|Tag|Día
+184|Week|週|주|Woche|Semana
+185|Month|月|월|Monat|Mes
+186|Year|年|년|Jahr|Año
+187|Score|スコア|점수|Wert|Puntuación
+188|Heart rate|心拍数|심박수|Puls|Pulso
+189|Health SDNN|ヘルスケアSDNN|건강 SDNN|Health-SDNN|SDNN de Salud
+190|points|点|점|Punkte|puntos
+191|Today|今日|오늘|Heute|Hoy
+192|This week|今週|이번 주|Diese Woche|Esta semana
+193|This month|今月|이번 달|Dieser Monat|Este mes
+194|This year|今年|올해|Dieses Jahr|Este año
+195|View|表示方法|보기 방식|Ansicht|Vista
+196|Daily|当日|일별|Tagesansicht|Diario
+197|Daily ECGs|毎日の心電図|일별 심전도|Tages-EKGs|ECG diarios
+198|ECG trends|心電図の推移|심전도 추세|EKG-Trends|Tendencias de ECG
+199|Choose date|日付を選択|날짜 선택|Datum wählen|Elegir fecha
+200|Previous day or period|前の日・期間|이전 날짜 또는 기간|Vorheriger Tag oder Zeitraum|Día o período anterior
+201|Next day or period|次の日・期間|다음 날짜 또는 기간|Nächster Tag oder Zeitraum|Día o período siguiente
+202|Daily overview|当日の概要|해당 날짜 요약|Tagesübersicht|Resumen del día
+203|ECGs for this day|当日の心電図|해당 날짜 심전도|EKGs dieses Tages|ECG de este día
+204|No records for this day|この日の記録はありません|이 날짜의 기록이 없습니다|Keine Aufzeichnungen für diesen Tag|No hay registros de este día
+205|Days without records are not scored as zero. Move between dates to view other ECGs.|記録のない日を0点とはしません。日付を切り替えて他の心電図を確認できます。|기록이 없는 날은 0점으로 처리하지 않습니다. 날짜를 바꿔 다른 심전도를 확인하세요.|Tage ohne Aufzeichnung werden nicht mit null bewertet. Wechsle das Datum, um andere EKGs anzusehen.|Los días sin registros no se puntúan como cero. Cambia de fecha para ver otros ECG.
+206|Time range|期間|기간|Zeitraum|Período
+207|Apple Health SDNN|ヘルスケアのSDNN|Apple 건강 SDNN|SDNN aus Apple Health|SDNN de Salud de Apple
+208|Median {0}|{0}の中央値|{0} 중앙값|Median: {0}|Mediana de {0}
+209|No data to compare yet|比較できるデータがありません|아직 비교할 데이터가 없습니다|Noch keine Vergleichsdaten|Aún no hay datos para comparar
+210|Scores for real records still require validation. View heart rate instead, or explore clearly labeled demo trends.|実際の記録のスコアはまだ検証が必要です。心拍数を見るか、デモと明示した推移をお試しください。|실제 기록의 점수는 아직 검증이 필요합니다. 심박수를 확인하거나 데모로 표시된 추세를 체험하세요.|Bewertungen echter Aufzeichnungen müssen noch validiert werden. Sieh dir die Herzfrequenz oder klar gekennzeichnete Demo-Trends an.|Las puntuaciones de registros reales aún requieren validación. Consulta la frecuencia cardíaca o explora las tendencias marcadas como demo.
+211|No readable samples for this metric in this period.|この期間には、この指標の読み取り可能なサンプルがありません。|이 기간에 불러올 수 있는 해당 지표의 샘플이 없습니다.|In diesem Zeitraum sind keine lesbaren Messwerte für diese Messgröße verfügbar.|No hay muestras legibles de esta métrica en este período.
+212|Date|日付|날짜|Datum|Fecha
+213|Continuous section|連続区間|연속 구간|Zusammenhängender Abschnitt|Tramo continuo
+214|{0} trend, {1} valid data points|{0}の推移、有効なデータ点は{1}個|{0} 추세, 유효 데이터 지점 {1}개|Trend für {0}, {1} gültige Datenpunkte|Tendencia de {0}, {1} puntos válidos
+215|SDNN samples: {0}|SDNN：{0}件|SDNN 샘플: {0}개|SDNN-Messwerte: {0}|Muestras de SDNN: {0}
+216|ECGs: {0}|心電図：{0}件|심전도: {0}개|EKGs: {0}|ECG: {0}
+217|By recording|記録ごと|기록별|Je Aufzeichnung|Por registro
+218|Monthly summary|月ごとに集計|월별 요약|Monatliche Übersicht|Resumen mensual
+219|Daily summary|日ごとに集計|일별 요약|Tägliche Übersicht|Resumen diario
+220|Reading HRV…|HRVを読み込み中…|HRV 불러오는 중…|HRV wird geladen …|Leyendo HRV…
+221|Read HRV from Apple Health|ヘルスケアからHRVを読み込む|Apple 건강에서 HRV 불러오기|HRV aus Apple Health laden|Leer HRV de Salud de Apple
+222|Health SDNN is shown separately from RR variation in short ECGs. Duration, posture, breathing and data source can affect the results.|ヘルスケアのSDNNは、短時間の心電図のRR変動とは別に表示します。記録時間、姿勢、呼吸、データソースが結果に影響します。|건강 앱의 SDNN은 짧은 심전도의 RR 변동과 별도로 표시합니다. 기록 시간, 자세, 호흡, 데이터 출처가 결과에 영향을 줄 수 있습니다.|SDNN aus Health wird getrennt von RR-Schwankungen kurzer EKGs angezeigt. Dauer, Haltung, Atmung und Datenquelle können die Ergebnisse beeinflussen.|La SDNN de Salud se muestra separada de la variación RR de ECG cortos. La duración, postura, respiración y fuente de datos pueden influir en los resultados.
+223|Gaps stay empty. No zero values or estimates are added for unrecorded periods.|空白はそのまま表示し、未記録の時間を0や推定値で埋めません。|빈 구간은 그대로 두며 기록되지 않은 시간을 0이나 추정값으로 채우지 않습니다.|Lücken bleiben leer. Für nicht aufgezeichnete Zeiten werden weder Nullwerte noch Schätzungen ergänzt.|Los huecos quedan vacíos. No se añaden ceros ni estimaciones para períodos sin registrar.

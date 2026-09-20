@@ -1,0 +1,36 @@
+{
+  "bundle_id": "com.alkinum.heartpro",
+  "submission_ready": false,
+  "user_decision": "Retain all analysis features; validate accuracy before submission.",
+  "gates": {
+    "independent_watch_accuracy": {
+      "complete": false,
+      "evidence": "validation/watch-accuracy-protocol.md"
+    },
+    "medical_regulatory_and_operator_review": {
+      "complete": false,
+      "evidence": null
+    },
+    "public_policies_and_support_https": {
+      "complete": false,
+      "evidence": null
+    },
+    "real_device_healthkit_flow": {
+      "complete": false,
+      "evidence": null
+    },
+    "current_iphone_and_ipad_screenshots": {
+      "complete": true,
+      "evidence": "screenshots/README.md"
+    },
+    "signed_archive_and_connect_validation": {
+      "complete": false,
+      "evidence": null
+    },
+    "store_account_metadata": {
+      "complete": false,
+      "evidence": "connect-settings.md"
+    }
+  },
+  "deferred_by_user": "Formal operator, launch regions, email provider and retention details deferred; website legal pages remain drafts."
+}

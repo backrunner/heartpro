@@ -1,0 +1,33 @@
+report-zh-Hans: 7 pages
+  1: mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / HeartPro 4D86EA78 / 心电记录报告 / 2026年9月18日 17:37 App
+  2: HeartPro 4D86EA78 / 分析摘要 / 2026年9月18日 17:37 Apple Watch / 平均心率 / 68 bpm / 信号覆盖率 / 100% / 分析时长 / 30 秒 / 指标 结果 / 数据来源
+  3: HeartPro 4D86EA78 / 分段测量 / 2026年9月18日 17:37 Apple Watch / PR 段 / 测量项目 中位数 范围 P10–P90 有效 / 总数 / PR 段持续时间 6
+  4: HeartPro 4D86EA78 / 分段测量 / 2026年9月18日 17:37 Apple Watch / T 波 / 测量项目 中位数 范围 P10–P90 有效 / 总数 / T 波持续时间 219
+  5: HeartPro 4D86EA78 / 测量方法 / 2026年9月18日 17:37 Apple Watch / 自动测量尚未经过真实 Watch 数据验证， 不能用于判断心电是否正常。 / 指标 结果 / 
+  6: HeartPro 4D86EA78 / 测量方法 / 2026年9月18日 17:37 Apple Watch / QTc（校正 QT） / 使用同一次心跳的 QT 和紧邻前一次的 RR， 均以秒代入： F
+  7: HeartPro 4D86EA78 / 记录备忘 / 2026年9月18日 17:37 Apple Watch / 2026年9月18日 17:37 / 持续 2 分钟 / 咖啡因 / USERNOTE café 
+report-de: 8 pages
+  1: mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / HeartPro 4D86EA78 / EKG-Aufzeichnungsbericht / 18
+  2: HeartPro 4D86EA78 / Analyseübersicht / 18. Sept. 2026, 17:37 Apple Watch / Mittlere Herzfrequenz dies
+  3: HeartPro 4D86EA78 / EKG-Abschnitte / 18. Sept. 2026, 17:37 Apple Watch / PR-Intervall / Messung Median 
+  4: HeartPro 4D86EA78 / EKG-Abschnitte / 18. Sept. 2026, 17:37 Apple Watch / ST-Strecke / J-Punkt / Messung
+  5: HeartPro 4D86EA78 / EKG-Abschnitte / 18. Sept. 2026, 17:37 Apple Watch / QTc (korrigiertes QT) / Messun
+  6: HeartPro 4D86EA78 / Messmethode / 18. Sept. 2026, 17:37 Apple Watch / Diese Werte werden automatisch 
+  7: HeartPro 4D86EA78 / Messmethode / 18. Sept. 2026, 17:37 Apple Watch / ST-Strecke / J-Punkt / Das QRS-En
+  8: HeartPro 4D86EA78 / Aufzeichnungsnotizen / 18. Sept. 2026, 17:37 Apple Watch / 18. Sept. 2026, 17:37 / 
+report-en: 7 pages
+  1: mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / HeartPro 09B94FE1 / ECG recording report / Sep 18
+  2: HeartPro 09B94FE1 / Analysis summary / Sep 18, 2026 at 5:42 PM Apple Watch / Average heart rate in th
+  3: HeartPro 09B94FE1 / ECG segments / Sep 18, 2026 at 5:42 PM Apple Watch / PR segment / Measurement Media
+  4: HeartPro 09B94FE1 / ECG segments / Sep 18, 2026 at 5:42 PM Apple Watch / T wave / Measurement Median Ra
+  5: HeartPro 09B94FE1 / Measurement method / Sep 18, 2026 at 5:42 PM Apple Watch / These values are estim
+  6: HeartPro 09B94FE1 / Measurement method / Sep 18, 2026 at 5:42 PM Apple Watch / ST segment / J point / T
+  7: HeartPro 09B94FE1 / Recording notes / Sep 18, 2026 at 5:42 PM Apple Watch / Sep 18, 2026 at 5:42 PM / D
+rhythm-candidates-and-u: 7 pages
+  1: mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / mV 1 / 0 / -1 / HeartPro A6CAC5C4 / 心电记录报告 / 2026年9月18日 17:37 App
+  2: HeartPro A6CAC5C4 / 分析摘要 / 2026年9月18日 17:37 Apple Watch / 平均心率 / 60 bpm / 信号覆盖率 / 97% / 分析时长 / 30 秒 / 指标 结果 / 数据来源 
+  3: HeartPro A6CAC5C4 / 分析摘要 / 2026年9月18日 17:37 Apple Watch / 波形事件 / 时间 类型 测量依据 / 8.65 秒心跳间隔变化 两次波峰相隔 650 ms / 
+  4: HeartPro A6CAC5C4 / 分段测量 / 2026年9月18日 17:37 Apple Watch / QRS 波群 / 测量项目 中位数 范围 P10–P90 有效 / 总数 / QRS 持续时间
+  5: HeartPro A6CAC5C4 / 分段测量 / 2026年9月18日 17:37 Apple Watch / QT 间期 / 测量项目 中位数 范围 P10–P90 有效 / 总数 / QT 间期 434
+  6: HeartPro A6CAC5C4 / 测量方法 / 2026年9月18日 17:37 Apple Watch / 自动测量尚未经过真实 Watch 数据验证， 不能用于判断心电是否正常。 / 指标 结果 / 
+  7: HeartPro A6CAC5C4 / 测量方法 / 2026年9月18日 17:37 Apple Watch / QTc（校正 QT） / 使用同一次心跳的 QT 和紧邻前一次的 RR， 均以秒代入： F

@@ -1,0 +1,8 @@
+657|View ECG full screen|心電図を全画面表示|심전도 전체 화면 보기|EKG im Vollbild ansehen|Ver ECG a pantalla completa
+658|Exit full screen|全画面表示を終了|전체 화면 닫기|Vollbild schließen|Salir de pantalla completa
+659|Waves and intervals|波形と間隔|파형 및 간격|Wellen und Intervalle|Ondas e intervalos
+660|Average heart rate|平均心拍数|평균 심박수|Durchschnittliche Herzfrequenz|Frecuencia cardíaca media
+661|More measurements|その他の測定値|측정값 더 보기|Weitere Messwerte|Más mediciones
+662|Measured {0} beats|{0} 拍を測定|{0}회 박동 측정|{0} Schläge gemessen|{0} latidos medidos
+663|Measured {0} beats; {1} excluded|{0} 拍を測定、{1} 拍を除外|{0}회 박동 측정, {1}회 제외|{0} Schläge gemessen, {1} ausgeschlossen|{0} latidos medidos; {1} excluidos
+664|Tap the top-right button for a landscape full-screen view. Tap a measured wave or interval at the top to see its duration. You can also zoom or use the ruler to measure between two points.|右上をタップすると横向きの全画面表示になります。上部の測定済みの波形や間隔をタップすると長さを確認できます。拡大や定規での2点間測定もできます。|오른쪽 위 버튼을 누르면 가로 전체 화면으로 볼 수 있습니다. 위쪽에 표시된 측정된 파형이나 간격을 누르면 길이를 확인할 수 있습니다. 확대하거나 자로 두 점 사이를 측정할 수도 있습니다.|Tippe oben rechts, um das EKG im Querformat als Vollbild zu sehen. Tippe oben auf eine gemessene Welle oder ein Intervall, um die Dauer anzuzeigen. Du kannst auch zoomen oder mit dem Lineal zwischen zwei Punkten messen.|Toca el botón de arriba a la derecha para verlo a pantalla completa en horizontal. Toca una onda o un intervalo medido en la parte superior para ver su duración. También puedes ampliar o usar la regla para medir entre dos puntos.

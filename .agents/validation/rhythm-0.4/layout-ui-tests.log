@@ -1,0 +1,516 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project HeartPro.xcodeproj -scheme HeartPro -destination "platform=iOS Simulator,id=296BE700-A282-4A86-97B3-1FDA17426238" -derivedDataPath DerivedData -resultBundlePath /tmp/heartpro-rhythm-layout.xcresult "-only-testing:HeartProUITests/RhythmUITests" -parallel-testing-enabled NO -collect-test-diagnostics never CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  HeartProCore: /Volumes/BRData/projects/heartpro/Packages/HeartProCore
+
+Writing result bundle at path:
+	/tmp/heartpro-rhythm-layout.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (6 targets)
+    Target 'HeartProUITests' in project 'HeartPro'
+        ➜ Explicit dependency on target 'HeartPro' in project 'HeartPro'
+    Target 'HeartProTests' in project 'HeartPro'
+        ➜ Explicit dependency on target 'HeartPro' in project 'HeartPro'
+    Target 'HeartPro' in project 'HeartPro'
+        ➜ Explicit dependency on target 'HeartProCore-product' in project 'HeartProCore'
+    Target 'HeartProCore-product' in project 'HeartProCore'
+        ➜ Explicit dependency on target 'HeartProCore' in project 'HeartProCore'
+        ➜ Explicit dependency on target 'HeartProCore_HeartProCore' in project 'HeartProCore'
+    Target 'HeartProCore' in project 'HeartProCore'
+        ➜ Explicit dependency on target 'HeartProCore_HeartProCore' in project 'HeartProCore'
+    Target 'HeartProCore_HeartProCore' in project 'HeartProCore' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk /Volumes/BRData/projects/heartpro/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-e829b21a6f8c9b70876ba0858053c0448dc58220667be655e1bcc261a7455254.sdkstatcache
+    cd /Volumes/BRData/projects/heartpro/HeartPro.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -o /Volumes/BRData/projects/heartpro/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-e829b21a6f8c9b70876ba0858053c0448dc58220667be655e1bcc261a7455254.sdkstatcache
+
+MkDir /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle (in target 'HeartProCore_HeartProCore' from project 'HeartProCore')
+    cd /Volumes/BRData/projects/heartpro/Packages/HeartProCore
+    /bin/mkdir -p /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle
+
+MkDir /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest (in target 'HeartProUITests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /bin/mkdir -p /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest
+
+ProcessInfoPlistFile /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle/Info.plist /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartProCore.build/Debug-iphonesimulator/HeartProCore_HeartProCore-b.build/empty-HeartProCore_HeartProCore.plist (in target 'HeartProCore_HeartProCore' from project 'HeartProCore')
+    cd /Volumes/BRData/projects/heartpro/Packages/HeartProCore
+    builtin-infoPlistUtility /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartProCore.build/Debug-iphonesimulator/HeartProCore_HeartProCore-b.build/empty-HeartProCore_HeartProCore.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle/Info.plist
+
+MkDir /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest (in target 'HeartProTests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /bin/mkdir -p /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest
+
+RegisterExecutionPolicyException /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle (in target 'HeartProCore_HeartProCore' from project 'HeartProCore')
+    cd /Volumes/BRData/projects/heartpro/Packages/HeartProCore
+    builtin-RegisterExecutionPolicyException /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle
+
+SwiftDriver HeartPro normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartPro -Onone @/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Volumes/BRData/projects/heartpro/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -F /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Volumes/BRData/projects/heartpro/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-e829b21a6f8c9b70876ba0858053c0448dc58220667be655e1bcc261a7455254.sdkstatcache -output-file-map /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Volumes/BRData/projects/heartpro/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro_const_extract_protocols.json -Xcc -iquote -Xcc /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-generated-files.hmap -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-own-target-headers.hmap -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro-3334144e8ab188ddb04463d48763c13f-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-project-headers.hmap -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources/arm64 -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro-Swift.h -working-directory /Volumes/BRData/projects/heartpro -experimental-emit-module-separately -disable-cmo
+
+Touch /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle (in target 'HeartProCore_HeartProCore' from project 'HeartProCore')
+    cd /Volumes/BRData/projects/heartpro/Packages/HeartProCore
+    /usr/bin/touch -c /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle
+
+Ld /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/__preview.dylib normal (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -install_name @rpath/HeartPro.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro_dependency_info.dat -o /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/__preview.dylib
+
+Copy /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartProCore_HeartProCore.bundle /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app
+
+ProcessInfoPlistFile /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/Info.plist /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/empty-HeartPro.plist (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-infoPlistUtility /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/empty-HeartPro.plist -producttype com.apple.product-type.application -genpkginfo /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/assetcatalog_generated_info.plist -scanforprivacyfile /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartProCore_HeartProCore.bundle -o /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/Info.plist
+
+SwiftCompile normal arm64 Compiling\ SegmentAnalysisPanel.swift /Volumes/BRData/projects/heartpro/HeartPro/Features/SegmentAnalysisPanel.swift (in target 'HeartPro' from project 'HeartPro')
+
+SwiftCompile normal arm64 /Volumes/BRData/projects/heartpro/HeartPro/Features/SegmentAnalysisPanel.swift (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-SwiftPerFileCompile SegmentAnalysisPanel.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ HeartPro (in target 'HeartPro' from project 'HeartPro')
+
+SwiftCompile normal arm64 (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for HeartPro (in target 'HeartPro' from project 'HeartPro')
+
+SwiftDriver\ Compilation\ Requirements HeartPro normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartPro -Onone @/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Volumes/BRData/projects/heartpro/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -F /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Volumes/BRData/projects/heartpro/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-e829b21a6f8c9b70876ba0858053c0448dc58220667be655e1bcc261a7455254.sdkstatcache -output-file-map /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Volumes/BRData/projects/heartpro/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro_const_extract_protocols.json -Xcc -iquote -Xcc /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-generated-files.hmap -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-own-target-headers.hmap -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro-3334144e8ab188ddb04463d48763c13f-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-project-headers.hmap -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources/arm64 -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro-Swift.h -working-directory /Volumes/BRData/projects/heartpro -experimental-emit-module-separately -disable-cmo
+
+Copy /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.swiftmodule/arm64-apple-ios-simulator.abi.json /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.abi.json (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.abi.json /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.swiftsourceinfo (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.swiftsourceinfo /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling SegmentAnalysisPanel.swift (in target 'HeartPro' from project 'HeartPro')
+
+SwiftDriver\ Compilation HeartPro normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartPro -Onone @/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Volumes/BRData/projects/heartpro/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -F /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Volumes/BRData/projects/heartpro/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-e829b21a6f8c9b70876ba0858053c0448dc58220667be655e1bcc261a7455254.sdkstatcache -output-file-map /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Volumes/BRData/projects/heartpro/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Volumes/BRData/projects/heartpro/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro_const_extract_protocols.json -Xcc -iquote -Xcc /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-generated-files.hmap -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-own-target-headers.hmap -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro-3334144e8ab188ddb04463d48763c13f-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-project-headers.hmap -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources/arm64 -Xcc -I/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro-Swift.h -working-directory /Volumes/BRData/projects/heartpro -experimental-emit-module-separately -disable-cmo
+
+Ld /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro.debug.dylib normal (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -filelist /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.LinkFileList -install_name @rpath/HeartPro.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro.debug.dylib
+
+ConstructStubExecutorLinkFileList /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-ExecutorLinkFileList-normal-arm64.txt (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    construct-stub-executor-link-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'HeartPro' from project 'HeartPro')
+
+Ld /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro normal (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro-ExecutorLinkFileList-normal-arm64.txt /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro.debug.dylib -o /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro
+
+CopySwiftLibs /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro.debug.dylib --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/Frameworks --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/SystemExtensions --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/Extensions --platform iphonesimulator --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.r41kak/Metal.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.r41kak/Metal.xctoolchain --module-name HeartPro --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk --xcode-version 27A266a --platform-family iOS --deployment-target 18.0 --bundle-identifier app.heartpro.ios --output /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app --target-triple arm64-apple-ios18.0-simulator --binary-file /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro --dependency-file /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro_dependency_info.dat --stringsdata-file /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.SwiftFileList --metadata-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro.DependencyMetadataFileList --static-metadata-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro.DependencyStaticMetadataFileList --swift-const-vals-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/Objects-normal/arm64/HeartPro.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-09-18 16:20:53.677 appintentsmetadataprocessor[6493:42296575] Starting appintentsmetadataprocessor export
+2026-09-18 16:20:53.679 appintentsmetadataprocessor[6493:42296575] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+Copy /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/HeartProCore_HeartProCore.bundle /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle (in target 'HeartProTests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProCore_HeartProCore.bundle /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest
+
+Ld /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/HeartProTests normal (in target 'HeartProTests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk/Developer/Library/Frameworks -filelist /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/Objects-normal/arm64/HeartProTests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -bundle_loader /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro -Xlinker -object_path_lto -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/Objects-normal/arm64/HeartProTests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/Objects-normal/arm64/HeartProTests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/Objects-normal/arm64/HeartProTests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/HeartPro.debug.dylib -o /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/HeartProTests
+
+ProcessInfoPlistFile /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/Info.plist /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/empty-HeartProTests.plist (in target 'HeartProTests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-infoPlistUtility /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/empty-HeartProTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -format binary -platform iphonesimulator -scanforprivacyfile /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/HeartProCore_HeartProCore.bundle -o /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/Info.plist
+
+CopySwiftLibs /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest (in target 'HeartProTests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/HeartProTests --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/Frameworks --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/PlugIns --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/SystemExtensions --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/Extensions --platform iphonesimulator --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.r41kak/Metal.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'HeartProTests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.r41kak/Metal.xctoolchain --module-name HeartProTests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk --xcode-version 27A266a --platform-family iOS --deployment-target 18.0 --bundle-identifier app.heartpro.HeartProTests --output /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest --target-triple arm64-apple-ios18.0-simulator --binary-file /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/HeartProTests --dependency-file /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/Objects-normal/arm64/HeartProTests_dependency_info.dat --stringsdata-file /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/Objects-normal/arm64/HeartProTests.SwiftFileList --metadata-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/HeartProTests.DependencyMetadataFileList --static-metadata-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/HeartProTests.DependencyStaticMetadataFileList --swift-const-vals-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProTests.build/Objects-normal/arm64/HeartProTests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-09-18 16:20:53.867 appintentsmetadataprocessor[6497:42296591] Starting appintentsmetadataprocessor export
+2026-09-18 16:20:53.868 appintentsmetadataprocessor[6497:42296591] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+RegisterExecutionPolicyException /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest (in target 'HeartProTests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-RegisterExecutionPolicyException /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest
+
+Touch /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest (in target 'HeartProTests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /usr/bin/touch -c /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest
+
+Validate /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app (in target 'HeartPro' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-validationUtility /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app -shallow-bundle -infoplist-subpath Info.plist
+
+Ld /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/HeartProUITests normal (in target 'HeartProUITests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk/Developer/Library/Frameworks -filelist /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/Objects-normal/arm64/HeartProUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/Objects-normal/arm64/HeartProUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/Objects-normal/arm64/HeartProUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/Objects-normal/arm64/HeartProUITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/HeartProUITests
+
+ProcessInfoPlistFile /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/Info.plist /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/empty-HeartProUITests.plist (in target 'HeartProUITests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-infoPlistUtility /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/empty-HeartProUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/ProductTypeInfoPlistAdditions.plist -o /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/Info.plist
+
+CopySwiftLibs /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest (in target 'HeartProUITests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/HeartProUITests --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/Frameworks --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/PlugIns --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/SystemExtensions --scan-folder /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/Extensions --platform iphonesimulator --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.r41kak/Metal.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'HeartProUITests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.r41kak/Metal.xctoolchain --module-name HeartProUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk --xcode-version 27A266a --platform-family iOS --deployment-target 18.0 --bundle-identifier app.heartpro.HeartProUITests --output /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest --target-triple arm64-apple-ios18.0-simulator --binary-file /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/HeartProUITests --dependency-file /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/Objects-normal/arm64/HeartProUITests_dependency_info.dat --stringsdata-file /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/Objects-normal/arm64/HeartProUITests.SwiftFileList --metadata-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/HeartProUITests.DependencyMetadataFileList --static-metadata-file-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/HeartProUITests.DependencyStaticMetadataFileList --swift-const-vals-list /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/Objects-normal/arm64/HeartProUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-09-18 16:20:54.012 appintentsmetadataprocessor[6501:42296605] Starting appintentsmetadataprocessor export
+2026-09-18 16:20:54.013 appintentsmetadataprocessor[6501:42296605] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+MkDir /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app (in target 'HeartProUITests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /bin/mkdir -p /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app
+
+CopyAndPreserveArchs /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/HeartProUITests-Runner (in target 'HeartProUITests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/XCTRunner -output /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/HeartProUITests-Runner -extract arm64
+
+RegisterExecutionPolicyException /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest (in target 'HeartProUITests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    builtin-RegisterExecutionPolicyException /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest
+
+Touch /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest (in target 'HeartProUITests' from project 'HeartPro')
+    cd /Volumes/BRData/projects/heartpro
+    /usr/bin/touch -c /Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest
+
+PruneExplicitPrecompiledModules /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Volumes/BRData/projects/heartpro/DerivedData/SDKExplicitPrecompiledModules
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/DerivedSources/Entitlements-Simulated.plist'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/HeartProUITests.xctest-Simulated.xcent'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartProUITests.build/HeartProUITests.xctest-Simulated.xcent.der'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/DerivedSources/Entitlements-Simulated.plist'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/PlugIns/HeartProUITests.xctest/_CodeSignature'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro.app-Simulated.xcent'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/PlugIns/HeartProTests.xctest/_CodeSignature'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartProUITests-Runner.app/_CodeSignature'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro.app-Simulated.xcent.der'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro.app.xcent'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Intermediates.noindex/HeartPro.build/Debug-iphonesimulator/HeartPro.build/HeartPro.app.xcent.der'
+
+note: Removed stale file '/Volumes/BRData/projects/heartpro/DerivedData/Build/Products/Debug-iphonesimulator/HeartPro.app/_CodeSignature'
+
+2026-09-18 16:20:54.973934+0800 HeartProUITests-Runner[6504:42296776] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-09-18 16:20:57.255.
+Test Suite 'HeartProUITests.xctest' started at 2026-09-18 16:20:57.256.
+Test Suite 'RhythmUITests' started at 2026-09-18 16:20:57.256.
+Test Case '-[HeartProUITests.RhythmUITests testCandidatesRulesUWaveAndOriginalTrace]' started.
+    t =     0.00s Start Test at 2026-09-18 16:20:57.259
+    t =     0.03s Set Up
+    t =     0.03s Open app.heartpro.ios
+    t =     0.03s     Launch app.heartpro.ios
+2026-09-18 16:20:57.338 xcodebuild[6463:42296282] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-09-18 16:20:57.338 xcodebuild[6463:42296282] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     0.50s         Setting up automation session
+objc[6504]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5390f/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10e5a8398) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5390f/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10e67c310). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     2.46s         Wait for app.heartpro.ios to idle
+    t =     4.04s Waiting 30.0s for "ecgRecord-0" Button to exist
+    t =     5.12s     Checking `Expect predicate `existsNoRetry == 1` for object "ecgRecord-0" Button`
+    t =     5.12s         Checking existence of `"ecgRecord-0" Button`
+    t =     5.31s Tap "ecgRecord-0" Button
+    t =     5.31s     Wait for app.heartpro.ios to idle
+    t =     5.32s     Find the "ecgRecord-0" Button
+    t =     5.41s     Check for interrupting elements affecting "ecgRecord-0" Button
+    t =     5.49s     Synthesize event
+    t =     5.80s     Wait for app.heartpro.ios to idle
+    t =     6.19s Find the Button (First Match)
+    t =     6.27s Swipe up Target Application 'app.heartpro.ios'
+    t =     6.27s     Wait for app.heartpro.ios to idle
+    t =     6.28s     Find the Target Application 'app.heartpro.ios'
+    t =     6.41s     Check for interrupting elements affecting "HeartPro" Application
+    t =     6.53s     Synthesize event
+    t =     6.95s     Wait for app.heartpro.ios to idle
+    t =     9.05s Find the "ectopy-8" Button
+    t =     9.18s Added attachment named 'premature-candidates'
+    t =     9.18s Checking existence of `Button (First Match)`
+    t =     9.22s Tap "ectopy-8" Button
+    t =     9.22s     Wait for app.heartpro.ios to idle
+    t =     9.22s     Find the "ectopy-8" Button
+    t =     9.25s     Check for interrupting elements affecting "ectopy-8" Button
+    t =     9.38s     Synthesize event
+    t =     9.68s     Wait for app.heartpro.ios to idle
+    t =     9.68s Waiting 5.0s for StaticText (First Match) to exist
+    t =    10.76s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    10.76s         Checking existence of `StaticText (First Match)`
+    t =    10.87s Added attachment named 'premature-original-waveform'
+    t =    10.87s Find the "rhythmRules" Button
+    t =    11.05s Swipe up Target Application 'app.heartpro.ios'
+    t =    11.05s     Wait for app.heartpro.ios to idle
+    t =    11.05s     Find the Target Application 'app.heartpro.ios'
+    t =    11.17s     Check for interrupting elements affecting "HeartPro" Application
+    t =    11.29s     Synthesize event
+    t =    11.71s     Wait for app.heartpro.ios to idle
+    t =    13.82s Find the "rhythmRules" Button
+    t =    13.99s Tap "rhythmRules" Button
+    t =    13.99s     Wait for app.heartpro.ios to idle
+    t =    13.99s     Find the "rhythmRules" Button
+    t =    14.15s     Check for interrupting elements affecting "rhythmRules" Button
+    t =    14.27s     Synthesize event
+    t =    14.56s     Wait for app.heartpro.ios to idle
+    t =    14.57s Waiting 5.0s for "检测与评分规则" NavigationBar to exist
+    t =    15.64s     Checking `Expect predicate `existsNoRetry == 1` for object "检测与评分规则" NavigationBar`
+    t =    15.64s         Checking existence of `"检测与评分规则" NavigationBar`
+    t =    15.91s Added attachment named 'rhythm-score-rules'
+    t =    15.91s Tap "完成" Button
+    t =    15.91s     Wait for app.heartpro.ios to idle
+    t =    15.91s     Find the "完成" Button
+    t =    16.08s     Check for interrupting elements affecting "完成" Button
+    t =    16.21s     Synthesize event
+    t =    16.50s     Wait for app.heartpro.ios to idle
+    t =    16.51s Find the "segment-u" Button
+    t =    16.68s Swipe up Target Application 'app.heartpro.ios'
+    t =    16.68s     Wait for app.heartpro.ios to idle
+    t =    16.68s     Find the Target Application 'app.heartpro.ios'
+    t =    16.79s     Check for interrupting elements affecting "HeartPro" Application
+    t =    16.91s     Synthesize event
+    t =    17.33s     Wait for app.heartpro.ios to idle
+    t =    19.44s Find the "segment-u" Button
+    t =    19.61s Swipe up Target Application 'app.heartpro.ios'
+    t =    19.61s     Wait for app.heartpro.ios to idle
+    t =    19.61s     Find the Target Application 'app.heartpro.ios'
+    t =    19.72s     Check for interrupting elements affecting "HeartPro" Application
+    t =    19.84s     Synthesize event
+    t =    20.26s     Wait for app.heartpro.ios to idle
+    t =    22.35s Find the "segment-u" Button
+    t =    22.54s Tap "segment-u" Button
+    t =    22.54s     Wait for app.heartpro.ios to idle
+    t =    22.54s     Find the "segment-u" Button
+    t =    22.71s     Check for interrupting elements affecting "segment-u" Button
+    t =    22.83s     Synthesize event
+    t =    23.13s     Wait for app.heartpro.ios to idle
+    t =    23.14s Find the "segmentBeats-u" Button
+    t =    23.32s Swipe up Target Application 'app.heartpro.ios'
+    t =    23.32s     Wait for app.heartpro.ios to idle
+    t =    23.32s     Find the Target Application 'app.heartpro.ios'
+    t =    23.44s     Check for interrupting elements affecting "HeartPro" Application
+    t =    23.57s     Synthesize event
+    t =    23.99s     Wait for app.heartpro.ios to idle
+    t =    26.09s Find the "segmentBeats-u" Button
+    t =    26.28s Tap "segmentBeats-u" Button
+    t =    26.28s     Wait for app.heartpro.ios to idle
+    t =    26.28s     Find the "segmentBeats-u" Button
+    t =    26.45s     Check for interrupting elements affecting "segmentBeats-u" Button
+    t =    26.58s     Synthesize event
+    t =    26.87s     Wait for app.heartpro.ios to idle
+    t =    26.89s Waiting 5.0s for "U 波候选" NavigationBar to exist
+    t =    27.96s     Checking `Expect predicate `existsNoRetry == 1` for object "U 波候选" NavigationBar`
+    t =    27.96s         Checking existence of `"U 波候选" NavigationBar`
+    t =    28.26s Added attachment named 'u-candidate-waveform'
+    t =    28.26s Tear Down
+Test Case '-[HeartProUITests.RhythmUITests testCandidatesRulesUWaveAndOriginalTrace]' passed (28.524 seconds).
+Test Case '-[HeartProUITests.RhythmUITests testGermanLargeTextCandidates]' started.
+    t =     0.00s Start Test at 2026-09-18 16:21:25.783
+    t =     0.02s Set Up
+    t =     0.02s Open app.heartpro.ios
+    t =     0.02s     Launch app.heartpro.ios
+    t =     0.02s         Terminate app.heartpro.ios:6613
+2026-09-18 16:21:26.901 xcodebuild[6463:42296282] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-09-18 16:21:26.901 xcodebuild[6463:42296282] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.33s         Setting up automation session
+    t =     3.24s         Wait for app.heartpro.ios to idle
+    t =     4.82s Waiting 30.0s for "ecgRecord-0" Button to exist
+    t =     5.89s     Checking `Expect predicate `existsNoRetry == 1` for object "ecgRecord-0" Button`
+    t =     5.89s         Checking existence of `"ecgRecord-0" Button`
+    t =     6.06s Tap "ecgRecord-0" Button
+    t =     6.06s     Wait for app.heartpro.ios to idle
+    t =     6.06s     Find the "ecgRecord-0" Button
+    t =     6.13s     Check for interrupting elements affecting "ecgRecord-0" Button
+    t =     6.18s     Synthesize event
+    t =     6.21s         Scroll element to visible
+    t =     6.21s         Find the "ecgRecord-0" Button
+    t =     6.31s         Computed hit point {201, 488.99998474121094} after scrolling to visible
+    t =     6.59s     Wait for app.heartpro.ios to idle
+    t =     7.08s Find the "ectopy-8" Button
+    t =     7.29s Swipe up Target Application 'app.heartpro.ios'
+    t =     7.29s     Wait for app.heartpro.ios to idle
+    t =     7.29s     Find the Target Application 'app.heartpro.ios'
+    t =     7.41s     Check for interrupting elements affecting "HeartPro" Application
+    t =     7.52s     Synthesize event
+    t =     7.94s     Wait for app.heartpro.ios to idle
+    t =    10.05s Find the "ectopy-8" Button
+    t =    10.23s Swipe up Target Application 'app.heartpro.ios'
+    t =    10.23s     Wait for app.heartpro.ios to idle
+    t =    10.23s     Find the Target Application 'app.heartpro.ios'
+    t =    10.34s     Check for interrupting elements affecting "HeartPro" Application
+    t =    10.46s     Synthesize event
+    t =    10.88s     Wait for app.heartpro.ios to idle
+    t =    12.99s Find the "ectopy-8" Button
+    t =    13.16s Swipe up Target Application 'app.heartpro.ios'
+    t =    13.16s     Wait for app.heartpro.ios to idle
+    t =    13.16s     Find the Target Application 'app.heartpro.ios'
+    t =    13.27s     Check for interrupting elements affecting "HeartPro" Application
+    t =    13.39s     Synthesize event
+    t =    13.81s     Wait for app.heartpro.ios to idle
+    t =    15.92s Find the "ectopy-8" Button
+    t =    16.08s Find the "ectopy-8" Button
+    t =    16.31s Added attachment named 'de-large-premature-candidates'
+    t =    16.32s Tap "ectopy-8" Button
+    t =    16.32s     Wait for app.heartpro.ios to idle
+    t =    16.32s     Find the "ectopy-8" Button
+    t =    16.47s     Check for interrupting elements affecting "ectopy-8" Button
+    t =    16.58s     Synthesize event
+    t =    16.88s     Wait for app.heartpro.ios to idle
+    t =    16.88s Find the "measureWaveform" Button
+    t =    17.07s Find the "rhythmRules" Button
+    t =    17.24s Swipe up Target Application 'app.heartpro.ios'
+    t =    17.24s     Wait for app.heartpro.ios to idle
+    t =    17.25s     Find the Target Application 'app.heartpro.ios'
+    t =    17.36s     Check for interrupting elements affecting "HeartPro" Application
+    t =    17.47s     Synthesize event
+    t =    17.90s     Wait for app.heartpro.ios to idle
+    t =    20.00s Find the "rhythmRules" Button
+    t =    20.18s Swipe up Target Application 'app.heartpro.ios'
+    t =    20.18s     Wait for app.heartpro.ios to idle
+    t =    20.18s     Find the Target Application 'app.heartpro.ios'
+    t =    20.29s     Check for interrupting elements affecting "HeartPro" Application
+    t =    20.41s     Synthesize event
+    t =    20.83s     Wait for app.heartpro.ios to idle
+    t =    22.96s Find the "rhythmRules" Button
+    t =    23.13s Tap "rhythmRules" Button
+    t =    23.13s     Wait for app.heartpro.ios to idle
+    t =    23.14s     Find the "rhythmRules" Button
+    t =    23.29s     Check for interrupting elements affecting "rhythmRules" Button
+    t =    23.41s     Synthesize event
+    t =    23.70s     Wait for app.heartpro.ios to idle
+    t =    23.70s Waiting 5.0s for "Fertig" Button to exist
+    t =    24.75s     Checking `Expect predicate `existsNoRetry == 1` for object "Fertig" Button`
+    t =    24.75s         Checking existence of `"Fertig" Button`
+    t =    25.01s Added attachment named 'de-large-rhythm-rules'
+    t =    25.01s Tap "Fertig" Button
+    t =    25.01s     Wait for app.heartpro.ios to idle
+    t =    25.02s     Find the "Fertig" Button
+    t =    25.18s     Check for interrupting elements affecting "Fertig" Button
+    t =    25.31s     Synthesize event
+    t =    25.59s     Wait for app.heartpro.ios to idle
+    t =    25.60s Find the "segment-u" Button
+    t =    25.76s Swipe up Target Application 'app.heartpro.ios'
+    t =    25.76s     Wait for app.heartpro.ios to idle
+    t =    25.76s     Find the Target Application 'app.heartpro.ios'
+    t =    25.87s     Check for interrupting elements affecting "HeartPro" Application
+    t =    25.98s     Synthesize event
+    t =    26.40s     Wait for app.heartpro.ios to idle
+    t =    28.51s Find the "segment-u" Button
+    t =    28.67s Swipe up Target Application 'app.heartpro.ios'
+    t =    28.67s     Wait for app.heartpro.ios to idle
+    t =    28.67s     Find the Target Application 'app.heartpro.ios'
+    t =    28.78s     Check for interrupting elements affecting "HeartPro" Application
+    t =    28.90s     Synthesize event
+    t =    29.32s     Wait for app.heartpro.ios to idle
+    t =    31.43s Find the "segment-u" Button
+    t =    31.60s Swipe up Target Application 'app.heartpro.ios'
+    t =    31.60s     Wait for app.heartpro.ios to idle
+    t =    31.60s     Find the Target Application 'app.heartpro.ios'
+    t =    31.71s     Check for interrupting elements affecting "HeartPro" Application
+    t =    31.82s     Synthesize event
+    t =    32.35s     Wait for app.heartpro.ios to idle
+    t =    34.35s Find the "segment-u" Button
+    t =    34.51s Swipe up Target Application 'app.heartpro.ios'
+    t =    34.51s     Wait for app.heartpro.ios to idle
+    t =    34.51s     Find the Target Application 'app.heartpro.ios'
+    t =    34.62s     Check for interrupting elements affecting "HeartPro" Application
+    t =    34.74s     Synthesize event
+    t =    35.16s     Wait for app.heartpro.ios to idle
+    t =    37.26s Find the "segment-u" Button
+    t =    37.43s Swipe up Target Application 'app.heartpro.ios'
+    t =    37.43s     Wait for app.heartpro.ios to idle
+    t =    37.43s     Find the Target Application 'app.heartpro.ios'
+    t =    37.54s     Check for interrupting elements affecting "HeartPro" Application
+    t =    37.66s     Synthesize event
+    t =    38.08s     Wait for app.heartpro.ios to idle
+    t =    40.18s Find the "segment-u" Button
+    t =    40.35s Tap "segment-u" Button
+    t =    40.35s     Wait for app.heartpro.ios to idle
+    t =    40.35s     Find the "segment-u" Button
+    t =    40.50s     Check for interrupting elements affecting "segment-u" Button
+    t =    40.61s     Synthesize event
+    t =    40.91s     Wait for app.heartpro.ios to idle
+    t =    40.91s Find the "segmentBeats-u" Button
+    t =    41.09s Swipe up Target Application 'app.heartpro.ios'
+    t =    41.09s     Wait for app.heartpro.ios to idle
+    t =    41.09s     Find the Target Application 'app.heartpro.ios'
+    t =    41.21s     Check for interrupting elements affecting "HeartPro" Application
+    t =    41.33s     Synthesize event
+    t =    41.75s     Wait for app.heartpro.ios to idle
+    t =    43.86s Find the "segmentBeats-u" Button
+    t =    44.04s Tap "segmentBeats-u" Button
+    t =    44.04s     Wait for app.heartpro.ios to idle
+    t =    44.04s     Find the "segmentBeats-u" Button
+    t =    44.21s     Check for interrupting elements affecting "segmentBeats-u" Button
+    t =    44.33s     Synthesize event
+    t =    44.63s     Wait for app.heartpro.ios to idle
+    t =    44.66s Waiting 5.0s for "U-Wellenkandidaten" NavigationBar to exist
+    t =    45.74s     Checking `Expect predicate `existsNoRetry == 1` for object "U-Wellenkandidaten" NavigationBar`
+    t =    45.74s         Checking existence of `"U-Wellenkandidaten" NavigationBar`
+    t =    46.03s Added attachment named 'de-large-u-candidate'
+    t =    46.03s Tear Down
+Test Case '-[HeartProUITests.RhythmUITests testGermanLargeTextCandidates]' passed (46.370 seconds).
+Test Suite 'RhythmUITests' passed at 2026-09-18 16:22:12.153.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 74.893 (74.897) seconds
+Test Suite 'HeartProUITests.xctest' passed at 2026-09-18 16:22:12.154.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 74.893 (74.898) seconds
+Test Suite 'Selected tests' passed at 2026-09-18 16:22:12.154.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 74.893 (74.899) seconds
+2026-09-18 16:22:12.451 xcodebuild[6463:42296282] [MT] IDETestOperationsObserverDebug: 78.421 elapsed -- Testing started completed.
+2026-09-18 16:22:12.451 xcodebuild[6463:42296282] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-09-18 16:22:12.451 xcodebuild[6463:42296282] [MT] IDETestOperationsObserverDebug: 78.421 sec, +78.421 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/heartpro-rhythm-layout.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

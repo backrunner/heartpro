@@ -1,0 +1,137 @@
+224|ECG segments|心電図の各区間|심전도 구간 분석|EKG-Abschnitte|Segmentos del ECG
+225|About segment measurements|区間の測定について|구간 측정 안내|Über Abschnittsmessungen|Acerca de las mediciones por segmento
+226|Automatic estimates, for reference only|自動推定による参考値|자동 추정값, 참고용|Automatische Schätzungen, nur zur Information|Estimaciones automáticas, solo como referencia
+227|Heartbeats: {0}|{0}回の心拍|심박 {0}회|Herzschläge: {0}|Latidos: {0}
+228|Understanding the numbers|数値の見方|수치 이해하기|Die Zahlen verstehen|Cómo interpretar los valores
+229|This record samples about every {0} ms. The sampling interval is not the measurement error.|この記録は約{0} ms間隔でサンプリングされています。サンプリング間隔と測定誤差は異なります。|이 기록의 샘플링 간격은 약 {0} ms입니다. 샘플링 간격이 측정 오차를 뜻하지는 않습니다.|Diese Aufzeichnung hat etwa alle {0} ms einen Messpunkt. Das Abtastintervall ist nicht der Messfehler.|Este registro toma una muestra aproximadamente cada {0} ms. El intervalo de muestreo no equivale al error de medición.
+230|Reference ranges help explain the measurements; they cannot be applied directly to decide whether a Watch ECG is normal. A missing measurement does not mean that part of the waveform is absent.|参考範囲は数値の理解を助けるもので、Watchの心電図が正常かの判断にそのまま使うことはできません。測定値がなくても、その波形が存在しないとは限りません。|참고 범위는 측정값 이해를 돕기 위한 것으로 Watch 심전도의 정상 여부에 직접 적용할 수 없습니다. 측정값이 없다고 해당 파형이 없는 것은 아닙니다.|Referenzbereiche helfen beim Verständnis der Messwerte. Sie lassen sich nicht direkt zur Beurteilung eines Watch-EKGs als normal verwenden. Ein fehlender Messwert bedeutet nicht, dass dieser Kurvenabschnitt fehlt.|Los rangos de referencia ayudan a comprender las mediciones, pero no se aplican directamente para decidir si un ECG del Watch es normal. La falta de una medición no significa que esa parte de la onda no exista.
+231|Read MSD's ECG introduction|MSDの心電図解説を読む|MSD 심전도 소개 읽기|EKG-Einführung von MSD lesen|Leer la introducción al ECG de MSD
+232|{0}/{1} measurable|{0}/{1}回で測定可能|{0}/{1}회 측정 가능|{0}/{1} messbar|{0}/{1} medibles
+233|Automatic measurement not supported yet|自動測定は未対応|자동 측정 미지원|Automatische Messung noch nicht unterstützt|Medición automática aún no disponible
+234|Expand for details|開いて理由を確認|펼쳐서 이유 보기|Details aufklappen|Ampliar para ver detalles
+235|Fridericia median|Fridericiaの中央値|Fridericia 중앙값|Fridericia-Median|Mediana de Fridericia
+236|Median|中央値|중앙값|Median|Mediana
+237|Chart metric|グラフの指標|차트 지표|Messgröße im Diagramm|Métrica del gráfico
+238|Recording time (s)|記録内の時間（秒）|기록 시간(초)|Aufzeichnungszeit (s)|Tiempo del registro (s)
+239|{0} for each beat; values that cannot be measured are left blank|心拍ごとの{0}。測定できない位置は空欄|심박별 {0}, 측정할 수 없는 지점은 빈칸|{0} für jeden Herzschlag; nicht messbare Werte bleiben leer|{0} de cada latido; los valores que no se pueden medir quedan en blanco
+240|View individual beats|心拍ごとに見る|각 심박 보기|Einzelne Herzschläge ansehen|Ver cada latido
+241|Why measurement isn't possible|測定できない理由|측정할 수 없는 이유|Warum keine Messung möglich ist|Por qué no se puede medir
+242|Distribution and waveform details|分布と波形の詳細|분포 및 파형 상세|Verteilung und Kurvendetails|Distribución y detalles de la onda
+243|Middle 80%: {0}–{1} {2}|中央80%の範囲：{0}〜{1} {2}|중앙 80% 범위: {0}~{1} {2}|Mittlere 80 %: {0}–{1} {2}|80 % central: {0}–{1} {2}
+244|Beats: {0}|{0}回|{0}회|Herzschläge: {0}|Latidos: {0}
+245|Meaning and measurement|数値の意味と測定方法|의미와 측정 방법|Bedeutung und Messung|Significado y medición
+246|Not supported yet|未対応|아직 지원하지 않음|Noch nicht unterstützt|Aún no compatible
+247|Unable to measure|測定できません|측정할 수 없음|Nicht messbar|No se puede medir
+248|Range: {0}–{1} {2}|範囲：{0}〜{1} {2}|범위: {0}~{1} {2}|Bereich: {0}–{1} {2}|Rango: {0}–{1} {2}
+249|Previous beat|前の心拍|이전 심박|Vorheriger Herzschlag|Latido anterior
+250|Choose a beat|心拍を選択|심박 선택|Herzschlag wählen|Elegir latido
+251|Beat {0} ({1} s)|心拍{0}（{1}秒）|심박 {0}({1}초)|Herzschlag {0} ({1} s)|Latido {0} ({1} s)
+252|Beat {0}/{1}|心拍{0}/{1}|심박 {0}/{1}|Schlag {0}/{1}|Latido {0}/{1}
+253|Next beat|次の心拍|다음 심박|Nächster Herzschlag|Latido siguiente
+254|Start|開始|시작|Beginn|Inicio
+255|End|終了|끝|Ende|Final
+256|Voltage|電圧|전압|Spannung|Voltaje
+257|Continuous trace|連続した波形|연속 파형|Zusammenhängende Kurve|Trazado continuo
+258|Start|始|시작|Start|Inicio
+259|End|終|끝|Ende|Fin
+260|The red line is the original waveform. Dashed lines mark estimated start and end points. Unclear boundaries are not marked.|赤線は元の波形です。破線は推定した開始・終了位置を示します。不明瞭な境界には印を付けません。|빨간 선은 원본 파형입니다. 점선은 추정한 시작과 끝을 나타내며 불명확한 경계는 표시하지 않습니다.|Die rote Linie zeigt die Originalkurve. Gestrichelte Linien markieren geschätzte Anfangs- und Endpunkte. Unklare Grenzen werden nicht markiert.|La línea roja es la onda original. Las líneas discontinuas marcan el inicio y el final estimados. Los límites poco claros no se marcan.
+261|Start time|開始時刻|시작 시간|Beginn bei|Tiempo de inicio
+262|End time|終了時刻|끝 시간|Ende bei|Tiempo final
+263|Peak time|ピーク時刻|정점 시간|Spitze bei|Tiempo del pico
+264|Locate in full ECG|心電図全体で見る|전체 심전도에서 보기|Im gesamten EKG anzeigen|Ver en el ECG completo
+265|Measurement method|測定方法|측정 방법|Messmethode|Método de medición
+266|Beat intervals and HRV|心拍間隔とHRV|심박 간격과 HRV|Schlagintervalle und HRV|Intervalos y HRV
+267|About beat intervals and HRV|心拍間隔とHRVについて|심박 간격 및 HRV 안내|Über Schlagintervalle und HRV|Acerca de los intervalos y la HRV
+268|Interval variation|間隔のばらつき|간격 변동|Intervallstreuung|Variación de intervalos
+269|Successive changes|隣接間隔の変化|연속 간격 변화|Benachbarte Änderungen|Cambios consecutivos
+270|Previous interval (ms)|前の間隔（ms）|이전 간격(ms)|Vorheriges Intervall (ms)|Intervalo anterior (ms)
+271|Next interval (ms)|次の間隔（ms）|다음 간격(ms)|Nächstes Intervall (ms)|Intervalo siguiente (ms)
+272|Successive RR scatter plot|隣接RR間隔の散布図|연속 RR 산점도|Streudiagramm aufeinanderfolgender RR-Intervalle|Dispersión de intervalos RR consecutivos
+273|RR statistics for this record cannot be treated as HRV.|この記録のRR統計は、そのままHRVとは扱えません。|이 기록의 RR 통계를 HRV로 간주할 수는 없습니다.|RR-Statistiken dieser Aufzeichnung sind nicht mit HRV gleichzusetzen.|Las estadísticas RR de este registro no equivalen a HRV.
+274|Apple Health HRV|ヘルスケアのHRV|Apple 건강 HRV|HRV aus Apple Health|HRV de Salud de Apple
+275|View SDNN trends|SDNNの推移を見る|SDNN 추세 보기|SDNN-Trends ansehen|Ver tendencias de SDNN
+276|What these numbers mean|数値の意味|이 수치의 의미|Was diese Zahlen bedeuten|Qué significan estos valores
+277|Interval variation is the standard deviation of RR intervals in this record. It describes how spread out the intervals are.|間隔のばらつきは、この記録のRR間隔の標準偏差です。間隔がどの程度散らばっているかを示します。|간격 변동은 기록 내 RR 간격의 표준편차로 간격이 얼마나 흩어져 있는지 나타냅니다.|Die Intervallstreuung ist die Standardabweichung der RR-Intervalle dieser Aufzeichnung. Sie beschreibt, wie weit die Intervalle auseinanderliegen.|La variación de intervalos es la desviación estándar de los intervalos RR del registro. Describe cuánto se dispersan.
+278|Successive changes are the root mean square of differences between adjacent RR intervals. They describe how much consecutive intervals differ.|隣接間隔の変化は、隣り合うRR間隔の差の二乗平均平方根です。前後の間隔がどの程度異なるかを示します。|연속 간격 변화는 인접 RR 간격 차이의 제곱평균제곱근으로 연속된 간격이 얼마나 다른지 나타냅니다.|Benachbarte Änderungen werden als quadratisches Mittel der Differenzen aufeinanderfolgender RR-Intervalle berechnet. Sie beschreiben, wie stark sich benachbarte Intervalle unterscheiden.|Los cambios consecutivos son la raíz cuadrática media de las diferencias entre intervalos RR adyacentes. Describen cuánto difieren los intervalos consecutivos.
+279|Adjacent interval pairs compared: {0}. Signal gaps are skipped.|散布図は隣接間隔{0}組を比較しています。信号が途切れた箇所は除外しています。|산점도는 인접 간격 {0}쌍을 비교하며 신호가 끊긴 구간은 제외합니다.|Verglichene Paare benachbarter Intervalle: {0}. Signallücken werden übersprungen.|Pares de intervalos adyacentes comparados: {0}. Se omiten los cortes de señal.
+280|Why this isn't labeled HRV|HRVと呼ばない理由|HRV로 표시하지 않는 이유|Warum dies nicht als HRV bezeichnet wird|Por qué no se denomina HRV
+281|These calculations have not confirmed which beats are normal, so they are not labeled normal-beat SDNN or RMSSD. A roughly 30-second Watch ECG also cannot be compared directly with five-minute or all-day HRV.|正常な心拍を確認した上での計算ではないため、正常心拍に基づくSDNNやRMSSDとは表示しません。また、約30秒のWatch心電図は、5分間や終日のHRVとは直接比較できません。|어떤 심박이 정상인지 확인한 계산이 아니므로 정상 심박의 SDNN 또는 RMSSD로 표시하지 않습니다. 약 30초의 Watch 심전도는 5분 또는 종일 HRV와 직접 비교할 수도 없습니다.|Für diese Berechnungen wurde nicht bestätigt, welche Herzschläge normal sind. Daher werden sie nicht als SDNN oder RMSSD normaler Herzschläge bezeichnet. Ein etwa 30 Sekunden langes Watch-EKG ist auch nicht direkt mit einer HRV über fünf Minuten oder den ganzen Tag vergleichbar.|Estos cálculos no han confirmado qué latidos son normales, por lo que no se denominan SDNN ni RMSSD de latidos normales. Un ECG del Watch de unos 30 segundos tampoco se compara directamente con la HRV de cinco minutos o de todo el día.
+282|Apple Health uses SDNN for HRV. Its trends are available separately; the data source differs from this ECG's calculations.|ヘルスケアのHRVはSDNNを使います。この心電図の計算とはデータソースが異なり、推移を別に確認できます。|Apple 건강의 HRV는 SDNN을 사용합니다. 이 심전도의 계산과 데이터 출처가 다르며 추세를 별도로 확인할 수 있습니다.|Apple Health verwendet SDNN für HRV. Die Trends sind separat verfügbar; ihre Datenquelle unterscheidet sich von den Berechnungen dieses EKGs.|Salud de Apple usa SDNN para la HRV. Puedes consultar sus tendencias por separado; la fuente difiere de los cálculos de este ECG.
+283|At least 12 clear, complete beats are needed to draw a reference waveform.|比較用の参考波形を描くには、明瞭で欠けのない心拍が12回以上必要です。|기준 파형을 그리려면 선명하고 완전한 심박이 최소 12회 필요합니다.|Für eine Referenzkurve sind mindestens 12 klare, vollständige Herzschläge nötig.|Se necesitan al menos 12 latidos claros y completos para dibujar una onda de referencia.
+284|Median R amplitude|R波振幅の中央値|R파 진폭 중앙값|Mediane R-Amplitude|Amplitud R mediana
+285|beats|回|회|Schläge|latidos
+286|Beats compared|比較した心拍|비교한 심박|Verglichene Herzschläge|Latidos comparados
+287|Amplitude|振幅|진폭|Amplitude|Amplitud
+288|Typical waveform in this record|この記録の代表的な波形|이 기록의 대표 파형|Typische Kurve dieser Aufzeichnung|Onda típica del registro
+289|About waveform comparison|波形比較について|파형 비교 안내|Über den Kurvenvergleich|Acerca de la comparación de ondas
+290|Relative to R peak|R波ピークを基準|R파 정점 기준|Relativ zur R-Zacke|Respecto al pico R
+291|Relative to R peak (ms)|R波ピークからの時間（ms）|R파 정점 기준(ms)|Relativ zur R-Zacke (ms)|Respecto al pico R (ms)
+292|Only the area near the R peak is compared, not the full beat.|R波ピーク付近のみを比較しています。心拍全体ではありません。|R파 정점 주변만 비교하며 전체 심박을 나타내지는 않습니다.|Verglichen wird nur der Bereich nahe der R-Zacke, nicht der ganze Herzschlag.|Solo se compara la zona cercana al pico R, no el latido completo.
+293|Beat waveform comparison|心拍の波形比較|심박 파형 비교|Herzschlagkurven vergleichen|Comparación de ondas
+294|View R amplitudes and the typical waveform|R波の振幅と代表的な波形を見る|R파 진폭 및 대표 파형 보기|R-Amplituden und typische Kurve ansehen|Ver amplitudes R y la onda típica
+295|Aligning each beat's R peak lets you compare nearby waveform height and shape. The reference uses the median at each position to show the record's typical shape.|各心拍のR波ピークを揃えると、付近の波形の高さと形を比較できます。参考波形は各位置の中央値を使い、この記録の代表的な形を示します。|각 심박의 R파 정점을 맞추면 주변 파형의 높이와 모양을 비교할 수 있습니다. 기준 파형은 각 위치의 중앙값을 사용해 이 기록의 대표적인 모양을 보여 줍니다.|Durch Ausrichten der R-Zacken lassen sich Höhe und Form der nahen Kurve vergleichen. Die Referenz nutzt den Median an jeder Position und zeigt so die typische Form dieser Aufzeichnung.|Al alinear el pico R de cada latido se comparan la altura y la forma cercanas. La referencia usa la mediana en cada posición para mostrar la forma típica del registro.
+296|The comparison spans 120 ms before to 160 ms after the R peak. It does not include complete P or T waves and is not a measurement of QRS duration.|比較範囲はR波ピークの120 ms前から160 ms後までです。P波・T波全体は含まず、QRS持続時間の測定でもありません。|비교 범위는 R파 정점 120 ms 전부터 160 ms 후까지입니다. 완전한 P파와 T파를 포함하지 않으며 QRS 지속 시간 측정도 아닙니다.|Verglichen wird der Bereich von 120 ms vor bis 160 ms nach der R-Zacke. Er enthält keine vollständigen P- oder T-Wellen und misst nicht die QRS-Dauer.|La comparación abarca desde 120 ms antes hasta 160 ms después del pico R. No incluye las ondas P o T completas ni mide la duración del QRS.
+297|Contact and posture changes can also alter the waveform. Similar or different shapes alone cannot determine whether an ECG is normal.|接触状態や姿勢の変化でも波形は変わります。形が似ている・異なるというだけでは、心電図が正常かは判断できません。|접촉 상태와 자세 변화도 파형에 영향을 줄 수 있습니다. 모양이 비슷하거나 다르다는 것만으로 정상 여부를 판단할 수 없습니다.|Kontakt- und Haltungsänderungen können die Kurve ebenfalls verändern. Ähnliche oder unterschiedliche Formen allein zeigen nicht, ob ein EKG normal ist.|El contacto y la postura también pueden cambiar la onda. Que las formas sean similares o distintas no determina por sí solo si un ECG es normal.
+298|Apple Health is unavailable on this device. You can still try the demo or view saved records.|この端末ではヘルスケアを利用できません。デモや保存済みの記録は閲覧できます。|이 기기에서는 Apple 건강을 사용할 수 없습니다. 데모를 체험하거나 저장된 기록은 볼 수 있습니다.|Apple Health ist auf diesem Gerät nicht verfügbar. Du kannst weiterhin die Demo oder gespeicherte Aufzeichnungen ansehen.|Salud de Apple no está disponible en este dispositivo. Puedes probar la demo o consultar registros guardados.
+299|This ECG cannot be read right now. Check the record and read permissions in Apple Health.|現在この心電図を読み取れません。ヘルスケアの記録と読み取り権限を確認してください。|현재 이 심전도를 불러올 수 없습니다. Apple 건강의 기록과 읽기 권한을 확인하세요.|Dieses EKG ist derzeit nicht lesbar. Prüfe die Aufzeichnung und die Leseberechtigungen in Apple Health.|No se puede leer este ECG ahora. Comprueba el registro y los permisos de lectura en Salud de Apple.
+300|Permission to save this symptom was not granted. Your local note has been kept.|この症状の書き込み権限がありません。ローカルメモは保存されています。|이 증상의 쓰기 권한이 허용되지 않았습니다. 로컬 메모는 보관되어 있습니다.|Keine Schreibberechtigung für dieses Symptom. Deine lokale Notiz bleibt erhalten.|No se concedió permiso para guardar este síntoma. Tu nota local se conserva.
+301|HeartPro — Single-lead ECG|HeartPro　単一誘導心電図|HeartPro　단일 유도 심전도|HeartPro — Einkanal-EKG|HeartPro — ECG de una derivación
+302|{0}{1}; {2} s; {3} bpm; {4}|{0}{1}　{2}秒　{3} bpm　{4}|{0}{1}　{2}초　{3} bpm　{4}|{0}{1}; {2} s; {3} bpm; {4}|{0}{1}; {2} s; {3} bpm; {4}
+303|Synthetic demo: |合成デモ：|합성 데모: |Synthetische Demo: |Demo sintética: 
+304|25 mm/s; 10 mm/mV; print at 100% actual size; page {0}|25 mm/s　10 mm/mV　100%の実寸で印刷　{0}ページ|25 mm/s　10 mm/mV　실제 크기 100%로 인쇄　{0}페이지|25 mm/s; 10 mm/mV; in 100 % Originalgröße drucken; Seite {0}|25 mm/s; 10 mm/mV; imprimir al 100 % del tamaño real; página {0}
+305|Similar to Lead I; {0}–{1} s|I誘導に相当　{0}〜{1}秒|유도 I과 유사　{0}~{1}초|Ähnlich Ableitung I; {0}–{1} s|Similar a la derivación I; {0}–{1} s
+306|For reference only, not for medical use. Cannot replace diagnosis or rule out a heart attack or myocardial ischemia.|参考情報です。医療用途には使用できず、診断の代わりや心筋梗塞・心筋虚血の否定には使えません。|참고용이며 의료용이 아닙니다. 진단을 대신하거나 심근경색 및 심근허혈을 배제할 수 없습니다.|Nur zur Information, nicht für medizinische Zwecke. Ersetzt keine Diagnose und schließt Herzinfarkt oder Myokardischämie nicht aus.|Solo como referencia, no para uso médico. No sustituye un diagnóstico ni descarta un infarto o isquemia miocárdica.
+307|Analysis version: {0}; original ECG read-only; no health score provided|分析バージョン：{0}　元の心電図は読み取り専用　健康スコアの提供なし|분석 버전: {0}　원본 ECG 읽기 전용　건강 점수 미제공|Analyseversion: {0}; Original-EKG schreibgeschützt; keine Gesundheitsbewertung|Versión del análisis: {0}; ECG original de solo lectura; sin puntuación de salud
+308|HeartPro — Recording statistics|HeartPro　記録の統計|HeartPro　기록 통계|HeartPro — Aufzeichnungsstatistik|HeartPro — Estadísticas del registro
+309|Usable recording time: {0}%; {1} s|分析に使える時間：{0}%　{1}秒|분석 가능한 기록 시간: {0}%　{1}초|Nutzbare Aufzeichnungszeit: {0} %; {1} s|Tiempo utilizable: {0} %; {1} s
+310|R peaks identified: {0}; RR intervals: {1}|検出したR波ピーク：{0}個　RR間隔：{1}個|식별된 R파 정점: {0}개　RR 간격: {1}개|Erkannte R-Zacken: {0}; RR-Intervalle: {1}|Picos R identificados: {0}; intervalos RR: {1}
+311|Median RR: {0} ms|RR中央値：{0} ms|RR 중앙값: {0} ms|Medianes RR: {0} ms|RR mediano: {0} ms
+312|Overall interval variation (RR standard deviation): {0} ms|間隔全体のばらつき（RR標準偏差）：{0} ms|전체 간격 변동(RR 표준편차): {0} ms|Gesamte Intervallstreuung (RR-Standardabweichung): {0} ms|Variación global de intervalos (desviación estándar RR): {0} ms
+313|Successive interval changes (root mean square of RR differences): {0} ms|隣接間隔の変化（RR差の二乗平均平方根）：{0} ms|연속 간격 변화(RR 차이의 제곱평균제곱근): {0} ms|Benachbarte Intervalländerungen (quadratisches Mittel der RR-Differenzen): {0} ms|Cambios consecutivos (raíz cuadrática media de diferencias RR): {0} ms
+314|Normal beats have not been distinguished from other types, so these statistics cannot be treated as HRV.|正常な心拍と他の種類を区別していないため、そのままHRVとは扱えません。|정상 심박과 다른 유형을 구분하지 않았으므로 이 통계를 HRV로 간주할 수 없습니다.|Normale Herzschläge wurden nicht von anderen Typen unterschieden. Diese Statistiken sind daher nicht mit HRV gleichzusetzen.|No se han distinguido los latidos normales de otros tipos, por lo que estas estadísticas no equivalen a HRV.
+315|Waveform changes marked: {0}|マークした波形変化：{0}件|표시된 파형 변화: {0}개|Markierte Kurvenänderungen: {0}|Cambios de onda marcados: {0}
+316|Segment positions and timings are estimated by the app. No health score is currently provided.|区間の位置と時間はアプリが推定しています。現在、健康スコアは提供していません。|구간 위치와 시간은 앱이 추정하며 현재 건강 점수는 제공하지 않습니다.|Positionen und Zeiten der Abschnitte sind Schätzungen der App. Eine Gesundheitsbewertung wird derzeit nicht angeboten.|La app estima las posiciones y los tiempos de los segmentos. No se ofrece puntuación de salud.
+317|For reference only, not for medical use. Marked changes are not a diagnosis.|参考情報です。医療用途には使えず、マークした変化は診断を意味しません。|참고용이며 의료용이 아닙니다. 표시된 변화는 질병 진단이 아닙니다.|Nur zur Information, nicht für medizinische Zwecke. Markierte Änderungen sind keine Diagnose.|Solo como referencia, no para uso médico. Los cambios marcados no son un diagnóstico.
+318|HeartPro — Changes to review (continued)|HeartPro　見返せる変化（続き）|HeartPro　다시 볼 변화(계속)|HeartPro — Änderungen zum Nachsehen (Fortsetzung)|HeartPro — Cambios para revisar (continuación)
+319|{0}; heartbeats identified: {1}\n|{0}　検出した心拍：{1}回\n|{0}　식별된 심박: {1}회\n|{0}; erkannte Herzschläge: {1}\n|{0}; latidos identificados: {1}\n
+320|Synthetic demo|合成デモ|합성 데모|Synthetische Demo|Demo sintética
+321|Single-lead recording|単一誘導の記録|단일 유도 기록|Einkanal-Aufzeichnung|Registro de una derivación
+322|Understanding the numbers\n|数値の見方\n|수치 이해하기\n|Die Zahlen verstehen\n|Cómo interpretar los valores\n
+323|Median {0} {1}; min–max {2}–{3} {4}; middle 80% {5}–{6} {7}|中央値 {0} {1}、最小〜最大 {2}〜{3} {4}、中央80% {5}〜{6} {7}|중앙값 {0} {1}; 최솟값~최댓값 {2}~{3} {4}; 중앙 80% {5}~{6} {7}|Median {0} {1}; Min.–Max. {2}–{3} {4}; mittlere 80 % {5}–{6} {7}|Mediana {0} {1}; mín.–máx. {2}–{3} {4}; 80 % central {5}–{6} {7}
+324|Why measurement isn't possible:|測定できない理由：|측정할 수 없는 이유:|Warum keine Messung möglich ist:|Por qué no se puede medir:
+325|Measurement method: |測定方法：|측정 방법: |Messmethode: |Método de medición: 
+326|HeartPro — ECG segments|HeartPro　心電図の各区間|HeartPro　심전도 구간 분석|HeartPro — EKG-Abschnitte|HeartPro — Segmentos del ECG
+327|; duration: {0} min|　持続時間：{0}分|　지속 시간: {0}분|; Dauer: {0} min|; duración: {0} min
+328|HeartPro — Local notes|HeartPro　ローカルメモ|HeartPro　로컬 메모|HeartPro — Lokale Notizen|HeartPro — Notas locales
+329|Self-reported notes; for reference only, not for medical use|本人の記録。参考情報であり、医療用途には使用できません。|사용자 본인의 기록. 참고용이며 의료용이 아닙니다|Eigene Angaben; nur zur Information, nicht für medizinische Zwecke|Notas del usuario; solo como referencia, no para uso médico
+330|Automatic estimates, not validated on real Watch data. For reference only, not for medical use.|自動推定値。実際のWatchデータでは未検証。参考情報であり、医療用途には使用できません。|자동 추정값이며 실제 Watch 데이터로 검증되지 않았습니다. 참고용이며 의료용이 아닙니다.|Automatische Schätzungen, nicht an echten Watch-Daten validiert. Nur zur Information, nicht für medizinische Zwecke.|Estimaciones automáticas no validadas con datos reales del Watch. Solo como referencia, no para uso médico.
+331|Sinus rhythm|洞調律|동성 리듬|Sinusrhythmus|Ritmo sinusal
+332|Atrial fibrillation classification|心房細動の分類|심방세동 분류|Klassifikation: Vorhofflimmern|Clasificación de fibrilación auricular
+333|High heart rate|高心拍数|높은 심박수|Hohe Herzfrequenz|Frecuencia cardíaca alta
+334|Low heart rate|低心拍数|낮은 심박수|Niedrige Herzfrequenz|Frecuencia cardíaca baja
+335|Inconclusive|判定不能|판정 불가|Nicht eindeutig|No concluyente
+336|Poor recording|記録品質が低い|기록 품질 불량|Schlechte Aufzeichnungsqualität|Registro de baja calidad
+337|No classification|分類情報なし|분류 정보 없음|Keine Klassifikation|Sin clasificación
+338|No symptoms|特に症状なし|뚜렷한 증상 없음|Keine Beschwerden|Sin síntomas
+339|Palpitations|動悸|두근거림|Herzklopfen|Palpitaciones
+340|Skipped beats|脈が飛ぶ感じ|맥이 건너뛰는 느낌|Herzaussetzer|Sensación de latidos omitidos
+341|Chest tightness / pain|胸の圧迫感・胸痛|가슴 답답함 / 흉통|Brustenge / Brustschmerz|Opresión / dolor torácico
+342|Shortness of breath|息切れ|숨 가쁨|Atemnot|Falta de aire
+343|Dizziness|めまい|어지러움|Schwindel|Mareo
+344|Fainting|失神|실신|Ohnmacht|Desmayo
+345|Fatigue|疲労|피로|Müdigkeit|Fatiga
+346|After exercise|運動後|운동 후|Nach Sport|Después de ejercicio
+347|Caffeine|カフェイン|카페인|Koffein|Cafeína
+348|High stress|強いストレス|스트레스 많음|Starker Stress|Mucho estrés
+349|Poor sleep|睡眠不足|수면 부족|Schlafmangel|Falta de sueño
+350|P wave|P波|P파|P-Welle|Onda P
+351|PR interval|PR間隔|PR 간격|PR-Intervall|Intervalo PR
+352|PR segment|PR部分|PR 분절|PR-Strecke|Segmento PR
+353|QRS complex|QRS波|QRS군|QRS-Komplex|Complejo QRS
+354|ST segment / J point|ST部分・J点|ST 분절 / J점|ST-Strecke / J-Punkt|Segmento ST / punto J
+355|T wave|T波|T파|T-Welle|Onda T
+356|QT interval|QT間隔|QT 간격|QT-Intervall|Intervalo QT
+357|QTc (corrected QT)|QTc（補正QT）|QTc(보정 QT)|QTc (korrigiertes QT)|QTc (QT corregido)
+358|TP segment|TP部分|TP 분절|TP-Strecke|Segmento TP
+359|RR / PP intervals|RR・PP間隔|RR / PP 간격|RR-/PP-Intervalle|Intervalos RR / PP
+360|U wave|U波|U파|U-Welle|Onda U

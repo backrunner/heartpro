@@ -1,0 +1,26 @@
+HeartPro brings the heart records already in Apple Health into one place, so you can look back at your day and keep the context behind each recording.
+
+REVIEW YOUR RECORDS
+• Browse your ECG history and find recordings by date.
+• View daily heart rate and HRV summaries and day, week, month or year trends.
+• Scroll through original single-lead ECG waveforms, zoom in, or open the waveform full screen.
+• Select two points to compare time and voltage.
+
+KEEP CONTEXT
+Add notes, symptoms and measurement context to individual ECGs. If you choose, save supported symptoms as separate entries in Apple Health. Export an ECG PDF and use the system share sheet to choose who receives it.
+
+ON-DEVICE ANALYSIS
+Inspect estimated beat intervals, waveform segments, short-recording HRV and candidate rhythm changes alongside the original recording. Automatic values are informational estimates. Missing values remain blank when the signal cannot support a measurement. Apple's recorded classification is identified separately from HeartPro's calculations.
+
+PRIVATE BY DESIGN
+No account, advertising or tracking. Health records, notes and analysis stay on your device. HeartPro does not upload health data to a developer server or sync it to iCloud. You control permissions and sharing, and can clear local data in Settings.
+
+REQUIREMENTS
+iOS/iPadOS 18 or later. Personal-data features require records accessible in Apple Health on that device. Recording a new ECG requires a compatible Apple Watch and ECG availability in your region; HeartPro itself does not record ECGs. On iPad, records must already be synchronized to Health on that iPad. Clearly labelled synthetic examples let you explore without sharing Health data.
+
+IMPORTANT LIMITATIONS
+HeartPro does not diagnose, treat, monitor continuously or provide emergency alerts. Automatic measurements are not clinically validated and cannot establish whether an ECG is normal. Candidate findings and rhythm reference scores are not disease diagnoses, risk probabilities or health scores. Short ECG HRV estimates are not equivalent to standardized five-minute HRV. A single-lead ECG cannot reliably detect or rule out a heart attack or ischemia. Consult a doctor before medical decisions. For persistent chest pain, severe breathlessness or fainting, seek emergency help immediately.
+
+Support: support@heartpro.alkinum.com
+Privacy: https://heartpro.alkinum.com/privacy/
+Methods: https://heartpro.alkinum.com/docs/methods/

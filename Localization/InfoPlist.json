@@ -1,0 +1,26 @@
+{
+  "en": {
+    "NSHealthShareUsageDescription": "HeartPro reads your heart rate, ECGs and heart rate variability (HRV) to show daily summaries, trends and original waveforms. All analysis stays on your device and is for reference only.",
+    "NSHealthUpdateUsageDescription": "Only when you choose to save symptoms, HeartPro adds the symptoms you record as separate entries in Apple Health."
+  },
+  "zh-Hans": {
+    "NSHealthShareUsageDescription": "HeartPro 读取你的日常心率、心电图和心率变异性（HRV），用于每日概览、趋势和原始波形展示。所有分析仅在设备上进行，结果仅供参考。",
+    "NSHealthUpdateUsageDescription": "只有在你选择写回时，HeartPro 才会将你记录的症状作为独立记录保存到 Apple 健康。"
+  },
+  "ja": {
+    "NSHealthShareUsageDescription": "HeartProは日常の心拍数、心電図、心拍変動（HRV）を読み取り、毎日の概要、傾向、元の波形を表示します。解析は端末内のみで行い、結果は参考用です。",
+    "NSHealthUpdateUsageDescription": "症状の保存を選んだ場合のみ、HeartProは記録した症状を独立した項目としてヘルスケアに保存します。"
+  },
+  "ko": {
+    "NSHealthShareUsageDescription": "HeartPro는 일상 심박수, 심전도, 심박변이도(HRV)를 읽어 일일 요약, 추세, 원본 파형을 표시합니다. 모든 분석은 기기에서만 수행되며 결과는 참고용입니다.",
+    "NSHealthUpdateUsageDescription": "증상 저장을 선택한 경우에만 HeartPro가 기록한 증상을 별도 항목으로 Apple 건강에 저장합니다."
+  },
+  "de": {
+    "NSHealthShareUsageDescription": "HeartPro liest Puls, EKGs und Herzfrequenzvariabilität (HRV), um Tagesübersichten, Trends und Originalkurven anzuzeigen. Alle Analysen bleiben auf deinem Gerät und dienen nur zur Information.",
+    "NSHealthUpdateUsageDescription": "Nur wenn du das Speichern auswählst, fügt HeartPro deine erfassten Symptome als separate Einträge zu Apple Health hinzu."
+  },
+  "es": {
+    "NSHealthShareUsageDescription": "HeartPro lee tu frecuencia cardíaca, ECG y variabilidad de la frecuencia cardíaca (VFC) para mostrar resúmenes diarios, tendencias y ondas originales. El análisis se realiza solo en tu dispositivo y sirve como referencia.",
+    "NSHealthUpdateUsageDescription": "Solo si eliges guardar los síntomas, HeartPro añade los que registres como entradas independientes en Salud de Apple."
+  }
+}

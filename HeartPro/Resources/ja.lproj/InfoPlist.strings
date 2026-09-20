@@ -1,0 +1,2 @@
+"NSHealthShareUsageDescription" = "HeartProは日常の心拍数、心電図、心拍変動（HRV）を読み取り、毎日の概要、傾向、元の波形を表示します。解析は端末内のみで行い、結果は参考用です。";
+"NSHealthUpdateUsageDescription" = "症状の保存を選んだ場合のみ、HeartProは記録した症状を独立した項目としてヘルスケアに保存します。";

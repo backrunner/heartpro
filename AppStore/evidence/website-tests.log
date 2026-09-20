@@ -1,0 +1,17 @@
+$ playwright test
+[WebServer] $ svedocs preview --host 127.0.0.1 --port 48621
+[WebServer] (node:36865) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:37622) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/site.spec.ts:5:1 › all content routes, legal drafts and page metadata (1.0s)
+  ✓  2 tests/site.spec.ts:17:3 › en homepage, preview controls, themes and mobile layout (650ms)
+  ✓  3 tests/site.spec.ts:17:3 › zh homepage, preview controls, themes and mobile layout (582ms)
+[WebServer] 
+[WebServer] [404] GET /page-that-does-not-exist/
+  ✓  4 tests/site.spec.ts:43:1 › search, article anchors, unknown routes and machine-readable content (503ms)
+
+  4 passed (7.7s)

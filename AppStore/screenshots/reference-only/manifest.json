@@ -1,0 +1,72 @@
+[
+  {
+    "file": "en-timeline.png",
+    "source": ".agents/validation/supported-features-0.3/en-timeline.png",
+    "version": "0.3 development",
+    "sha256": "9efced7804bc2b81cc54d113d7be354477a630cbced8bb8adef661755be0319b",
+    "upload_ready": false
+  },
+  {
+    "file": "en-ecg.png",
+    "source": ".agents/validation/supported-features-0.3/en-ecg.png",
+    "version": "0.3 development",
+    "sha256": "9d39ec510ba440e6073fe6c7d41695bf9aa83b85330d523ac62cfa7d4f979f74",
+    "upload_ready": false
+  },
+  {
+    "file": "en-segments.png",
+    "source": ".agents/validation/supported-features-0.3/en-segments.png",
+    "version": "0.3 development",
+    "sha256": "84408c2399c9776a7f36ce44619bd94fe05edcb9a31b823673d26b0197fb23db",
+    "upload_ready": false
+  },
+  {
+    "file": "en-hrv.png",
+    "source": ".agents/validation/supported-features-0.3/en-hrv.png",
+    "version": "0.3 development",
+    "sha256": "695ae2bb8438fcce6f0a7c3c77c733265f9abeafb1bd9089d1e9f9f507c4b0e3",
+    "upload_ready": false
+  },
+  {
+    "file": "en-settings.png",
+    "source": ".agents/validation/supported-features-0.3/en-settings.png",
+    "version": "0.3 development",
+    "sha256": "f29486d707d1ed3b2b8c2c62d44b9cd38adc03afb2069b72e1dcf36d9cf9e8dd",
+    "upload_ready": false
+  },
+  {
+    "file": "zh-Hans-timeline.png",
+    "source": ".agents/validation/supported-features-0.3/zh-Hans-timeline.png",
+    "version": "0.3 development",
+    "sha256": "c6e68fbb27aa4c70b9d44abdaf4a9dca81e1432ed9faf48e5a55282bdd5788c9",
+    "upload_ready": false
+  },
+  {
+    "file": "zh-Hans-ecg.png",
+    "source": ".agents/validation/supported-features-0.3/zh-Hans-ecg.png",
+    "version": "0.3 development",
+    "sha256": "7fc98f26aae4aca3aa5359652e9fa4b5447183ac19d6211ede2e2e17a3c4945a",
+    "upload_ready": false
+  },
+  {
+    "file": "zh-Hans-segments.png",
+    "source": ".agents/validation/supported-features-0.3/zh-Hans-segments.png",
+    "version": "0.3 development",
+    "sha256": "f64f296b55cccdef046ca701c3b30e1ab795326b0c0ca8676e0773c368a83bfc",
+    "upload_ready": false
+  },
+  {
+    "file": "zh-Hans-hrv.png",
+    "source": ".agents/validation/supported-features-0.3/zh-Hans-hrv.png",
+    "version": "0.3 development",
+    "sha256": "2d46470244d2fa93d3f3aa7a336c53e1db5f1086adf7206f3162d4052b940599",
+    "upload_ready": false
+  },
+  {
+    "file": "zh-Hans-settings.png",
+    "source": ".agents/validation/supported-features-0.3/zh-Hans-settings.png",
+    "version": "0.3 development",
+    "sha256": "e6c1463209a0403c714038e851ceb510ee0359e77ba169345541c726bebf3288",
+    "upload_ready": false
+  }
+]

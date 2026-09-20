@@ -1,0 +1,120 @@
+{
+  "bundle_id": "com.alkinum.heartpro",
+  "version": "0.6.0",
+  "build": "1",
+  "device": {
+    "dataPath": "~/Library/Developer/CoreSimulator/Devices/2981271F-5537-421E-BD70-0A415F6BC577/data",
+    "dataPathSize": 1993293824,
+    "logPath": "~/Library/Logs/CoreSimulator/2981271F-5537-421E-BD70-0A415F6BC577",
+    "udid": "2981271F-5537-421E-BD70-0A415F6BC577",
+    "lastUsedAt": "2026-09-20T17:52:41Z",
+    "isAvailable": true,
+    "logPathSize": 335872,
+    "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPhone-17-Pro-Max",
+    "state": "Shutdown",
+    "name": "HeartPro-AppStore-iPhone"
+  },
+  "captured_at": "20260921-020915",
+  "xcresult": "TestResults/AppStore-iphone-6.9-20260921-020915.xcresult",
+  "data": "synthetic, labelled in the app",
+  "visual_review_complete": true,
+  "screenshots": [
+    {
+      "file": "en-01-history.png",
+      "sha256": "dda54e49be6732a29f276f90c265be544ddce1bf843693f00c5f82a0993a7181",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "en-02-daily.png",
+      "sha256": "c66376d28d7845be29f5c2c82fc843c9be3425f9cca41f7f072ebd13a2eb6440",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "en-03-trends.png",
+      "sha256": "50a35a1e130c5c7d308fd8f5476e33977af3390deec6e998c76dc827951c03b4",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "en-04-waveform.png",
+      "sha256": "15e18b5c92936d8ae9a58d5e40742ea3a30597ae5fe76fa339d59c68fc05db95",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "en-05-note.png",
+      "sha256": "69825a7c1ff147b44d0161a43faff1f8f458f7312392a0d39747483a2a7f695b",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "en-06-privacy-settings.png",
+      "sha256": "6ca056214db66170b2b88e97783a0bb6f590317af72367241e265291d039ca99",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "zh-Hans-01-history.png",
+      "sha256": "d15c08cddb7b21516b14626fbdb8b721d77af7efc299a9846c198ca5dcdfd6ae",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "zh-Hans-02-daily.png",
+      "sha256": "4698731d5eaac1a30e52eb954ce44f787228b4e25f525fbebcfb0d2c88eb47d3",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "zh-Hans-03-trends.png",
+      "sha256": "f0252cac14030defe010025e6867e348ad5b0ccf9db45a82382e6abda1a3161d",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "zh-Hans-04-waveform.png",
+      "sha256": "52b1a004743bfd6963ed105d2a55b33feaea68bd64df167782cf60490157f75e",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "zh-Hans-05-note.png",
+      "sha256": "e6f3dc6a6a09b0ce0166b81e34e4e4b29ee7c9f66af58bb68108b96833616a1c",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "zh-Hans-06-privacy-settings.png",
+      "sha256": "7abe3fa5dc4bedd580d0bdb09ae8a63e70cf4fd7027723eff841d220374185b5",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    }
+  ],
+  "visual_review_notes": "Reviewed all 12 current captures via contact sheet and full-size settings: loaded content, English/Chinese app locale, synthetic labels and portrait framing. Policy, support and version are visible. No original PNG edits."
+}

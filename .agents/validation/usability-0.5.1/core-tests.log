@@ -1,0 +1,108 @@
+Building for debugging...
+[Computing dependencies]
+[1 / 1]
+[2 / 13] HeartProCore
+[4 / 15] HeartProCore
+[10 / 20] HeartProCore
+[13 / 19] HeartProCoreTests-product
+[15 / 21] ECGAudit-product
+[17 / 22] HeartProCoreTests-product
+[21 / 24] HeartProCoreTests-product
+[23 / 27] HeartProCoreTests-product
+[24 / 27] HeartProCoreTests-product
+Build complete! (10.82秒)
+Test Suite 'All tests' started at 2026-09-19 18:13:32.648.
+Test Suite 'All tests' passed at 2026-09-19 18:13:32.652.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.004) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test savedFailuresAreTranslatedWhenDisplayed() started.
+◇ Test languageChangesPresentationWithoutChangingSavedAnalysis() started.
+◇ Test ecgHRVNeverBridgesRejectedBeatOrMissingInterval() started.
+◇ Test invalidAndFlatSignalsNeverProduceAHealthyResult() started.
+◇ Test truncatedRisingTIsNotReportedAsAPeak() started.
+◇ Test regularAndGradualRhythmsDoNotBecomePrematureBeats() started.
+◇ Test oldNotesDecodeAndDurationHasAnExplicitEnd() started.
+◇ Test ecgHRVSlowThirtySecondRecordingDoesNotRequireTwentyIntervalsOrRhythmScore() started.
+◇ Test noRRIntervalBridgesMissingSignal() started.
+◇ Test hrvUsesSampleDeviationAndAdjacentPairs() started.
+◇ Test ecgHRVThirtySecondsRetainsBothSidesOfAnExcludedInterval() started.
+◇ Test dailyGroupingUsesCalendarAcrossDST() started.
+◇ Test STSamplesDoNotIncludeTWaveAndUnseparatedUIsUnavailable() started.
+◇ Test dailyHealthPreservesMissingValuesAndCalendarDays() started.
+◇ Test repeatedShortLongSequencesAreDescriptiveCandidates() started.
+◇ Test morphologyRejectsFlatAndDetectsIsolatedAmplitudeChange() started.
+◇ Test envelopePreservesNarrowExtrema() started.
+◇ Test localizationResolvesRegionsAndFallsBackToEnglish() started.
+◇ Test qtcUsesPairedQTAndRRAndRejectsUnstableRhythm() started.
+◇ Test productionScoresAreNeverSynthesizedAndEmptyDaysAreNotZero() started.
+◇ Test overlappingTAndUnstableBaselineSuppressMeasurements() started.
+◇ Test delineationMatchesKnownBoundariesAtMultipleSamplingRates() started.
+◇ Test noiseConfinedToTWaveDoesNotBecomeAQTMeasurement() started.
+◇ Test prematureBeatCandidatesUseTimingAndMorphology() started.
+◇ Test lowSamplingRateAndFlatSignalsHaveExplicitUnavailableResults() started.
+◇ Test interpolationReordersArgumentsAndPreservesTheirContents() started.
+◇ Test inversionAndDCOffsetPreserveTimesAndSignedVoltages() started.
+◇ Test syntheticExperienceHasThreeTodayRecordsAndNeverRealData() started.
+◇ Test segmentStorageRoundTripsAndOldAnalysisStillDecodes() started.
+◇ Test ecgHRVRejectsUnsuitableClassificationsQualityAndTooLittleSignal() started.
+◇ Test repeatingWideCandidatesDoNotRequireAFalseNormalScore() started.
+◇ Test isolatedImpulseDoesNotBecomeAPrematureBeatOrContaminateAdjacentRR() started.
+◇ Test displacedSTUsesRawBaselineWithoutForcingJToZero() started.
+◇ Test ecgHRVUsesKnownFormulaForContinuousRecording() started.
+◇ Test ecgHRVDoesNotBridgeTimeGapsOrUseNoisyIntervals() started.
+◇ Test gapsRejectAffectedBeatsAndNeverJoinPPOrTP() started.
+◇ Test URequiresSeparatedRepeatedSmallDeflections() started.
+◇ Test absentWavesDoNotReceiveFabricatedIntervals() started.
+◇ Test rrPairsDoNotCrossRejectedSignalAndNeverBecomeNN() started.
+◇ Test gapsNoiseShortRecordsAndAFNeverReceiveAnUnqualifiedScore() started.
+◇ Test detectorHandlesBothPolarities() started.
+◇ Test lightweightRecordsKeepSummaryWithoutBeatPayload() started.
+◇ Test rhythmStorageKeepsOldResultsDecodableAndIgnoresIllustrativeScores() started.
+◇ Test adultReferencesRespectLimitsAndAvoidUnsupportedRanges() started.
+✔ Test oldNotesDecodeAndDurationHasAnExplicitEnd() passed after 2.633 seconds.
+✔ Test hrvUsesSampleDeviationAndAdjacentPairs() passed after 2.634 seconds.
+✔ Test invalidAndFlatSignalsNeverProduceAHealthyResult() passed after 2.634 seconds.
+✔ Test dailyGroupingUsesCalendarAcrossDST() passed after 2.634 seconds.
+✔ Test dailyHealthPreservesMissingValuesAndCalendarDays() passed after 2.634 seconds.
+✔ Test savedFailuresAreTranslatedWhenDisplayed() passed after 2.634 seconds.
+✔ Test noRRIntervalBridgesMissingSignal() passed after 2.634 seconds.
+✔ Test envelopePreservesNarrowExtrema() passed after 2.634 seconds.
+✔ Test localizationResolvesRegionsAndFallsBackToEnglish() passed after 2.634 seconds.
+✔ Test ecgHRVSlowThirtySecondRecordingDoesNotRequireTwentyIntervalsOrRhythmScore() passed after 2.634 seconds.
+✔ Test productionScoresAreNeverSynthesizedAndEmptyDaysAreNotZero() passed after 2.634 seconds.
+✔ Test ecgHRVThirtySecondsRetainsBothSidesOfAnExcludedInterval() passed after 2.634 seconds.
+✔ Test languageChangesPresentationWithoutChangingSavedAnalysis() passed after 2.634 seconds.
+✔ Test STSamplesDoNotIncludeTWaveAndUnseparatedUIsUnavailable() passed after 2.634 seconds.
+✔ Test repeatedShortLongSequencesAreDescriptiveCandidates() passed after 2.634 seconds.
+✔ Test lowSamplingRateAndFlatSignalsHaveExplicitUnavailableResults() passed after 2.634 seconds.
+✔ Test interpolationReordersArgumentsAndPreservesTheirContents() passed after 2.634 seconds.
+✔ Test truncatedRisingTIsNotReportedAsAPeak() passed after 2.634 seconds.
+✔ Test morphologyRejectsFlatAndDetectsIsolatedAmplitudeChange() passed after 2.634 seconds.
+✔ Test ecgHRVNeverBridgesRejectedBeatOrMissingInterval() passed after 2.634 seconds.
+✔ Test noiseConfinedToTWaveDoesNotBecomeAQTMeasurement() passed after 2.634 seconds.
+✔ Test qtcUsesPairedQTAndRRAndRejectsUnstableRhythm() passed after 2.634 seconds.
+✔ Test ecgHRVRejectsUnsuitableClassificationsQualityAndTooLittleSignal() passed after 2.634 seconds.
+✔ Test overlappingTAndUnstableBaselineSuppressMeasurements() passed after 2.634 seconds.
+✔ Test segmentStorageRoundTripsAndOldAnalysisStillDecodes() passed after 2.634 seconds.
+✔ Test ecgHRVUsesKnownFormulaForContinuousRecording() passed after 2.634 seconds.
+✔ Test inversionAndDCOffsetPreserveTimesAndSignedVoltages() passed after 2.634 seconds.
+✔ Test repeatingWideCandidatesDoNotRequireAFalseNormalScore() passed after 2.634 seconds.
+✔ Test ecgHRVDoesNotBridgeTimeGapsOrUseNoisyIntervals() passed after 2.634 seconds.
+✔ Test regularAndGradualRhythmsDoNotBecomePrematureBeats() passed after 2.635 seconds.
+✔ Test isolatedImpulseDoesNotBecomeAPrematureBeatOrContaminateAdjacentRR() passed after 2.634 seconds.
+✔ Test rrPairsDoNotCrossRejectedSignalAndNeverBecomeNN() passed after 2.634 seconds.
+✔ Test delineationMatchesKnownBoundariesAtMultipleSamplingRates() passed after 2.634 seconds.
+✔ Test gapsRejectAffectedBeatsAndNeverJoinPPOrTP() passed after 2.634 seconds.
+✔ Test adultReferencesRespectLimitsAndAvoidUnsupportedRanges() passed after 2.634 seconds.
+✔ Test displacedSTUsesRawBaselineWithoutForcingJToZero() passed after 2.701 seconds.
+✔ Test detectorHandlesBothPolarities() passed after 2.863 seconds.
+✔ Test absentWavesDoNotReceiveFabricatedIntervals() passed after 3.073 seconds.
+✔ Test rhythmStorageKeepsOldResultsDecodableAndIgnoresIllustrativeScores() passed after 3.373 seconds.
+✔ Test prematureBeatCandidatesUseTimingAndMorphology() passed after 3.472 seconds.
+✔ Test gapsNoiseShortRecordsAndAFNeverReceiveAnUnqualifiedScore() passed after 4.093 seconds.
+✔ Test URequiresSeparatedRepeatedSmallDeflections() passed after 4.389 seconds.
+✔ Test syntheticExperienceHasThreeTodayRecordsAndNeverRealData() passed after 5.507 seconds.
+✔ Test lightweightRecordsKeepSummaryWithoutBeatPayload() passed after 6.069 seconds.
+✔ Test run with 44 tests in 0 suites passed after 6.070 seconds.

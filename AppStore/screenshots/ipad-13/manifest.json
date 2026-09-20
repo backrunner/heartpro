@@ -1,0 +1,120 @@
+{
+  "bundle_id": "com.alkinum.heartpro",
+  "version": "0.6.0",
+  "build": "1",
+  "device": {
+    "dataPath": "~/Library/Developer/CoreSimulator/Devices/73662148-35B6-4922-BE32-46C415BE1979/data",
+    "dataPathSize": 1671163904,
+    "logPath": "~/Library/Logs/CoreSimulator/73662148-35B6-4922-BE32-46C415BE1979",
+    "udid": "73662148-35B6-4922-BE32-46C415BE1979",
+    "lastUsedAt": "2026-09-20T18:00:46Z",
+    "isAvailable": true,
+    "logPathSize": 327680,
+    "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-13-inch-M5-12GB",
+    "state": "Booted",
+    "name": "HeartPro-AppStore-iPad"
+  },
+  "captured_at": "20260921-020257",
+  "xcresult": "TestResults/AppStore-ipad-13-20260921-020257.xcresult",
+  "data": "synthetic, labelled in the app",
+  "visual_review_complete": true,
+  "screenshots": [
+    {
+      "file": "en-01-history.png",
+      "sha256": "7fdfa431bd24c4e3d586fe5818dd6d7a1702c4c2a1659e23e598034212b9b75f",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "en-02-daily.png",
+      "sha256": "4c0e0ccf0d2f26fe9e1ac2a10200eaa23bfe622f0b5c3b4220b482a9240ac22f",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "en-03-trends.png",
+      "sha256": "aa4efa7b980ab9a012ef2a19b1cb15650411fd29c3992f59d89f837f0f52d785",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "en-04-waveform.png",
+      "sha256": "8b4b2f1dcbcccd08ffd3cf74de038a2688ce2bcf9264035fbb89e4451d6b47b5",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "en-05-note.png",
+      "sha256": "0e921d329af0379fd9c2702eb5b62513866acd9da95e70dd796c799a439d990d",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "en-06-privacy-settings.png",
+      "sha256": "9018f11c6fdc0cb6fc9699a2189dcd8fd81e9cab5951521760f5d3ae43c5b618",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "zh-Hans-01-history.png",
+      "sha256": "c1e9cb1059720c0b4027548b374fc70f78d79ab91b1ab9d5dae9eee2eb16c630",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "zh-Hans-02-daily.png",
+      "sha256": "bf922d28d4c1dea386da4cd6d0de847e55e6b4d501ac965385c19f7cec370e8d",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "zh-Hans-03-trends.png",
+      "sha256": "c9b4e854518c04ab53f7c5057f56c1d37febfe224fe6678ae6de387c78d595d9",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "zh-Hans-04-waveform.png",
+      "sha256": "40a984a8d42b27ea4b2f82c3b4a5680eb6dc21cac7b659a086a0db048961264a",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "zh-Hans-05-note.png",
+      "sha256": "dbcee724c8661710345556c36db92be4b760a8168996cd456f5722b13be71b98",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "file": "zh-Hans-06-privacy-settings.png",
+      "sha256": "efa0992b8e0678d1ddfb6ca55e3c5d8227f7af8f35a39bb2f8d22a50e6bf1491",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    }
+  ],
+  "visual_review_notes": "Reviewed all 12 captures via contact sheet and full-size detail/notes: loaded UI, synthetic labels, readable app locale, portrait framing. System status-bar date follows simulator language. No original PNG edits."
+}
