@@ -1,0 +1,4 @@
+interface:
+  display_name: "HeartPro Guard"
+  short_description: "Guard HeartPro development, design, and commits"
+  default_prompt: "Use $heartpro-guard to implement or review this HeartPro change and check its commit readiness."

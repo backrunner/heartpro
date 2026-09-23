@@ -1,0 +1,41 @@
+name: HeartPro guard
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Check tracked files and guard tests
+        run: |
+          python3 Tools/guard.py tracked
+          python3 -m unittest discover -s Tools/tests -p 'test_guard.py'
+      - name: Check commit messages
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          if [ "$EVENT_NAME" = pull_request ]; then
+            range="$BASE_SHA..$HEAD_SHA"
+          elif [ -n "$BEFORE_SHA" ] && [ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ] && git cat-file -e "$BEFORE_SHA^{commit}"; then
+            range="$BEFORE_SHA..$CURRENT_SHA"
+          else
+            range="$CURRENT_SHA"
+          fi
+          python3 Tools/guard.py commits --range "$range"

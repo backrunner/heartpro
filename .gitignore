@@ -11,3 +11,18 @@ DerivedData-*/
 __pycache__/
 *.py[cod]
 HeartPro-AppStore-*-preparation.zip
+
+# Local configuration and Apple signing/export artifacts.
+.env
+.env.*
+!.env.example
+.dev.vars*
+*.p8
+*.p12
+*.pfx
+*.mobileprovision
+*.provisionprofile
+*.xcarchive/
+*.xcresult/
+*.dSYM/
+*.ipa

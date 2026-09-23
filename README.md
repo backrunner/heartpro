@@ -4,6 +4,8 @@
 
 ## 运行
 
+开发、设计与提交统一遵循 [HeartPro Guard](.agents/skills/heartpro-guard/SKILL.md)。首次克隆先运行 `rtk proxy python3 Tools/install_hooks.py`，启用暂存内容和 Conventional Commits 信息校验。
+
 要求：Xcode 26+、iOS 18+ SDK 和 XcodeGen。当前开发环境为 Xcode 27 / Swift 6.4。
 
 ```sh
