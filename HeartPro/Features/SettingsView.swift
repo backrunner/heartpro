@@ -7,6 +7,7 @@ struct SettingsView: View {
     @Environment(\.openURL) private var openURL
     @State private var confirmClear = false
     @State private var showGuide = false
+    @State private var showNotice = false
     var body: some View {
         List {
             Section {
@@ -42,6 +43,8 @@ struct SettingsView: View {
                 } label: { Label(model.isDemo ? L10n.text("退出演示，查看我的数据") : L10n.text("体验示例"), systemImage: "play.circle") }
             }
             Section(L10n.text("关于")) {
+                Button(L10n.text("使用须知")) { showNotice = true }
+                    .accessibilityIdentifier("openUsageNotice")
                 Link(L10n.text("隐私政策"), destination: URL(string: "https://heartpro.alkinum.com/\(L10n.language == "zh-Hans" ? "zh/" : "")privacy/")!)
                     .accessibilityIdentifier("privacyPolicy")
                 NavigationLink(L10n.text("分析能力与限制")) { methods }
@@ -54,6 +57,7 @@ struct SettingsView: View {
         }.navigationTitle(L10n.text("设置")).navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button(L10n.text("完成")) { dismiss() } } }
             .sheet(isPresented: $showGuide) { UsageGuideView() }
+            .sheet(isPresented: $showNotice) { UsageNoticeView(acknowledging: false) { showNotice = false } }
             .confirmationDialog(L10n.text("清空所有本地心电副本、分析与备忘？此操作不能撤销。"), isPresented: $confirmClear, titleVisibility: .visible) {
                 Button(L10n.text("清空本地数据"), role: .destructive) { Task { await model.clearLocalData() } }
             }

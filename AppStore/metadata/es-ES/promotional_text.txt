@@ -1,0 +1,1 @@
+Reúne tus ECG, frecuencia cardíaca y VFC de Salud de Apple. Revisa las ondas, añade notas y exporta PDF. Todo el análisis se realiza en tu dispositivo.

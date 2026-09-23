@@ -147,14 +147,14 @@
   },
   {
     "id": 20,
-    "source": "仅供参考，不能用于医疗用途",
+    "source": "仅供记录参考，不构成医疗建议，不能替代专业医疗服务。",
     "files": [
       "HeartPro/Design/DesignSystem.swift"
     ]
   },
   {
     "id": 21,
-    "source": "不能替代医生诊断，也不能排除心脏问题",
+    "source": "不提供医疗建议，也不能判断心脏是否健康",
     "files": [
       "HeartPro/Design/DesignSystem.swift"
     ]
@@ -1238,7 +1238,7 @@
   },
   {
     "id": 174,
-    "source": "应用会估算波峰位置、心跳间隔和波形变化，并标出值得回看的片段。它还不能确定早搏类型，也不能诊断房颤等疾病。",
+    "source": "应用估算波峰位置、心跳间隔和波形差异，供你结合原图回看；不据此判断疾病、健康风险或治疗方案。",
     "files": [
       "HeartPro/Features/ECGDetailView.swift"
     ]
@@ -3205,7 +3205,7 @@
   },
   {
     "id": 454,
-    "source": "至少连续出现了 3 组。这个变化本身不能确定是否有早搏。",
+    "source": "至少连续出现了 3 组。这是本次记录内相邻间隔的时序比较。",
     "files": [
       "Packages/HeartProCore/Sources/HeartProCore/AnalysisText.swift"
     ]
@@ -3639,7 +3639,7 @@
   },
   {
     "id": 516,
-    "source": "心电记录报告",
+    "source": "心电记录导出",
     "files": [
       "HeartPro/Data/ReportContents.swift"
     ]
@@ -3850,7 +3850,7 @@
   },
   {
     "id": 546,
-    "source": "了解每日心脏健康",
+    "source": "了解每日记录",
     "files": [
       "HeartPro/Features/TimelineView.swift"
     ]
@@ -3893,7 +3893,7 @@
   },
   {
     "id": 552,
-    "source": "今日心脏健康",
+    "source": "今日记录",
     "files": [
       "HeartPro/Features/TimelineView.swift"
     ]
@@ -3943,14 +3943,14 @@
   },
   {
     "id": 559,
-    "source": "每日心脏健康",
+    "source": "每日记录",
     "files": [
       "HeartPro/Features/InsightsView.swift"
     ]
   },
   {
     "id": 560,
-    "source": "心脏健康趋势",
+    "source": "记录趋势",
     "files": [
       "HeartPro/Features/InsightsView.swift"
     ]
@@ -4090,13 +4090,6 @@
     ]
   },
   {
-    "id": 580,
-    "source": "测量值达到或超过参考上限。可能与心房传导变慢有关，也可能是噪声或 P 波边界识别偏差；反复出现时可请医生复核心电图。",
-    "files": [
-      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
-    ]
-  },
-  {
     "id": 581,
     "source": "成人参考：PR 120–200 ms",
     "files": [
@@ -4106,20 +4099,6 @@
   {
     "id": 582,
     "source": "年龄、心率及药物会影响 PR，参考范围不能单独用于诊断。",
-    "files": [
-      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
-    ]
-  },
-  {
-    "id": 583,
-    "source": "测量值低于参考范围。可能与传导较快、预激或起点识别偏差有关，需结合 P 波与 QRS 形态复核。",
-    "files": [
-      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
-    ]
-  },
-  {
-    "id": 584,
-    "source": "测量值高于参考范围。迷走神经张力、部分减慢心率的药物或房室传导延迟都可能影响 PR；请结合原图和用药情况复核。",
     "files": [
       "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
     ]
@@ -4139,22 +4118,8 @@
     ]
   },
   {
-    "id": 587,
-    "source": "测量值达到或超过常用增宽界限。可能与心室传导延迟、起搏或不同起源的心跳有关，也可能是边界识别误差；需结合完整心电图复核。",
-    "files": [
-      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
-    ]
-  },
-  {
     "id": 588,
     "source": "成人 QTc：男性约 350–450 ms；女性约 360–460 ms",
-    "files": [
-      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
-    ]
-  },
-  {
-    "id": 589,
-    "source": "需结合性别、年龄和校正公式判断。QTc 偏长可能与药物、电解质或遗传因素有关；偏短也可能与电解质或遗传因素有关。心率及 T 波终点误差会改变估算结果。",
     "files": [
       "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
     ]
@@ -4169,20 +4134,6 @@
   {
     "id": 591,
     "source": "仅适用于成人安静状态。呼吸、运动、睡眠、体能和药物都可能改变心跳间隔。",
-    "files": [
-      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
-    ]
-  },
-  {
-    "id": 592,
-    "source": "间隔较短表示心率较快。运动、紧张、咖啡因、发热等都可能造成变化；若静息时持续偏快或伴不适，可咨询医生。",
-    "files": [
-      "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
-    ]
-  },
-  {
-    "id": 593,
-    "source": "间隔较长表示心率较慢。睡眠、较好的体能、药物或传导变化都可能造成变化；漏检波峰也会拉长间隔，需要复核原图。",
     "files": [
       "Packages/HeartProCore/Sources/HeartProCore/SegmentReference.swift"
     ]
@@ -4413,7 +4364,7 @@
   },
   {
     "id": 626,
-    "source": "轻点模块右上角的加号展开。分段测量提供参考范围和偏离原因；波形对比帮助你看清心跳的形状。",
+    "source": "轻点模块右上角的加号展开。分段测量展示本次记录的数值分布和测量方法；波形对比展示形状差异。",
     "files": [
       "HeartPro/Features/UsageGuideView.swift"
     ]
@@ -4616,14 +4567,14 @@
   },
   {
     "id": 655,
-    "source": "需要留意的提示",
+    "source": "记录中的来源分类",
     "files": [
       "HeartPro/Features/UsageGuideView.swift"
     ]
   },
   {
     "id": 656,
-    "source": "Apple 提示心率偏高、偏低或房颤时，卡片会突出显示。进入详情可查看原始分类和测量结果。",
+    "source": "卡片注明 Apple 原始分类或合成示例分类，供你回看来源记录；这些标签不是 HeartPro 的诊断。",
     "files": [
       "HeartPro/Features/UsageGuideView.swift"
     ]
@@ -4718,5 +4669,49 @@
     "files": [
       "HeartPro/Design/DesignSystem.swift"
     ]
+  },
+  {
+    "id": 670,
+    "source": "使用须知"
+  },
+  {
+    "id": 671,
+    "source": "使用前，请先了解"
+  },
+  {
+    "id": 672,
+    "source": "HeartPro 用于整理、浏览和比较已有记录。自动测量、候选标记、参考值及评分只供回看，不构成医疗建议。"
+  },
+  {
+    "id": 673,
+    "source": "不能替代专业医生、诊断、治疗或其他医疗服务。不要依据应用结果自行诊断、开始或停止用药，或延误就医。"
+  },
+  {
+    "id": 674,
+    "source": "自动分析尚未经过真实 Apple Watch 记录的独立准确度验证。高分、没有提示或缺少数值都不表示身体健康或没有风险。"
+  },
+  {
+    "id": 675,
+    "source": "如有身体不适，请及时就医；持续胸痛、明显气短或晕厥时，请立即联系当地急救服务。不要等待应用分析，本应用不提供急救监测或提醒。"
+  },
+  {
+    "id": 676,
+    "source": "我已了解，继续"
+  },
+  {
+    "id": 677,
+    "source": "参考值仅作一般资料，不根据本次测量推断病因或给出用药、治疗建议。单导联估算可能有误差，不能用于判断健康状况。"
+  },
+  {
+    "id": 678,
+    "source": "不能替代专业医疗"
+  },
+  {
+    "id": 679,
+    "source": "分析结果有局限"
+  },
+  {
+    "id": 680,
+    "source": "不适时，请及时就医"
   }
 ]

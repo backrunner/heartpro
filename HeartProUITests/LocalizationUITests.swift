@@ -6,7 +6,7 @@ final class LocalizationUITests: XCTestCase {
     @MainActor func testGermanWithAccessibilityTextSize() throws {
         let app = XCUIApplication()
         app.launchArguments = ["--uitesting", "--skip-guide", "--demo", "--light", "--large-text", "-AppleLanguages", "(de)", "-AppleLocale", "de_DE"]
-        app.launch()
+        app.launchHeartPro()
         XCTAssertTrue(app.buttons["ecgRecord-0"].waitForExistence(timeout: 30))
         app.buttons["ecgRecord-0"].tap()
         let qrs = app.buttons["segment-qrs"]
@@ -42,7 +42,7 @@ final class LocalizationUITests: XCTestCase {
             let app = XCUIApplication()
             app.launchArguments = ["--uitesting", "--skip-guide", "--demo", language.code == "ko" ? "--dark" : "--light",
                                    "-AppleLanguages", "(\(language.code))", "-AppleLocale", language.locale]
-            app.launch()
+            app.launchHeartPro()
             XCTAssertTrue(app.buttons["ecgRecord-0"].waitForExistence(timeout: 30), language.code)
             capture("\(language.code)-timeline")
             app.buttons["settings"].tap()

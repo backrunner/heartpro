@@ -1,0 +1,65 @@
+[
+  {
+    "name": "guidelines",
+    "url": "https://developer.apple.com/app-store/review/guidelines/",
+    "status": 200,
+    "final_url": "https://developer.apple.com/app-store/review/guidelines/",
+    "bytes": 236636,
+    "checked_at": "2026-09-22T17:16:42.976180+00:00"
+  },
+  {
+    "name": "external-testing",
+    "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/invite-external-testers/",
+    "status": 200,
+    "final_url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/invite-external-testers/",
+    "bytes": 380563,
+    "checked_at": "2026-09-22T17:16:43.162852+00:00"
+  },
+  {
+    "name": "upload",
+    "url": "https://developer.apple.com/help/app-store-connect/manage-builds/upload-builds/",
+    "status": 200,
+    "final_url": "https://developer.apple.com/help/app-store-connect/manage-builds/upload-builds/",
+    "bytes": 372313,
+    "checked_at": "2026-09-22T17:16:43.848402+00:00"
+  },
+  {
+    "name": "privacy",
+    "url": "https://developer.apple.com/app-store/app-privacy-details/",
+    "status": 200,
+    "final_url": "https://developer.apple.com/app-store/app-privacy-details/",
+    "bytes": 133129,
+    "checked_at": "2026-09-22T17:16:42.969126+00:00"
+  },
+  {
+    "name": "upcoming",
+    "url": "https://developer.apple.com/news/upcoming-requirements/",
+    "status": 200,
+    "final_url": "https://developer.apple.com/news/upcoming-requirements/",
+    "bytes": 135541,
+    "checked_at": "2026-09-22T17:16:43.725911+00:00"
+  },
+  {
+    "name": "enrollment",
+    "url": "https://developer.apple.com/help/account/membership/updating-your-account-information/",
+    "status": 200,
+    "final_url": "https://developer.apple.com/help/account/membership/updating-your-account-information/",
+    "bytes": 196798,
+    "checked_at": "2026-09-22T17:16:43.120264+00:00"
+  },
+  {
+    "name": "website-privacy",
+    "url": "https://heartpro.alkinum.com/privacy/",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+  },
+  {
+    "name": "website-zh-privacy",
+    "url": "https://heartpro.alkinum.com/zh/privacy/",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+  },
+  {
+    "name": "website-support",
+    "url": "https://heartpro.alkinum.com/support/",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+  }
+]

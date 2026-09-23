@@ -1,0 +1,99 @@
+[
+  {
+    "name": "platform-version",
+    "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information/",
+    "checked_at": "2026-09-22T18:08:39.956885+00:00",
+    "status": 200,
+    "final_url": "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information/",
+    "excerpts": [
+      "This property is required and can be localized. | Keywords | One or more keywords (each greater than two characters) describing your app. You can provide up to 100 bytes of content. Your app is searchable by app name and company name, so you shouldn't duplicate these values in the keyword list. Names of other apps or companies aren't allowed. | This property is required and can be localized. | Support URL | The URL of the support website you plan to provide for users, which displays on the App Store for users who have downloaded your app. This URL must lead to actual contact information (legal address, email address, telephone number), as may be required by local law, so that users can reach you regarding app issues, general feedback, and feature enhancement requests. Specify the entire URL, including the protocol (for example,",
+      "Keywords | One or more keywords (each greater than two characters) describing your app. You can provide up to 100 bytes of content. Your app is searchable by app name and company name, so you shouldn't duplicate these values in the keyword list. Names of other apps or companies aren't allowed. | This property is required and can be localized. | Support URL | The URL of the support website you plan to provide for users, which displays on the App Store for users who have downloaded your app. This URL must lead to actual contact information (legal address, email address, telephone number), as may be required by local law, so that users can reach you regarding app issues, general feedback, and feature enhancement requests. Specify the entire URL, including the protocol (for example, | http://support.example.com"
+    ]
+  },
+  {
+    "name": "age-rating",
+    "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/",
+    "checked_at": "2026-09-22T18:08:39.957313+00:00",
+    "status": 200,
+    "final_url": "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/",
+    "excerpts": [
+      "Medical or Wellness | Medical or Treatment Information: | Content that provides diagnoses or guidance around the management of medical conditions or health and wellness. | May include: medication guidance, emergency medical care, or treatment information. | Health or Wellness Topics: | Content that provides self-care or lifestyle recommendations.",
+      "May include: medication guidance, emergency medical care, or treatment information. | Health or Wellness Topics: | Content that provides self-care or lifestyle recommendations. | May include: calorie tracking, dieting advice, or exercise recommendations. | Sexuality or Nudity | Mature or Suggestive Themes:",
+      "Medical or Wellness: | Infrequent medical or treatment information | Sexuality or Nudity: | Infrequent sexual content or nudity | Violence: | Frequent cartoon or fantasy violence",
+      "Medical or Wellness: | Frequent medical or treatment information | Sexuality or Nudity: | Frequent mature or suggestive themes | 18+ | Apps with this rating may contain instances of the following content that may not be suitable for children under the age of 18:",
+      "Medical or Wellness: | Infrequent medical or treatment information | Sexuality or Nudity: | Infrequent mature or suggestive themes | Infrequent sexual content or nudity | Violence:",
+      "Medical or Wellness: | Frequent medical or treatment information | A18 | Apps that contain: | Sexuality or Nudity: | Frequent mature or suggestive themes",
+      "Medical or Wellness: | Health or wellness topics | Sexuality or Nudity: | Infrequent mature or suggestive themes | Violence: | Infrequent cartoon or fantasy violence",
+      "Medical or Wellness: | Infrequent medical or treatment information | Sexuality or Nudity: | Frequent mature or suggestive themes | Infrequent sexual content or nudity | Violence:",
+      "Medical or Wellness: | Frequent medical or treatment information | 19+ | Apps that contain: | Mature Themes: | Frequent alcohol, tobacco, or drug use or references",
+      "Medical or Wellness: | Infrequent medical or treatment information | Health and wellness topics | Sexuality or Nudity: | Infrequent mature or suggestive themes | Infrequent sexual content or nudity",
+      "Medical or Wellness: | Frequent medical or treatment information | Sexuality or Nudity: | Frequent mature or suggestive themes | Violence: | Infrequent realistic violence",
+      "Apps with this rating may contain instances of the following content that may not be suitable for children under the age of 12: | Infrequent or mild medical or treatment-focused content | Infrequent or mild references to alcohol, tobacco, or drug use | Infrequent or mild sexual content or nudity | Frequent or intense contests | Frequent or intense profanity or crude humor",
+      "Frequent or intense mature or suggestive content | Frequent or intense medical or treatment-focused content | Frequent or intense references to alcohol, tobacco, or drug use | Frequent or intense sexual content or nudity | Frequent or intense realistic violence | Unrated"
+    ]
+  },
+  {
+    "name": "localization",
+    "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/localize-app-information/",
+    "checked_at": "2026-09-22T18:08:39.957590+00:00",
+    "status": 200,
+    "final_url": "https://developer.apple.com/help/app-store-connect/manage-app-information/localize-app-information/",
+    "excerpts": [
+      ". | For example, if you select English as the primary language for your app in App Store Connect, and it\u2019s the only language you provide, your app metadata will appear in English in all | App Store countries or regions | . If you localize your app metadata in French, the French localization displays to users whose language setting is in French. The French localization also displays to users in countries or regions where the App Store supports French but not English. Users can search for your app using localized keywords in all countries or regions where the App Store supports French. If no localization matches a user's language setting, the next most relevant localization is used. In other countries or regions, your metadata displays in the primary language (English in this example). | Languages on the App Information page in App Store Connect are part of your app's metadata. This differs from adding languages to your app in Xcode when you localize your binary. | Learn about localizing your app binary.",
+      "App Store countries or regions | . If you localize your app metadata in French, the French localization displays to users whose language setting is in French. The French localization also displays to users in countries or regions where the App Store supports French but not English. Users can search for your app using localized keywords in all countries or regions where the App Store supports French. If no localization matches a user's language setting, the next most relevant localization is used. In other countries or regions, your metadata displays in the primary language (English in this example). | Languages on the App Information page in App Store Connect are part of your app's metadata. This differs from adding languages to your app in Xcode when you localize your binary. | Learn about localizing your app binary. | Learn how to manage the localization with the App Store Connect API. | Important:",
+      "Add a language | When you add a language to your app, screenshots and the properties for the new language default to those of the primary language, except for the description and keywords. When you add a localization from the | platform version section | , it\u2019s automatically added to the shared metadata under | App Information | and to other platforms.",
+      "In Apps, select the app you want to view. | On the top right, click the primary language to display the language pop-up menu. | Scroll down the menu to Not Localized, hold the pointer over the language (and locale) you want to add, then click the add button (+) that appears to the right of the language. | Enter localized metadata\u2014such as descriptions and keywords\u2014for the platform, then click Save. | View descriptions of these properties. | To enter information that is shared across platforms, click App information.",
+      "Scroll down the menu to Not Localized, hold the pointer over the language (and locale) you want to add, then click the add button (+) that appears to the right of the language. | Enter localized metadata\u2014such as descriptions and keywords\u2014for the platform, then click Save. | View descriptions of these properties. | To enter information that is shared across platforms, click App information. | On the top right, click the primary language to display the language pop-up menu. | Hold the pointer over the language (and locale) you want to add, then click the add button (+) that appears.",
+      "To enter information that is shared across platforms, click App information. | On the top right, click the primary language to display the language pop-up menu. | Hold the pointer over the language (and locale) you want to add, then click the add button (+) that appears. | Enter the app name and privacy policy URL for the language or locale, then on the top right, click Save. | View descriptions of these properties. | Edit localizations",
+      "Delete a language | When you delete a language, countries or regions that display app information in that language revert to showing the information entered for the primary language. | In Apps, select the app you want to view. | On the top right, click the primary language to display the language pop-up menu. | In the Localized section, hold the pointer over the language you want to delete and click the delete button (\u2013). | Change the primary language",
+      "In Apps, select the app you want to view. | On the top right, click the primary language to display the language pop-up menu. | In the Localized section, hold the pointer over the language you want to delete and click the delete button (\u2013). | Change the primary language | You can change the primary language for an app. For a language to be selectable as the primary language: | You must have already",
+      "In the Localized section, hold the pointer over the language you want to delete and click the delete button (\u2013). | Change the primary language | You can change the primary language for an app. For a language to be selectable as the primary language: | You must have already | added the language | to a previous version.",
+      "Change the primary language | You can change the primary language for an app. For a language to be selectable as the primary language: | You must have already | added the language | to a previous version. | App Review must approve the new language. If the language hasn\u2019t been approved, submit a version with this localized metadata for approval. Then, select it as your primary language in a subsequent update.",
+      "to a previous version. | App Review must approve the new language. If the language hasn\u2019t been approved, submit a version with this localized metadata for approval. Then, select it as your primary language in a subsequent update. | You must have already uploaded and received App Review approval for screenshots in the language for all supported platforms. The screenshot sizes for this language must match those of your current primary language. If this localization's screenshots were previously derived from another localization, you must first manually upload new screenshots that match your current primary language's sizes and submit a version for approval. Then, change the primary language on a subsequent update. | Learn more about adding screenshots and previews. | Note: | If your app has a",
+      "App Review must approve the new language. If the language hasn\u2019t been approved, submit a version with this localized metadata for approval. Then, select it as your primary language in a subsequent update. | You must have already uploaded and received App Review approval for screenshots in the language for all supported platforms. The screenshot sizes for this language must match those of your current primary language. If this localization's screenshots were previously derived from another localization, you must first manually upload new screenshots that match your current primary language's sizes and submit a version for approval. Then, change the primary language on a subsequent update. | Learn more about adding screenshots and previews. | Note: | If your app has a | custom product page",
+      "In the sidebar, click App Information. | In the Primary Language pop-up menu, choose the new primary language. | On the top right, click Save. | Related | View and edit app information | Provide a custom license agreement"
+    ]
+  },
+  {
+    "name": "privacy",
+    "url": "https://developer.apple.com/app-store/app-privacy-details/",
+    "checked_at": "2026-09-22T18:08:39.957815+00:00",
+    "status": 200,
+    "final_url": "https://developer.apple.com/app-store/app-privacy-details/",
+    "excerpts": [
+      "As you get ready to select your answers from the options presented in App\u00a0Store\u00a0Connect, keep in mind: | You need to identify all of the data you or your third-party partners collect, unless the data meets all of the criteria for optional disclosure listed below. | Your app\u2019s privacy practices should follow the App Review Guidelines and all applicable laws. | You\u2019re responsible for keeping your responses accurate and up to date. If your practices change, update your responses in App\u00a0Store\u00a0Connect. You may update your answers at any time, and you do not need to submit an app update in order to change your answers. | Account Holders, Admins, and App Managers can | learn how to enter their responses",
+      "\u201cThird-party partners\u201d refers to analytics tools, advertising networks, third-party SDKs, or other external vendors whose code you\u2019ve added to your app. | Optional disclosure | Data types that meet all of the following criteria are optional to disclose: | The data is not used for tracking purposes, meaning the data is not linked with Third-Party Data for advertising or advertising measurement purposes, or shared with a data broker. For details, see the | Tracking | section.",
+      "You collect different types of data from users depending on whether the user is a child, whether they are a free or paid user, whether they opt in, where they live, or for some other reason. | Please disclose all data collected from your app, unless it meets all of the criteria outlined in the Optional Disclosure section. You may use the Privacy Choices or Privacy Policy links to provide additional detail about how your data collection practices may vary. | You use Apple frameworks or services, such as MapKit, CloudKit, or App\u00a0Analytics. | If you collect data about your app from Apple frameworks or services, you should indicate what data you collect and how you use it. You are not responsible for disclosing data collected by Apple. | You use location, device identifiers, and other sensitive data, but only on device, and the data is never sent to a server. | Data that is processed only on device is not \u201ccollected\u201d and does not need to be disclosed in your answers. If you derive anything from that data and send it off device, the resulting data should be considered separately."
+    ]
+  },
+  {
+    "name": "public-privacy",
+    "url": "https://heartpro.alkinum.com/privacy/",
+    "checked_at": "2026-09-22T18:08:39.958078+00:00",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+  },
+  {
+    "name": "public-support",
+    "url": "https://heartpro.alkinum.com/support/",
+    "checked_at": "2026-09-22T18:08:39.958176+00:00",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+  },
+  {
+    "name": "beta-information",
+    "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/provide-test-information/",
+    "status": 200,
+    "checked_at": "2026-09-22T18:13:16.347952+00:00"
+  },
+  {
+    "name": "medical-device-status",
+    "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/declare-regulated-medical-device-status/",
+    "status": 200,
+    "checked_at": "2026-09-22T18:13:17.136985+00:00"
+  },
+  {
+    "name": "set-age-rating",
+    "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-an-app-age-rating/",
+    "status": 200,
+    "checked_at": "2026-09-22T18:13:17.110326+00:00"
+  }
+]

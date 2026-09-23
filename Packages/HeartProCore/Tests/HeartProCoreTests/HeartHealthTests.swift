@@ -112,6 +112,19 @@ import Testing
     #expect(ECGSegment.pr.adultReference.position(.nan) == .contextRequired)
 }
 
+@Test func referenceCopyNeverUsesPersonalMeasurementsToSuggestCausesOrTreatment() {
+    for language in L10n.languages {
+        L10n.withLanguage(language) {
+            for segment in ECGSegment.allCases {
+                let reference = segment.adultReference
+                for value: Double? in [nil, -100, 0, 120, 201, 455, 2_000, .nan] {
+                    #expect(reference.explanation(value) == reference.context)
+                }
+            }
+        }
+    }
+}
+
 @Test func dailyHealthPreservesMissingValuesAndCalendarDays() throws {
     var calendar = Calendar(identifier: .gregorian)
     calendar.timeZone = try #require(TimeZone(identifier: "America/New_York"))

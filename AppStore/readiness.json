@@ -1,7 +1,7 @@
 {
   "bundle_id": "com.alkinum.heartpro",
   "submission_ready": false,
-  "user_decision": "Retain all analysis features; validate accuracy before submission.",
+  "user_decision": "Retain analysis features; show a dedicated first-use notice and avoid individualized disease, medication or treatment advice. Disclaimer does not replace accuracy or regulatory evidence.",
   "gates": {
     "independent_watch_accuracy": {
       "complete": false,
@@ -32,5 +32,19 @@
       "evidence": "connect-settings.md"
     }
   },
-  "deferred_by_user": "Formal operator, launch regions, email provider and retention details deferred; website legal pages remain drafts."
+  "deferred_by_user": "Individual membership and external testing confirmed; formal operator identity, hosting/email provider and retention details still missing.",
+  "distribution_intent": {
+    "account_type": "individual",
+    "territories": "As many as supported and lawfully eligible after territory review",
+    "testflight": "external"
+  },
+  "external_testflight_ready": false,
+  "external_testflight_gates": [
+    "independent_watch_accuracy",
+    "medical_regulatory_and_operator_review",
+    "public_policies_and_support_https",
+    "real_device_healthkit_flow",
+    "signed_archive_and_connect_validation",
+    "store_account_metadata"
+  ]
 }

@@ -234,8 +234,8 @@ struct MetricValue: View {
 struct ReferenceFooter: View {
     var body: some View {
         VStack(spacing: 5) {
-            Label(L10n.text("仅供参考，不能用于医疗用途"), systemImage: "cross.case")
-            Text(L10n.text("不能替代医生诊断，也不能排除心脏问题"))
+            Label(L10n.text("仅供记录参考，不构成医疗建议，不能替代专业医疗服务。"), systemImage: "cross.case")
+            Text(L10n.text("不提供医疗建议，也不能判断心脏是否健康"))
             Text(L10n.text("请在作出医疗决定前咨询医生。"))
         }.font(.caption2).foregroundStyle(.secondary).frame(maxWidth: .infinity).padding(.vertical, 15)
     }

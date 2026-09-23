@@ -34,7 +34,7 @@ import HeartProCore
         let headerBottom = max(100, 80 + max(dateHeight, sourceHeight) + 8)
         rule(at: headerBottom)
         rule(at: 792)
-        text(L10n.text("仅供参考，不能用于医疗用途"), x: margin, y: 803, width: 445, size: 7.5, color: Self.secondary)
+        text(L10n.text("仅供记录参考，不构成医疗建议，不能替代专业医疗服务。"), x: margin, y: 803, width: 445, size: 7.5, color: Self.secondary)
         text(String(format: "%02d", pageNumber), x: 512, y: 801, width: 45, size: 9, weight: .medium, alignment: .right)
         y = headerBottom + 12
     }

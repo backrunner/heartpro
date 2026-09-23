@@ -36,9 +36,8 @@ import SwiftData
                             }.accessibilityHidden(true)
                         }
                     }
-                    .task { await model.start(); model.refresh() }
                     .onChange(of: scenePhase) { _, phase in
-                        if phase == .active { model.refresh() }
+                        if phase == .active && model.hasAcknowledgedUsageNotice { model.refresh() }
                         else if phase == .background { model.cancelSync() }
                     }
             } else if let startupError {
@@ -68,10 +67,35 @@ private struct UITestTextSize: ViewModifier {
 }
 
 struct RootView: View {
+    @AppStorage("acknowledgedUsageNoticeVersion") private var acknowledgedUsageNoticeVersion = 0
     @AppStorage("hasSeenUsageGuide") private var hasSeenUsageGuide = false
     @State private var showGuide = false
+    @State private var acknowledgedInSession = false
     @Environment(AppModel.self) private var model
+    private var needsNotice: Bool {
+        let args = ProcessInfo.processInfo.arguments
+        let testReset = args.contains("--uitesting") && args.contains("--reset-notice") && !acknowledgedInSession
+        return acknowledgedUsageNoticeVersion < UsageNoticeView.currentVersion || testReset
+    }
     var body: some View {
+        Group {
+            if needsNotice {
+                UsageNoticeView {
+                    acknowledgedInSession = true
+                    acknowledgedUsageNoticeVersion = UsageNoticeView.currentVersion
+                }
+            } else {
+                tabs
+                    .task {
+                        model.hasAcknowledgedUsageNotice = true
+                        await model.start()
+                        model.refresh()
+                    }
+            }
+        }
+    }
+
+    @ViewBuilder private var tabs: some View {
         @Bindable var model = model
         TabView(selection: $model.selectedTab) {
             Tab(L10n.text("心电"), systemImage: "waveform.path.ecg", value: 0) {

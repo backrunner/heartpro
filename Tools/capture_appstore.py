@@ -2,6 +2,7 @@
 """Capture and export real XCTest screenshots; never resize or fabricate app screens."""
 import argparse, datetime, hashlib, json, os, pathlib, plistlib, shutil, signal, struct, subprocess, sys, tempfile
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+LANGUAGES = [entry['language'] for entry in json.loads((ROOT / 'AppStore/localizations.json').read_text())['localizations']]
 p = argparse.ArgumentParser()
 p.add_argument('--device', required=True, help='Dedicated simulator UDID, not a personal device')
 p.add_argument('--group', choices=['iphone-6.9', 'ipad-13'], required=True)
@@ -51,11 +52,12 @@ try:
         chosen = {}
         for item in attachments:
             name = item.get('suggestedHumanReadableName', '')
-            for language in ['en', 'zh-Hans']:
+            for language in LANGUAGES:
                 for index, screen in enumerate(['history', 'daily', 'trends', 'waveform', 'note', 'privacy-settings'], 1):
                     key = f'{language}-{index:02d}-{screen}'
                     if name.startswith(key): chosen[key] = export / item['exportedFileName']
-        if len(chosen) != 12: raise ValueError(f'Expected 12 named screenshots, found {len(chosen)}; inspect {result}')
+        expected_count = 6 * len(LANGUAGES)
+        if len(chosen) != expected_count: raise ValueError(f'Expected {expected_count} named screenshots, found {len(chosen)}; inspect {result}')
         accepted = {'iphone-6.9': {(1320,2868),(1290,2796),(1260,2736)}, 'ipad-13': {(2064,2752),(2048,2732)}}[a.group]
         for key, file in chosen.items():
             data = file.read_bytes()
@@ -74,6 +76,6 @@ try:
             'version':info['CFBundleShortVersionString'],'build':info['CFBundleVersion'],'device':device,
             'captured_at':stamp,'xcresult':str(result.relative_to(ROOT)),'data':'synthetic, labelled in the app',
             'visual_review_complete':False,'screenshots':items}, indent=2)+'\n')
-        print(f'Exported 12 screenshots to {destination}; visual review is still required.')
+        print(f'Exported {expected_count} screenshots to {destination}; visual review is still required.')
 except (subprocess.SubprocessError, ValueError, StopIteration, AssertionError, OSError) as error:
     sys.exit(f'Capture failed without promoting incomplete assets: {error}')

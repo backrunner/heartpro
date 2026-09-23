@@ -6,12 +6,16 @@ final class AppStoreScreenshotTests: XCTestCase {
 
     @MainActor func testEnglishScreenshots() throws { try captureJourney(language: "en", locale: "en_US") }
     @MainActor func testChineseScreenshots() throws { try captureJourney(language: "zh-Hans", locale: "zh_CN") }
+    @MainActor func testJapaneseScreenshots() throws { try captureJourney(language: "ja", locale: "ja_JP") }
+    @MainActor func testKoreanScreenshots() throws { try captureJourney(language: "ko", locale: "ko_KR") }
+    @MainActor func testGermanScreenshots() throws { try captureJourney(language: "de", locale: "de_DE") }
+    @MainActor func testSpanishScreenshots() throws { try captureJourney(language: "es", locale: "es_ES") }
 
     @MainActor private func captureJourney(language: String, locale: String) throws {
         XCUIDevice.shared.orientation = .portrait
         let app = XCUIApplication()
         app.launchArguments = ["--uitesting", "--skip-guide", "--demo", "--light", "-AppleLanguages", "(\(language))", "-AppleLocale", locale]
-        app.launch()
+        app.launchHeartPro()
         XCTAssertTrue(app.buttons["dailyOverview"].waitForExistence(timeout: 60))
         XCTAssertTrue(app.buttons["ecgRecord-0"].waitForExistence(timeout: 60))
         capture("\(language)-01-history")

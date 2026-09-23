@@ -120,15 +120,9 @@ private struct SegmentCard: View {
     private var details: some View {
         VStack(alignment: .leading, spacing: 18) {
             let reference = segment.adultReference
-            let median = analysis?.statistics(segment.metrics[0]).median
             VStack(alignment: .leading, spacing: 8) {
                 Label(reference.range, systemImage: "ruler").font(.subheadline.weight(.medium))
-                if let median {
-                    if reference.position(median) == .above || reference.position(median) == .below {
-                        Text(L10n.text("本次中位数偏离参考范围")).font(.caption.weight(.semibold)).foregroundStyle(HP.amber)
-                    }
-                }
-                Text(reference.explanation(median)).font(.caption).foregroundStyle(.secondary)
+                Text(reference.context).font(.caption).foregroundStyle(.secondary)
             }.padding(12).background(HP.teal.opacity(0.06), in: RoundedRectangle(cornerRadius: 12))
                 .accessibilityIdentifier("segmentReference-\(segment.rawValue)")
             if let analysis {

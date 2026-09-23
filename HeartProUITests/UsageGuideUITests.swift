@@ -7,7 +7,7 @@ final class UsageGuideUITests: XCTestCase {
         let app = XCUIApplication()
         let arguments = ["--uitesting", "--light", "-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN"]
         app.launchArguments = arguments + ["--reset-guide"]
-        app.launch()
+        app.launchHeartPro()
         XCTAssertTrue(app.staticTexts["先看今天，再看趋势"].waitForExistence(timeout: 15))
         app.buttons["guideNext"].tap()
         XCTAssertTrue(app.staticTexts["找到一条心电，读懂一次测量"].exists)
@@ -19,7 +19,7 @@ final class UsageGuideUITests: XCTestCase {
         XCTAssertTrue(app.buttons["connectHealth"].waitForExistence(timeout: 5))
         app.terminate()
         app.launchArguments = arguments
-        app.launch()
+        app.launchHeartPro()
         XCTAssertTrue(app.buttons["connectHealth"].waitForExistence(timeout: 15))
         XCTAssertFalse(app.buttons["guideNext"].exists)
         app.buttons["settings"].tap()
@@ -34,7 +34,7 @@ final class UsageGuideUITests: XCTestCase {
     @MainActor func testGuideWithLargeTextCanBeClosedAndReopened() {
         let app = XCUIApplication()
         app.launchArguments = ["--uitesting", "--reset-guide", "--large-text", "--dark", "-AppleLanguages", "(de)", "-AppleLocale", "de_DE"]
-        app.launch()
+        app.launchHeartPro()
         XCTAssertTrue(app.buttons["guideNext"].waitForExistence(timeout: 15))
         for _ in 0..<3 { app.buttons["guideNext"].tap() }
         XCTAssertTrue(app.buttons["guidePrevious"].isHittable)

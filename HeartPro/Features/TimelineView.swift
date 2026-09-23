@@ -190,7 +190,7 @@ struct DailyHero: View {
     var summary: DailySummary
     var health: HeartHealthSnapshot
     var isDemo: Bool
-    var title = L10n.text("今日心脏健康")
+    var title = L10n.text("今日记录")
     var navigates = false
     @ScaledMetric(relativeTo: .body) private var columnWidth = 95.0
     private var bpm: Double? { Statistics.median(health.heartRates.map(\.average)) }
@@ -218,18 +218,6 @@ struct DailyHero: View {
 struct ECGCard: View {
     var record: ECGRecord
     var hasNote = false
-    // Highlight the recorded source classification, not research beat-difference counts.
-    // Absence of a notice is not a conclusion about clinical risk.
-    private var noticeColor: Color? {
-        switch record.classification {
-        case .atrialFibrillation: HP.coral
-        case .highHeartRate, .lowHeartRate: HP.amber
-        default: nil
-        }
-    }
-    private var heartRateColor: Color {
-        record.classification == .highHeartRate || record.classification == .lowHeartRate ? HP.amber : .primary
-    }
     var body: some View {
         // Plain rows avoid a glass compositor and a full medical grid for every ECG.
         VStack(alignment: .leading, spacing: 10) {
@@ -238,7 +226,7 @@ struct ECGCard: View {
                     .font(.system(.headline, design: .rounded)).monospacedDigit()
                 Spacer()
                 Text(record.bpm?.integerText ?? "—").font(.system(.title3, design: .rounded, weight: .semibold))
-                    .foregroundStyle(heartRateColor)
+                    .foregroundStyle(.primary)
                 Text("bpm").font(.caption).foregroundStyle(.secondary)
                 if hasNote { Image(systemName: "note.text").font(.caption).foregroundStyle(HP.coral) }
                 CardNavigationIndicator().padding(.leading, 4)
@@ -247,12 +235,8 @@ struct ECGCard: View {
                 ECGSparkline(points: record.preview).frame(height: 42).accessibilityHidden(true)
             }
             HStack(spacing: 8) {
-                if let noticeColor {
-                    Label(record.classification.title, systemImage: "exclamationmark.circle.fill")
-                        .font(.subheadline.weight(.semibold)).foregroundStyle(noticeColor)
-                } else {
-                    Text(record.classification.title).font(.subheadline)
-                }
+                Text((record.isDemo ? L10n.text("合成分类：") : L10n.text("Apple 分类：")) + record.classification.title)
+                    .font(.subheadline)
                 Spacer(minLength: 0)
                 if record.failure != nil {
                     Text(L10n.text("分析未完成")).foregroundStyle(.secondary)

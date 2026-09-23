@@ -80,7 +80,7 @@ final class HeartProUITests: XCTestCase {
         attachment(app, name: "16-large-text-note")
         app.terminate()
         app.launchArguments = ["--uitesting", "--skip-guide", "--demo", "--light", "-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN"]
-        app.launch()
+        app.launchHeartPro()
         XCTAssertTrue(app.buttons["ecgRecord-0"].waitForExistence(timeout: 30))
         app.buttons["ecgRecord-0"].tap()
         XCTAssertTrue(app.buttons["measureWaveform"].waitForExistence(timeout: 5))
@@ -90,7 +90,7 @@ final class HeartProUITests: XCTestCase {
         attachment(app, name: "17-waveform-zoom")
         app.terminate()
         app.launchArguments = ["--uitesting", "--skip-guide", "--demo", "--dark", "-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN"]
-        app.launch()
+        app.launchHeartPro()
         XCTAssertTrue(app.buttons["ecgRecord-0"].waitForExistence(timeout: 30))
         app.buttons["ecgRecord-0"].tap()
         XCTAssertTrue(app.buttons["measureWaveform"].waitForExistence(timeout: 5))
@@ -144,7 +144,7 @@ final class HeartProUITests: XCTestCase {
         let app = launch(["--demo", "--light"])
         XCTAssertTrue(app.buttons["dailyOverview"].waitForExistence(timeout: 30))
         app.buttons["dailyOverview"].tap()
-        XCTAssertTrue(app.navigationBars["每日心脏健康"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.navigationBars["每日记录"].waitForExistence(timeout: 5))
         attachment(app, name: "06-daily")
         app.buttons["前一天或上一时段"].tap()
         app.buttons["后一天或下一时段"].tap()
@@ -198,7 +198,7 @@ final class HeartProUITests: XCTestCase {
     }
 
     @MainActor private func launch(_ arguments: [String]) -> XCUIApplication {
-        let app = XCUIApplication(); app.launchArguments = ["--uitesting", "--skip-guide", "-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN"] + arguments; app.launch(); return app
+        let app = XCUIApplication(); app.launchArguments = ["--uitesting", "--skip-guide", "-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN"] + arguments; app.launchHeartPro(); return app
     }
     @MainActor private func scrollTo(_ element: XCUIElement, app: XCUIApplication) {
         for _ in 0..<14 { if element.isHittable { return }; app.swipeUp() }

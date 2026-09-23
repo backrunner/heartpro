@@ -1,0 +1,4 @@
+$ playwright test
+Error: http://127.0.0.1:48621 is already used, make sure that nothing is running on the port/url or set reuseExistingServer:true in config.webServer.
+
+[ELIFECYCLE] Test failed. See above for more details.

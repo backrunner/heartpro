@@ -90,7 +90,7 @@ extension ReviewEvent {
             let intervals = detail.components(separatedBy: " ms").first ?? ""
             return L10n.text("间隔为 \(intervals) ms；与本次记录的中位数相比，前一次较短，后一次较长。")
         case .repeating:
-            return L10n.text("至少连续出现了 3 组。这个变化本身不能确定是否有早搏。")
+            return L10n.text("至少连续出现了 3 组。这是本次记录内相邻间隔的时序比较。")
         case .amplitude:
             let storedAmplitude = detail.replacingOccurrences(of: "局部基线校正振幅 ", with: "").replacingOccurrences(of: " mV", with: "")
             let amplitude = Double(storedAmplitude).map { String(format: "%.2f mV", locale: L10n.locale, $0) } ?? storedAmplitude

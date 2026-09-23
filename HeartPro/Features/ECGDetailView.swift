@@ -103,7 +103,7 @@ struct ECGDetailView: View {
         Surface {
             VStack(alignment: .leading, spacing: 16) {
                 HStack(alignment: .firstTextBaseline) {
-                    Text(record.classification.title).font(.headline)
+                    Text((record.isDemo ? L10n.text("合成分类：") : L10n.text("Apple 分类：")) + record.classification.title).font(.headline)
                 }
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: overviewColumnWidth), alignment: .leading)], alignment: .leading, spacing: 18) {
                     MetricValue(value: record.bpm?.integerText ?? "—", unit: "bpm", label: L10n.text("平均心率"))
@@ -190,7 +190,7 @@ struct ECGDetailView: View {
         AnalysisSurface(padding: 0) {
             DisclosureGroup(L10n.text("分析方法与限制")) {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text(L10n.text("应用会估算波峰位置、心跳间隔和波形变化，并标出值得回看的片段。它还不能确定早搏类型，也不能诊断房颤等疾病。"))
+                    Text(L10n.text("应用估算波峰位置、心跳间隔和波形差异，供你结合原图回看；不据此判断疾病、健康风险或治疗方案。"))
                     Text(L10n.text("Apple Watch 只有一个观察心脏电活动的角度，也就是单导联，不能可靠识别或排除心梗、心肌缺血。自动测量尚未经过真实 Watch 数据的准确度验证，不用于判断心电是否正常。"))
                     Text(L10n.text("分析版本：\(record.analysis?.version ?? L10n.text("未分析"))"))
                 }.font(.caption).foregroundStyle(.secondary).padding(.top, 12)

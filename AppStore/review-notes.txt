@@ -1,28 +1,29 @@
-PREPARATION DRAFT — update evidence and remove this header only after release gates pass.
+HeartPro — iPhone and iPad, iOS/iPadOS 18+
+Bundle ID: com.alkinum.heartpro
 
-HeartPro (com.alkinum.heartpro) is a native iPhone/iPad app for reviewing existing Apple Health ECGs, heart rate and HRV. No account, login, subscription, third-party tracking or remote analysis service is used. No demo credentials are required.
+No sign-in or demo credentials are required. There are no in-app purchases, subscriptions, ads, third-party tracking SDKs or remote analysis services.
 
-Review without a Watch or Health records:
-1. Launch the app; read or close the usage guide.
-2. Select “Try examples first” on the connection screen. All example records are explicitly synthetic, generated locally, and never written to Health.
-3. The ECG tab shows history. Tap the daily overview for summaries and trends, or use the calendar to browse dates.
-4. Open an ECG to inspect the waveform, zoom, two-point measurement, notes and automatic estimates. Use the expand control for full-screen viewing.
-5. Add a note and select a context item. In demo mode the note stays in memory and cannot write to Health.
-6. Tap the share icon to generate a PDF, then tap the share icon again to open the iOS share sheet.
-7. Settings includes Help, Health access, analysis limitations, data management and a privacy-policy link.
+REVIEW WITHOUT A WATCH OR HEALTH RECORDS
+1. On first launch, read the usage notice and tap “I understand, continue”. Read or dismiss the usage guide.
+2. Select “Try examples first”. Synthetic examples are labelled in the app, generated locally and never written to Apple Health. This is the same example mode available to every user.
+3. In the ECG tab, open the daily overview to see summaries and trends. Return to history and open a recording to inspect its waveform, zoom, two-point measurement and full-screen view.
+4. Scroll through the recording details to review interval/segment estimates, short-recording HRV, premature-beat candidates and the rhythm reference score. Information buttons explain methods, missing values and limitations. Apple’s stored classification and synthetic classifications are identified by source.
+5. Add a note and choose a context item. In example mode, notes stay in memory and Health writes are disabled.
+6. Tap the share icon to generate a PDF; tap the share icon again to choose a destination in the system share sheet.
+7. Settings → Usage notice reopens the first-use notice. Settings also contains Help, Health access, analysis limitations, privacy links and local-data controls.
 
-For real records, use “Connect Apple Health” and explicitly grant the desired read access. ECG recording requires a compatible Apple Watch with ECG available in its region; the app does not record an ECG. iPad can only read records available in Health on that iPad. Empty Health read results do not prove that permission was granted.
+HEALTH ACCESS
+“Connect Apple Health” requests read access to ECGs, heart rate and SDNN. HeartPro does not record ECGs. New ECG recordings require a compatible Apple Watch and regional ECG availability. On iPad, records must be available in Health on that iPad. HealthKit does not disclose whether read permission was denied; an empty result is not proof of authorization.
 
-HealthKit reads ECG, heart rate and SDNN. Optional symptom writes are requested only when the user chooses to save selected symptoms to Health. Symptoms are separate HeartPro entries; original ECGs are read-only. A denied write preserves the local note. The app never saves synthetic data or its own automated findings to Health. Clearing local data does not remove original Health records or independent symptoms already saved there.
+Write access is requested only when a user chooses to save supported symptoms. These become separate HeartPro entries in Health; original ECGs are read-only. Denied writes preserve the local note. Synthetic data and automated findings are never written to Health. Clearing local data removes local records, notes and temporary PDFs, but not original Health records, independent symptoms already saved there or files shared elsewhere.
 
-Data handling: protected local storage, no CloudKit, no analytics/ads, no uploads of health records or notes. Exported PDFs are shared only at the user's direction. Health permission can be revoked in Apple Health; local copies and temporary reports can be cleared in HeartPro Settings.
+DATA AND ANALYSIS
+Health records, notes and analysis are processed on device, with protected local storage and no HeartPro iCloud synchronization. PDFs are shared only at the user's direction. No health-record uploads, remote AI or developer telemetry are implemented.
 
-Medical methodology and accuracy:
-Apple's stored classification is source data and is distinguished from HeartPro's deterministic local algorithms. Local methods include quality checks, peak/interval estimation, segment boundaries, short-recording HRV and candidate rhythm review. No diagnoses, emergency monitoring or health-risk probabilities are provided. The rhythm reference score is a rule-based unflagged-beat fraction, not a health score. Details and references: https://heartpro.alkinum.com/docs/methods/
+Local deterministic methods estimate peaks, intervals, waveform segments, short-recording HRV and premature-beat candidates. The rhythm reference score is the rounded fraction of reviewable beats not flagged by the rules; it is not a health score or risk probability. General reference values do not produce personalized disease, medication or treatment advice. No diagnosis, continuous monitoring or emergency alerts are provided. The usage notice is shown before record loading or Health access, to all users.
 
-DO NOT SUBMIT YET: independent real Apple Watch accuracy evidence is not complete. Attach the completed validation report, frozen algorithm/build identity, dataset provenance, measurement coverage/error, candidate sensitivity/PPV with confidence intervals and failure-mode analysis before submitting. The existing small public Holter benchmark and synthetic tests are not representative Watch validation. Regulatory status and seller identity must be assessed for launch territories. No regulatory clearance or Apple endorsement is claimed.
+Independent accuracy validation on real Apple Watch recordings has not been completed. Synthetic tests and public Holter benchmarks do not establish Watch accuracy. No clinical validation, regulatory clearance or Apple endorsement is claimed.
 
-Support: support@heartpro.alkinum.com
+Methods: https://heartpro.alkinum.com/docs/methods/
 Privacy: https://heartpro.alkinum.com/privacy/
-Support URL: https://heartpro.alkinum.com/support/
-App Review contact name/phone/email: to be supplied in App Store Connect; do not invent these fields.
+Support: https://heartpro.alkinum.com/support/

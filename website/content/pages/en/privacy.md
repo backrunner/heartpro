@@ -36,3 +36,6 @@ If you choose to email support, your email provider and our chosen mailbox provi
 
 ## Requests, rights and updates
 Revoke Health consent through Apple Health and delete local data in HeartPro. We cannot remotely retrieve or erase app data that stays only on your device. For support correspondence or privacy questions, contact the address above, including requests for access, correction or deletion where applicable. Statutory rights, lawful bases, operator details, international-transfer safeguards and complaint contacts will be specified for the operator and launch regions before publication. Material changes will be reflected in this policy and its effective date.
+
+## TestFlight testing
+When installed through TestFlight, Apple processes tester, installation, usage and crash information under its TestFlight terms and privacy disclosures. Feedback and screenshots you choose to submit may also be available to the developer. This is separate from HeartPro itself not uploading health records. Avoid including unnecessary personal health information in feedback or attachments. See [Apple’s TestFlight privacy information](https://www.apple.com/legal/privacy/data/en/test-flight/).

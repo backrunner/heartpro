@@ -1,0 +1,1 @@
+Erste Version im App Store: EKG-Verlauf, Tagesübersichten und Trends, Kurvenansicht, lokale Schätzwerte, Notizen und PDF-Berichte.

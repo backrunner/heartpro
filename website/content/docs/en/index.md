@@ -3,6 +3,9 @@ title: "Get started"
 description: "Connect Apple Health, browse ECGs and review your daily trends."
 ---
 
+On first launch, read and acknowledge the dedicated usage notice before the guide or Health authorization. HeartPro’s analysis is not medical advice and cannot replace clinicians or medical services. Seek prompt care if you feel unwell and contact local emergency services in an emergency.
+
+
 ## Connect your records
 Read or close the first-use guide. Select **Connect Apple Health**, then choose whether to allow ECG, heart-rate and HRV reads. Records must already be available in Health on this device. HeartPro cannot record an ECG or supply missing readings.
 

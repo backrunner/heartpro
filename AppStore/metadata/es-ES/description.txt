@@ -1,0 +1,26 @@
+HeartPro reúne los registros cardíacos que ya tienes en Salud de Apple para que puedas revisar los cambios del día y conservar el contexto de cada medición.
+
+REVISA TUS REGISTROS
+• Explora tu historial de ECG y busca por fecha.
+• Consulta resúmenes diarios de frecuencia cardíaca y variabilidad de la frecuencia cardíaca (VFC), además de tendencias por día, semana, mes o año.
+• Desplázate por las ondas originales del ECG de una derivación, amplíalas o ábrelas a pantalla completa.
+• Selecciona dos puntos para comparar diferencias de tiempo y voltaje.
+
+CONSERVA EL CONTEXTO
+Añade notas, síntomas y las circunstancias de la medición a cada ECG. Si lo deseas, guarda los síntomas compatibles como entradas independientes en Salud de Apple, sin modificar el ECG original. Exporta un PDF y elige el destinatario con la hoja de compartir del sistema.
+
+ANÁLISIS LOCAL DE REFERENCIA
+Consulta estimaciones de intervalos entre latidos, segmentos de onda, VFC de registros cortos y posibles cambios del ritmo junto al registro original. Los valores automáticos son estimaciones informativas. Cuando la señal no permite medir un valor, se deja en blanco. La clasificación registrada por Apple se identifica por separado de los cálculos de HeartPro.
+
+PRIVACIDAD
+Sin cuenta, publicidad ni seguimiento. Los registros de salud, las notas y el análisis permanecen en tu dispositivo. HeartPro no sube datos de salud a servidores del desarrollador ni los sincroniza con iCloud. Tú controlas los permisos y lo que compartes, y puedes borrar los datos locales en Ajustes.
+
+REQUISITOS
+iOS/iPadOS 18 o posterior. Para usar datos personales necesitas registros accesibles en Salud de Apple en ese dispositivo. Para registrar un ECG nuevo necesitas un Apple Watch compatible y que la función ECG esté disponible en tu región. HeartPro no registra ECG por sí mismo. En el iPad, los registros deben estar sincronizados con Salud en ese iPad. Los ejemplos, identificados claramente como sintéticos, permiten explorar la app sin compartir datos de salud.
+
+LIMITACIONES IMPORTANTES
+Todo el contenido es informativo: no constituye asesoramiento médico ni sustituye a profesionales o servicios médicos. HeartPro no diagnostica, trata, monitoriza continuamente ni ofrece alertas de emergencia. Las mediciones automáticas no están validadas clínicamente y no permiten determinar si un ECG es normal. Las marcas de posibles eventos y la puntuación de referencia del ritmo no son diagnósticos, probabilidades de riesgo ni puntuaciones de salud. La VFC estimada en ECG cortos no equivale a la VFC estandarizada de cinco minutos. Un ECG de una derivación no puede detectar ni descartar de forma fiable un infarto o una isquemia. Consulta a un médico antes de tomar decisiones médicas. Ante dolor torácico persistente, dificultad respiratoria intensa o desmayo, contacta inmediatamente con los servicios de emergencia locales. No esperes al análisis de la app.
+
+Soporte: support@heartpro.alkinum.com
+Privacidad (en inglés): https://heartpro.alkinum.com/privacy/
+Métodos (en inglés): https://heartpro.alkinum.com/docs/methods/

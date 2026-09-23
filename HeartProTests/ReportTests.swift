@@ -55,6 +55,12 @@ final class ReportTests: XCTestCase {
                 try assertVisibleWaveform(on: XCTUnwrap(pdf.page(at: 0)), strips: 5)
                 let content = try XCTUnwrap(pdf.string)
                 let compact = content.components(separatedBy: .whitespacesAndNewlines).joined()
+                for notice in [
+                    "仅供记录参考，不构成医疗建议，不能替代专业医疗服务。",
+                    "参考值仅作一般资料，不根据本次测量推断病因或给出用药、治疗建议。单导联估算可能有误差，不能用于判断健康状况。"
+                ] {
+                    XCTAssertTrue(compact.contains(L10n.lookup(notice).components(separatedBy: .whitespacesAndNewlines).joined()), language)
+                }
                 for segment in ECGSegment.supportedCases {
                     XCTAssertTrue(compact.contains(segment.title.components(separatedBy: .whitespacesAndNewlines).joined()), language + " " + segment.title)
                 }

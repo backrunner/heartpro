@@ -27,7 +27,7 @@ import HeartProCore
         let rows = max(1, Int(ceil(wave.duration / secondsPerRow)))
         for row in 0..<rows {
             if row == 0 || layout.y + rowHeight > layout.bottom {
-                layout.begin(L10n.text("心电记录报告"))
+                layout.begin(L10n.text("心电记录导出"))
                 layout.metrics([
                     (L10n.text("心率"), "\(record.bpm?.integerText ?? "—") bpm"),
                     (L10n.text("记录时长"), L10n.text("\(record.duration.integerText) 秒")),
@@ -151,7 +151,7 @@ import HeartProCore
             layout.table(headers: headers, rows: rows, widths: widths, continuation: segment.title, numericFrom: 1)
             if !reasonText.isEmpty { layout.paragraph(reasonText, size: 8) }
             let reference = segment.adultReference
-            layout.paragraph(reference.range + "\n" + reference.explanation(segments.statistics(segment.metrics[0]).median), size: 8)
+            layout.paragraph(reference.range + "\n" + reference.context, size: 8)
         }
     }
 

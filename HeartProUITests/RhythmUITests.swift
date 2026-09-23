@@ -5,7 +5,7 @@ final class RhythmUITests: XCTestCase {
     @MainActor func testGermanLargeTextCandidates() throws {
         let app = XCUIApplication()
         app.launchArguments = ["--uitesting", "--skip-guide", "--demo", "--rhythm-demo", "--light", "--large-text", "-AppleLanguages", "(de)", "-AppleLocale", "de_DE"]
-        app.launch()
+        app.launchHeartPro()
         XCTAssertTrue(app.buttons["ecgRecord-0"].waitForExistence(timeout: 30))
         app.buttons["ecgRecord-0"].tap()
         let narrow = app.buttons["ectopy-8"]
@@ -32,7 +32,7 @@ final class RhythmUITests: XCTestCase {
     @MainActor func testCandidatesRulesUWaveAndOriginalTrace() throws {
         let app = XCUIApplication()
         app.launchArguments = ["--uitesting", "--skip-guide", "--demo", "--rhythm-demo", "--light", "-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN"]
-        app.launch()
+        app.launchHeartPro()
         XCTAssertTrue(app.buttons["ecgRecord-0"].waitForExistence(timeout: 30))
         app.buttons["ecgRecord-0"].tap()
         let narrow = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'ectopy-' AND label CONTAINS '波形较窄'")).firstMatch

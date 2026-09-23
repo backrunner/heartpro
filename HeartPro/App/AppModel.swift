@@ -24,6 +24,7 @@ import HeartProCore
     var lastSynced: Date?
     var isDemo = false
     var hasConnected = false
+    var hasAcknowledgedUsageNotice = false
     var selectedTab = 0
     private var demoRecords: [ECGRecord] = []
     private var demoNotes: [JournalNote] = []

@@ -4,13 +4,15 @@ import { mkdir } from 'node:fs/promises';
 const routes = ['/', '/support/', '/privacy/', '/terms/', '/release/', '/docs/', '/docs/data/', '/docs/methods/', '/zh/', '/zh/support/', '/zh/privacy/', '/zh/terms/', '/zh/release/', '/docs/zh/', '/docs/zh/data/', '/docs/zh/methods/'];
 test('all content routes, legal drafts and page metadata', async ({ page }) => {
   for (const path of routes) {
-    const response = await page.goto(path);
-    expect(response?.status(), path).toBe(200);
-    await expect(page.locator('main')).toHaveCount(1);
-    await expect(page.locator('h1')).toHaveCount(1);
-    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /https:\/\/heartpro\.alkinum\.com\//);
-    await expect(page.locator('html')).toHaveAttribute('lang', path.includes('zh') ? /zh/ : 'en');
-    if (/privacy|terms/.test(path)) await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+    await test.step(path, async () => {
+      const response = await page.goto(path);
+      expect(response?.status(), path).toBe(200);
+      await expect(page.locator('main')).toHaveCount(1);
+      await expect(page.locator('h1')).toHaveCount(1);
+      await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /https:\/\/heartpro\.alkinum\.com\//);
+      await expect(page.locator('html')).toHaveAttribute('lang', path.includes('zh') ? /zh/ : 'en');
+      if (/privacy|terms/.test(path)) await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+    });
   }
 });
 for (const language of ['en', 'zh']) {

@@ -1,0 +1,1 @@
+EKGs, Herzfrequenz und HRV aus Apple Health im Überblick. Kurven ansehen, Notizen ergänzen und PDFs exportieren. Die Analyse bleibt auf deinem Gerät.

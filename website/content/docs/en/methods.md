@@ -11,6 +11,9 @@ HeartPro runs deterministic Swift signal processing locally. It checks signal qu
 
 Candidate premature beats combine timing and waveform rules. Wide/narrow categories do not establish ventricular/atrial origin. The rhythm reference score is the proportion of beats not flagged by these rules; it is not a health score, risk estimate or assurance that a rhythm is safe. Both false positives and missed events can occur.
 
+
+Reference ranges are general information. Neither the interface nor exported PDFs infer disease causes or offer medication or treatment explanations from an individual measurement. Deviations are not presented as personal diagnoses. A usage notice appears before first use and remains available in Settings. This notice does not replace algorithm validation or applicable regulatory requirements.
+
 ## Two different HRV sources
 Apple Health HRV uses the SDNN samples supplied by HealthKit. HRV estimated from a single short ECG is separate: it uses eligible intervals and does not bridge rejected gaps for adjacent-interval statistics. The filtering rules cannot confirm normal beats. A roughly 30-second estimate is not equivalent to standardized five-minute HRV or its reference values.
 

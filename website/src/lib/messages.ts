@@ -21,7 +21,7 @@ export const en: Record<string, string> = {
   'privacy.body': 'Analysis runs on your device. No account, advertising or health-data uploads to a developer server. You control Health access and decide when to share a report.',
   'privacy.link': 'Read our privacy policy',
   'limits.title': 'A companion for reviewing records.',
-  'limits.body': 'HeartPro is not a diagnostic tool. Automatic measurements remain unvalidated on independently annotated Apple Watch recordings. They cannot determine whether your heart is healthy or rule out a heart problem. Consult a doctor before making medical decisions.',
+  'limits.body': 'HeartPro does not provide medical advice and cannot replace professional medical care. Automatic measurements remain unvalidated on independently annotated Apple Watch recordings. They cannot determine whether your heart is healthy or rule out a heart problem. Consult a doctor before making medical decisions.',
   'limits.link': 'Understand the methods and limits',
   'support.title': 'A question about your records?', 'support.body': 'Start with the guide, or reach us directly.', 'support.action': 'Get support'
 };
@@ -46,7 +46,7 @@ export const zh: Record<string, string> = {
   'privacy.kicker': '从设计开始保护隐私', 'privacy.title': '你的健康数据，', 'privacy.second': '留在你的设备上。',
   'privacy.body': '分析在本机完成，无需账号、没有广告，不向开发者服务器上传健康数据。健康权限由你控制，报告由你决定是否分享。', 'privacy.link': '阅读隐私政策',
   'limits.title': '帮助回看记录，不作医学判断。',
-  'limits.body': '自动测量尚未经过独立标注的真实 Apple Watch 记录验证，不能判断心脏是否健康，也不能排除心脏问题。请在作出医疗决定前咨询医生。',
+  'limits.body': '所有内容不构成医疗建议，不能替代专业医生或医疗服务。自动测量尚未经过真实 Apple Watch 记录的独立准确度验证，不能判断健康状况或排除心脏问题。身体不适请及时就医，紧急情况请立即求助。',
   'limits.link': '了解分析方法与能力边界',
   'support.title': '使用中遇到问题？', 'support.body': '先看看使用指南，也可以直接联系我们。', 'support.action': '获取支持',
   'nav.footer': '页脚导航',

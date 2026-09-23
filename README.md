@@ -85,4 +85,6 @@ rtk proxy swift Tools/GenerateIcon.swift HeartPro/Resources/Assets.xcassets/AppI
 
 ## App Store 准备
 
+外部测试请按[本项目 Xcode → TestFlight 指引](AppStore/testflight-guide.zh-CN.md)操作。当前新增首次使用须知（先确认再进入指南/健康同步，设置可重看），保留分析能力，同时移除根据个人测量解释病因或用药的输出；Apple 来源分类明确标识。提醒不代表已通过医疗用途、个人主体或全球分发的审查。[本轮验证与未完成事项](AppStore/validation/compliance-2026-09-22.md)。
+
 应用 Bundle ID 固定为 `com.alkinum.heartpro`。中英上架文案、图标、当前 iPhone/iPad 截图、隐私问卷及待完成审核项见 [App Store 材料](AppStore/README.md)，中英产品网站见 [website](website/README.md)。保留全部分析功能；独立真实 Apple Watch 准确度验证完成前不提交审核。当前网站未部署，主体等资料按用户决定暂时跳过，隐私条款保留草稿；历史截图仅供构图参考。

@@ -1,0 +1,10 @@
+Please read the usage notice shown on first launch. HeartPro’s automatic measurements, candidate markers, reference values and scores are not medical advice and cannot replace qualified clinicians or medical services. Seek prompt care if unwell and contact local emergency services for urgent symptoms; do not wait for the app’s analysis.
+
+Please test:
+1. Acknowledge the usage notice, open the guide, and reopen the notice from Settings.
+2. Use “Try examples first” to review records, original waveforms, zoom, interval measurements and trends without granting Health access.
+3. Optionally connect your own Apple Health records and check full, partial, denied and revoked access. Compare displayed source classifications and records with the Health app.
+4. Add a local note. Only choose symptom writes voluntarily; selected symptoms are separate Health entries and do not alter original ECGs.
+5. Export a PDF and check the waveform, long notes and limitations. Clear local data and confirm local records and temporary PDFs are removed while original Health records remain.
+
+Include the app version, device, OS, language and steps in feedback. Avoid unnecessary personal health records, ECGs, PDFs or sensitive screenshots; inspect TestFlight screenshots before submitting. Automatic analysis has not undergone independent accuracy validation on real Watch data. Do not use this test to assess your health or change medical care.

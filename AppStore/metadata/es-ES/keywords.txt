@@ -1,0 +1,1 @@
+corazón,hrv,pulso,ondas,diario,historial,variabilidad,salud,pdf

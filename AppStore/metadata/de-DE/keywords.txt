@@ -1,0 +1,1 @@
+herz,ekg,hrv,puls,kurve,tagebuch,verlauf,variabilität,gesundheit,pdf

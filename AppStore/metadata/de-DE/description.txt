@@ -1,0 +1,26 @@
+HeartPro bündelt die bereits in Apple Health gespeicherten Herzaufzeichnungen. So kannst du Veränderungen im Alltag und die Umstände einzelner Messungen nachvollziehen.
+
+AUFZEICHNUNGEN ANSEHEN
+• EKG-Verlauf nach Datum durchsuchen.
+• Tagesübersichten zu Herzfrequenz und HRV sowie Tages-, Wochen-, Monats- und Jahrestrends ansehen.
+• Durch originale Einkanal-EKG-Kurven scrollen, sie vergrößern oder im Vollbild öffnen.
+• Zwei Punkte auswählen, um Zeit- und Spannungsunterschiede zu vergleichen.
+
+DEN KONTEXT FESTHALTEN
+Ergänze EKGs um Notizen, Symptome und Messumstände. Auf Wunsch kannst du unterstützte Symptome als separate Einträge in Apple Health speichern. Das ursprüngliche EKG wird nicht verändert. Exportiere ein PDF und wähle den Empfänger über die Teilen-Funktion des Systems.
+
+LOKALE REFERENZANALYSE
+Sieh dir geschätzte Schlagintervalle, Kurvenabschnitte, HRV kurzer EKGs und mögliche Rhythmusänderungen neben der Originalaufzeichnung an. Automatische Werte sind unverbindliche Schätzungen. Wenn das Signal keine Messung erlaubt, bleibt der Wert leer. Apples gespeicherte Klassifizierung wird getrennt von HeartPros Berechnungen gekennzeichnet.
+
+DATENSCHUTZ
+Kein Konto, keine Werbung und kein Tracking. Gesundheitsaufzeichnungen, Notizen und Analysen bleiben auf deinem Gerät. HeartPro lädt keine Gesundheitsdaten auf Entwicklerserver hoch und synchronisiert sie nicht mit iCloud. Du bestimmst Zugriffsrechte und Freigaben und kannst lokale Daten in den Einstellungen löschen.
+
+VORAUSSETZUNGEN
+iOS/iPadOS 18 oder neuer. Für persönliche Daten sind Aufzeichnungen erforderlich, auf die Apple Health auf diesem Gerät Zugriff bietet. Zum Aufzeichnen neuer EKGs sind eine kompatible Apple Watch und die regionale Verfügbarkeit der EKG-Funktion nötig. HeartPro zeichnet selbst keine EKGs auf. Auf dem iPad müssen die Daten bereits mit Health auf diesem iPad synchronisiert sein. Klar gekennzeichnete synthetische Beispiele ermöglichen das Ausprobieren ohne Freigabe von Gesundheitsdaten.
+
+WICHTIGE GRENZEN
+Alle Inhalte dienen der Information und sind keine medizinische Beratung. Sie ersetzen weder qualifizierte Ärzte noch medizinische Leistungen. HeartPro bietet keine Diagnose, Behandlung, kontinuierliche Überwachung oder Notfallwarnungen. Automatische Messungen sind nicht klinisch validiert und können nicht feststellen, ob ein EKG normal ist. Kandidatenmarkierungen und der Rhythmus-Referenzwert sind weder Krankheitsdiagnosen noch Risikowahrscheinlichkeiten oder Gesundheitswerte. HRV-Schätzungen aus kurzen EKGs sind nicht mit standardisierter Fünf-Minuten-HRV gleichzusetzen. Ein Einkanal-EKG kann einen Herzinfarkt oder eine Ischämie nicht zuverlässig erkennen oder ausschließen. Besprich medizinische Entscheidungen mit einem Arzt. Wende dich bei anhaltenden Brustschmerzen, starker Atemnot oder Ohnmacht sofort an den örtlichen Rettungsdienst. Warte nicht auf die Analyse der App.
+
+Support: support@heartpro.alkinum.com
+Datenschutz (Englisch): https://heartpro.alkinum.com/privacy/
+Methoden (Englisch): https://heartpro.alkinum.com/docs/methods/

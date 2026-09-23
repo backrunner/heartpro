@@ -18,8 +18,8 @@
 17|Expanded|展開中|펼쳐짐|Ausgeklappt|Expandido
 18|Collapsed|折りたたみ中|접힘|Eingeklappt|Contraído
 19|Done|完了|완료|Fertig|Listo
-20|For reference only. Not for medical use.|参考情報です。医療用途には使用できません。|참고용이며 의료 목적으로 사용할 수 없습니다|Nur zur Information. Nicht für medizinische Zwecke.|Solo como referencia. No apto para uso médico.
-21|Cannot replace a doctor's diagnosis or rule out heart problems|医師の診断に代わるものではなく、心臓の問題も否定できません|의사의 진단을 대신하거나 심장 문제를 배제할 수 없습니다|Ersetzt keine ärztliche Diagnose und schließt Herzprobleme nicht aus|No sustituye el diagnóstico médico ni descarta problemas cardíacos
+20|For reviewing records only. Not medical advice or a substitute for professional medical care.|記録を振り返るための参考情報です。医療上の助言や専門の医療サービスの代わりにはなりません。|기록 참고용이며 의학적 조언이나 전문 의료 서비스를 대신하지 않습니다.|Nur zur Rückschau auf Aufzeichnungen. Keine medizinische Beratung und kein Ersatz für professionelle medizinische Versorgung.|Solo para revisar registros. No es asesoramiento médico ni sustituye la atención médica profesional.
+21|No medical advice or assessment of heart health|医療上の助言や心臓の健康状態の判定は行いません|의학적 조언이나 심장 건강 상태의 판단을 제공하지 않습니다|Keine medizinische Beratung oder Beurteilung der Herzgesundheit|No ofrece asesoramiento médico ni evalúa la salud del corazón
 22|Your data stays on your device|データはすべて端末内に保存|모든 데이터는 기기에만 저장됩니다|Deine Daten bleiben auf deinem Gerät|Tus datos permanecen en tu dispositivo
 23|Reading recent ECGs…|最近の心電図を読み込み中…|최근 심전도를 불러오는 중…|Neueste EKGs werden geladen …|Leyendo ECG recientes…
 24|ECGs indexed: {0}|{0}件の心電図を登録済み|심전도 {0}개 색인 완료|Erfasste EKGs: {0}|ECG indexados: {0}

@@ -28,15 +28,15 @@ struct UsageGuideView: View {
                     VStack(alignment: .leading, spacing: 24) {
                         switch page {
                         case 0:
-                            lesson("heart", L10n.text("今日心脏健康"), L10n.text("快速了解今天的心率、HRV 和心电记录。轻点卡片可查看每日详情。"))
+                            lesson("heart", L10n.text("今日记录"), L10n.text("快速了解今天的心率、HRV 和心电记录。轻点卡片可查看每日详情。"))
                             lesson("chart.xyaxis.line", L10n.text("趋势"), L10n.text("按周、月或年观察变化。先看自己一段时间的走势，不必只盯着某一次高低。"))
                         case 1:
                             lesson("calendar", L10n.text("按日期查找"), L10n.text("在心电记录上方轻点日历，直接找到某一天，再切换前一天或后一天。"))
                             lesson("arrow.up.right", L10n.text("打开记录"), L10n.text("轻点整张卡片查看详情。右上角的箭头表示可以进入下一页。"))
-                            lesson("exclamationmark.circle", L10n.text("需要留意的提示"), L10n.text("Apple 提示心率偏高、偏低或房颤时，卡片会突出显示。进入详情可查看原始分类和测量结果。"))
+                            lesson("exclamationmark.circle", L10n.text("记录中的来源分类"), L10n.text("卡片注明 Apple 原始分类或合成示例分类，供你回看来源记录；这些标签不是 HeartPro 的诊断。"))
                         case 2:
                             lesson("waveform.path.ecg", L10n.text("原始心电图"), L10n.text("轻点右上角可横屏全屏查看。顶部标出测得的波段与间隔，轻点可查看时长；也能放大或用尺子选择两点测量。"))
-                            lesson("plus", L10n.text("分段测量与波形对比"), L10n.text("轻点模块右上角的加号展开。分段测量提供参考范围和偏离原因；波形对比帮助你看清心跳的形状。"))
+                            lesson("plus", L10n.text("分段测量与波形对比"), L10n.text("轻点模块右上角的加号展开。分段测量展示本次记录的数值分布和测量方法；波形对比展示形状差异。"))
                             lesson("heart.text.clipboard", L10n.text("节律分析"), L10n.text("查看心跳间隔、节奏变化和提前出现的心跳线索。自动分析只能帮助回看，不能代替诊断。"))
                         default:
                             lesson("chart.dots.scatter", L10n.text("本次 ECG 的 HRV"), L10n.text("30 秒心电也能估算 HRV。聚集图中每个点代表相邻的两次心跳间隔；越集中，间隔越接近，并非越集中就越健康。"))

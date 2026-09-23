@@ -101,7 +101,7 @@ struct InsightsView: View {
                 ReferenceFooter()
             }.padding(20).frame(maxWidth: 760).frame(maxWidth: .infinity)
         }
-        .background(AppBackground()).navigationTitle(section == 0 ? L10n.text("每日心脏健康") : L10n.text("心脏健康趋势")).navigationBarTitleDisplayMode(.inline)
+        .background(AppBackground()).navigationTitle(section == 0 ? L10n.text("每日记录") : L10n.text("记录趋势")).navigationBarTitleDisplayMode(.inline)
         .task(id: "\(date)-\(range)-\(section)-\(model.isDemo)-\(model.dataRevision)") { await load() }
         .onChange(of: date) { _, _ in selectedDate = nil }
         .onChange(of: range) { _, _ in selectedDate = nil }
