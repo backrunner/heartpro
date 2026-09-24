@@ -88,8 +88,9 @@ final class LocalizationUITests: XCTestCase {
             let health = app.buttons["healthHRV"]
             scrollTo(health, app: app); health.tap()
             XCTAssertTrue(app.segmentedControls["insightsSection"].waitForExistence(timeout: 5))
-            XCTAssertTrue(app.buttons["trendMetric-bpm"].exists, language.code)
-            XCTAssertTrue(app.buttons["trendMetric-hrv"].exists, language.code)
+            XCTAssertTrue(app.staticTexts["trendTitle-bpm"].exists, language.code)
+            expectation(for: NSPredicate { _, _ in app.staticTexts["trendTitle-hrv"].isHittable }, evaluatedWith: nil)
+            waitForExpectations(timeout: 5)
             XCTAssertFalse(app.buttons["trendMetric-score"].exists, language.code)
             capture("\(language.code)-trends")
             app.terminate()

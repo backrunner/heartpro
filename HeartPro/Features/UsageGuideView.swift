@@ -29,7 +29,7 @@ struct UsageGuideView: View {
                         switch page {
                         case 0:
                             lesson("heart", L10n.text("今日记录"), L10n.text("快速了解今天的心率、HRV 和心电记录。轻点卡片可查看每日详情。"))
-                            lesson("chart.xyaxis.line", L10n.text("趋势"), L10n.text("按周、月或年观察变化。先看自己一段时间的走势，不必只盯着某一次高低。"))
+                            lesson("chart.xyaxis.line", L10n.text("趋势"), L10n.text("按日、周或月汇总，观察近两周、近一季度或近一年的变化。"))
                         case 1:
                             lesson("calendar", L10n.text("按日期查找"), L10n.text("在心电记录上方轻点日历，直接找到某一天，再切换前一天或后一天。"))
                             lesson("arrow.up.right", L10n.text("打开记录"), L10n.text("轻点整张卡片查看详情。右上角的箭头表示可以进入下一页。"))
