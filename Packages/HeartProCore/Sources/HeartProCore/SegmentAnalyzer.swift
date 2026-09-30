@@ -141,7 +141,12 @@ enum SegmentAnalyzer {
             }
         }
 
-        if let range = s.indices(r - min(0.32, previousRR * 0.38), s.time(onset) - 0.025),
+        // P wave search: typical PR interval is 120-200 ms, P duration 60-120 ms.
+        // Search from QRS onset back to previousRR * 0.42 (or 0.44s max), ending 12ms before QRS.
+        let pSearchStart = r - min(0.44, previousRR * 0.42)
+        let pSearchEnd = s.time(onset) - 0.012
+        if pSearchEnd >= pSearchStart,
+           let range = s.indices(pSearchStart, pSearchEnd),
            s.usable(s.time(range.lowerBound), s.time(range.upperBound - 1)) {
             draft.p = s.wave(range: range, baseline: baseline, minimumAmplitude: max(0.025, noise * 5))
         }
@@ -166,7 +171,7 @@ enum SegmentAnalyzer {
         }
 
         // Stop before the next P search region. Truncation yields a missing T end, never a guessed QT.
-        let tLimit = min(r + 0.65, next.map { $0 - min(0.32, nextRR * 0.38) } ?? s.duration)
+        let tLimit = min(r + 0.65, next.map { $0 - min(0.44, nextRR * 0.42) } ?? s.duration)
         let tStart = s.time(offset) + 0.035
         if tLimit > tStart, s.usable(s.time(offset), tLimit), let range = s.indices(tStart, tLimit) {
             draft.t = s.wave(range: range, baseline: baseline, minimumAmplitude: max(0.035, noise * 5))

@@ -259,7 +259,8 @@ private func rateScaledFixture(rr: Double) -> Waveform {
 @Test func waveformAnnotationsUseMeasuredBoundariesAndClipWithoutInventingEndpoints() throws {
     let analysis = try segments(segmentFixture())
     let spans = analysis.waveformAnnotations
-    #expect(Set(spans.map(\.kind)).isSuperset(of: [.p, .qrs, .t, .prSegment, .st, .tp, .pr, .qt, .rr, .pp]))
+    // Only waves are annotated on the waveform display, not segments
+    #expect(Set(spans.map(\.kind)).isSuperset(of: [.p, .qrs, .t]))
     #expect(Set(spans.map(\.id)).count == spans.count)
     for span in spans {
         #expect(span.start >= 0 && span.end > span.start)
@@ -269,9 +270,9 @@ private func rateScaledFixture(rr: Double) -> Waveform {
         #expect(span.clipped(to: span.end...(span.end + 1)) == nil)
     }
     let noP = try segments(segmentFixture(p: false)).waveformAnnotations
-    #expect(!noP.contains { [.p, .pp, .pr, .prSegment, .tp].contains($0.kind) })
+    #expect(!noP.contains { $0.kind == .p })
     let noT = try segments(segmentFixture(t: false)).waveformAnnotations
-    #expect(!noT.contains { [.t, .qt, .st, .tp].contains($0.kind) })
+    #expect(!noT.contains { $0.kind == .t })
     var gap = segmentFixture()
     gap.points.removeAll { $0.time > 5.97 && $0.time < 6.05 }
     #expect(try segments(gap).waveformAnnotations.allSatisfy { !($0.start < 6.05 && $0.end > 5.97) })

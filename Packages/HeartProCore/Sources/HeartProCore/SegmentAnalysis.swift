@@ -42,7 +42,7 @@ public enum ECGSegment: String, Codable, CaseIterable, Sendable, Identifiable {
         case .pr: L10n.text("成人常用参考为 120–200 ms。年龄、心率和测量方法都会影响结果。")
         case .prSegment: L10n.text("PR 段通常接近参考水平线。参考线的位置和信号处理方式会影响测量。")
         case .qrs: L10n.text("成人 QRS 常用参考为短于 120 ms。Q、R、S 的识别还需要结合原波形复核。")
-        case .st: L10n.text("接触、姿势和信号处理都可能改变 ST 的样子。手表心电不能据此判断或排除心肌缺血。")
+        case .st: L10n.text("接触、姿势和信号处理都可能改变 ST 的样子。单导联记录的局限性较大，解读需结合多方面信息。")
         case .t: L10n.text("从不同导联看，T 波的方向和大小可能不同，不能只凭一个数值判断是否正常。")
         case .qt: L10n.text("QT 会随心率变化，不能用一个固定范围判断所有记录。")
         case .qtc: L10n.text("心率很快或很慢时，校正的偏差可能更大。解读还需结合年龄、性别和所用方法。")

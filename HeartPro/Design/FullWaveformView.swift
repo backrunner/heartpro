@@ -141,7 +141,7 @@ private struct WaveformPlot: View {
                 Menu {
                     Button(L10n.text("波形开头"), systemImage: "backward.end") { viewport.position = 0 }
                     Button(L10n.text("波形末尾"), systemImage: "forward.end") { viewport.position = tiles - 1 }
-                    Toggle(L10n.text("波段与间隔"), isOn: $viewport.showSegments)
+                    Toggle(L10n.text("波段标注"), isOn: $viewport.showSegments)
                     Toggle(L10n.text("研究性 R 峰"), isOn: $viewport.showPeaks)
                 } label: { Image(systemName: "ellipsis").frame(width: 44, height: 44) }
                     .accessibilityLabel(L10n.text("波形选项"))
@@ -208,15 +208,15 @@ private struct WaveformBands: View {
                     guard let range = span.clipped(to: 0...duration), let row = lanes.firstIndex(of: span.kind.lane) else { continue }
                     let x = range.lowerBound * scale, width = (range.upperBound - range.lowerBound) * scale
                     let y = Double(row) * 16
-                    let color = span.kind.lane == 0 ? HP.coral : HP.teal
-                    let rect = CGRect(x: x, y: y + 1, width: max(0.5, width), height: 14)
-                    context.fill(Path(roundedRect: rect, cornerRadius: 2), with: .color(color.opacity(selected?.id == span.id ? 0.28 : 0.10)))
+                    let color = HP.coral
+                    let rect = CGRect(x: x, y: y + 2, width: max(0.5, width), height: 12)
+                    context.fill(Path(roundedRect: rect, cornerRadius: 2), with: .color(color.opacity(selected?.id == span.id ? 0.28 : 0.12)))
                     var bracket = Path()
-                    bracket.move(to: CGPoint(x: x, y: y + 11)); bracket.addLine(to: CGPoint(x: x, y: y + 15))
-                    bracket.addLine(to: CGPoint(x: x + width, y: y + 15)); bracket.addLine(to: CGPoint(x: x + width, y: y + 11))
-                    context.stroke(bracket, with: .color(color.opacity(0.65)), lineWidth: 0.7)
+                    bracket.move(to: CGPoint(x: x, y: y + 10)); bracket.addLine(to: CGPoint(x: x, y: y + 14))
+                    bracket.addLine(to: CGPoint(x: x + width, y: y + 14)); bracket.addLine(to: CGPoint(x: x + width, y: y + 10))
+                    context.stroke(bracket, with: .color(color.opacity(0.7)), lineWidth: 0.8)
                     let label = context.resolve(Text(span.kind.label).font(.system(size: 9, weight: .medium)).foregroundStyle(.primary))
-                    if label.measure(in: CGSize(width: 100, height: 14)).width + 3 < width {
+                    if label.measure(in: CGSize(width: 100, height: 12)).width + 2 < width {
                         context.draw(label, at: CGPoint(x: x + width / 2, y: y + 7))
                     }
                 }
@@ -228,7 +228,7 @@ private struct WaveformBands: View {
                 select(span)
             }
         }
-        .accessibilityElement(children: .ignore).accessibilityLabel(L10n.text("波段与间隔"))
+        .accessibilityElement(children: .ignore).accessibilityLabel(L10n.text("波段标注"))
         .accessibilityValue(selected.map { "\($0.kind.label), \($0.milliseconds.integerText) ms" } ?? "")
         .accessibilityAdjustableAction { direction in
             let index = selected.flatMap { choice in annotations.firstIndex { $0.id == choice.id } }
