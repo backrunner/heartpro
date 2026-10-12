@@ -4717,5 +4717,19 @@
   {
     "id": 681,
     "source": "按周汇总"
+  },
+  {
+    "id": 682,
+    "source": "波段标注",
+    "files": [
+      "HeartPro/Design/FullWaveformView.swift"
+    ]
+  },
+  {
+    "id": 683,
+    "source": "接触、姿势和信号处理都可能改变 ST 的样子。单导联记录的局限性较大，解读需结合多方面信息。",
+    "files": [
+      "Packages/HeartProCore/Sources/HeartProCore/SegmentAnalysis.swift"
+    ]
   }
 ]

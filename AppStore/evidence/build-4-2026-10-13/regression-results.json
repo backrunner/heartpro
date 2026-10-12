@@ -1,0 +1,185 @@
+{
+  "latest_test_results": {
+    "ReportTests/testClearLocalDataRemovesSensitiveTemporaryReports()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "ReportTests/testPDFIncludesFullWaveformAndLongMemo()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "ReportTests/testReportContainsActualCandidatesAndConditionalUWave()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "ReportTests/testReportContainsDescriptiveStatisticsAndDuration()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "ReportTests/testReportsAndPermissionsInEverySupportedLanguage()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "RepositoryTests/testAnalysisUpgradeAndFailureRetryKeepNotes()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "RepositoryTests/testAuthorizationBundleIncludesAllThreeReadTypes()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "RepositoryTests/testLightPagesAndDirectDateLookupKeepFullDetailAvailable()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "RepositoryTests/testOutdatedNoteCannotReplaceNewRevision()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "RepositoryTests/testRefreshPreservesLoadedHistoryAndClearRemovesHealthCache()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "RepositoryTests/testReplayPaginationAndDeletionPreserveNotes()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "RepositoryTests/testUnfinishedAnalysisStateIncludesUnloadedHistoryAndClearsAfterRecovery()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "WaveformBandTests/testClippedRangesKeepLabelsInsideContentAndEmptyInputHasNoBand()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "WaveformBandTests/testDenseLabelsNeverOverlapAtAnyZoomOrTextSize()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "WaveformBandTests/testNarrowQRSKeepsFullLabelAndExactTimeSpan()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testHistoryDayButtonsKeepFilterUntilExplicitClear()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testLandingHistoryFilterAndDailyHeartHealth()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testLargeGermanHistoryAndDailyHealth()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testReferencesAndECGHRVPlot()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testSDNNLinkScrollsToStackedTrend()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testTrendWindowsChartSwipesSelectionAndEmptyContent()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testWaveformEndpointsAtHalfZoomAfterFullscreenAndZoomChanges()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testWaveformFullscreenRotationAndSharedViewport()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testWaveformLabelsAtNarrowZoomAndLargeText()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartHealthUITests/testWholeDailyContentSwipesAndVerticalScrolling()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "HeartProUITests/testAccessibilityTextLayout()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "HeartProUITests/testDailyTrendsAndSettings()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-stacked-sdnn-test.xcresult"
+    },
+    "HeartProUITests/testDarkWelcomeAndAnalysisPanels()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "HeartProUITests/testDetailOwnsMemoEditingAndWaveformMeasurement()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "HeartProUITests/testSegmentAnalysisAndBeatWaveformNavigation()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "LocalizationUITests/testEveryLanguageThroughAnalysisAndHRV()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "LocalizationUITests/testGermanWithAccessibilityTextSize()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "RhythmUITests/testCandidatesRulesUWaveAndOriginalTrace()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "RhythmUITests/testGermanLargeTextCandidates()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult"
+    },
+    "UsageGuideUITests/testFirstEntryCompletionPersistenceAndSettingsReplay()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "UsageGuideUITests/testGuideWithLargeTextCanBeClosedAndReopened()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "UsageNoticeUITests/testNoticePrecedesHealthAccessPersistsAndCanBeReopened()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    },
+    "UsageNoticeUITests/testNoticeSupportsEveryLanguageAndLargeText()": {
+      "result": "Passed",
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult"
+    }
+  },
+  "distinct_app_and_ui_tests": 38,
+  "all_latest_results_passed": true,
+  "runs": [
+    {
+      "result_bundle": "/tmp/HeartPro-ReleaseQA-20261013/Logs/Test/Test-HeartPro-2026.10.13_01-11-40-+0800.xcresult",
+      "result": "Failed",
+      "passed": 32,
+      "failed": 6,
+      "skipped": 0
+    },
+    {
+      "result_bundle": "/tmp/heartpro-build4-corrected-tests.xcresult",
+      "result": "Failed",
+      "passed": 13,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "result_bundle": "/tmp/heartpro-build4-stacked-sdnn-test.xcresult",
+      "result": "Passed",
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "core_swift_tests": {
+    "passed": 55,
+    "log": "/tmp/heartpro-build4-core-tests.log"
+  }
+}

@@ -1,8 +1,10 @@
 Lee el aviso del primer inicio. Las mediciones automáticas, marcas de posibles eventos, referencias y puntuaciones no son asesoramiento médico ni sustituyen a profesionales o servicios médicos. Si te encuentras mal, busca atención médica; ante síntomas urgentes, contacta con emergencias sin esperar al análisis.
 
+En la compilación 4: filtra por fecha y cambia al día anterior/siguiente; el filtro debe mantenerse hasta seleccionar todos los registros. Tras ampliar o volver de pantalla completa, ve al inicio/final de la onda y comprueba que se vea el primer o último tramo.
+
 Prueba lo siguiente:
 1. Confirma el aviso de uso, abre la guía y vuelve a consultar el aviso en Ajustes.
-2. Usa los ejemplos para revisar registros, ondas, ampliación, medición de intervalos y tendencias sin conceder acceso a Salud.
+2. Usa los ejemplos para revisar registros, ondas, ampliación, medición de intervalos y tendencias sin conceder acceso a Salud. Comprueba las etiquetas P/QRS/T y la medición al tocarlas con ampliación de 0,5×, texto grande, modo claro/oscuro y pantalla completa. Las etiquetas próximas deben seguir siendo legibles y estar conectadas con sus intervalos de tiempo originales.
 3. Solo si lo deseas, conecta tus propios registros de Salud de Apple. Comprueba permisos completos, parciales, denegados y revocados. Compara las clasificaciones de origen y los registros con Salud.
 4. Añade una nota local. Guarda síntomas en Salud solo si lo deseas: son entradas independientes y no modifican los ECG originales.
 5. Revisa las ondas, notas largas y limitaciones del PDF. Borra los datos locales y comprueba que desaparecen los registros locales y PDF temporales, mientras se conservan los originales en Salud.

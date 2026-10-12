@@ -12,8 +12,8 @@
       "evidence": null
     },
     "public_policies_and_support_https": {
-      "complete": false,
-      "evidence": null
+      "complete": true,
+      "evidence": "evidence/connect-2026-10-10/status.json"
     },
     "real_device_healthkit_flow": {
       "complete": false,
@@ -24,18 +24,22 @@
       "evidence": "screenshots/README.md"
     },
     "signed_archive_and_connect_validation": {
-      "complete": false,
-      "evidence": null
+      "complete": true,
+      "evidence": "evidence/build-4-2026-10-13/status.json"
     },
     "store_account_metadata": {
+      "complete": true,
+      "evidence": "evidence/connect-2026-10-10/status.json"
+    },
+    "support_email_delivery": {
       "complete": false,
-      "evidence": "connect-settings.md"
+      "evidence": "validation/health-fitness-2026-10-09.md"
     }
   },
-  "deferred_by_user": "Individual membership and external testing confirmed; formal operator identity, hosting/email provider and retention details still missing.",
+  "deferred_by_user": "User confirmed the current individual team and USD 2.99, declared non-medical-device status, authorized privacy label publication and excluded China mainland. These Connect fields are saved. Independent accuracy, real-device HealthKit, regulatory/operator review and support delivery evidence remain outstanding.",
   "distribution_intent": {
     "account_type": "individual",
-    "territories": "As many as supported and lawfully eligible after territory review",
+    "territories": "174 current App Store countries/regions excluding China mainland; saved 2026-10-11",
     "testflight": "external"
   },
   "external_testflight_ready": false,
@@ -45,6 +49,63 @@
     "public_policies_and_support_https",
     "real_device_healthkit_flow",
     "signed_archive_and_connect_validation",
-    "store_account_metadata"
-  ]
+    "store_account_metadata",
+    "support_email_delivery"
+  ],
+  "last_reviewed": "2026-10-13",
+  "store_category": {
+    "primary": "Health & Fitness",
+    "secondary": null,
+    "selection": "Confirmed by the user; final category acceptance is determined by Apple"
+  },
+  "operator": {
+    "legal_name": null,
+    "brand": "HeartPro",
+    "website_provider": "Cloudflare",
+    "support_provider": "Cloudflare",
+    "type": "individual",
+    "apple_account_verified": true,
+    "display_name": "Alkinum"
+  },
+  "regulated_medical_device_declaration": {
+    "value": false,
+    "declared_by": "user",
+    "saved_in_connect": true,
+    "date": "2026-10-11",
+    "independent_review_complete": false
+  },
+  "beta_submission_decision": {
+    "date": "2026-10-11",
+    "requested_by": "user",
+    "decision": "Submit build 3 to Beta App Review and enable a public link with truthful feature/method/limitation disclosures. Defer additional project validation work for this request.",
+    "local_evidence_gates_unchanged": true,
+    "apple_beta_review_status": "Waiting for Review",
+    "apple_review_approval": false
+  },
+  "private_release_config": ".release-private/app-store.json",
+  "current_distribution": {
+    "date": "2026-10-13",
+    "version": "0.6.0",
+    "build": "4",
+    "uploaded": true,
+    "apple_binary_validation": "Validated",
+    "internal_group": "Internal",
+    "external_group": "PB",
+    "external_status": "Testing",
+    "public_link": "https://testflight.apple.com/join/qXWxxJev",
+    "app_store_build_selected": true,
+    "app_store_submission_status": "Waiting for Review",
+    "release_mode": "manual after approval",
+    "evidence": "evidence/build-4-2026-10-13/status.json",
+    "local_evidence_gates_unchanged": true,
+    "app_store_review_approved": false,
+    "pricing": {
+      "base": "USD 2.99",
+      "preference": ".99 ending where suitable Apple tiers exist",
+      "manual_override": {
+        "SGD": "3.99"
+      },
+      "evidence": "evidence/build-4-2026-10-13/pricing.json"
+    }
+  }
 }

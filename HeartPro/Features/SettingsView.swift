@@ -12,7 +12,9 @@ struct SettingsView: View {
         List {
             Section {
                 HStack(spacing: 15) {
-                    Image(systemName: "heart.fill").font(.system(size: 27)).foregroundStyle(HP.coral).frame(width: 62, height: 62).hpGlass(tint: HP.coral.opacity(0.08))
+                    Image("BrandMark").resizable().scaledToFit()
+                        .frame(width: 44, height: 44).frame(width: 62, height: 62)
+                        .hpGlass(tint: HP.coral.opacity(0.08)).accessibilityHidden(true)
                     VStack(alignment: .leading, spacing: 5) {
                         Text("HeartPro").font(.system(.title2, design: .rounded, weight: .bold))
                         Text(L10n.text("Apple Watch 心电记录与统计")).font(.caption).foregroundStyle(.secondary)
@@ -30,12 +32,17 @@ struct SettingsView: View {
             Section(L10n.text("健康数据")) {
                 Button { Task { await model.connect() } } label: { Label(L10n.text("健康授权"), systemImage: "heart.text.clipboard") }
                 Button { model.refresh() } label: { Label(L10n.text("同步记录"), systemImage: "arrow.triangle.2.circlepath") }.disabled(model.isDemo || model.isSyncing || !model.hasConnected)
-                Button { Task { await model.retryFailedAnalyses() } } label: { Label(L10n.text("重试未完成的分析"), systemImage: "arrow.clockwise") }.disabled(model.isDemo || model.isSyncing || !model.hasConnected)
+                if !model.isDemo && model.hasUnfinishedAnalyses {
+                    Button { Task { await model.retryFailedAnalyses() } } label: { Label(L10n.text("重试未完成的分析"), systemImage: "arrow.clockwise") }
+                        .disabled(model.isSyncing || !model.hasConnected)
+                        .accessibilityIdentifier("retryUnfinishedAnalyses")
+                }
             }
             Section(L10n.text("帮助")) {
-                Link(L10n.text("支持与联系"), destination: URL(string: "https://heartpro.alkinum.com/\(L10n.language == "zh-Hans" ? "zh/" : "")support/")!)
+                Link(destination: URL(string: "https://heartpro.alkinum.com/\(L10n.language == "zh-Hans" ? "zh/" : "")support/")!) {
+                    Label(L10n.text("支持与联系"), systemImage: "envelope")
+                }
                     .accessibilityIdentifier("supportWebsite")
-                Link("support@heartpro.alkinum.com", destination: URL(string: "mailto:support@heartpro.alkinum.com")!)
                 Button { showGuide = true } label: { Label(L10n.text("使用指南"), systemImage: "book.closed") }
                     .accessibilityIdentifier("openUsageGuide")
                 Button {

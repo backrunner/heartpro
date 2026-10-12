@@ -12,6 +12,7 @@
 		15D8BEEC12108051084A09C5 /* AppLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D77240CAD7B0963366FA3 /* AppLaunch.swift */; };
 		232EFAD08EC9062AB1D9F1E5 /* HeartProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F68F4163446F328AE1140 /* HeartProUITests.swift */; };
 		23305C20CFD525ECA6AE742D /* AuthorizationLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5145C8B4EA541AFB74DE76C /* AuthorizationLandingView.swift */; };
+		2481D126EFD3570ADD6BED26 /* WaveformBandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD05B27FC88DA6DB2E8FF5 /* WaveformBandTests.swift */; };
 		27BF5F734E6123DACD158276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41297A1B6FDA8BA63683B14 /* Assets.xcassets */; };
 		385DACE3DB950E49BCCC7C47 /* ReportExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF1C47D8EDC9705CA6F6AB /* ReportExporter.swift */; };
 		3BB9831B886CF0FE041DF9D8 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2685328AB5F8B9B49316FBA /* DesignSystem.swift */; };
@@ -71,11 +72,11 @@
 		17EF1C47D8EDC9705CA6F6AB /* ReportExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExporter.swift; sourceTree = "<group>"; };
 		24013C506B7D117F9B066A21 /* FullWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWaveformView.swift; sourceTree = "<group>"; };
 		25E99E061EB9ADA4277051A6 /* OnboardingDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDesign.swift; sourceTree = "<group>"; };
-		2884B7D0B7D28BCD42C3FADB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2884B7D0B7D28BCD42C3FADB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		298BF578CC29E8E0BC8EAD9F /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
 		327D77240CAD7B0963366FA3 /* AppLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunch.swift; sourceTree = "<group>"; };
 		35E36A6DFD11312ECD6AFEDF /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
-		42D34FE92CE5DEEAACDB75D5 /* HeartPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D34FE92CE5DEEAACDB75D5 /* HeartPro.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HeartPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435013A9B4DEF4032EC03DA0 /* ECGRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGRepository.swift; sourceTree = "<group>"; };
 		48100119397E212A08335C31 /* HeartHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartHealthUITests.swift; sourceTree = "<group>"; };
 		501B5DAA7E050C6341045F6E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		AAD57537692B37A1B7EF75E3 /* UsageNoticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageNoticeUITests.swift; sourceTree = "<group>"; };
 		AAE3DA38AAC17E941D64BD98 /* HeartPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartPro.entitlements; sourceTree = "<group>"; };
 		ACDCAD855BB9B50E28C1002E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0AD05B27FC88DA6DB2E8FF5 /* WaveformBandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformBandTests.swift; sourceTree = "<group>"; };
 		B1A48E5DDDE85725718F4961 /* AnalysisPanels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisPanels.swift; sourceTree = "<group>"; };
 		C3BA02C34541A80F5946D164 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		C4F3DF47EFCEA22503A932FA /* PDFReportLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReportLayout.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				DFC35CB44DBD17AE8245E64F /* ReportTests.swift */,
 				F2D374736F197E6FD729E0EB /* RepositoryTests.swift */,
+				B0AD05B27FC88DA6DB2E8FF5 /* WaveformBandTests.swift */,
 			);
 			path = HeartProTests;
 			sourceTree = "<group>";
@@ -316,8 +319,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
+					6DCFE5EF69A7DD108D33A5CA = {
+						DevelopmentTeam = PB8H83VL3Z;
+						ProvisioningStyle = Automatic;
+					};
 					749FCA55E6AECE7C64752862 = {
+						DevelopmentTeam = PB8H83VL3Z;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 6DCFE5EF69A7DD108D33A5CA;
+					};
+					74C00B3CA837E0585369235C = {
+						DevelopmentTeam = PB8H83VL3Z;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -414,6 +427,7 @@
 			files = (
 				0B1B6AEC4D0DD5BF5A1250D6 /* ReportTests.swift in Sources */,
 				F056CCC4974F3CA7EB1439F2 /* RepositoryTests.swift in Sources */,
+				2481D126EFD3570ADD6BED26 /* WaveformBandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,9 +530,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PB8H83VL3Z;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -548,7 +564,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HeartPro/HeartPro.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = PB8H83VL3Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = HeartPro;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
@@ -618,9 +633,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PB8H83VL3Z;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -657,7 +674,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HeartPro/HeartPro.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = PB8H83VL3Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = HeartPro;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;

@@ -2,7 +2,7 @@ HeartPro bündelt die bereits in Apple Health gespeicherten Herzaufzeichnungen. 
 
 AUFZEICHNUNGEN ANSEHEN
 • EKG-Verlauf nach Datum durchsuchen.
-• Tagesübersichten zu Herzfrequenz und HRV sowie Tages-, Wochen-, Monats- und Jahrestrends ansehen.
+• Tagesübersichten zu Herzfrequenz und HRV sowie Tages-, Wochen- und Monatstrends ansehen.
 • Durch originale Einkanal-EKG-Kurven scrollen, sie vergrößern oder im Vollbild öffnen.
 • Zwei Punkte auswählen, um Zeit- und Spannungsunterschiede zu vergleichen.
 

@@ -1,0 +1,2 @@
+$ svedocs check --translations --strict
+svedocs check: 16 pages, 80 search records, 0 errors, 0 warnings.

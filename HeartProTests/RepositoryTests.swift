@@ -107,4 +107,44 @@ final class RepositoryTests: XCTestCase {
         let saved = try await repository.notes(recordID: record.id); XCTAssertEqual(saved, [note])
         try await repository.clear()
     }
+
+    @MainActor func testUnfinishedAnalysisStateIncludesUnloadedHistoryAndClearsAfterRecovery() async throws {
+        let model = AppModel(container: try ECGRepository.container(inMemory: true))
+        await model.reload()
+        XCTAssertFalse(model.hasUnfinishedAnalyses)
+        let wave = DemoData.waveform(), analysis = try SignalAnalyzer.analyze(wave)
+        let records = (0..<31).map {
+            ECGRecord(date: Date.now.addingTimeInterval(-Double($0) * 60), duration: 30,
+                      samplingFrequency: 256, sampleCount: wave.points.count, appleBPM: 68, classification: .sinus)
+        }
+        try await model.repository.apply(records: records)
+        await model.reload()
+        XCTAssertTrue(model.hasUnfinishedAnalyses)
+        for record in records { try await model.repository.complete(record.id, waveform: wave, analysis: analysis) }
+        await model.reload()
+        XCTAssertFalse(model.hasUnfinishedAnalyses)
+
+        let oldest = try XCTUnwrap(records.last)
+        try await model.repository.failed(oldest.id, message: "Interrupted")
+        await model.reload()
+        XCTAssertFalse(model.records.contains { $0.id == oldest.id })
+        XCTAssertTrue(model.hasUnfinishedAnalyses)
+        await model.enterDemo()
+        XCTAssertFalse(model.hasUnfinishedAnalyses)
+        await model.leaveDemo()
+        XCTAssertTrue(model.hasUnfinishedAnalyses)
+        try await model.repository.complete(oldest.id, waveform: wave, analysis: analysis)
+        await model.reload()
+        XCTAssertFalse(model.hasUnfinishedAnalyses)
+
+        try await model.repository.requeue(oldest.id)
+        await model.reload()
+        XCTAssertTrue(model.hasUnfinishedAnalyses)
+        try await model.repository.apply(records: [], deleted: [oldest.id])
+        await model.reload()
+        XCTAssertFalse(model.hasUnfinishedAnalyses)
+        try await model.repository.requeue(records[0].id)
+        await model.clearLocalData()
+        XCTAssertFalse(model.hasUnfinishedAnalyses)
+    }
 }

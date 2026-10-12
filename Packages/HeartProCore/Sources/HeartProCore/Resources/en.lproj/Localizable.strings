@@ -674,3 +674,5 @@
 "分析结果有局限" = "Analysis has its limits";
 "不适时，请及时就医" = "Feeling unwell? Seek care promptly";
 "按周汇总" = "Weekly summaries";
+"波段标注" = "Waveform annotations";
+"接触、姿势和信号处理都可能改变 ST 的样子。单导联记录的局限性较大，解读需结合多方面信息。" = "Contact, posture and signal processing can all change the ST segment’s appearance. Single-lead recordings have significant limitations and must be interpreted with other relevant information.";

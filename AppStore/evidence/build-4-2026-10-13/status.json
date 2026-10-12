@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-13",
+  "app_id": "6821359492",
+  "bundle_id": "com.alkinum.heartpro",
+  "version": "0.6.0",
+  "build": "4",
+  "team_id": "PB8H83VL3Z",
+  "archive": "archive.json",
+  "apple_upload_complete": true,
+  "apple_processing_complete": true,
+  "apple_binary_validation": "Validated",
+  "apple_entitlements": {
+    "get-task-allow": false,
+    "com.apple.developer.healthkit": true,
+    "beta-reports-active": true
+  },
+  "internal": {
+    "group": "Internal",
+    "build_assigned": true
+  },
+  "external": {
+    "group": "PB",
+    "status": "Testing",
+    "public_link": "https://testflight.apple.com/join/qXWxxJev"
+  },
+  "app_store": {
+    "build_selected": "4",
+    "submission_status": "Waiting for Review",
+    "approved": false,
+    "release_mode": "manual after approval"
+  },
+  "qa": {
+    "core_passed": 55,
+    "distinct_app_and_ui_tests_latest_passed": 38,
+    "native_screenshot_journeys_passed": 18,
+    "regression_details": "regression-results.json",
+    "physical_test": "Navigation fixes exercised in separate HeartProFix build 3 with synthetic data; production TestFlight build 4 not freshly installed on the physical phone."
+  },
+  "screenshots": {
+    "current_native_files": 108,
+    "visually_reviewed_groups": [
+      "iphone-6.3",
+      "iphone-6.9",
+      "ipad-13"
+    ],
+    "connect_replaced_required_files": 72,
+    "languages": [
+      "en-US",
+      "zh-Hans",
+      "ja",
+      "ko",
+      "de-DE",
+      "es-ES"
+    ],
+    "optional_large_iphone_associations": "retained"
+  },
+  "pricing_evidence": "pricing.json",
+  "local_evidence_gates_unchanged": true,
+  "evidence": [
+    "xcode-validation.png",
+    "xcode-upload.png",
+    "pb-build4-testing.png",
+    "build4-metadata.png",
+    "app-store-waiting-review.png",
+    "pricing-sgd-saved.png"
+  ]
+}

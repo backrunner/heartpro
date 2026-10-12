@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-12",
+  "timezone": "Asia/Singapore",
+  "device": {"reality": "physical", "model": "iPhone 17", "os": "27.0.1", "os_build": "24A446"},
+  "app": {"bundle_id": "com.alkinum.heartpro", "version": "0.6.0", "build": "3", "source": "TestFlight", "testflight_ui_verified": true, "replacement_installed": false},
+  "appearance": {"language": "zh-Hans", "theme": "dark", "text_size": "existing_user_setting", "settings_changes_declined_by_user": true},
+  "result": "completed_with_reproducible_findings",
+  "checks": {
+    "existing_authorized_health_read_and_sync": "passed",
+    "real_ecg_full_waveform_load": "passed",
+    "health_heart_rate_and_sdnn_trends": "passed",
+    "usage_notice_reopen": "passed",
+    "four_page_usage_guide": "passed",
+    "demo_isolation_and_exit": "passed",
+    "half_zoom_band_labels_and_hit_test": "passed",
+    "two_point_measurement_ui": "passed",
+    "fullscreen_landscape_and_state_restore": "passed",
+    "synthetic_long_note_save": "passed",
+    "eight_page_pdf_visual_review": "passed",
+    "local_pdf_save_flow": "passed",
+    "saved_pdf_reopen_in_files": "not_tested",
+    "date_picker_selection": "passed",
+    "previous_day_navigation": "failed",
+    "half_zoom_jump_to_waveform_end": "failed",
+    "support_url_open_in_phone_browser": "passed",
+    "background_health_mask": "passed"
+  },
+  "findings": [
+    {"id": "phone-001", "priority": "P2", "title": "Previous day cancels the date filter", "reproductions": 2, "fixed": false, "evidence": ["demo-date-filter-before.png", "demo-date-filter-after.png"]},
+    {"id": "phone-002", "priority": "P2", "title": "Jump to waveform end stops before the end at 0.5x", "reproductions": 2, "fixed": false, "evidence": ["demo-end-jump-failure.png"]}
+  ],
+  "observations_pending_reproduction": ["Transient empty values and blank content while switching to the yearly monthly trend and scrolling in iPhone Mirroring; chart subsequently recovered."],
+  "full_healthkit_flow_complete": false,
+  "personal_health_data_saved_to_repository": false,
+  "synthetic_symptoms_written_to_health": false,
+  "personal_data_cleared": false,
+  "production_ticket_submitted": false,
+  "testflight_feedback_sent": false,
+  "implementation_changed": false,
+  "report": "README.md"
+}

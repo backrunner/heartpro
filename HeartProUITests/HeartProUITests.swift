@@ -23,13 +23,13 @@ final class HeartProUITests: XCTestCase {
         XCTAssertTrue(app.otherElements["segmentBeatWaveform"].exists)
         attachment(app, name: "21-segment-p-beat")
         app.buttons["下一次心跳"].tap()
-        XCTAssertTrue((app.buttons["选择心跳"].value as? String)?.hasPrefix("第 3/") == true)
+        XCTAssertTrue((app.buttons["选择心跳"].value as? String)?.hasPrefix("第 2/") == true)
         app.buttons["选择心跳"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "第 1 次心跳")).firstMatch.tap()
         XCTAssertTrue((app.buttons["选择心跳"].value as? String)?.hasPrefix("第 1/") == true)
         XCTAssertFalse(app.buttons["上一次心跳"].isEnabled)
-        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "这次心跳附近的波形不完整")).firstMatch.exists)
-        attachment(app, name: "31-unmeasured-beat")
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "开始时间")).firstMatch.exists)
+        attachment(app, name: "31-first-measured-beat")
         app.buttons["下一次心跳"].tap()
         let locate = app.buttons["locateSegmentBeat"]
         scrollTo(locate, app: app); locate.tap()
@@ -86,7 +86,7 @@ final class HeartProUITests: XCTestCase {
         XCTAssertTrue(app.buttons["measureWaveform"].waitForExistence(timeout: 5))
         attachment(app, name: "02-ecg-detail")
         app.buttons["放大波形"].tap()
-        XCTAssertTrue(app.staticTexts["1.5×"].exists)
+        XCTAssertTrue(app.staticTexts["waveformZoom"].label == "2.2×")
         attachment(app, name: "17-waveform-zoom")
         app.terminate()
         app.launchArguments = ["--uitesting", "--skip-guide", "--demo", "--dark", "-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN"]
@@ -150,11 +150,12 @@ final class HeartProUITests: XCTestCase {
         app.buttons["后一天或下一时段"].tap()
         app.segmentedControls["insightsSection"].buttons["趋势"].tap()
         XCTAssertFalse(app.buttons["参考分"].exists)
-        for title in ["日", "周", "月", "年"] {
+        for title in ["日", "周", "月"] {
             app.segmentedControls["trendRange"].buttons[title].tap()
         }
-        attachment(app, name: "07-year-trend")
-        app.buttons["健康 SDNN"].tap()
+        attachment(app, name: "07-month-trend")
+        scrollTo(app.staticTexts["trendTitle-hrv"], app: app)
+        XCTAssertTrue(app.staticTexts["trendTitle-hrv"].isHittable)
         XCTAssertTrue(app.staticTexts["还没有可比较的数据"].exists)
         app.navigationBars.buttons.firstMatch.tap()
         app.buttons["settings"].tap()

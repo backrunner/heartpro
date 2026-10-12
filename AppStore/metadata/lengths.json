@@ -1,20 +1,20 @@
 {
   "en-US": {
     "name": {
-      "characters": 8,
-      "utf8_bytes": 8,
+      "characters": 25,
+      "utf8_bytes": 25,
       "limit": 30,
       "limit_unit": "characters"
     },
     "subtitle": {
-      "characters": 27,
-      "utf8_bytes": 27,
+      "characters": 29,
+      "utf8_bytes": 29,
       "limit": 30,
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 2579,
-      "utf8_bytes": 2587,
+      "characters": 2580,
+      "utf8_bytes": 2588,
       "limit": 4000,
       "limit_unit": "characters"
     },
@@ -39,8 +39,8 @@
   },
   "zh-Hans": {
     "name": {
-      "characters": 13,
-      "utf8_bytes": 21,
+      "characters": 18,
+      "utf8_bytes": 33,
       "limit": 30,
       "limit_unit": "characters"
     },
@@ -51,8 +51,8 @@
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 940,
-      "utf8_bytes": 2218,
+      "characters": 942,
+      "utf8_bytes": 2224,
       "limit": 4000,
       "limit_unit": "characters"
     },
@@ -77,8 +77,8 @@
   },
   "ja": {
     "name": {
-      "characters": 8,
-      "utf8_bytes": 8,
+      "characters": 20,
+      "utf8_bytes": 39,
       "limit": 30,
       "limit_unit": "characters"
     },
@@ -89,8 +89,8 @@
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 1232,
-      "utf8_bytes": 3232,
+      "characters": 1230,
+      "utf8_bytes": 3226,
       "limit": 4000,
       "limit_unit": "characters"
     },
@@ -115,8 +115,8 @@
   },
   "ko": {
     "name": {
-      "characters": 8,
-      "utf8_bytes": 8,
+      "characters": 21,
+      "utf8_bytes": 38,
       "limit": 30,
       "limit_unit": "characters"
     },
@@ -127,8 +127,8 @@
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 1489,
-      "utf8_bytes": 3278,
+      "characters": 1487,
+      "utf8_bytes": 3273,
       "limit": 4000,
       "limit_unit": "characters"
     },
@@ -153,8 +153,8 @@
   },
   "de-DE": {
     "name": {
-      "characters": 8,
-      "utf8_bytes": 8,
+      "characters": 29,
+      "utf8_bytes": 30,
       "limit": 30,
       "limit_unit": "characters"
     },
@@ -165,8 +165,8 @@
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 3064,
-      "utf8_bytes": 3112,
+      "characters": 3055,
+      "utf8_bytes": 3103,
       "limit": 4000,
       "limit_unit": "characters"
     },
@@ -191,8 +191,8 @@
   },
   "es-ES": {
     "name": {
-      "characters": 8,
-      "utf8_bytes": 8,
+      "characters": 29,
+      "utf8_bytes": 30,
       "limit": 30,
       "limit_unit": "characters"
     },
@@ -203,8 +203,8 @@
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 3089,
-      "utf8_bytes": 3142,
+      "characters": 3084,
+      "utf8_bytes": 3136,
       "limit": 4000,
       "limit_unit": "characters"
     },

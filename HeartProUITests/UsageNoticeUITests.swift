@@ -21,6 +21,10 @@ final class UsageNoticeUITests: XCTestCase {
         XCTAssertTrue(app.buttons["connectHealth"].waitForExistence(timeout: 20))
         XCTAssertFalse(app.buttons["acknowledgeUsageNotice"].exists)
         app.buttons["settings"].tap()
+        XCTAssertTrue(app.buttons["appLanguage"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["retryUnfinishedAnalyses"].exists)
+        Thread.sleep(forTimeInterval: 0.8)
+        capture("zh-settings-without-unfinished-analysis")
         let notice = app.buttons["openUsageNotice"]
         for _ in 0..<8 { if notice.isHittable { break }; app.swipeUp() }
         XCTAssertTrue(notice.isHittable)

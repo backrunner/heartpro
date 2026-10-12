@@ -1,0 +1,16 @@
+.svelte-kit/output/server/chunks/Site.js                                                   57.58 kB │ gzip:  9.95 kB
+.svelte-kit/output/server/chunks/local.js                                                  67.67 kB │ gzip: 17.83 kB
+.svelte-kit/output/server/chunks/search.js                                                 89.75 kB │ gzip: 18.48 kB
+.svelte-kit/output/server/chunks/server.js                                                124.25 kB │ gzip: 32.40 kB
+.svelte-kit/output/server/chunks/theme-components.js                                      129.34 kB │ gzip: 26.48 kB
+.svelte-kit/output/server/index.js                                                        134.67 kB │ gzip: 33.71 kB
+
+✓ built in 1.46s
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-static
+  Wrote site to "build"
+  ✔ done
+vite build exited with code 0.
+Generated 16 OG PNG files with svg renderer in /Volumes/BRData/projects/heartpro/website/static/og

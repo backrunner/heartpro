@@ -23,6 +23,10 @@ jobs:
         run: |
           python3 Tools/guard.py tracked
           python3 -m unittest discover -s Tools/tests -p 'test_guard.py'
+      - name: Check entitlement budget
+        run: |
+          python3 Tools/check_entitlements.py
+          python3 -m unittest discover -s Tools/tests -p 'test_entitlements.py'
       - name: Check commit messages
         env:
           EVENT_NAME: ${{ github.event_name }}

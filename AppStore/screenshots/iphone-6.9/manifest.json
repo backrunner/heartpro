@@ -1,27 +1,28 @@
 {
   "bundle_id": "com.alkinum.heartpro",
   "version": "0.6.0",
-  "build": "1",
+  "build": "4",
   "device": {
-    "dataPath": "~/Library/Developer/CoreSimulator/Devices/2981271F-5537-421E-BD70-0A415F6BC577/data",
-    "dataPathSize": 4488089600,
-    "logPath": "~/Library/Logs/CoreSimulator/2981271F-5537-421E-BD70-0A415F6BC577",
-    "udid": "2981271F-5537-421E-BD70-0A415F6BC577",
-    "lastUsedAt": "2026-09-22T18:02:15Z",
+    "dataPath": "/Users/orchiliao/Library/Developer/CoreSimulator/Devices/08D07683-9C24-41A7-BDE4-21FEE01A2466/data",
+    "dataPathSize": 3005743104,
+    "logPath": "/Users/orchiliao/Library/Logs/CoreSimulator/08D07683-9C24-41A7-BDE4-21FEE01A2466",
+    "udid": "08D07683-9C24-41A7-BDE4-21FEE01A2466",
+    "lastUsedAt": "2026-10-09T15:50:25Z",
     "isAvailable": true,
-    "logPathSize": 315392,
+    "logPathSize": 356352,
     "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPhone-17-Pro-Max",
     "state": "Booted",
-    "name": "HeartPro-AppStore-iPhone"
+    "name": "HeartPro-StoreCompliance-iPhone"
   },
-  "captured_at": "20260923-021000",
-  "xcresult": "TestResults/AppStore-iphone-6.9-20260923-021000.xcresult",
+  "captured_at": "20261013-011637",
+  "xcresult": "TestResults/AppStore-iphone-6.9-20261013-011637.xcresult",
   "data": "synthetic, labelled in the app",
+  "source_fingerprint_sha256": "891150ebb67b8039c0e2f5b46c7f1a00068a861bfc978bcd3eb19b34f5ac09c6",
   "visual_review_complete": true,
   "screenshots": [
     {
       "file": "de-01-history.png",
-      "sha256": "da32ba26985f8cfdd15264337d3724031f045e9b7a8ca49c7ff1c0c3db21ccb8",
+      "sha256": "799b5bc24fa6a41fea8ffccd12842c4dc61e436625e5fa6303624f7f90b8b178",
       "dimensions": [
         1320,
         2868
@@ -29,7 +30,7 @@
     },
     {
       "file": "de-02-daily.png",
-      "sha256": "19076080acde29abc136edc217076b737413ea752c85ce267a6afdb2ab8852f9",
+      "sha256": "2ce96133a26e11de80be0ffb9a087d6ed4aa5440402f0c26df2f2496cc4ff919",
       "dimensions": [
         1320,
         2868
@@ -37,7 +38,7 @@
     },
     {
       "file": "de-03-trends.png",
-      "sha256": "1fb63db106e0bc2bacc2d413a8a11d9679bb100896ff9aeb1a518ec5c8c54659",
+      "sha256": "7f8cc26468f11c6caa129669dee918d346cfef24765a1c3d27a3e0e3a338c107",
       "dimensions": [
         1320,
         2868
@@ -45,7 +46,7 @@
     },
     {
       "file": "de-04-waveform.png",
-      "sha256": "446a153f4ec6375e31c870c1444313ceb4da6a3cf3d1d7a8770865612f8b74d7",
+      "sha256": "227caf1d2d3320f23ba8b9ddfa8c868a6fec5e46e2a0af1b0367d0305b62b6d6",
       "dimensions": [
         1320,
         2868
@@ -53,7 +54,7 @@
     },
     {
       "file": "de-05-note.png",
-      "sha256": "04badc0aed71b50cc32b9436b78b371e25d8dbe3af28a5d91e9c91fd34e6c755",
+      "sha256": "fbd54864e3a84104e980b78c8fb34d655fcc526961620751dc2094756bc2d311",
       "dimensions": [
         1320,
         2868
@@ -61,7 +62,7 @@
     },
     {
       "file": "de-06-privacy-settings.png",
-      "sha256": "3fcdc8f730378494f4988745e9ac3d5d844d3df44a76f4c49eaf2c70198fd4a6",
+      "sha256": "430f5cb212d23b9f675ada032f7cd6ff5013d3b4e2b86e42a31d27dc1219cfdc",
       "dimensions": [
         1320,
         2868
@@ -69,7 +70,7 @@
     },
     {
       "file": "en-01-history.png",
-      "sha256": "8ee7f6796eade3d89680288f9e2d55b2b40fbd785d79190ad1a585fe8dcfb1be",
+      "sha256": "1566e6e0b8b36e89915f294f09e2e86996e1d67c0b11dec25ecde0665829f5f0",
       "dimensions": [
         1320,
         2868
@@ -77,7 +78,7 @@
     },
     {
       "file": "en-02-daily.png",
-      "sha256": "3e7a48b430081f02b7de554f386566d4d29d7538e260836bf5e6a15ee53b5695",
+      "sha256": "2cd35010d76d3d0d90c0e0515bc35093b2f0154abe57591ac22cb2170c698621",
       "dimensions": [
         1320,
         2868
@@ -85,7 +86,7 @@
     },
     {
       "file": "en-03-trends.png",
-      "sha256": "3b1d7a5fd0f060c4d19fed05934e4e472538fba9a0e37793bcb1b36f6eb7d02e",
+      "sha256": "abddbf38ba23a494f244e8e42a205d347a63fc01e570675e9e3dcca35127b613",
       "dimensions": [
         1320,
         2868
@@ -93,7 +94,7 @@
     },
     {
       "file": "en-04-waveform.png",
-      "sha256": "7f5682b147e9edc2fa28740ddb681e9a43ca5b9915cda4b3390b6fe725a28049",
+      "sha256": "3488e82a5fbd87afc13ef1de726f03de1c9d5f646cfb8bc2d705db5cb87e8436",
       "dimensions": [
         1320,
         2868
@@ -101,7 +102,7 @@
     },
     {
       "file": "en-05-note.png",
-      "sha256": "a536f5e95e268084206ab8d259f6b69620e24c29a0d6894d0db6322b21bc3a39",
+      "sha256": "e52489a0d303e5924af68eadffb06386f2a5651168f8524991199051d763e460",
       "dimensions": [
         1320,
         2868
@@ -109,7 +110,7 @@
     },
     {
       "file": "en-06-privacy-settings.png",
-      "sha256": "fb5de7ff4d42d2ab5840527ca6890ca0f33742db231f4c082c64280ea34cfafb",
+      "sha256": "2d79aec39015bc4bd977153df1881564b01c0bac8e4ae8d9d752e320b68d137d",
       "dimensions": [
         1320,
         2868
@@ -117,7 +118,7 @@
     },
     {
       "file": "es-01-history.png",
-      "sha256": "7966c4885e13f74c22f9f08d6197522931afa011eacf5a2139b0e29aa397e5f3",
+      "sha256": "156a7c0324421c850566981bb230c42a5cbf7a3b81ef206f1f024d75185a2579",
       "dimensions": [
         1320,
         2868
@@ -125,7 +126,7 @@
     },
     {
       "file": "es-02-daily.png",
-      "sha256": "1db98299810aac743cb6a17a5818d5eff75e05e2ecf7f866c283140d1d859b52",
+      "sha256": "d61afb8d8bc92cc30b80e1e8743635042b3c19b4dddfaa3bdbae1bd8a593f710",
       "dimensions": [
         1320,
         2868
@@ -133,7 +134,7 @@
     },
     {
       "file": "es-03-trends.png",
-      "sha256": "06b1e7ab451f76365ae453251adbbd3f5ca45c4d455a7cb28d9d823be32b6185",
+      "sha256": "a0047518105b09fea9bd25e9eb384ba46b684397ef1267e387c8ffa470531d43",
       "dimensions": [
         1320,
         2868
@@ -141,7 +142,7 @@
     },
     {
       "file": "es-04-waveform.png",
-      "sha256": "eceee1b992c513d7cb890ebd1993640a5f230f7c4b099a80f7827b71aed8cadf",
+      "sha256": "62251180e0adaed4286166ea0beb63bd80e87d19803a235443c5d20c3d5eab61",
       "dimensions": [
         1320,
         2868
@@ -149,7 +150,7 @@
     },
     {
       "file": "es-05-note.png",
-      "sha256": "bf97cd1ba10e2f4e549ec326aaf5a32dd9c0540043503a6eafea3750b98301c0",
+      "sha256": "607fc973049f4bb796d4702864ab01e3c71acc159885b92286ddefecd42f34c0",
       "dimensions": [
         1320,
         2868
@@ -157,7 +158,7 @@
     },
     {
       "file": "es-06-privacy-settings.png",
-      "sha256": "fb5b7952c0783bf7fe951a63006b980c4fc758811b84bfc91b3891bb1521613d",
+      "sha256": "ec38ec4c15430f81f66029de65e1248eca7bb5fba1ea8b344a622178afeb4fa2",
       "dimensions": [
         1320,
         2868
@@ -165,7 +166,7 @@
     },
     {
       "file": "ja-01-history.png",
-      "sha256": "2cd7a54740c1a6eb92eeee6e54d8fcc06d7b7b464b084c9157215f9e4410f6a9",
+      "sha256": "4559c0810746a2030eda532d54ba417ab03868f6ddf782186133534819ca0585",
       "dimensions": [
         1320,
         2868
@@ -173,7 +174,7 @@
     },
     {
       "file": "ja-02-daily.png",
-      "sha256": "6d230dc210cf5b2a287908c5d34e8b023d3d68339d757d73b5ee4e8cc32db710",
+      "sha256": "bf396852a5cbee493b3c38104e05a8477f9238c3a8d0f8c517235e3198e775f4",
       "dimensions": [
         1320,
         2868
@@ -181,7 +182,7 @@
     },
     {
       "file": "ja-03-trends.png",
-      "sha256": "dd258cc9d5bd2b523dc3922b56d62bf5a59612eb455a92ff3fe3b65f079ad3ce",
+      "sha256": "d0ba13fb32d9f9589c298ff0c3df1def54f2008e15030b4e20d4fe011079d968",
       "dimensions": [
         1320,
         2868
@@ -189,7 +190,7 @@
     },
     {
       "file": "ja-04-waveform.png",
-      "sha256": "1d4b86b03af5203ff0478867ff48754b71c88880fa3c7e9757e70993d93284cf",
+      "sha256": "2ca7503cc7b88509913db17d7820a126bb769a25bf5886aaf022726e92eea262",
       "dimensions": [
         1320,
         2868
@@ -197,7 +198,7 @@
     },
     {
       "file": "ja-05-note.png",
-      "sha256": "a13af868ffd69284f1873cad0dbf19edc1176ae167e67830e11bf2ca61848677",
+      "sha256": "2ae98b80812ce37c6912583a953c2175cfc0bfcb5ec844883d7ebf19fdb9f7e3",
       "dimensions": [
         1320,
         2868
@@ -205,7 +206,7 @@
     },
     {
       "file": "ja-06-privacy-settings.png",
-      "sha256": "9d99fd0b5c157d2ce84d2d8d2d2610acdcc2d4ae6b5128ba547a9de005d94ecd",
+      "sha256": "ddf1ceced7148dd5fe77c8066cf3cbc5de3469c4fd5a096028d49a0ab69796fd",
       "dimensions": [
         1320,
         2868
@@ -213,7 +214,7 @@
     },
     {
       "file": "ko-01-history.png",
-      "sha256": "3272730f2d1041b560fde7a1b21309dbc188d26c3e5536e46d4add5815782520",
+      "sha256": "55cd954a75fd18bdc17f52312f2b01fb82e9f26ad25876916db577c0a9ba7056",
       "dimensions": [
         1320,
         2868
@@ -221,7 +222,7 @@
     },
     {
       "file": "ko-02-daily.png",
-      "sha256": "d96aec1b52d9bc9417be89a95e3f046d2181cecb6e4a212b43253e5486e4e4ea",
+      "sha256": "8cbcb17d3a80f664d67cfca295d2af1ed7928933e781b5be15b1cec925f09cbd",
       "dimensions": [
         1320,
         2868
@@ -229,7 +230,7 @@
     },
     {
       "file": "ko-03-trends.png",
-      "sha256": "b1939b450cbc220acdc89a90b49f1fb403933c72cbcc604af93168739842f5dc",
+      "sha256": "9e21c8819b0c5c16db663530f9a2040e9bb8b9701609f4ea732931462ee93cd6",
       "dimensions": [
         1320,
         2868
@@ -237,7 +238,7 @@
     },
     {
       "file": "ko-04-waveform.png",
-      "sha256": "0359dcb6a8d92fe5b8277dbc745f2af95fbf0f8ac0416b9fe0b8ef0652ed8445",
+      "sha256": "b6d16cedfb20a466ce7ae21c6aefd1c9ba004b005fa726d42c5c0d310dcd1ccc",
       "dimensions": [
         1320,
         2868
@@ -245,7 +246,7 @@
     },
     {
       "file": "ko-05-note.png",
-      "sha256": "745011a23ff101df053d9293b2bc6d52882a5d1c4cd0104d18b94290113d3a2a",
+      "sha256": "28f4c7f2d2c71ae3e2ef15c4181077b2a73cec288a2f2df1bbd84ad436e7e4a0",
       "dimensions": [
         1320,
         2868
@@ -253,7 +254,7 @@
     },
     {
       "file": "ko-06-privacy-settings.png",
-      "sha256": "33c4782faa0bc9c8508c4cad212a550ffc953f78861784f0d506218041f3f98d",
+      "sha256": "1c1cdee10f8bf6926edc6fc5aaeb6ca2deb5080dc4e841bcc3ab6b831e0f8c91",
       "dimensions": [
         1320,
         2868
@@ -261,7 +262,7 @@
     },
     {
       "file": "zh-Hans-01-history.png",
-      "sha256": "77c763744997ad1db4cf837f45e230bd786fcfb0ae616bad425866d9014a8530",
+      "sha256": "14d2481d306ab142ec9e2d312ce06385a5963b8c3f967b0a2bedf626f42dc69c",
       "dimensions": [
         1320,
         2868
@@ -269,7 +270,7 @@
     },
     {
       "file": "zh-Hans-02-daily.png",
-      "sha256": "54aa7be23818e96fe23966d3e893c7460db2a739b8589b46e1aaa70ca57effed",
+      "sha256": "acc5dc2a5f2b1a92cea2ab53379471599f428d6fae33d09e716d18dd0ae33bab",
       "dimensions": [
         1320,
         2868
@@ -277,7 +278,7 @@
     },
     {
       "file": "zh-Hans-03-trends.png",
-      "sha256": "a09c9b271b32bc242691441da5c66b01361caa442d90cc1d08a3cdd8c370113e",
+      "sha256": "8dcc64bbca99e6f785070fdc1970977fe065afe806f5bdc5e71d3bc620ae7763",
       "dimensions": [
         1320,
         2868
@@ -285,7 +286,7 @@
     },
     {
       "file": "zh-Hans-04-waveform.png",
-      "sha256": "43e1a3820017cdcf2c68c41b051269630096ad6201001fa52659b678e37a9189",
+      "sha256": "9410e388cc058fcdacae8a9db006d8322eeb827bb269371b8e77c0991d83b34a",
       "dimensions": [
         1320,
         2868
@@ -293,7 +294,7 @@
     },
     {
       "file": "zh-Hans-05-note.png",
-      "sha256": "b415e69d27c8ed81b9f18b601a2c91241fb58cc47924ac14ce0fd5e481d7e54f",
+      "sha256": "c243b10719745957aab15e6deaeb9a6dc399946c2f7f9ae536ecb5a5b6dfca8a",
       "dimensions": [
         1320,
         2868
@@ -301,14 +302,13 @@
     },
     {
       "file": "zh-Hans-06-privacy-settings.png",
-      "sha256": "ec90e25f672ccdb1351aa9159bf468485de81d7972090472e55dae6e30aa15f3",
+      "sha256": "c4c59a013e8c710eb3d26bf7d26b032754abe0d0729d306eae59ec0a45734e47",
       "dimensions": [
         1320,
         2868
       ]
     }
   ],
-  "visual_review_date": "2026-09-22",
-  "visual_review_notes": "Reviewed all 36 captures in six language contact sheets for loaded records/charts, synthetic and source labels, locale, layout and controls. Spanish iPhone waveform also inspected at full size. All 6 XCTest journeys passed. iPad system status-bar date remains in simulator system language; app content is localized. No medical accuracy or real HealthKit claim.",
-  "source_fingerprint_sha256": "62e50c0d0c9f22aac5bd41194edc606a4b7b4785a5641db94a40d459bbb03dab"
+  "visual_reviewed_on": "2026-10-13",
+  "visual_review_notes": "All six language contact sheets inspected: synthetic labels, waveform/time origin, long labels, actions and note/settings layouts. No blocking issue observed."
 }

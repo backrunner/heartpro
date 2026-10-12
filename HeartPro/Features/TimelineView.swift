@@ -110,16 +110,17 @@ struct TimelineView: View {
                     }
                     if let filterDate {
                         HStack {
-                            Button { shiftHistoryDay(-1) } label: { Image(systemName: "chevron.left").frame(width: 32, height: 40) }
+                            Button { shiftHistoryDay(-1) } label: { Image(systemName: "chevron.left").frame(width: 44, height: 44) }
                                 .accessibilityLabel(L10n.text("前一天或上一时段")).accessibilityIdentifier("previousHistoryDay")
                             Text(filterDate.formatted(.dateTime.year().month().day().locale(L10n.locale)))
-                            Button { shiftHistoryDay(1) } label: { Image(systemName: "chevron.right").frame(width: 32, height: 40) }
+                                .accessibilityIdentifier("historyFilterDate")
+                            Button { shiftHistoryDay(1) } label: { Image(systemName: "chevron.right").frame(width: 44, height: 44) }
                                 .disabled(Calendar.current.isDateInToday(filterDate))
                                 .accessibilityLabel(L10n.text("后一天或下一时段")).accessibilityIdentifier("nextHistoryDay")
                             Spacer()
                             Button(L10n.text("全部记录")) { self.filterDate = nil }
                                 .accessibilityIdentifier("clearDateFilter")
-                        }.font(.subheadline)
+                        }.font(.subheadline).buttonStyle(.plain)
                     }
                     if loadingDay { ProgressView().frame(maxWidth: .infinity) }
                     else if displayedRecords.isEmpty {

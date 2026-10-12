@@ -1,8 +1,10 @@
 Bitte lies die Nutzungshinweise beim ersten Start. Automatische Messungen, Kandidatenmarkierungen, Referenzwerte und Punktwerte sind keine medizinische Beratung und ersetzen keine Ärzte oder medizinischen Leistungen. Suche bei Beschwerden zeitnah Hilfe und kontaktiere bei dringenden Symptomen den Rettungsdienst, ohne auf die Analyse zu warten.
 
+Schwerpunkt von Build 4: Nach der Datumsauswahl zum vorherigen/nächsten Tag wechseln. Der Filter soll bis zur Auswahl aller Aufzeichnungen aktiv bleiben. Nach Zoom oder Vollbildwechsel zum Kurvenanfang/-ende springen und prüfen, ob der erste bzw. letzte Abschnitt sichtbar ist.
+
 Bitte teste:
 1. Nutzungshinweise bestätigen, Anleitung öffnen und Hinweise in den Einstellungen erneut ansehen.
-2. Mit den Beispielen Aufzeichnungen, Kurven, Zoom, Intervallmessung und Trends ohne Health-Freigabe prüfen.
+2. Mit den Beispielen Aufzeichnungen, Kurven, Zoom, Intervallmessung und Trends ohne Health-Freigabe prüfen. Prüfe P/QRS/T-Beschriftungen und Messwerte beim Antippen bei 0,5× Zoom, größerer Schrift, hellem/dunklem Modus und im Vollbild. Dicht liegende Beschriftungen sollen lesbar und mit ihren ursprünglichen Zeitbereichen verbunden bleiben.
 3. Nur auf Wunsch eigene Apple-Health-Daten verbinden. Vollständige und teilweise Freigabe, Ablehnung und Widerruf prüfen. Angezeigte Quellklassifizierungen und Aufzeichnungen mit Health vergleichen.
 4. Eine lokale Notiz ergänzen. Symptome nur freiwillig in Health speichern: Sie werden als separate Einträge angelegt und ändern keine ursprünglichen EKGs.
 5. PDF auf Kurven, lange Notizen und Einschränkungen prüfen. Lokale Daten löschen und kontrollieren, dass lokale Aufzeichnungen und temporäre PDFs entfernt werden, ursprüngliche Health-Daten aber erhalten bleiben.

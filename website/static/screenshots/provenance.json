@@ -1,8 +1,8 @@
 {
   "bundle_id": "com.alkinum.heartpro",
   "version": "0.6.0",
-  "build": "1",
-  "xcresult": "TestResults/AppStore-iphone-6.9-20260923-021000.xcresult",
+  "build": "3",
+  "xcresult": "TestResults/AppStore-iphone-6.9-20261011-014925.xcresult",
   "data": "synthetic, labelled in the app",
   "images": [
     {
@@ -11,9 +11,9 @@
         880,
         1912
       ],
-      "sha256": "6f26babd48af8349c7166575f04ec8dd3f7afc6ea99e4f6640710a585ae0d51b",
+      "sha256": "5b96a96901920e3b90eea1a303bcc54b33ae9408fc6c5596e11876b59ce5167e",
       "source": "AppStore/screenshots/iphone-6.9/en-01-history.png",
-      "source_sha256": "8ee7f6796eade3d89680288f9e2d55b2b40fbd785d79190ad1a585fe8dcfb1be"
+      "source_sha256": "80157d859776acfccf90378fbf4cb5932be667e3c0beca7d4e76e767fc94e1c6"
     },
     {
       "file": "en-trends.webp",
@@ -21,9 +21,9 @@
         880,
         1912
       ],
-      "sha256": "d999bc9e48f2c6ec149fee2d5c08c6c8a7e69770d5c9a8696c37b7701fe5fbc9",
+      "sha256": "49a70b18d96e775e4f01c3fa44547489f2e296e4551dd8f3a98f00c95162337d",
       "source": "AppStore/screenshots/iphone-6.9/en-03-trends.png",
-      "source_sha256": "3b1d7a5fd0f060c4d19fed05934e4e472538fba9a0e37793bcb1b36f6eb7d02e"
+      "source_sha256": "2717a43b75e539fe90ddf120cde0751086842455961153c0d96a0c0803d82642"
     },
     {
       "file": "en-waveform.webp",
@@ -31,9 +31,9 @@
         880,
         1912
       ],
-      "sha256": "2c1270edca0d3438fb19621fac376150c2f72ee83ebc882a1855a9d7e9912386",
+      "sha256": "701a32b69681f5afe3b83ff640f501479a5520042135b793142c0b8472f97fb5",
       "source": "AppStore/screenshots/iphone-6.9/en-04-waveform.png",
-      "source_sha256": "7f5682b147e9edc2fa28740ddb681e9a43ca5b9915cda4b3390b6fe725a28049"
+      "source_sha256": "81e5735a8af939bc0ac6243c4e65b0f50e95b6c9166fbfab86b0989cf41ea847"
     },
     {
       "file": "zh-Hans-history.webp",
@@ -41,9 +41,9 @@
         880,
         1912
       ],
-      "sha256": "7d9e34c69a508a8f33e46d5aee4591f4a5cbb7c3c18edbbd7a03f798918a70f1",
+      "sha256": "0e07c039577cd2af088d2d11c0c3fa2697f019162b36e48a193b36d368b807ce",
       "source": "AppStore/screenshots/iphone-6.9/zh-Hans-01-history.png",
-      "source_sha256": "77c763744997ad1db4cf837f45e230bd786fcfb0ae616bad425866d9014a8530"
+      "source_sha256": "e6fe288a342eb0d30fd776ab97c6ff5b898f07249a5849a88e1f7e2faa15e441"
     },
     {
       "file": "zh-Hans-trends.webp",
@@ -51,9 +51,9 @@
         880,
         1912
       ],
-      "sha256": "319843753bb0b8d66284fdab31a6fb9cbee8c1dc2932fe4912512977bdef5528",
+      "sha256": "3ecebf563302b48b26f13c4e3034c7bf330bd4ae05181db748bbae98251752fe",
       "source": "AppStore/screenshots/iphone-6.9/zh-Hans-03-trends.png",
-      "source_sha256": "a09c9b271b32bc242691441da5c66b01361caa442d90cc1d08a3cdd8c370113e"
+      "source_sha256": "2beaa8f78b2ed1e2e12cc247a0d635436f7b9751c2aeb1fbbca1e369cdb49a90"
     },
     {
       "file": "zh-Hans-waveform.webp",
@@ -61,9 +61,9 @@
         880,
         1912
       ],
-      "sha256": "8ea8f1031c57d5c97fd81eb750c0b7f7823b7d346904c86845dd450a7e9f8f7c",
+      "sha256": "c93950dd0665c162a05c2a9d06e9a0d11a02173c2fd10af605cf95564a9fd9af",
       "source": "AppStore/screenshots/iphone-6.9/zh-Hans-04-waveform.png",
-      "source_sha256": "43e1a3820017cdcf2c68c41b051269630096ad6201001fa52659b678e37a9189"
+      "source_sha256": "fe7d272b3ba8ff1ad4cc744498b76cb2475350c2b5b6f44159bae3815486963d"
     }
   ]
 }

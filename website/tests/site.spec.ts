@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { mkdir } from 'node:fs/promises';
 
 const routes = ['/', '/support/', '/privacy/', '/terms/', '/release/', '/docs/', '/docs/data/', '/docs/methods/', '/zh/', '/zh/support/', '/zh/privacy/', '/zh/terms/', '/zh/release/', '/docs/zh/', '/docs/zh/data/', '/docs/zh/methods/'];
-test('all content routes, legal drafts and page metadata', async ({ page }) => {
+test('all content routes, public legal pages and page metadata', async ({ page }) => {
   for (const path of routes) {
     await test.step(path, async () => {
       const response = await page.goto(path);
@@ -11,7 +11,12 @@ test('all content routes, legal drafts and page metadata', async ({ page }) => {
       await expect(page.locator('h1')).toHaveCount(1);
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /https:\/\/heartpro\.alkinum\.com\//);
       await expect(page.locator('html')).toHaveAttribute('lang', path.includes('zh') ? /zh/ : 'en');
-      if (/privacy|terms/.test(path)) await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+      if (/privacy|terms/.test(path)) {
+        await expect(page.locator('main')).toContainText('HeartPro');
+        await expect(page.locator('main')).not.toContainText(/Publication draft|发布草稿/);
+        const robots = await page.locator('meta[name="robots"]').evaluateAll(nodes => nodes.map(node => node.getAttribute('content') ?? '').join(','));
+        expect(robots).not.toContain('noindex');
+      }
     });
   }
 });

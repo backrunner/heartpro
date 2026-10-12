@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-10-09T16:37:19.161752+00:00",
+  "deployment_version": "68c01fdb-8f8b-4d39-9370-a9f488df655c",
+  "checks": [
+    {
+      "url": "https://heartpro.alkinum.com/screenshots/en-history.webp",
+      "status": 200,
+      "sha256": "060d66fa3aa7885d480bc40489d4983a60dac6d0dabbb564d22f8f09fc40e896",
+      "matches_local": true
+    },
+    {
+      "url": "https://heartpro.alkinum.com/screenshots/en-trends.webp",
+      "status": 200,
+      "sha256": "0c41098dd0f4796ef1e5d03fc2fda6f085d5e51a66bc8e7e281e157d083f87b4",
+      "matches_local": true
+    },
+    {
+      "url": "https://heartpro.alkinum.com/screenshots/en-waveform.webp",
+      "status": 200,
+      "sha256": "99b331091172db02036b02a1c21a6ef742c5e19c34b06dd0026ebb8d5e537e0e",
+      "matches_local": true
+    },
+    {
+      "url": "https://heartpro.alkinum.com/screenshots/zh-Hans-history.webp",
+      "status": 200,
+      "sha256": "e7efbd458cc56351450d50851fd31862ce34dd754cf6cbff91627c3bbfcf356c",
+      "matches_local": true
+    },
+    {
+      "url": "https://heartpro.alkinum.com/screenshots/zh-Hans-trends.webp",
+      "status": 200,
+      "sha256": "3f406f8ea1ff2442dee7cd524a3c31d6e745ce55bd61bf44812bc94cb81dec4d",
+      "matches_local": true
+    },
+    {
+      "url": "https://heartpro.alkinum.com/screenshots/zh-Hans-waveform.webp",
+      "status": 200,
+      "sha256": "0d4716a0b109585df9f5341f405096c2dce7ce6fc07bd108797000760dcf2129",
+      "matches_local": true
+    },
+    {
+      "url": "https://heartpro.alkinum.com/",
+      "status": 200
+    },
+    {
+      "url": "https://heartpro.alkinum.com/privacy/",
+      "status": 200
+    },
+    {
+      "url": "https://heartpro.alkinum.com/support/",
+      "status": 200
+    },
+    {
+      "url": "https://heartpro.alkinum.com/tos/",
+      "status": 200
+    },
+    {
+      "url": "https://heartpro.alkinum.com/zh/",
+      "status": 200
+    },
+    {
+      "url": "https://heartpro.alkinum.com/zh/privacy/",
+      "status": 200
+    },
+    {
+      "url": "https://heartpro.alkinum.com/zh/support/",
+      "status": 200
+    },
+    {
+      "url": "https://heartpro.alkinum.com/zh/tos/",
+      "status": 200
+    }
+  ]
+}

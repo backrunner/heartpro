@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Capture and export real XCTest screenshots; never resize or fabricate app screens."""
 import argparse, datetime, hashlib, json, os, pathlib, plistlib, shutil, signal, struct, subprocess, sys, tempfile
+from appstore_common import app_source_fingerprint
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 LANGUAGES = [entry['language'] for entry in json.loads((ROOT / 'AppStore/localizations.json').read_text())['localizations']]
 p = argparse.ArgumentParser()
 p.add_argument('--device', required=True, help='Dedicated simulator UDID, not a personal device')
-p.add_argument('--group', choices=['iphone-6.9', 'ipad-13'], required=True)
+p.add_argument('--group', choices=['iphone-6.9', 'iphone-6.3', 'ipad-13'], required=True)
 p.add_argument('--timeout', type=int, default=600)
 a = p.parse_args()
 def run(*args, timeout=60, capture=False):
@@ -32,7 +33,7 @@ try:
         '--wifiMode', 'active', '--wifiBars', '3', '--batteryState', 'discharging', '--batteryLevel', '100')
     stamp = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
     result = ROOT / f'TestResults/AppStore-{a.group}-{stamp}.xcresult'
-    run('xcodegen', 'generate')
+    source_fingerprint = app_source_fingerprint(ROOT)
     run('xcodebuild', '-project', 'HeartPro.xcodeproj', '-scheme', 'HeartPro',
         '-destination', f'platform=iOS Simulator,id={a.device}', '-derivedDataPath', 'DerivedData',
         '-resultBundlePath', str(result), '-parallel-testing-enabled', 'NO', '-collect-test-diagnostics', 'never',
@@ -58,7 +59,9 @@ try:
                     if name.startswith(key): chosen[key] = export / item['exportedFileName']
         expected_count = 6 * len(LANGUAGES)
         if len(chosen) != expected_count: raise ValueError(f'Expected {expected_count} named screenshots, found {len(chosen)}; inspect {result}')
-        accepted = {'iphone-6.9': {(1320,2868),(1290,2796),(1260,2736)}, 'ipad-13': {(2064,2752),(2048,2732)}}[a.group]
+        if app_source_fingerprint(ROOT) != source_fingerprint:
+            raise ValueError('App sources changed during capture; keep the previous assets and recapture.')
+        accepted = {'iphone-6.9': {(1320,2868),(1290,2796),(1260,2736)}, 'iphone-6.3': {(1206,2622),(1179,2556)}, 'ipad-13': {(2064,2752),(2048,2732)}}[a.group]
         for key, file in chosen.items():
             data = file.read_bytes()
             if data[:8] != b'\x89PNG\r\n\x1a\n' or struct.unpack('>II', data[16:24]) not in accepted:
@@ -75,6 +78,7 @@ try:
         (destination / 'manifest.json').write_text(json.dumps({'bundle_id':info['CFBundleIdentifier'],
             'version':info['CFBundleShortVersionString'],'build':info['CFBundleVersion'],'device':device,
             'captured_at':stamp,'xcresult':str(result.relative_to(ROOT)),'data':'synthetic, labelled in the app',
+            'source_fingerprint_sha256':source_fingerprint,
             'visual_review_complete':False,'screenshots':items}, indent=2)+'\n')
         print(f'Exported {expected_count} screenshots to {destination}; visual review is still required.')
 except (subprocess.SubprocessError, ValueError, StopIteration, AssertionError, OSError) as error:

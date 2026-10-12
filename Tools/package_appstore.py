@@ -17,6 +17,8 @@ LIMITS = {'name': 30, 'subtitle': 30, 'description': 4000, 'keywords': 100,
 def generated_files():
     config = json.loads((STORE / 'localizations.json').read_text())
     state = json.loads((STORE / 'readiness.json').read_text())
+    connect_evidence = STORE / 'evidence/connect-2026-10-10/status.json'
+    saved = json.loads(connect_evidence.read_text()) if connect_evidence.exists() else {}
     project = (ROOT / 'project.yml').read_text()
     version = re.search(r"MARKETING_VERSION:\s*'([^']+)'", project).group(1)
     build = re.search(r"CURRENT_PROJECT_VERSION:\s*'([^']+)'", project).group(1)
@@ -26,10 +28,21 @@ def generated_files():
         'external_testflight_ready': state['external_testflight_ready'],
         'bundle_id': state['bundle_id'], 'version': version, 'build': build,
         'primary_locale': config['primary_locale'],
+        'primary_category': state['store_category']['primary'],
+        'secondary_category': state['store_category']['secondary'],
+        'operator': state['operator'],
+        'copyright': f"2026 {state['operator'].get('display_name') or 'Alkinum'}",
         'sign_in_required': False,
         'review_notes': (STORE / 'review-notes.txt').read_text().strip(),
-        'account_fields_deferred': ['copyright_owner', 'review_contact_name', 'review_contact_email',
-                                   'review_contact_phone', 'price', 'territories'],
+        'account_fields_deferred': (
+            (['review_contact_name', 'review_contact_email', 'review_contact_phone'] if not saved.get('review_contact_saved') else [])
+            + (['price'] if not saved.get('price_base_amount') else [])
+            + (['territories'] if not saved.get('territories_saved') else [])
+            + (['regulated_medical_device_declaration'] if not saved.get('regulated_medical_device_declaration_saved') else [])
+            + (['privacy_publish_confirmation'] if not saved.get('privacy_labels_published') else [])
+        ),
+        'review_contact_saved_in_connect': saved.get('review_contact_saved', False),
+        'price_base': {'currency': saved.get('price_base_currency'), 'amount': saved.get('price_base_amount')},
         'urls_verified_public': state['gates']['public_policies_and_support_https']['complete'],
         'localizations': {},
     }
@@ -45,7 +58,7 @@ def generated_files():
         }
         prefix = 'https://heartpro.alkinum.com/' + ('zh/' if language == 'zh-Hans' else '')
         screenshots = {}
-        for group in ['iphone-6.9', 'ipad-13']:
+        for group in ['iphone-6.3', 'iphone-6.9', 'ipad-13']:
             folder = STORE / 'screenshots' / group
             capture = json.loads((folder / 'manifest.json').read_text())
             known = {item['file']: item for item in capture['screenshots']}
@@ -96,7 +109,7 @@ def main():
     selected = set()
     for name in ['metadata', 'testflight', 'icons', 'submission', 'validation']:
         selected.update(path for path in (STORE / name).rglob('*') if path.is_file())
-    for group in ['iphone-6.9', 'ipad-13']:
+    for group in ['iphone-6.3', 'iphone-6.9', 'ipad-13']:
         selected.update(path for path in (STORE / 'screenshots' / group).iterdir() if path.is_file())
     selected.update((STORE / 'screenshots').glob('*contact-sheet.jpg'))
     for name in ['README.md', 'localizations.json', 'readiness.json', 'connect-settings.md',
@@ -105,6 +118,7 @@ def main():
     # Keep the delivery focused: current summaries, notice previews and synthetic report examples.
     for name in ['validation/device-checklist.md', 'validation/watch-accuracy-protocol.md',
                  'validation/compliance-2026-09-22.md',
+                 'validation/health-fitness-2026-10-09.md',
                  'evidence/submission-materials-2026-09-22/online-checks.json',
                  'evidence/submission-materials-2026-09-22/iphone-tests-summary.json',
                  'evidence/submission-materials-2026-09-22/ipad-tests-summary.json',
@@ -113,6 +127,9 @@ def main():
                  'evidence/usage-notice-design-2026-09-22/zh-ipad-light.png',
                  'evidence/usage-notice-design-2026-09-22/language-contact-sheet.jpg']:
         selected.add(STORE / name)
+    selected.update(path for path in (STORE / 'evidence/health-fitness-2026-10-09').rglob('*') if path.is_file())
+    selected.update(path for path in (STORE / 'evidence/wave-labels-2026-10-10').rglob('*') if path.is_file())
+    selected.update(path for path in (STORE / 'evidence/connect-2026-10-10').rglob('*') if path.is_file())
     selected.update((STORE / 'evidence/testflight-2026-09-22').glob('report-*.pdf'))
     selected.update((STORE / 'evidence/submission-materials-2026-09-22').glob('*.txt'))
     for language in ['en', 'zh']:

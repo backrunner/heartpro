@@ -1,13 +1,14 @@
 # Screenshot delivery
 
-Refreshed on **2026-09-22** after the final usage-notice design. Current **0.6.0 (1)** app screenshots are captured from the real simulator UI with labelled synthetic examples in all six supported languages:
+Refreshed on **2026-10-13** for release build 4. Current **0.6.0 (4)** app screenshots are captured from the real simulator UI with labelled synthetic examples in all six supported languages:
 
 | Directory | Native dimensions | Languages / count |
 | --- | --- | --- |
+| `iphone-6.3/` | 1206 × 2622 | English, Simplified Chinese, Japanese, Korean, German, Spanish; 6 each |
 | `iphone-6.9/` | 1320 × 2868 | English, Simplified Chinese, Japanese, Korean, German, Spanish; 6 each |
 | `ipad-13/` | 2064 × 2752 | English, Simplified Chinese, Japanese, Korean, German, Spanish; 6 each |
 
-72 upload PNGs are included. Per-language contact sheets are named `<device-group>-<language>-contact-sheet.jpg`; combined overviews are also available. Do not upload contact sheets. The manifests identify the build, simulator, XCTest result, source fingerprint and PNG hashes. This capture run passed all 12 automated journeys (6 per device), with no failures, skips or runtime warnings. Visual review is recorded separately in each manifest. Current summaries and logs are in `../evidence/submission-materials-2026-09-22/`; older retry logs remain historical evidence. These screenshots demonstrate the app UI, not medical accuracy or real HealthKit access.
+108 upload PNGs are included. All 18 language/device contact sheets were visually reviewed. The 72 required iPhone 6.3-inch and iPad 13-inch screenshots were replaced in Connect for all six languages; the optional large-iPhone associations were retained. German note navigation title may use native ellipsis, with full Cancel/Save controls visible. Current delivery evidence is in [build 4](../evidence/build-4-2026-10-13/README.md). Per-language contact sheets are named `<device-group>-<language>-contact-sheet.jpg`; combined overviews are also available. Do not upload contact sheets. The manifests identify the build, simulator, XCTest result, source fingerprint and PNG hashes. This capture run passed all 18 automated journeys (6 per device), with no failures or skips. Xcode reported debugger-version diagnostics during launches; they did not fail the journeys. Visual review is recorded separately in each manifest. Current summaries are in `../evidence/health-fitness-2026-10-09/`; waveform-label zoom, large-text and full-screen checks are in `../evidence/wave-labels-2026-10-10/`; September captures and logs remain historical evidence. These screenshots demonstrate the app UI, not medical accuracy or real HealthKit access.
 
 `reference-only/` contains ten older 0.3 development screenshots plus a contact sheet. These files are real historical UI with synthetic data, but are **not final App Store assets**. Their original source paths and hashes are in the manifest. The website now uses optimized copies of the current 0.6.0 iPhone images, with provenance in `website/static/screenshots/provenance.json`. Do not crop away demo labels, stretch screenshots to another device size, or imply they show another build.
 

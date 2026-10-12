@@ -2,6 +2,8 @@
 """Local material checks; release modes require their own evidence gates."""
 from pathlib import Path
 import argparse,hashlib,json,plistlib,re,struct,sys
+from appstore_common import app_source_fingerprint
+from check_entitlements import check_source
 root=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser()
 mode=p.add_mutually_exclusive_group()
@@ -9,6 +11,7 @@ mode.add_argument('--submission',action='store_true')
 mode.add_argument('--external-testflight',action='store_true')
 args=p.parse_args()
 errors=[]
+errors.extend(check_source(root))
 def check(ok, message):
  if not ok:errors.append(message)
 yaml=(root/'project.yml').read_text();check('PRODUCT_BUNDLE_IDENTIFIER: com.alkinum.heartpro' in yaml,'Wrong bundle ID')
@@ -35,10 +38,13 @@ for entry in localizations:
   value=(root/f'AppStore/testflight/{field}.{lang}.txt').read_text().strip()
   check(0<len(value)<=4000,f'{lang}/{field}: empty or exceeds 4000 characters')
 check(json.loads((root/'AppStore/metadata/lengths.json').read_text())==lengths,'Stale metadata lengths; run Tools/package_appstore.py')
-check(0<len((root/'AppStore/review-notes.txt').read_text().strip())<=4000,'Review notes: empty or exceeds 4000 characters')
+check(0<len((root/'AppStore/review-notes.txt').read_text().strip().encode('utf-8'))<=4000,'Review notes: empty or exceeds 4000 UTF-8 bytes')
 for f in (root/'AppStore/icons').glob('*.png'):
  b=f.read_bytes();check(struct.unpack('>II',b[16:24])==(1024,1024),f'{f.name}: wrong icon size');check(b[25]==2,f'{f.name}: expected RGB without alpha')
 state=json.loads((root/'AppStore/readiness.json').read_text())
+check(state.get('store_category',{}).get('primary')=='Health & Fitness','Expected Health & Fitness primary category')
+check('INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.healthcare-fitness' in yaml,'Wrong native category')
+source_fingerprint=app_source_fingerprint(root)
 version=re.search(r"MARKETING_VERSION:\s*'([^']+)'",yaml).group(1)
 build=re.search(r"CURRENT_PROJECT_VERSION:\s*'([^']+)'",yaml).group(1)
 for group,allowed in [('iphone-6.9',{(1320,2868),(1290,2796),(1260,2736)}),('ipad-13',{(2064,2752),(2048,2732)})]:
@@ -64,6 +70,7 @@ for group,allowed in [('iphone-6.9',{(1320,2868),(1290,2796),(1260,2736)}),('ipa
   check(b[25]==2,f'{group}/{f.name}: expected RGB screenshot without alpha')
  if args.submission or state['gates']['current_iphone_and_ipad_screenshots']['complete']:
   check(data.get('visual_review_complete') is True,f'{group}: visual review missing')
+  check(data.get('source_fingerprint_sha256')==source_fingerprint,f'{group}: capture does not match current app sources; recapture')
 if args.submission:
  for gate,v in state['gates'].items():
   check(v['complete'] and v['evidence'] and (root/'AppStore'/v['evidence']).is_file(),f'BLOCKED: {gate}')

@@ -11,9 +11,11 @@ packages:
 settings:
   base:
     SWIFT_VERSION: '6.0'
+    DEVELOPMENT_TEAM: PB8H83VL3Z
+    CODE_SIGN_STYLE: Automatic
     SWIFT_STRICT_CONCURRENCY: complete
     MARKETING_VERSION: '0.6.0'
-    CURRENT_PROJECT_VERSION: '1'
+    CURRENT_PROJECT_VERSION: '4'
 targets:
   HeartPro:
     type: application

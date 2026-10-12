@@ -674,3 +674,5 @@
 "分析结果有局限" = "El análisis tiene límites";
 "不适时，请及时就医" = "Si se siente mal, busque atención médica";
 "按周汇总" = "Resumen semanal";
+"波段标注" = "Anotaciones de la forma de onda";
+"接触、姿势和信号处理都可能改变 ST 的样子。单导联记录的局限性较大，解读需结合多方面信息。" = "El contacto, la postura y el procesamiento pueden cambiar el aspecto del segmento ST. Los registros de una sola derivación tienen limitaciones importantes y deben interpretarse junto con otra información pertinente.";

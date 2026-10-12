@@ -8,7 +8,7 @@ import HeartProCore
     var measuring = false
     var firstPoint: VoltagePoint?
     var secondPoint: VoltagePoint?
-    var position: Int? = 0
+    var position = ScrollPosition(id: 0, anchor: .leading)
     var selection: WaveformAnnotation?
 }
 
@@ -53,8 +53,13 @@ private struct WaveformPlot: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     private let tileDuration = 0.5
     private var tiles: Int { max(1, Int(ceil(waveform.duration / tileDuration))) }
-    private var lanes: [Int] { viewport.showSegments ? Set(annotations.map { $0.kind.lane }).sorted() : [] }
-    private var bandHeight: CGFloat { CGFloat(lanes.count) * 16 }
+    @ScaledMetric(relativeTo: .caption2) private var bandFontSize = 9.0
+    private var bandLayout: WaveformBandLayout {
+        WaveformBandLayout(annotations: viewport.showSegments ? annotations : [], duration: waveform.duration,
+                           pointsPerSecond: 100 * viewport.zoom,
+                           font: .systemFont(ofSize: bandFontSize, weight: .medium))
+    }
+    private var bandHeight: CGFloat { bandLayout.height }
     private var hasReadout: Bool { viewport.measuring || viewport.selection != nil || selectedTime != nil }
     private var height: CGFloat {
         availableHeight.map { max(80, $0 - 100 - bandHeight - (hasReadout ? 30 : 0)) } ?? 148
@@ -87,13 +92,14 @@ private struct WaveformPlot: View {
                     VoltageAxis(height: height, pointsPerMillivolt: 40 * viewport.zoom)
                 }.frame(width: 36)
                 ScrollView(.horizontal) {
-                    VStack(spacing: 0) {
-                        if !lanes.isEmpty {
-                            WaveformBands(annotations: annotations, lanes: lanes, duration: waveform.duration,
-                                          selected: viewport.selection) { select($0) }
+                    VStack(alignment: .leading, spacing: 0) {
+                        if !bandLayout.entries.isEmpty {
+                            WaveformBands(layout: bandLayout, selected: viewport.selection) { select($0) }
                                 .frame(width: max(1, waveform.duration * 100 * viewport.zoom), height: bandHeight)
                         }
-                        LazyHStack(spacing: 0) {
+                        // Every tile participates in layout so zoom and rotation
+                        // cannot leave off-screen scroll targets at estimated positions.
+                        HStack(spacing: 0) {
                             ForEach(0..<tiles, id: \.self) { tile in
                                 let start = Double(tile) * tileDuration
                                 let end = min(waveform.duration, start + tileDuration)
@@ -102,6 +108,7 @@ private struct WaveformPlot: View {
                                                range: start...max(start + 0.01, end), peakTimes: viewport.showPeaks ? peakTimes : [],
                                                gain: viewport.zoom, standard: true, markers: markers)
                                     .frame(width: width, height: height).id(tile)
+                                    .accessibilityIdentifier("waveformTile-\(tile)")
                                     .onTapGesture { location in
                                         guard viewport.measuring else { return }
                                         let time = start + location.x / (100 * viewport.zoom)
@@ -113,8 +120,9 @@ private struct WaveformPlot: View {
                             }
                         }.scrollTargetLayout()
                     }
+                    .frame(width: max(1, waveform.duration * 100 * viewport.zoom), alignment: .leading)
                 }
-                .scrollPosition(id: $viewport.position, anchor: .leading).scrollIndicators(.hidden)
+                .scrollPosition($viewport.position, anchor: .leading).scrollIndicators(.hidden)
                 .clipShape(RoundedRectangle(cornerRadius: 8)).accessibilityIdentifier("fullWaveform")
                 .simultaneousGesture(MagnifyGesture().onChanged { value in
                     if pinchStart == nil { pinchStart = viewport.zoom }
@@ -139,12 +147,15 @@ private struct WaveformPlot: View {
                     .foregroundStyle(viewport.measuring ? HP.coral : .secondary)
                     .accessibilityLabel(L10n.text("双点测量")).accessibilityIdentifier("measureWaveform")
                 Menu {
-                    Button(L10n.text("波形开头"), systemImage: "backward.end") { viewport.position = 0 }
-                    Button(L10n.text("波形末尾"), systemImage: "forward.end") { viewport.position = tiles - 1 }
+                    Button(L10n.text("波形开头"), systemImage: "backward.end") { viewport.position.scrollTo(edge: .leading) }
+                        .accessibilityIdentifier("jumpToWaveformStart")
+                    Button(L10n.text("波形末尾"), systemImage: "forward.end") { viewport.position.scrollTo(edge: .trailing) }
+                        .accessibilityIdentifier("jumpToWaveformEnd")
                     Toggle(L10n.text("波段标注"), isOn: $viewport.showSegments)
                     Toggle(L10n.text("研究性 R 峰"), isOn: $viewport.showPeaks)
                 } label: { Image(systemName: "ellipsis").frame(width: 44, height: 44) }
                     .accessibilityLabel(L10n.text("波形选项"))
+                    .accessibilityIdentifier("waveformOptions")
             }.font(.body).buttonStyle(.plain)
             if hasReadout {
                 HStack(spacing: 8) {
@@ -159,7 +170,7 @@ private struct WaveformPlot: View {
         .onChange(of: selectedTime) { _, time in
             if let time {
                 withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.2)) {
-                    viewport.position = min(tiles - 1, max(0, Int(time / tileDuration)))
+                    viewport.position.scrollTo(id: min(tiles - 1, max(0, Int(time / tileDuration))), anchor: .leading)
                 }
             }
         }
@@ -193,44 +204,89 @@ private struct WaveformPlot: View {
     }
 }
 
+/// Label widths are independent of measured spans. Extra rows resolve label
+/// collisions at small zoom levels without widening or moving the time brackets.
+@MainActor struct WaveformBandLayout {
+    struct Entry {
+        var span: WaveformAnnotation
+        var band: CGRect
+        var label: CGRect
+    }
+    var entries: [Entry] = []
+    var height: CGFloat = 0
+    var font: UIFont
+
+    init(annotations: [WaveformAnnotation], duration: Double, pointsPerSecond: CGFloat, font: UIFont) {
+        self.font = font
+        let contentWidth = max(1, duration * pointsPerSecond)
+        let rowHeight = max(16, ceil(font.lineHeight) + 4)
+        for lane in Set(annotations.map { $0.kind.lane }).sorted() {
+            var rowEnds: [CGFloat] = []
+            var pending: [(WaveformAnnotation, CGRect, CGFloat, Int)] = []
+            for span in annotations.filter({ $0.kind.lane == lane }).sorted(by: { $0.start < $1.start }) {
+                guard let range = span.clipped(to: 0...duration) else { continue }
+                let x = range.lowerBound * pointsPerSecond
+                let width = (range.upperBound - range.lowerBound) * pointsPerSecond
+                let labelWidth = ceil((span.kind.label as NSString).size(withAttributes: [.font: font]).width) + 2
+                let labelX = max(0, min(contentWidth - labelWidth, x + width / 2 - labelWidth / 2))
+                let row = rowEnds.firstIndex(where: { $0 + 3 <= labelX }) ?? rowEnds.count
+                if row == rowEnds.count { rowEnds.append(labelX + labelWidth) }
+                else { rowEnds[row] = labelX + labelWidth }
+                pending.append((span, CGRect(x: labelX, y: 0, width: labelWidth, height: ceil(font.lineHeight)), width, row))
+            }
+            let bandY = height + CGFloat(max(0, rowEnds.count - 1)) * rowHeight + 2
+            for (span, label, width, row) in pending {
+                let band = CGRect(x: max(0, span.start) * pointsPerSecond, y: bandY,
+                                  width: width, height: rowHeight - 4)
+                entries.append(Entry(span: span, band: band,
+                    label: CGRect(x: label.minX, y: band.midY - CGFloat(row) * rowHeight - label.height / 2,
+                                  width: label.width, height: label.height)))
+            }
+            height += CGFloat(rowEnds.count) * rowHeight
+        }
+    }
+
+    func annotation(at point: CGPoint) -> WaveformAnnotation? {
+        entries.first { $0.label.contains(point) }?.span ?? entries.first { $0.band.contains(point) }?.span
+    }
+}
+
 private struct WaveformBands: View {
-    var annotations: [WaveformAnnotation]
-    var lanes: [Int]
-    var duration: Double
+    var layout: WaveformBandLayout
     var selected: WaveformAnnotation?
     var select: (WaveformAnnotation) -> Void
 
     var body: some View {
-        GeometryReader { geometry in
-            Canvas { context, size in
-                let scale = size.width / max(duration, 0.001)
-                for span in annotations {
-                    guard let range = span.clipped(to: 0...duration), let row = lanes.firstIndex(of: span.kind.lane) else { continue }
-                    let x = range.lowerBound * scale, width = (range.upperBound - range.lowerBound) * scale
-                    let y = Double(row) * 16
-                    let color = HP.coral
-                    let rect = CGRect(x: x, y: y + 2, width: max(0.5, width), height: 12)
-                    context.fill(Path(roundedRect: rect, cornerRadius: 2), with: .color(color.opacity(selected?.id == span.id ? 0.28 : 0.12)))
-                    var bracket = Path()
-                    bracket.move(to: CGPoint(x: x, y: y + 10)); bracket.addLine(to: CGPoint(x: x, y: y + 14))
-                    bracket.addLine(to: CGPoint(x: x + width, y: y + 14)); bracket.addLine(to: CGPoint(x: x + width, y: y + 10))
-                    context.stroke(bracket, with: .color(color.opacity(0.7)), lineWidth: 0.8)
-                    let label = context.resolve(Text(span.kind.label).font(.system(size: 9, weight: .medium)).foregroundStyle(.primary))
-                    if label.measure(in: CGSize(width: 100, height: 12)).width + 2 < width {
-                        context.draw(label, at: CGPoint(x: x + width / 2, y: y + 7))
-                    }
+        Canvas { context, _ in
+            for entry in layout.entries {
+                let rect = entry.band
+                let color = HP.coral
+                context.fill(Path(roundedRect: rect, cornerRadius: 2),
+                             with: .color(color.opacity(selected?.id == entry.span.id ? 0.28 : 0.12)))
+                var bracket = Path()
+                bracket.move(to: CGPoint(x: rect.minX, y: rect.maxY - 4))
+                bracket.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
+                bracket.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+                bracket.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY - 4))
+                if entry.label.maxY < rect.minY {
+                    bracket.move(to: CGPoint(x: entry.label.midX, y: entry.label.maxY + 1))
+                    bracket.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
                 }
-            }.onTapGesture { point in
-                let row = Int(point.y / 16), time = point.x / geometry.size.width * duration
-                guard lanes.indices.contains(row), let span = annotations.first(where: {
-                    $0.kind.lane == lanes[row] && $0.start <= time && $0.end >= time
-                }) else { return }
-                select(span)
+                context.stroke(bracket, with: .color(color.opacity(0.7)), lineWidth: 0.8)
             }
+            // Paint text last so a neighbouring range never covers a narrow wave's label.
+            for entry in layout.entries {
+                let label = context.resolve(Text(entry.span.kind.label).font(Font(layout.font)).foregroundStyle(.primary))
+                context.draw(label, at: CGPoint(x: entry.label.midX, y: entry.label.midY))
+            }
+        }
+        .onTapGesture { point in
+            if let span = layout.annotation(at: point) { select(span) }
         }
         .accessibilityElement(children: .ignore).accessibilityLabel(L10n.text("波段标注"))
         .accessibilityValue(selected.map { "\($0.kind.label), \($0.milliseconds.integerText) ms" } ?? "")
         .accessibilityAdjustableAction { direction in
+            let annotations = layout.entries.map(\.span)
             let index = selected.flatMap { choice in annotations.firstIndex { $0.id == choice.id } }
             let next = direction == .increment ? min(annotations.count - 1, (index ?? -1) + 1) : max(0, (index ?? 1) - 1)
             if annotations.indices.contains(next) { select(annotations[next]) }

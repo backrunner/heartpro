@@ -14,6 +14,7 @@ import HeartProCore
     var dataRevision = 0
     var isLoadingHRV = false
     var totalCount = 0
+    private(set) var hasUnfinishedAnalyses = false
     var hasMore = true
     var isLoading = false
     var isPreparingDemo = false
@@ -71,13 +72,18 @@ import HeartProCore
         let currentGeneration = generation
         do {
             let limit = max(30, records.count)
-            if isDemo { records = demoRecords.prefix(limit).map(\.lightweight); notes = demoNotes; totalCount = demoRecords.count }
+            if isDemo {
+                records = demoRecords.prefix(limit).map(\.lightweight); notes = demoNotes; totalCount = demoRecords.count
+                hasUnfinishedAnalyses = false
+            }
             else {
                 let page = try await repository.page(limit: limit)
                 let storedNotes = try await repository.notes()
                 let count = try await repository.count()
+                let unfinished = try await repository.hasUnfinishedAnalyses()
                 guard currentGeneration == generation else { return }
                 records = page; notes = storedNotes; totalCount = count
+                hasUnfinishedAnalyses = unfinished
             }
             hasMore = records.count < totalCount
             dataRevision += 1
@@ -179,9 +185,9 @@ import HeartProCore
                 }
             }
             lastSynced = .now; syncMessage = L10n.text("已更新 \(totalCount) 条记录")
-            await reload()
         } catch is CancellationError { syncMessage = L10n.text("整理已暂停，下次打开继续") }
         catch { syncMessage = L10n.text("同步暂未完成"); errorMessage = error.localizedDescription }
+        await reload()
     }
 
     func waveform(for record: ECGRecord) async throws -> Waveform {

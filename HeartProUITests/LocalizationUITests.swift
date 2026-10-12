@@ -7,7 +7,8 @@ final class LocalizationUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["--uitesting", "--skip-guide", "--demo", "--light", "--large-text", "-AppleLanguages", "(de)", "-AppleLocale", "de_DE"]
         app.launchHeartPro()
-        XCTAssertTrue(app.buttons["ecgRecord-0"].waitForExistence(timeout: 30))
+        XCTAssertTrue(app.buttons["dailyOverview"].waitForExistence(timeout: 30))
+        scrollTo(app.buttons["ecgRecord-0"], app: app)
         app.buttons["ecgRecord-0"].tap()
         let qrs = app.buttons["segment-qrs"]
         scrollTo(qrs, app: app)
@@ -73,9 +74,9 @@ final class LocalizationUITests: XCTestCase {
             XCTAssertTrue(app.navigationBars[language.p].waitForExistence(timeout: 5))
             app.buttons["previousBeat"].tap()
             XCTAssertFalse(app.buttons["previousBeat"].isEnabled)
-            let status = app.descendants(matching: .any).matching(NSPredicate(format: "label CONTAINS %@", language.unavailable)).firstMatch
-            XCTAssertTrue(status.waitForExistence(timeout: 5), language.code)
-            capture("\(language.code)-unavailable")
+            XCTAssertTrue(app.otherElements["segmentBeatWaveform"].exists, language.code)
+            XCTAssertTrue(app.buttons["locateSegmentBeat"].exists, language.code)
+            capture("\(language.code)-first-beat")
             app.buttons[language.done].tap()
             let help = app.buttons["hrvHelp"]
             scrollTo(help, app: app)

@@ -27,5 +27,5 @@ HeartPro-AppStore-*-preparation.zip
 *.dSYM/
 *.ipa
 
-# Private publisher and review inputs.
+# Local legal seller and App Review contact inputs. Never publish.
 .release-private/

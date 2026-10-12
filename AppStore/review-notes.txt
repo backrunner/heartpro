@@ -1,6 +1,9 @@
 HeartPro — iPhone and iPad, iOS/iPadOS 18+
 Bundle ID: com.alkinum.heartpro
 
+INTENDED CATEGORY AND OPERATOR
+Primary category: Health & Fitness. HeartPro is a personal record-review and journaling app submitted by [REDACTED PERSONAL NAME] under the Alkinum brand. Local interval estimates, premature-beat candidates and rhythm reference scores are disclosed below. Category selection does not establish regulatory status or accuracy.
+
 No sign-in or demo credentials are required. There are no in-app purchases, subscriptions, ads, third-party tracking SDKs or remote analysis services.
 
 REVIEW WITHOUT A WATCH OR HEALTH RECORDS

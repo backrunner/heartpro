@@ -2,7 +2,7 @@ HeartPro brings the heart records already in Apple Health into one place, so you
 
 REVIEW YOUR RECORDS
 • Browse your ECG history and find recordings by date.
-• View daily heart rate and HRV summaries and day, week, month or year trends.
+• View daily heart rate and HRV summaries and daily, weekly and monthly trends.
 • Scroll through original single-lead ECG waveforms, zoom in, or open the waveform full screen.
 • Select two points to compare time and voltage.
 

@@ -2,7 +2,7 @@ HeartPro reúne los registros cardíacos que ya tienes en Salud de Apple para qu
 
 REVISA TUS REGISTROS
 • Explora tu historial de ECG y busca por fecha.
-• Consulta resúmenes diarios de frecuencia cardíaca y variabilidad de la frecuencia cardíaca (VFC), además de tendencias por día, semana, mes o año.
+• Consulta resúmenes diarios de frecuencia cardíaca y variabilidad de la frecuencia cardíaca (VFC), además de tendencias por día, semana o mes.
 • Desplázate por las ondas originales del ECG de una derivación, amplíalas o ábrelas a pantalla completa.
 • Selecciona dos puntos para comparar diferencias de tiempo y voltaje.
 

@@ -1,1 +1,1 @@
-ECG records, notes & trends
+ECG, heart rate & HRV journal

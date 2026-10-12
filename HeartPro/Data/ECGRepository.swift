@@ -104,6 +104,16 @@ struct RecordCursor: Sendable { var date: Date; var key: String }
     func record(_ id: UUID) throws -> ECGRecord? { try entity(id).map { try decode($0) } }
     func listRecord(_ id: UUID) throws -> ECGRecord? { try entity(id).map { try decode($0, detailed: false, preview: true) } }
     func count() throws -> Int { try modelContext.fetchCount(FetchDescriptor<RecordEntity>()) }
+    func hasUnfinishedAnalyses() throws -> Bool {
+        var query = FetchDescriptor<RecordEntity>()
+        query.propertiesToFetch = [\.pending, \.payload]
+        for row in try modelContext.fetch(query) {
+            if row.pending { return true }
+            if try decode(row, detailed: false).failure != nil { return true }
+        }
+        return false
+    }
+
     func pending() throws -> [UUID] {
         var query = FetchDescriptor<RecordEntity>(predicate: #Predicate { $0.pending }, sortBy: [SortDescriptor(\.date, order: .reverse)])
         query.fetchLimit = 100

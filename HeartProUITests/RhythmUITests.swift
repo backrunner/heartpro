@@ -6,7 +6,8 @@ final class RhythmUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["--uitesting", "--skip-guide", "--demo", "--rhythm-demo", "--light", "--large-text", "-AppleLanguages", "(de)", "-AppleLocale", "de_DE"]
         app.launchHeartPro()
-        XCTAssertTrue(app.buttons["ecgRecord-0"].waitForExistence(timeout: 30))
+        XCTAssertTrue(app.buttons["dailyOverview"].waitForExistence(timeout: 30))
+        scrollTo(app.buttons["ecgRecord-0"], app: app)
         app.buttons["ecgRecord-0"].tap()
         let narrow = app.buttons["ectopy-8"]
         scrollTo(narrow, app: app)

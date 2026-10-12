@@ -1,10 +1,9 @@
 ---
 title: "使用条款"
 description: "了解能力边界，合理使用 HeartPro 回看记录。"
-robots: "noindex, follow"
 ---
 
-**发布草稿。** 正式发布前须补全运营主体、适用法律和生效日期；本条款不限制法定消费者权利。除非 App Store Connect 中另行指定有效自定义协议，App Store 版本适用 Apple [标准最终用户许可协议](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。
+**生效日期：2026 年 10 月 9 日。** HeartPro 由 Alkinum提供。本条款受适用法律约束，不限制你所在地的强制性消费者权利或依法可选择的救济渠道。除非 App Store Connect 中另行指定有效自定义协议，App Store 版本适用 Apple [标准最终用户许可协议](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。
 
 ## 用途
 HeartPro 整理 Apple 健康现有记录，提供本地参考分析、备忘和 PDF 导出。不录制新的心电、不持续监护、不提供急救提醒、不诊断疾病或推荐治疗。所有自动测量、候选提示、参考值和分数均不构成医疗建议，不能替代专业医生或医疗服务。自动测量及候选提示未经临床验证；分数高、未标出异常或波形看似正常均不表示安全。医疗决定前请咨询医生。
@@ -16,4 +15,4 @@ HeartPro 整理 Apple 健康现有记录，提供本地参考分析、备忘和 
 由你决定授权和分享。清空数据或删除应用前，请导出需要保留的备忘；HeartPro 不向开发者服务器备份备忘。未经适当授权，不应处理他人的健康数据。详见[隐私政策](/privacy)与[分析方法](/docs/methods)。
 
 ## 支持与变更
-联系 [support@heartpro.alkinum.com](mailto:support@heartpro.alkinum.com)。产品支持不构成医疗服务。未来若有定价或付费功能，须通过商店条款明确披露；本草稿不产生订阅或支付义务。可用性见[发行进度](/release)。
+请通过[支持表单](/support)联系我们。产品支持不构成医疗服务。未来若有定价或付费功能，须通过商店条款明确披露；本条款不产生订阅或支付义务。可用性见[发行进度](/release)。
