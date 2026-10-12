@@ -12,4 +12,4 @@ US remains **USD 2.99**. USD, EUR, GBP, CAD, AUD and NZD existing prices already
 
 Localization (677 keys, six languages), source entitlements, App Store materials, generated payload and whitespace checks are recorded as passing after final regeneration. Independent accuracy, regulatory applicability, complete real HealthKit flow and support mailbox delivery remain explicitly deferred project evidence; local readiness gates were not changed to true based on Apple submission.
 
-Screenshots and machine-readable state: [status.json](status.json), [PB](pb-build4-testing.png), [App Store](app-store-waiting-review.png), [Apple metadata](build4-metadata.png), [Xcode upload](xcode-upload.png).
+Machine-readable state: [status.json](status.json), [archive metadata](archive.json), and [Xcode upload](xcode-upload.png). Raw App Store account captures and pricing-page text contain personal account details and are retained only in the maintainer’s private evidence archive. Their removal from the current tree does not remove earlier Git versions.

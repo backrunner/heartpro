@@ -59,9 +59,14 @@
   "evidence": [
     "xcode-validation.png",
     "xcode-upload.png",
-    "pb-build4-testing.png",
-    "build4-metadata.png",
-    "app-store-waiting-review.png",
     "pricing-sgd-saved.png"
-  ]
+  ],
+  "private_evidence": {
+    "files": [
+      "pb-build4-testing.png",
+      "build4-metadata.png",
+      "app-store-waiting-review.png"
+    ],
+    "reason": "Contains personal account details; originals retained in the ignored maintainer archive."
+  }
 }
