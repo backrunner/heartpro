@@ -26,3 +26,6 @@ HeartPro-AppStore-*-preparation.zip
 *.xcresult/
 *.dSYM/
 *.ipa
+
+# Private publisher and review inputs.
+.release-private/
