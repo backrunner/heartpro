@@ -1,6 +1,6 @@
 # Open-source preparation — 2026-10-13
 
-**Publication: explicitly authorized on 2026-10-13; GitHub server-side cleanup remains pending.** The user's latest instruction requests committing and pushing all remaining changes, then making the existing repository public. This supersedes the earlier publication hold pending server-side cleanup. All eight original commits were cleaned and force-pushed. Branch history is clean, but authenticated requests for old commit SHA objects still retrieve personal account captures on GitHub; public visibility may expose these retained files.
+**Publication: public, verified on 2026-10-13; GitHub server-side cleanup remains pending.** The user's latest instruction requested committing and pushing all remaining changes, then making the existing repository public. This superseded the earlier publication hold pending server-side cleanup. All eight original commits were cleaned and force-pushed. Branch history is clean, but anonymous requests for old commit SHA objects still resolve personal account captures on GitHub; these retained files are publicly accessible.
 
 ## Scope and findings
 
@@ -60,3 +60,5 @@ The GitHub Support request is prepared in the ignored private evidence directory
 - The staged-file and tracked-file guards passed, no tracked files matched ignore rules, and [CI for that commit](https://github.com/backrunner/heartpro/actions/runs/38413045774) passed.
 - Fresh authenticated probes still retrieved the old commit, personal text capture and personal screenshot. The removed text path at `main` returned 404. These probes did not print the captured contents.
 - The owner explicitly requested public visibility following commit and push. Verification of publication uses GitHub repository metadata and anonymous access; publication must not be reported as a server purge.
+- The publication record was committed and pushed as `c5c09131b5e5b4564670c395b3710b6b3e23c3cc` before the visibility change. GitHub then reported `PUBLIC`; an unauthenticated repository API request returned HTTP 200 with `private: false` and `visibility: public`.
+- Unauthenticated HEAD requests for the old personal text and image paths returned HTTP 200. The removed text path at `main` returned HTTP 404. The old retained files are therefore publicly accessible pending GitHub cleanup; the private Support draft remains unsent.
