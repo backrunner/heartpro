@@ -1,6 +1,6 @@
 # Open-source preparation — 2026-10-13
 
-**Publication: pending. The GitHub repository remains private.** The current tree has been prepared for GPL-3.0-or-later distribution, but making the existing repository public would expose old account captures. A clean current tree is not a clean repository history.
+**Publication: pending GitHub server-side cleanup. The repository remains private.** The user explicitly authorized rewriting and force-pushing history on 2026-10-13. All eight published commits were cleaned and force-pushed. Branch history is clean, but direct requests for old commit SHA objects still retrieve personal account captures on GitHub.
 
 ## Scope and findings
 
@@ -9,14 +9,14 @@ The audit started from `d1f13870d7f6d4b0d17f548a9745775e8f13023c` on `main`. The
 | Area | Result | Evidence / limits |
 | --- | --- | --- |
 | Secret scanning | Passed | Gitleaks scanned all seven commits reachable from local refs, about 10.51 MB of text; no findings. This does not cover inaccessible GitHub caches or establish that every possible secret format is absent. |
-| Personal account data | Pending for history | Three App Store screenshots and three account-page text captures in `AppStore/evidence/build-4-2026-10-13` contained personal names. Originals were archived privately and removed from the current tree. Their old Git blobs remain reachable. |
+| Personal account data | Passed for published branch history; pending server purge | Three screenshots and three account-page text captures contained personal names. They were removed from all eight rewritten commits and excluded by exact ignore rules. Old SHA retrieval still succeeds on GitHub. |
 | Media review | Passed for targeted text checks | OCR/PDF extraction covered 664 remaining current media files and 126 historical-only variants. No further personal-name/phone candidates were found; email matches were the public support address and example placeholders. Textless artwork and OCR limitations remain; this is not a claim of exhaustive forensic or clinical review. |
 | Health data | Passed for inspected material | Product screenshots are tied to synthetic fixtures and capture manifests. `watch-records.csv` contains a header only. No raw MIT-BIH `.dat`, `.hea` or `.atr` records are tracked. Health-record upload or live HealthKit tests were not run. |
-| External documents | Passed for current tree; pending for history | Twenty complete Apple documentation captures were archived privately and replaced with official source links. Historical copies remain in Git. |
+| External documents | Passed for published branch history | Twenty complete Apple documentation captures were replaced with official source pointers in every rewritten commit. Original copies remain outside the rewritten branch history, in private archives/local recovery objects and retained old server objects. |
 | License | Passed for preparation | Added the standard GNU GPLv3 text, explicitly selected GPL-3.0-or-later for original code/docs/artwork, and added contribution, security and third-party notices. No custom store exception or copyright assignment was added. |
 | Dependencies | Passed for inspected environment | Native Swift package has no external dependencies. Installed website graph has 290 package-name entries: MIT, ISC, BSD, Apache-2.0, CC0, MPL-2.0 and LGPL-3.0-or-later. Platform binaries and future lockfile changes need their own notice/source review. |
 | README presentation | Passed | English root and website READMEs; formal light/dark app icons; three native build-4 screenshots. GitHub Markdown rendering, local links, loaded images and light/dark browser previews checked. |
-| GitHub retained records | Pending | Four pre-existing workflow runs were listed. Some refer to commits outside current fetched refs. One older success log was readable without personal-name matches; two older failure logs were unavailable. No claim that unreachable server objects or expired logs were purged. |
+| GitHub retained records | Pending server purge | Five pre-rewrite workflow records were privately backed up where available and removed; two older logs were unavailable. No Actions artifacts or caches exist. Direct old-SHA retrieval of personal text and image files still returns success. |
 
 ## Checks run
 
@@ -31,12 +31,25 @@ The audit started from `d1f13870d7f6d4b0d17f548a9745775e8f13023c` on `main`. The
 
 Final staged hygiene and remote CI are recorded with the preparation commit and its GitHub workflow result.
 
-## Before changing visibility
+## Authorized history rewrite
 
-The private originals and a bundle of the seven reachable commits are retained under the ignored `.release-private/open-source-2026-10-13/`. Do not publish that directory or bundle.
+The user explicitly chose cleanup and force push of this repository; no repository rename or replacement was performed. The private backup includes the original reachable history, raw account captures, available CI logs and the `git-filter-repo` commit map.
 
-Do not merely delete the files at HEAD and change visibility. Either preserve this repository as a private archive and publish a reviewed clean snapshot in a new repository, or obtain explicit authorization to rewrite the pushed history and address GitHub's retained references/caches before making the existing repository public. The former keeps the original audit trail and avoids exposing old Git objects through the new public repository.
+`git-filter-repo --sensitive-data-removal` rewrote all eight commits. It removed the six personal capture paths and replaced all versions of twenty third-party page snapshots with the reviewed source pointers. One old nonconforming commit title was normalized so the full rewritten history passes the repository commit-message guard. The rewritten tip was `0acf6d0097eec7639277a39b8c16f1c9fb4bba1a`.
 
-The [commit rules](../../skills/heartpro-guard/references/commits.md) require explicit authorization before rewriting pushed history. This preparation does not perform a force push, rename a repository, delete workflow history or change visibility.
+Before the force push, the rewritten tip's file tree was byte-for-byte identical to the previously reviewed preparation tree. Checks covered every commit's excluded paths, reference-pointer contents and known personal-name patterns. Gitleaks scanned all eight rewritten commits (about 9.95 MB) with no findings. The full history commit guard and tracked-file guard passed; [GitHub CI for the rewritten tip](https://github.com/backrunner/heartpro/actions/runs/38412571346) also passed. The application source and assets were not changed.
 
-Open-source readiness is separate from App Store distribution, trademark clearance and clinical validation. See [licensing notes](../../../LICENSING.md) and the existing app-release evidence for those boundaries.
+The push used `--force-with-lease` tied to the previously observed remote `main`. Local and remote `main` were then verified equal; `main` is the only advertised branch and there are no tags. This follow-up adds exact ignore rules for the removed files and records the results.
+
+## Remaining server-side publication gate
+
+Authenticated GitHub API checks after force push and removal of old workflow records confirm:
+
+- The removed personal text path at `main` returns 404.
+- The old commit object is still retrievable by SHA.
+- A personal text capture and a personal screenshot at that old SHA are still retrievable.
+- There are no Actions caches, artifacts, releases or pull requests to remove.
+
+Do not interpret a force push or a clean clone as proof that GitHub has purged old objects. [GitHub's sensitive-data removal documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) directs users to Support for cached views and server-side cleanup; there is no repository-admin Git command that proves that purge.
+
+The GitHub Support request is prepared in the ignored private evidence directory. It has not been sent. Keep the repository private until server-side retrieval checks pass; source licensing, commercial distribution and clinical validation remain separate questions.

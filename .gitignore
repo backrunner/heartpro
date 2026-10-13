@@ -29,3 +29,11 @@ HeartPro-AppStore-*-preparation.zip
 
 # Local legal seller and App Review contact inputs. Never publish.
 .release-private/
+
+# Raw account captures removed during the authorized publication-history cleanup.
+/AppStore/evidence/build-4-2026-10-13/app-store-waiting-review.png
+/AppStore/evidence/build-4-2026-10-13/build4-metadata.png
+/AppStore/evidence/build-4-2026-10-13/pb-build4-testing.png
+/AppStore/evidence/build-4-2026-10-13/build4-metadata.txt
+/AppStore/evidence/build-4-2026-10-13/pricing-after.txt
+/AppStore/evidence/build-4-2026-10-13/pricing-before.txt
