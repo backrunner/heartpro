@@ -1,6 +1,6 @@
 # Open-source preparation — 2026-10-13
 
-**Publication: pending GitHub server-side cleanup. The repository remains private.** The user explicitly authorized rewriting and force-pushing history on 2026-10-13. All eight published commits were cleaned and force-pushed. Branch history is clean, but direct requests for old commit SHA objects still retrieve personal account captures on GitHub.
+**Publication: explicitly authorized on 2026-10-13; GitHub server-side cleanup remains pending.** The user's latest instruction requests committing and pushing all remaining changes, then making the existing repository public. This supersedes the earlier publication hold pending server-side cleanup. All eight original commits were cleaned and force-pushed. Branch history is clean, but authenticated requests for old commit SHA objects still retrieve personal account captures on GitHub; public visibility may expose these retained files.
 
 ## Scope and findings
 
@@ -41,7 +41,7 @@ Before the force push, the rewritten tip's file tree was byte-for-byte identical
 
 The push used `--force-with-lease` tied to the previously observed remote `main`. Local and remote `main` were then verified equal; `main` is the only advertised branch and there are no tags. This follow-up adds exact ignore rules for the removed files and records the results.
 
-## Remaining server-side publication gate
+## Remaining server-side cleanup
 
 Authenticated GitHub API checks after force push and removal of old workflow records confirm:
 
@@ -52,4 +52,11 @@ Authenticated GitHub API checks after force push and removal of old workflow rec
 
 Do not interpret a force push or a clean clone as proof that GitHub has purged old objects. [GitHub's sensitive-data removal documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) directs users to Support for cached views and server-side cleanup; there is no repository-admin Git command that proves that purge.
 
-The GitHub Support request is prepared in the ignored private evidence directory. It has not been sent. Keep the repository private until server-side retrieval checks pass; source licensing, commercial distribution and clinical validation remain separate questions.
+The GitHub Support request is prepared in the ignored private evidence directory. It has not been sent. The latest publication instruction does not establish that GitHub has removed the retained objects. Source licensing, commercial distribution and clinical validation remain separate questions.
+
+## Publication follow-up — 2026-10-13
+
+- Before this documentation change, the checkout had no uncommitted files and `main` matched remote commit `fb5a1488398c9759fe45039011ed267ea9fb916b`. An explicit push returned `Everything up-to-date`.
+- The staged-file and tracked-file guards passed, no tracked files matched ignore rules, and [CI for that commit](https://github.com/backrunner/heartpro/actions/runs/38413045774) passed.
+- Fresh authenticated probes still retrieved the old commit, personal text capture and personal screenshot. The removed text path at `main` returned 404. These probes did not print the captured contents.
+- The owner explicitly requested public visibility following commit and push. Verification of publication uses GitHub repository metadata and anonymous access; publication must not be reported as a server purge.
