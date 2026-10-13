@@ -22,4 +22,8 @@ description: Guard development, UI and report design, validation evidence, Git h
 4. 提交前运行 `rtk proxy python3 Tools/guard.py staged`，审阅暂存 diff，并按提交规范拟定信息。自动检查覆盖 Git 文件卫生、常见凭据模式、空白和提交格式；架构、视觉与医学表述仍需人工/agent 判断。
 5. 完成时简述变化、已运行的检查和未验证项；提交/推送仅沿用当前任务授权，skill 本身不授予外部操作权限。
 
+## 本地维护资料
+
+账户截图、原始账户页面和开源历史维护记录遵循 `.gitignore`，只保留在本地，不作为公开提交内容。用户已结束旧 GitHub 对象的清理事项；除非用户另行明确要求，后续开发、提交、CI 和本 skill 不复查其姓名、截图、OCR 或旧 SHA，不生成新的公开审计记录，也不将其列为待办或发布门槛。
+
 采用本仓库的 RTK shell 约定。项目安装命令：`rtk proxy python3 Tools/install_hooks.py`；新克隆需要执行一次。Git hook 和 CI 内部直接调用 Python/Git，不要求 CI 安装 RTK。
