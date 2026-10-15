@@ -22,13 +22,16 @@
     </div>
     <div class="hp-preview">
       <div class="hp-preview-stage">
-        <div class="hp-orbit hp-orbit-one" aria-hidden="true"></div>
-        <div class="hp-orbit hp-orbit-two" aria-hidden="true"></div>
         <div class="hp-device">
           <img src={`/screenshots/${locale}-${selected}.webp`} width="1320" height="2868" alt={context.t(`preview.alt.${selected}`)} fetchpriority="high" />
         </div>
         <div class="hp-preview-tag">
-          <span class="hp-lock-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg></span>
+          <span class="hp-lock-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect x="5" y="10" width="14" height="11" rx="3"/>
+              <path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/>
+            </svg>
+          </span>
           <span>{context.t('hero.private')}</span>
         </div>
       </div>
@@ -58,8 +61,16 @@
     </div>
   </section>
   <section class="hp-privacy">
-    <div class="hp-privacy-copy"><p class="hp-eyebrow">{context.t('privacy.kicker')}</p><h2>{context.t('privacy.title')}<br />{context.t('privacy.second')}</h2><p>{context.t('privacy.body')}</p><a class="hp-text-link" href={href('/privacy')}>{context.t('privacy.link')} <span aria-hidden="true">→</span></a></div>
-    <div class="hp-imprint"><div class="hp-icon-orbit" aria-hidden="true"><img src="/app-icon.png" alt="" width="1024" height="1024" loading="lazy" /></div><p>{context.t('hero.records')}</p></div>
+    <div class="hp-privacy-copy">
+      <p class="hp-eyebrow">{context.t('privacy.kicker')}</p>
+      <h2>{context.t('privacy.title')}<br />{context.t('privacy.second')}</h2>
+      <p>{context.t('privacy.body')}</p>
+      <a class="hp-text-link" href={href('/privacy')}>{context.t('privacy.link')} <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="hp-imprint">
+      <img src="/app-icon.png" alt="" width="1024" height="1024" loading="lazy" />
+      <p>{context.t('hero.records')}</p>
+    </div>
   </section>
   <section class="hp-limits"><h2>{context.t('limits.title')}</h2><p>{context.t('limits.body')}</p><a class="hp-text-link" href={href('/docs/methods')}>{context.t('limits.link')} <span aria-hidden="true">→</span></a></section>
   <section class="hp-support"><div><h2>{context.t('support.title')}</h2><p>{context.t('support.body')}</p></div><a class="hp-button hp-secondary" href={href('/support')}>{context.t('support.action')} <span aria-hidden="true">↗</span></a></section>
