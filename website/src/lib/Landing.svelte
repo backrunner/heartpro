@@ -11,7 +11,6 @@
 <div class="hp-landing">
   <section class="hp-hero">
     <div class="hp-intro">
-      <p class="hp-eyebrow hp-hero-kicker"><span class="hp-status-dot" aria-hidden="true"></span>{context.t('hero.kicker')}</p>
       <h1>{context.t('hero.title')}<br /><span>{context.t('hero.second')}</span></h1>
       <p class="hp-lead">{context.t('hero.body')}</p>
       <div class="hp-actions">

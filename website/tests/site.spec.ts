@@ -32,7 +32,7 @@ for (const language of ['en', 'zh']) {
     await page.getByRole('button', { name: language === 'en' ? 'Trends' : '变化趋势', exact: true }).click();
     await expect(image).toHaveAttribute('src', /trends/);
     const primary = page.locator('.hp-actions a').first();
-    await expect(primary).toHaveAttribute('href', language === 'en' ? '/docs' : '/docs/zh');
+    await expect(primary).toHaveAttribute('href', language === 'en' ? '/docs/' : '/docs/zh/');
     await page.getByRole('button', { name: language === 'en' ? 'ECG' : '心电波形', exact: true }).click();
     await page.screenshot({ path: `.svedocs/qa/${language}-desktop.png`, fullPage: true });
     await page.getByRole('button', { name: /Switch to .* theme|切换到.*主题/ }).click();
@@ -44,6 +44,16 @@ for (const language of ['en', 'zh']) {
     if (await menu.isVisible()) {
       await menu.click();
       await expect(page.getByRole('link', { name: language === 'en' ? 'Support' : '支持', exact: true }).first()).toBeVisible();
+      const themeBefore = await page.locator('html').getAttribute('data-theme');
+      await page.locator('.hp-header .sd-theme-toggle').click();
+      await expect(page.locator('html')).toHaveAttribute('data-theme', themeBefore === 'dark' ? 'light' : 'dark');
+      const search = page.locator('.hp-header .sd-search-trigger');
+      await search.click();
+      await expect(page.getByRole('dialog')).toBeVisible();
+      await page.getByRole('combobox').fill(language === 'en' ? 'ECG' : '心电');
+      await expect(page.getByRole('dialog').getByRole('option').first()).toBeVisible();
+      await page.keyboard.press('Escape');
+      await expect(search).toBeFocused();
     }
   });
 }
