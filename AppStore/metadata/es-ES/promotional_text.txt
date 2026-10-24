@@ -1,1 +1,0 @@
-Revisa registros, ondas y estadísticas de Salud de Apple. Añade notas y exporta PDF. Análisis local, sin rangos normales ni valoraciones de salud personal.

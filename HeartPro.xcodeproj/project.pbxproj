@@ -32,9 +32,9 @@
 		8F294903B4305B67A5BDD844 /* UsageGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6E58FC3DFBFA0635F64DAB /* UsageGuideUITests.swift */; };
 		8FEB43520682FE47C0752E66 /* HeartProCore in Frameworks */ = {isa = PBXBuildFile; productRef = A497C214CE2697489C62FCDB /* HeartProCore */; };
 		969D84BF87E2398110A5B960 /* UsageNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60839D6B6DF3CBC683910546 /* UsageNoticeView.swift */; };
-		9AD62BEDCE85E1EBEC8F85AF /* AppStoreScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222337F81F3550F2902508F /* AppStoreScreenshotTests.swift */; };
 		A107C533DC3BC3991EE375A9 /* AnalysisPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A48E5DDDE85725718F4961 /* AnalysisPanels.swift */; };
 		B0340D6C3B2E598AD91041A2 /* HealthReferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A78D2FFB5E9CEC2F5887B /* HealthReferencesView.swift */; };
+		C330DE8BD33A6D4B6078EA3C /* ScreenshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B8C92BFF2528C351DEE3F /* ScreenshotUITests.swift */; };
 		C70D2DB7BF2477BAA1647CF9 /* HealthKitGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5586D6BF2372B267BD59AF53 /* HealthKitGateway.swift */; };
 		C7D0104A96097799F45DD16F /* FullWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24013C506B7D117F9B066A21 /* FullWaveformView.swift */; };
 		CB459A5C90F700BB13C019C0 /* HeartProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB48BACB953C8DFEF38BA31 /* HeartProApp.swift */; };
@@ -66,9 +66,9 @@
 
 /* Begin PBXFileReference section */
 		0D627DEAAFD24935F69D770B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1222337F81F3550F2902508F /* AppStoreScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreScreenshotTests.swift; sourceTree = "<group>"; };
 		13CAE2210088C24645D7D92A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		159A7DA47D8387FB0E2C7939 /* LocalizationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationUITests.swift; sourceTree = "<group>"; };
+		164B8C92BFF2528C351DEE3F /* ScreenshotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotUITests.swift; sourceTree = "<group>"; };
 		175752BFD2CE1C1F6DB9E39A /* ECGDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGDetailView.swift; sourceTree = "<group>"; };
 		17EF1C47D8EDC9705CA6F6AB /* ReportExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExporter.swift; sourceTree = "<group>"; };
 		24013C506B7D117F9B066A21 /* FullWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWaveformView.swift; sourceTree = "<group>"; };
@@ -130,11 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				327D77240CAD7B0963366FA3 /* AppLaunch.swift */,
-				1222337F81F3550F2902508F /* AppStoreScreenshotTests.swift */,
 				48100119397E212A08335C31 /* HeartHealthUITests.swift */,
 				513F68F4163446F328AE1140 /* HeartProUITests.swift */,
 				159A7DA47D8387FB0E2C7939 /* LocalizationUITests.swift */,
 				ED6BB0F9CC58B36656FE8966 /* RhythmUITests.swift */,
+				164B8C92BFF2528C351DEE3F /* ScreenshotUITests.swift */,
 				7F6E58FC3DFBFA0635F64DAB /* UsageGuideUITests.swift */,
 				AAD57537692B37A1B7EF75E3 /* UsageNoticeUITests.swift */,
 			);
@@ -415,11 +415,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D8BEEC12108051084A09C5 /* AppLaunch.swift in Sources */,
-				9AD62BEDCE85E1EBEC8F85AF /* AppStoreScreenshotTests.swift in Sources */,
 				EAB52A8385F7EA7896AEE884 /* HeartHealthUITests.swift in Sources */,
 				232EFAD08EC9062AB1D9F1E5 /* HeartProUITests.swift in Sources */,
 				57542A0D4700BC426F22D200 /* LocalizationUITests.swift in Sources */,
 				433AC5ACAFCB0C33A63353A1 /* RhythmUITests.swift in Sources */,
+				C330DE8BD33A6D4B6078EA3C /* ScreenshotUITests.swift in Sources */,
 				8F294903B4305B67A5BDD844 /* UsageGuideUITests.swift in Sources */,
 				CFAA4CF1DAB32EF95F4F91AC /* UsageNoticeUITests.swift in Sources */,
 			);

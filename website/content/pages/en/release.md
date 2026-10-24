@@ -1,12 +1,12 @@
 ---
 title: "Release status"
-description: "HeartPro is being prepared for App Store review."
+description: "HeartPro availability and supported platforms."
 ---
 
-HeartPro is in preparation for App Store submission. A public App Store download link is not yet available.
+HeartPro is currently available through TestFlight testing. A public App Store download link is not yet available.
 
 Version 0.6.0 includes ECG history, daily heart summaries, trends, waveform inspection, automatic research estimates, notes and PDF reports. The app supports English, Simplified Chinese, Japanese, Korean, German and Spanish; this website currently supports English and Simplified Chinese.
 
-HeartPro is operated under the Alkinum brand and is being prepared under the Health & Fitness category. Public privacy and terms pages are available. All analysis features are retained. Submission will wait for independently annotated Apple Watch accuracy validation, real-device HealthKit testing, developer-account and regional eligibility review, support ticket reply-delivery verification and distribution checks. Synthetic UI examples and software tests do not demonstrate clinical accuracy.
+HeartPro is operated under the Alkinum brand. Public privacy and terms pages are available. Automatic estimates have not undergone independent accuracy validation on real Apple Watch recordings. Synthetic examples and software tests do not demonstrate clinical accuracy.
 
-Read the [guide](/docs), [methods and limits](/docs/methods), or [contact support](/support).
+Read the [guide](/docs), [methods and limits](/docs/methods), or [help](/support).

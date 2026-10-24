@@ -35,7 +35,7 @@ Upstream guidance: [Apache / GPLv3 compatibility](https://www.apache.org/license
 
 ## Research data
 
-`Tools/audit_ectopy.py` downloads selected records from the [MIT-BIH Arrhythmia Database 1.0.0](https://physionet.org/content/mitdb/1.0.0/) under the Open Data Commons Attribution License. Raw records are not included in this repository and must stay outside it. The repository retains derived evaluation summaries with attribution in the [research audit](.agents/validation/rhythm-0.4/README.md).
+`Tools/audit_ectopy.py` downloads selected records from the [MIT-BIH Arrhythmia Database 1.0.0](https://physionet.org/content/mitdb/1.0.0/) under the Open Data Commons Attribution License. Raw records are not included in this repository and must stay outside it. The repository retains derived evaluation summaries with attribution in the [research audit](docs/research/mitbih-audit.md).
 
 Cite Moody and Mark, *The impact of the MIT-BIH Arrhythmia Database*, IEEE Engineering in Medicine and Biology Magazine 20(3):45–50 (2001), and the dataset DOI [10.13026/C2F305](https://doi.org/10.13026/C2F305). Follow the dataset page’s current citation requirements when conducting a new audit. Public Holter data does not establish Apple Watch accuracy.
 

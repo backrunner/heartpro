@@ -35,7 +35,7 @@
 | 本地化 | `rtk proxy python3 Tools/localization.py --check`；涉及布局时检查长译文与大字号 |
 | Xcode 配置/新 Swift 文件 | XcodeGen 后构建目标，审阅生成 diff |
 | 网站 | 在 `website` 下按影响运行 `rtk proxy pnpm check`、`check:docs`、`build`、`test`；dev 与 build 不并行 |
-| App Store 材料 | `rtk proxy python3 Tools/check_appstore.py`；分发请求才加相应发布参数 |
+| 分发材料 | 在公开仓库之外维护；普通开发检查不依赖私有发布状态 |
 | Guard/hook | `rtk proxy python3 -m unittest discover -s Tools/tests -p 'test_guard.py'`，检查真实 hook 接受/拒绝行为 |
 | 纯规范文档 | 校对引用与当前实现、`git diff --check`；不要求重跑无关产品测试 |
 

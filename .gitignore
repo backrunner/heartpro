@@ -27,16 +27,17 @@ HeartPro-AppStore-*-preparation.zip
 *.dSYM/
 *.ipa
 
-# Local legal seller and App Review contact inputs. Never publish.
+# Local distribution configuration. Never publish.
 .release-private/
+.mcp.json
 
-# Local account captures, across release builds and evidence dates.
-/AppStore/evidence/**/app-store-waiting-review.png
-/AppStore/evidence/**/build*-metadata.png
-/AppStore/evidence/**/pb-build*-testing.png
-/AppStore/evidence/**/build*-metadata.txt
-/AppStore/evidence/**/pricing-after.txt
-/AppStore/evidence/**/pricing-before.txt
-
-# Local publication-maintenance notes and evidence.
-/.agents/validation/open-source-*/
+# Release materials, historical plans and development artifacts live outside
+# the public source tree. Keep these retired locations from being re-added.
+/AppStore/
+/.agents/*.md
+/.agents/validation/
+/Design/AppIcon/
+/Tools/appstore_common.py
+/Tools/capture_appstore.py
+/Tools/check_appstore.py
+/Tools/package_appstore.py

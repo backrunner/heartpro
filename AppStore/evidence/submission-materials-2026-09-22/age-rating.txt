@@ -1,8 +1,0 @@
-https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/
-
-External Apple reference. The full captured page is retained in the maintainer’s
-private evidence archive and is not distributed with HeartPro. Consult the
-linked official documentation for current terms and requirements.
-
-Historical validation conclusions remain in the adjacent project-authored
-reports; this reference pointer is not fresh verification of the source.

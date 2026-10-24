@@ -1,8 +1,0 @@
-$ wrangler deploy --dry-run
-
- ⛅️ wrangler 4.134.0 (update available 4.149.0)
-───────────────────────────────────────────────
-✨ Read 185 files from the assets directory /Volumes/BRData/projects/heartpro/website/build
-Total Upload: 0.36 KiB / gzip: 0.25 KiB
-No bindings found.
---dry-run: exiting now.

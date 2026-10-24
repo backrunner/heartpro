@@ -1,1 +1,0 @@
-registros,pulso,hrv,ondas,notas,historial,salud,pdf,estadisticas

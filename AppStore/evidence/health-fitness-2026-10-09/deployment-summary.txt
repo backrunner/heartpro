@@ -1,7 +1,0 @@
-✨ Success! Uploaded 35 files (123 already uploaded) (1.95 sec)
-
-Total Upload: 0.36 KiB / gzip: 0.25 KiB
-Uploaded heartpro-website (5.73 sec)
-Deployed heartpro-website triggers (3.42 sec)
-  heartpro.alkinum.com (custom domain)
-Current Version ID: 616215db-ced6-406f-951b-0d0655cb99ea

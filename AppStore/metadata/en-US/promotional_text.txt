@@ -1,1 +1,0 @@
-Review existing Apple Health records, waveforms and statistics. Keep notes and export PDFs. Analysis stays on device, without normal ranges or personal health judgments.

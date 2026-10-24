@@ -1,1 +1,0 @@
-Primera versión de App Store: registros, resúmenes diarios, tendencias, ondas, mediciones locales, notas y PDF.

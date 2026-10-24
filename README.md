@@ -15,9 +15,9 @@
 <p align="center">iPhone &amp; iPad · iOS 18+ · Swift 6 · Six languages</p>
 
 <p align="center">
-  <img src="AppStore/screenshots/iphone-6.9/en-01-history.png" width="30%" alt="ECG history with labelled synthetic examples">
-  <img src="AppStore/screenshots/iphone-6.9/en-04-waveform.png" width="30%" alt="Original ECG waveform with interval labels and measurement controls">
-  <img src="AppStore/screenshots/iphone-6.9/en-03-trends.png" width="30%" alt="Heart rate and Apple Health HRV trends">
+  <img src="docs/images/history.png" width="30%" alt="Record history with labelled synthetic examples">
+  <img src="docs/images/waveform.png" width="30%" alt="Original waveform with interval labels and measurement controls">
+  <img src="docs/images/trends.png" width="30%" alt="Heart rate and Apple Health HRV trends">
 </p>
 <p align="center"><sub>Native simulator captures from 0.6.0 (4), using labelled synthetic data.</sub></p>
 
@@ -68,9 +68,10 @@ rtk proxy xcodebuild -project HeartPro.xcodeproj -scheme HeartPro \
 | --- | --- |
 | [HeartPro](HeartPro) | Native app, HealthKit access, local storage, UI and PDF export |
 | [HeartProCore](Packages/HeartProCore) | Deterministic Swift analysis, models, synthetic fixtures and tests; no third-party packages |
-| [website](website) | Bilingual SvelteKit / svedocs site and server-side support intake |
+| [website](website) | Bilingual SvelteKit / svedocs site with read-only help |
 | [Localization](Localization/README.md) | Shared six-language resources and generation workflow |
-| [Tools](Tools) | Validation, packaging and reproducible brand artwork |
+| [Tools](Tools) | Development checks, simulator captures and reproducible brand artwork |
+| [docs](docs) | Product previews, artwork instructions and research benchmark results |
 
 [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Development standards](.agents/skills/heartpro-guard/SKILL.md)
 

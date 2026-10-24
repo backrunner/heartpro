@@ -25,7 +25,7 @@ Apple Health HRV uses the SDNN samples supplied by HealthKit [A3]. HRV estimated
 ## Evidence status
 These automatic calculations have not been validated against independently annotated real Apple Watch recordings. A prior development comparison with eight public MIT-BIH recordings reported 43.78% overall premature-beat sensitivity and substantial missed events in complex rhythms. Those Holter recordings differ from Watch single-lead ECGs; this is a limited development benchmark, not a clinical accuracy claim or representative Watch validation.
 
-No regulatory clearance for HeartPro is claimed. Retaining these features does not establish readiness for App Store review. Watch accuracy evidence is a release prerequisite. Numerical agreement on synthetic signals, UI tests and PDFs do not establish medical performance.
+No regulatory clearance for HeartPro is claimed. Numerical agreement on synthetic signals, UI tests and PDFs does not establish medical performance.
 
 ## Making decisions
 HeartPro cannot reliably identify or exclude a heart attack, ischemia or other heart disease. A high score, no marked candidates, missing measurement or Apple's sinus classification does not mean you are safe. Consult a doctor before medical decisions. For persistent chest pain, severe breathlessness or fainting, seek emergency help immediately. Apple's ECG guidance explains single-lead limitations, that its ECG app cannot detect a heart attack, and when to seek care [A1]. This does not validate HeartPro's analysis.

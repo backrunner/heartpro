@@ -1,1 +1,0 @@
-Initial App Store version: record history, daily summaries, trends, waveform tools, local measurements, notes and PDFs.

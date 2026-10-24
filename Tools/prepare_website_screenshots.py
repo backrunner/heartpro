@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """Create web previews from captured app PNGs (requires Pillow).
 
-App Store originals remain untouched. The provenance file records both hashes.
+Native originals remain untouched. The provenance file records both hashes.
 """
+import argparse
 import hashlib
 import json
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--source', required=True, type=Path, help='Native capture directory containing manifest.json')
+parser.add_argument('--output', type=Path, default=ROOT / 'website/static/screenshots')
+args = parser.parse_args()
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parents[1]
-source = ROOT / "AppStore/screenshots/iphone-6.9"
-destination = ROOT / "website/static/screenshots"
+source = args.source.resolve()
+destination = args.output.resolve()
 manifest = json.loads((source / "manifest.json").read_text())
 assert manifest["bundle_id"] == "com.alkinum.heartpro"
 known = {item["file"]: item for item in manifest["screenshots"]}
@@ -31,11 +36,11 @@ for lang, scene, name in selected:
         dimensions = list(image.size)
     items.append({"file": target.name, "dimensions": dimensions,
                   "sha256": hashlib.sha256(target.read_bytes()).hexdigest(),
-                  "source": str((source / name).relative_to(ROOT)),
+                  "source_file": name,
                   "source_sha256": known[name]["sha256"]})
 (destination / "provenance.json").write_text(json.dumps({
     "bundle_id": manifest["bundle_id"], "version": manifest["version"],
-    "build": manifest["build"], "xcresult": manifest["xcresult"],
+    "build": manifest["build"],
     "data": manifest["data"], "images": items
 }, indent=2) + "\n")
 print(f"Prepared {len(items)} website previews from {manifest['version']} ({manifest['build']}).")

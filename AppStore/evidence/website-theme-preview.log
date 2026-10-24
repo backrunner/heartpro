@@ -1,4 +1,0 @@
-$ svedocs preview --host 127.0.0.1 --port 48624
-  ➜  Local:   http://127.0.0.1:48624/
-vite preview --host 127.0.0.1 --port 48624 exited with code 143.
-[ELIFECYCLE] Command failed with exit code 1.

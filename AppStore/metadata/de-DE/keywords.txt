@@ -1,1 +1,0 @@
-daten,puls,hrv,kurve,notizen,verlauf,gesundheit,pdf,statistik

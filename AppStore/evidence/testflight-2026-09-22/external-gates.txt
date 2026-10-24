@@ -1,7 +1,0 @@
-BLOCKED: independent_watch_accuracy
-BLOCKED: medical_regulatory_and_operator_review
-BLOCKED: public_policies_and_support_https
-BLOCKED: real_device_healthkit_flow
-BLOCKED: signed_archive_and_connect_validation
-BLOCKED: store_account_metadata
-External TestFlight has not been verified as ready

@@ -1,1 +1,0 @@
-Sieh vorhandene Apple Health-Aufzeichnungen, Kurven und Statistiken an. Ergänze Notizen und exportiere PDFs. Lokale Analyse ohne Normalbereiche oder Gesundheitsurteile.

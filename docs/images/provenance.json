@@ -1,0 +1,32 @@
+{
+  "version": "0.6.0",
+  "build": "4",
+  "data": "synthetic, labelled in the app",
+  "capture_method": "native simulator XCTest screenshots",
+  "images": [
+    {
+      "file": "history.png",
+      "sha256": "1566e6e0b8b36e89915f294f09e2e86996e1d67c0b11dec25ecde0665829f5f0",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "waveform.png",
+      "sha256": "3488e82a5fbd87afc13ef1de726f03de1c9d5f646cfb8bc2d705db5cb87e8436",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "trends.png",
+      "sha256": "abddbf38ba23a494f244e8e42a205d347a63fc01e570675e9e3dcca35127b613",
+      "dimensions": [
+        1320,
+        2868
+      ]
+    }
+  ]
+}
