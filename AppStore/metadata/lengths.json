@@ -1,8 +1,8 @@
 {
   "en-US": {
     "name": {
-      "characters": 25,
-      "utf8_bytes": 25,
+      "characters": 23,
+      "utf8_bytes": 23,
       "limit": 30,
       "limit_unit": "characters"
     },
@@ -13,216 +13,216 @@
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 2580,
-      "utf8_bytes": 2588,
+      "characters": 3383,
+      "utf8_bytes": 3395,
       "limit": 4000,
       "limit_unit": "characters"
     },
     "keywords": {
-      "characters": 77,
-      "utf8_bytes": 77,
+      "characters": 73,
+      "utf8_bytes": 73,
       "limit": 100,
       "limit_unit": "UTF-8 bytes"
     },
     "promotional_text": {
-      "characters": 139,
-      "utf8_bytes": 139,
+      "characters": 169,
+      "utf8_bytes": 169,
       "limit": 170,
       "limit_unit": "characters"
     },
     "whats_new": {
-      "characters": 126,
-      "utf8_bytes": 126,
+      "characters": 119,
+      "utf8_bytes": 119,
       "limit": 4000,
       "limit_unit": "characters"
     }
   },
   "zh-Hans": {
     "name": {
-      "characters": 18,
-      "utf8_bytes": 33,
+      "characters": 16,
+      "utf8_bytes": 27,
       "limit": 30,
       "limit_unit": "characters"
     },
     "subtitle": {
-      "characters": 14,
-      "utf8_bytes": 42,
+      "characters": 12,
+      "utf8_bytes": 36,
       "limit": 30,
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 942,
-      "utf8_bytes": 2224,
+      "characters": 1170,
+      "utf8_bytes": 2848,
       "limit": 4000,
       "limit_unit": "characters"
     },
     "keywords": {
-      "characters": 40,
-      "utf8_bytes": 86,
+      "characters": 31,
+      "utf8_bytes": 63,
       "limit": 100,
       "limit_unit": "UTF-8 bytes"
     },
     "promotional_text": {
-      "characters": 61,
-      "utf8_bytes": 151,
+      "characters": 59,
+      "utf8_bytes": 155,
       "limit": 170,
       "limit_unit": "characters"
     },
     "whats_new": {
-      "characters": 52,
-      "utf8_bytes": 124,
+      "characters": 49,
+      "utf8_bytes": 117,
       "limit": 4000,
       "limit_unit": "characters"
     }
   },
   "ja": {
     "name": {
-      "characters": 20,
-      "utf8_bytes": 39,
+      "characters": 17,
+      "utf8_bytes": 24,
       "limit": 30,
       "limit_unit": "characters"
     },
     "subtitle": {
-      "characters": 17,
-      "utf8_bytes": 51,
+      "characters": 11,
+      "utf8_bytes": 33,
       "limit": 30,
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 1230,
-      "utf8_bytes": 3226,
+      "characters": 1537,
+      "utf8_bytes": 4125,
       "limit": 4000,
       "limit_unit": "characters"
     },
     "keywords": {
-      "characters": 34,
-      "utf8_bytes": 74,
+      "characters": 31,
+      "utf8_bytes": 63,
       "limit": 100,
       "limit_unit": "UTF-8 bytes"
     },
     "promotional_text": {
-      "characters": 74,
-      "utf8_bytes": 200,
+      "characters": 73,
+      "utf8_bytes": 203,
       "limit": 170,
       "limit_unit": "characters"
     },
     "whats_new": {
-      "characters": 70,
-      "utf8_bytes": 186,
+      "characters": 47,
+      "utf8_bytes": 117,
       "limit": 4000,
       "limit_unit": "characters"
     }
   },
   "ko": {
     "name": {
-      "characters": 21,
-      "utf8_bytes": 38,
+      "characters": 18,
+      "utf8_bytes": 25,
       "limit": 30,
       "limit_unit": "characters"
     },
     "subtitle": {
-      "characters": 19,
-      "utf8_bytes": 47,
+      "characters": 13,
+      "utf8_bytes": 31,
       "limit": 30,
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 1487,
-      "utf8_bytes": 3273,
+      "characters": 1829,
+      "utf8_bytes": 4080,
       "limit": 4000,
       "limit_unit": "characters"
     },
     "keywords": {
-      "characters": 30,
-      "utf8_bytes": 64,
+      "characters": 32,
+      "utf8_bytes": 66,
       "limit": 100,
       "limit_unit": "UTF-8 bytes"
     },
     "promotional_text": {
-      "characters": 97,
-      "utf8_bytes": 221,
+      "characters": 87,
+      "utf8_bytes": 201,
       "limit": 170,
       "limit_unit": "characters"
     },
     "whats_new": {
-      "characters": 77,
-      "utf8_bytes": 161,
+      "characters": 59,
+      "utf8_bytes": 111,
       "limit": 4000,
       "limit_unit": "characters"
     }
   },
   "de-DE": {
     "name": {
-      "characters": 29,
-      "utf8_bytes": 30,
+      "characters": 22,
+      "utf8_bytes": 23,
       "limit": 30,
       "limit_unit": "characters"
     },
     "subtitle": {
-      "characters": 28,
-      "utf8_bytes": 28,
+      "characters": 25,
+      "utf8_bytes": 25,
       "limit": 30,
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 3055,
-      "utf8_bytes": 3103,
+      "characters": 3967,
+      "utf8_bytes": 4031,
       "limit": 4000,
       "limit_unit": "characters"
     },
     "keywords": {
-      "characters": 68,
-      "utf8_bytes": 69,
+      "characters": 61,
+      "utf8_bytes": 61,
       "limit": 100,
       "limit_unit": "UTF-8 bytes"
     },
     "promotional_text": {
-      "characters": 149,
-      "utf8_bytes": 152,
+      "characters": 168,
+      "utf8_bytes": 169,
       "limit": 170,
       "limit_unit": "characters"
     },
     "whats_new": {
-      "characters": 130,
-      "utf8_bytes": 132,
+      "characters": 119,
+      "utf8_bytes": 120,
       "limit": 4000,
       "limit_unit": "characters"
     }
   },
   "es-ES": {
     "name": {
-      "characters": 29,
-      "utf8_bytes": 30,
+      "characters": 26,
+      "utf8_bytes": 27,
       "limit": 30,
       "limit_unit": "characters"
     },
     "subtitle": {
-      "characters": 30,
-      "utf8_bytes": 30,
+      "characters": 29,
+      "utf8_bytes": 29,
       "limit": 30,
       "limit_unit": "characters"
     },
     "description": {
-      "characters": 3084,
-      "utf8_bytes": 3136,
+      "characters": 3879,
+      "utf8_bytes": 3944,
       "limit": 4000,
       "limit_unit": "characters"
     },
     "keywords": {
-      "characters": 63,
+      "characters": 64,
       "utf8_bytes": 64,
       "limit": 100,
       "limit_unit": "UTF-8 bytes"
     },
     "promotional_text": {
-      "characters": 151,
-      "utf8_bytes": 155,
+      "characters": 155,
+      "utf8_bytes": 158,
       "limit": 170,
       "limit_unit": "characters"
     },
     "whats_new": {
-      "characters": 142,
-      "utf8_bytes": 144,
+      "characters": 111,
+      "utf8_bytes": 113,
       "limit": 4000,
       "limit_unit": "characters"
     }

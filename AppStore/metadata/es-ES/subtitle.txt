@@ -1,1 +1,1 @@
-Registros ECG, notas y cambios
+Registros, ondas y tendencias

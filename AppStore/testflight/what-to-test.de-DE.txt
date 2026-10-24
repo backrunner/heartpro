@@ -10,3 +10,7 @@ Bitte teste:
 5. PDF auf Kurven, lange Notizen und Einschränkungen prüfen. Lokale Daten löschen und kontrollieren, dass lokale Aufzeichnungen und temporäre PDFs entfernt werden, ursprüngliche Health-Daten aber erhalten bleiben.
 
 Bitte App-Version, Gerät, OS, Sprache und Schritte angeben. Keine unnötigen Gesundheitsaufzeichnungen, EKGs, PDFs oder sensiblen Screenshots beifügen; TestFlight-Screenshots vor dem Senden prüfen. Eine unabhängige Genauigkeitsprüfung mit echten Watch-Aufzeichnungen fehlt noch. Nutze den Test nicht zur Beurteilung deiner Gesundheit oder für Änderungen deiner medizinischen Versorgung.
+
+Öffne Einstellungen → Gesundheitsinformationen und Quellen oder die Quellenlinks in den Erläuterungen. PDFs enthalten ein Literaturverzeichnis mit anklickbaren Links. Quellen erläutern Konzepte und Methoden; sie validieren HeartPros Algorithmen nicht.
+
+Die Hilfe ist nur lesbar: Supportnachrichten, persönliche Angaben und Uploads werden nicht angenommen.

@@ -3,3 +3,11 @@ HeartPro is an iPhone and iPad app for reviewing ECG, heart rate and HRV records
 This beta includes a dedicated usage notice, waveform measurements, automatic segment estimates, premature-beat candidates and a rhythm reference score. Automatic analysis has not undergone independent accuracy validation on real Apple Watch recordings. All content is informational, is not medical advice and cannot replace qualified clinicians or medical services. There is no continuous monitoring or emergency alerting. If unwell, seek care promptly; for urgent symptoms, contact local emergency services without waiting for the app.
 
 Requires iOS/iPadOS 18 or later. Personal records must be accessible in Apple Health on the same device. HeartPro does not record new ECGs. Please focus feedback on navigation, display, permissions, notes and export. Do not attach unnecessary personal health records or sensitive screenshots.
+
+HeartPro is an informational measurement tool for reviewing existing records, not intended for use as a medical device. Automated estimates can be wrong and must not be used for diagnosis, treatment or assessing personal health.
+
+HeartPro does not collect your health records, notes or analysis results. They are processed and stored only on your device and are not automatically uploaded to developer or third-party servers. There are no accounts, ads, tracking or third-party analytics SDKs.
+
+Open Settings → Health information and sources, or the source links in the explanation panels. PDFs include a bibliography with tappable links. Sources explain concepts and methods; they do not validate HeartPro’s algorithms.
+
+Help is read-only: no support messages, personal details or uploads are accepted.

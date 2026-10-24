@@ -1,1 +1,1 @@
-ECG, heart rate & HRV journal
+Records, waveforms and trends

@@ -3,3 +3,11 @@ HeartPro permite revisar registros de ECG, frecuencia cardíaca y VFC de Salud d
 Esta beta incluye un aviso de uso, mediciones de ondas, estimaciones automáticas de segmentos, posibles latidos prematuros y una puntuación de referencia del ritmo. La precisión del análisis automático no se ha validado de forma independiente con registros reales del Apple Watch. Todo el contenido es informativo, no constituye asesoramiento médico ni sustituye a profesionales o servicios médicos. No ofrece monitorización continua ni alertas de emergencia. Si te encuentras mal, busca atención médica sin demora; ante síntomas urgentes, contacta con los servicios de emergencia locales sin esperar al análisis.
 
 Requiere iOS/iPadOS 18 o posterior. Los registros personales deben estar accesibles en Salud de Apple en el mismo dispositivo. HeartPro no registra ECG nuevos. Centra tus comentarios en la navegación, la visualización, los permisos, las notas y la exportación. No adjuntes registros de salud ni capturas sensibles innecesarios.
+
+HeartPro es una herramienta de medición informativa para revisar registros existentes, no destinada a utilizarse como producto sanitario. Las estimaciones automáticas pueden ser erróneas y no deben usarse para diagnosticar, tratar ni evaluar la salud personal.
+
+HeartPro no recopila tus registros de salud, notas ni resultados de análisis. Se procesan y guardan solo en tu dispositivo y no se suben automáticamente a servidores del desarrollador ni de terceros. No hay cuentas, anuncios, rastreo ni SDK de análisis de terceros.
+
+Abre Ajustes → Información de salud y fuentes, o los enlaces de cada explicación. Los PDF incluyen bibliografía con enlaces. Las referencias explican conceptos y métodos; no validan los algoritmos de HeartPro.
+
+La ayuda es de solo lectura: no se aceptan mensajes de asistencia, datos personales ni archivos.

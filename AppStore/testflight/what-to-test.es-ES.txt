@@ -10,3 +10,7 @@ Prueba lo siguiente:
 5. Revisa las ondas, notas largas y limitaciones del PDF. Borra los datos locales y comprueba que desaparecen los registros locales y PDF temporales, mientras se conservan los originales en Salud.
 
 Incluye versión de la app, dispositivo, OS, idioma y pasos en tus comentarios. Evita adjuntar registros de salud, ECG, PDF o capturas sensibles innecesarios; revisa las capturas de TestFlight antes de enviarlas. Falta la validación independiente de precisión con registros reales del Watch. No uses esta prueba para evaluar tu salud ni cambiar tu atención médica.
+
+Abre Ajustes → Información de salud y fuentes, o los enlaces de cada explicación. Los PDF incluyen bibliografía con enlaces. Las referencias explican conceptos y métodos; no validan los algoritmos de HeartPro.
+
+La ayuda es de solo lectura: no se aceptan mensajes de asistencia, datos personales ni archivos.

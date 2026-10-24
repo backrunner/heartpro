@@ -1,1 +1,1 @@
-HeartPro: ECG & HRV Diary
+HeartPro: Records & HRV

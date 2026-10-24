@@ -1,0 +1,22 @@
+UNSENT DRAFT - parked on 24 October 2026
+The owner has chosen to keep the existing TestFlight distribution and defer App Store review until organization enrollment can be considered. Do not send this draft or resubmit automatically. The revised app source has not been uploaded; App Store build 0.6.0 (4) does not include these changes.
+
+Hello App Review,
+
+Thank you for the specific feedback on Guidelines 1.4.1 and 5.1.1(ix).
+
+We have prepared a revision of HeartPro as an informational measurement and personal record-review tool. It is not intended for use as a medical device. We have not yet uploaded this revision or resubmitted it, and do not suggest that the changes are present in the build you reviewed.
+
+For 1.4.1, the revised getting-started flow explains controls and navigation rather than making general health-measurement claims. Health explanations have direct, numbered links to their sources, with a complete catalog in Settings and a linked bibliography in exported PDFs. The interface, explanations and reports support six languages. Adult normal ranges and normal/abnormal comparisons have been removed; only measurements and distributions within the selected record are shown. Sources explain concepts and methods and do not establish clinical validation of HeartPro.
+
+The app still includes local interval and waveform-segment estimates, short-recording HRV, candidate premature beats and a rhythm reference score. These functions are disclosed rather than hidden or renamed to disguise their purpose. The score describes HeartPro's own rule output, not health or risk. Estimates can be wrong; independent accuracy validation on real Apple Watch records has not been completed. The app does not offer diagnosis, treatment, continuous monitoring or emergency alerts. It reminds users to consult a qualified clinician before medical decisions.
+
+For 5.1.1(ix), we would appreciate clarification on its applicability to a personal, on-device record utility. HeartPro reads ECG, heart-rate and SDNN data from Apple Health only with permission. We do not receive the health records, derived measurements or notes. There is no user account, analytics SDK, remote analysis service or developer health-data backend. CloudKit is disabled and the local health-data directory is excluded from backups. Users can choose to share a PDF or save selected symptoms as separate entries in Health; those actions do not provide us access to their records.
+
+The support website has been changed to read-only troubleshooting, without a submission form, email intake, uploads or a ticket system. Basic website-delivery processing by Cloudflare is disclosed separately; we do not claim that visiting a website involves no network processing.
+
+Our intended use is to help individuals inspect their own existing records and derived statistics, rather than to provide a clinical service. We understand that on-device handling and a non-medical intended-use statement do not themselves create an exemption from your guidelines. Could you clarify which specific functionality makes organization enrollment necessary in this case, and whether individual enrollment can be considered for the fully disclosed scope above?
+
+We can provide a walkthrough using clearly labelled synthetic examples without exposing personal health information. We will wait for your guidance before deciding on a future submission.
+
+Thank you.

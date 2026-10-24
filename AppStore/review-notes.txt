@@ -1,32 +1,28 @@
-HeartPro — iPhone and iPad, iOS/iPadOS 18+
+HeartPro - iPhone and iPad, iOS/iPadOS 18+
 Bundle ID: com.alkinum.heartpro
 
-INTENDED CATEGORY AND OPERATOR
-Primary category: Health & Fitness. HeartPro is a personal record-review and journaling app submitted by [REDACTED PERSONAL NAME] under the Alkinum brand. Local interval estimates, premature-beat candidates and rhythm reference scores are disclosed below. Category selection does not establish regulatory status or accuracy.
+PURPOSE AND LIMITATIONS
+An informational measurement and record-review tool, not intended for use as a medical device. HeartPro displays existing Apple Health records and local derived statistics. It offers no diagnosis, treatment recommendations, normal reference ranges, continuous monitoring or emergency alerts. Estimates can be wrong. No clinical validation, regulatory clearance or Apple endorsement is claimed. Consult a doctor before medical decisions.
 
-No sign-in or demo credentials are required. There are no in-app purchases, subscriptions, ads, third-party tracking SDKs or remote analysis services.
+ALL FUNCTIONS REMAIN DISCLOSED
+The app estimates peaks, intervals, waveform segments, short-recording HRV, premature-beat candidates and a rhythm reference score. The score is the proportion of reviewable beats not flagged by HeartPro's own rules, not a medical scale or health/risk score. Candidate labels do not establish a disease or atrial/ventricular origin. Only within-record distributions are displayed. Missing measurements remain blank. Apple's stored classification is identified separately.
 
-REVIEW WITHOUT A WATCH OR HEALTH RECORDS
-1. On first launch, read the usage notice and tap “I understand, continue”. Read or dismiss the usage guide.
-2. Select “Try examples first”. Synthetic examples are labelled in the app, generated locally and never written to Apple Health. This is the same example mode available to every user.
-3. In the ECG tab, open the daily overview to see summaries and trends. Return to history and open a recording to inspect its waveform, zoom, two-point measurement and full-screen view.
-4. Scroll through the recording details to review interval/segment estimates, short-recording HRV, premature-beat candidates and the rhythm reference score. Information buttons explain methods, missing values and limitations. Apple’s stored classification and synthetic classifications are identified by source.
-5. Add a note and choose a context item. In example mode, notes stay in memory and Health writes are disabled.
-6. Tap the share icon to generate a PDF; tap the share icon again to choose a destination in the system share sheet.
-7. Settings → Usage notice reopens the first-use notice. Settings also contains Help, Health access, analysis limitations, privacy links and local-data controls.
+REVIEW WITHOUT HEALTH RECORDS
+1. Read the first-use notice and the operational guide, then select the synthetic example option. No sign-in, Health access or credentials are needed for examples. They are available to all users and never written to Health.
+2. In Records, open the daily overview, trends and a record. Inspect the original waveform, zoom, full screen and two-point measurements.
+3. Review candidates and segment measurements. Information buttons explain the methods, limitations and linked sources. Tap a candidate or beat to locate it in the original waveform.
+4. Open the HRV information button for sources H1-H3 and the distinction from HealthKit SDNN.
+5. Add a note. Generate a PDF, then use the share sheet to choose its destination. The PDF includes numbered source citations and tappable original links.
+6. Settings > Health information and sources opens the complete bibliography. Usage notice, guide, data controls and privacy policy are also in Settings. The same controls and disclosures are localized into Chinese, English, Japanese, Korean, German and Spanish.
 
-HEALTH ACCESS
-“Connect Apple Health” requests read access to ECGs, heart rate and SDNN. HeartPro does not record ECGs. New ECG recordings require a compatible Apple Watch and regional ECG availability. On iPad, records must be available in Health on that iPad. HealthKit does not disclose whether read permission was denied; an empty result is not proof of authorization.
+HEALTH PERMISSIONS
+Read access covers ECG records, heart rate and SDNN in Health on this device. HeartPro does not record ECGs; compatible Apple hardware and regional availability are required to create the original recording. An empty HealthKit query does not prove permission was granted or denied.
+Write access is requested only for symptoms the user explicitly chooses to save as separate Health entries. Original ECGs are read-only. Free text, synthetic records and algorithm findings are never written to Health. Failed writes retain the local note.
 
-Write access is requested only when a user chooses to save supported symptoms. These become separate HeartPro entries in Health; original ECGs are read-only. Denied writes preserve the local note. Synthetic data and automated findings are never written to Health. Clearing local data removes local records, notes and temporary PDFs, but not original Health records, independent symptoms already saved there or files shared elsewhere.
+PRIVACY
+No accounts, ads, tracking SDKs, developer analytics or remote AI. Health records, notes and analysis are processed locally and are not automatically uploaded to us or third-party servers. CloudKit is disabled and app health storage is excluded from backups. Apple Health's own sync is controlled by the system. Sharing is user-directed. Clearing app data cannot remove Health originals or files already shared.
+Support is a read-only help site, without message forms, email intake, uploads, tickets or Turnstile. Do not submit personal or health information. Cloudflare necessarily processes website delivery requests; that is disclosed separately.
 
-DATA AND ANALYSIS
-Health records, notes and analysis are processed on device, with protected local storage and no HeartPro iCloud synchronization. PDFs are shared only at the user's direction. No health-record uploads, remote AI or developer telemetry are implemented.
-
-Local deterministic methods estimate peaks, intervals, waveform segments, short-recording HRV and premature-beat candidates. The rhythm reference score is the rounded fraction of reviewable beats not flagged by the rules; it is not a health score or risk probability. General reference values do not produce personalized disease, medication or treatment advice. No diagnosis, continuous monitoring or emergency alerts are provided. The usage notice is shown before record loading or Health access, to all users.
-
-Independent accuracy validation on real Apple Watch recordings has not been completed. Synthetic tests and public Holter benchmarks do not establish Watch accuracy. No clinical validation, regulatory clearance or Apple endorsement is claimed.
-
-Methods: https://heartpro.alkinum.com/docs/methods/
+Methods and sources: https://heartpro.alkinum.com/docs/methods/
 Privacy: https://heartpro.alkinum.com/privacy/
-Support: https://heartpro.alkinum.com/support/
+Help: https://heartpro.alkinum.com/support/

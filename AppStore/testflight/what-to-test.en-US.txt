@@ -10,3 +10,7 @@ Please test:
 5. Export a PDF and check the waveform, long notes and limitations. Clear local data and confirm local records and temporary PDFs are removed while original Health records remain.
 
 Include the app version, device, OS, language and steps in feedback. Avoid unnecessary personal health records, ECGs, PDFs or sensitive screenshots; inspect TestFlight screenshots before submitting. Automatic analysis has not undergone independent accuracy validation on real Watch data. Do not use this test to assess your health or change medical care.
+
+Open Settings → Health information and sources, or the source links in the explanation panels. PDFs include a bibliography with tappable links. Sources explain concepts and methods; they do not validate HeartPro’s algorithms.
+
+Help is read-only: no support messages, personal details or uploads are accepted.

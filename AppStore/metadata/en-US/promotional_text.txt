@@ -1,1 +1,1 @@
-Bring your ECG records, heart rate and HRV together. Review waveforms, keep notes and export PDFs, with analysis that stays on your device.
+Review existing Apple Health records, waveforms and statistics. Keep notes and export PDFs. Analysis stays on device, without normal ranges or personal health judgments.

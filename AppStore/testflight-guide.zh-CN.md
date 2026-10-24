@@ -1,5 +1,7 @@
 # HeartPro：Xcode 构建与外部 TestFlight 指引
 
+2026-10-24：正式审核 build 4 因 1.4.1 引用与 5.1.1(ix) 主体要求被拒。用户决定先保持现有 TestFlight，后续再考虑组织账号。本轮只提交推送整改源码；未上传新构建、未重提正式审核、未发送回复。新源码不代表当前 TestFlight 二进制。见[整改与验证](validation/review-remediation-2026-10-24.md)、[同类经验](validation/review-experience-2026-10-24.md)及[未发送回复草稿](review-response-draft.en-US.txt)。
+
 核对日期：2026-10-13。项目：`HeartPro.xcodeproj`；scheme：`HeartPro`；Bundle ID：`com.alkinum.heartpro`；版本：`0.6.0 (4)`；最低系统：iOS/iPadOS 18。
 
 当前使用用户授权的个人团队和 HeartPro 品牌。0.6.0（4）已上传、处理和验证，Internal 已分配，PB 显示正在测试，正式 App Store 版本正在等待审核。审核通过后手动发布。当前 174 个地区开放供应，中国大陆排除，隐私标签已发布。Apple 分发状态与项目准确度、监管、真实 HealthKit 等证据分别记录，详见 [build 4 记录](evidence/build-4-2026-10-13/README.md)。

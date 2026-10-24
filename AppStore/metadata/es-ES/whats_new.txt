@@ -1,1 +1,1 @@
-Primera versión en el App Store: historial de ECG, resúmenes diarios y tendencias, vista de ondas, estimaciones locales, notas e informes PDF.
+Primera versión de App Store: registros, resúmenes diarios, tendencias, ondas, mediciones locales, notas y PDF.

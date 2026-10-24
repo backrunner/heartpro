@@ -1,5 +1,7 @@
 # HeartPro 上架材料
 
+2026-10-24：正式审核 build 4 因 1.4.1 引用与 5.1.1(ix) 主体要求被拒。用户决定先保持现有 TestFlight，后续再考虑组织账号。本轮只提交推送整改源码；未上传新构建、未重提正式审核、未发送回复。新源码不代表当前 TestFlight 二进制。见[整改与验证](validation/review-remediation-2026-10-24.md)、[同类经验](validation/review-experience-2026-10-24.md)及[未发送回复草稿](review-response-draft.en-US.txt)。
+
 2026-10-11：按用户最新授权使用 **[REDACTED PERSONAL NAME] 个人团队**，运营者与版权人为 **[REDACTED PERSONAL NAME]**，品牌改为 **HeartPro**。0.6.0（3）已由 Xcode 上传、Connect 处理并选入版本；主类别为 Health & Fitness。
 
 提审材料入口：[填写顺序](submission/README.md)。六语商店文案、审核步骤、联系人和 USD 2.99 基准价已保存。108 张原生截图已准备、复核并全部上传到 Connect（六种语言、三个设备组、每组六张）。2026-10-11 已按用户确认发布隐私标签、保存非医疗器械声明并设置 174 个地区（排除中国大陆）。实际完成范围见 [Connect 记录](evidence/connect-2026-10-10/status.json)，名称风险见 [改名记录](validation/name-review-2026-10-10.md)。
