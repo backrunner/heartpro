@@ -19,6 +19,7 @@ import HeartProCore
                 layout.paragraph(note.text, size: 10, color: PDFReportLayout.ink)
             }
         }
+        drawReferences(layout: layout)
     }
 
     private static func drawWaveform(_ wave: Waveform, record: ECGRecord, layout: PDFReportLayout) {
@@ -97,6 +98,7 @@ import HeartProCore
             layout.paragraph(L10n.text("使用 \(hrv.duration.integerText) 秒清晰信号，\(hrv.intervals.count) 个心跳间隔"))
         }
         layout.paragraph(hrv.explanation)
+        layout.paragraph(HealthInformation.shortHRVNotice + " " + HealthReference.markers(HealthReference.ecgHRV), size: 8)
         if let assessment = record.rhythmAssessment {
             layout.section(L10n.text("早搏候选与节律"), reserve: 110)
             layout.metrics([
@@ -111,7 +113,7 @@ import HeartProCore
                     rows: assessment.flagged.map { [L10n.text("\($0.time, specifier: "%.2f") 秒"), reportTitle($0), reportEvidence($0)] },
                     widths: [55, 126, layout.width - 181], continuation: L10n.text("早搏候选与节律"))
             }
-            layout.paragraph(L10n.text("自动标记需结合原始波形核查。节律评分不用于评价心脏健康状况。"))
+            layout.paragraph(L10n.text("自动标记需结合原始波形核查。节律评分不用于评价心脏健康状况。") + " " + HealthReference.markers([.prematureBeats, .ecg]))
         }
         if let review = analysis.review, !review.events.isEmpty {
             let headers = [L10n.text("时间"), L10n.text("类型"), L10n.text("测量依据")]
@@ -150,14 +152,14 @@ import HeartProCore
             layout.section(segment.title, reserve: min(600, blockHeight))
             layout.table(headers: headers, rows: rows, widths: widths, continuation: segment.title, numericFrom: 1)
             if !reasonText.isEmpty { layout.paragraph(reasonText, size: 8) }
-            let reference = segment.adultReference
-            layout.paragraph(reference.range + "\n" + reference.context, size: 8)
+            layout.paragraph(HealthReference.markers(segment.references), size: 8)
         }
     }
 
     private static func drawMethods(_ analysis: ECGAnalysis, record: ECGRecord, layout: PDFReportLayout) {
         layout.begin(L10n.text("测量方法"))
         layout.paragraph(SegmentAnalysis.method)
+        layout.paragraph(HealthInformation.implementationNotice)
         layout.table(headers: [L10n.text("指标"), L10n.text("结果")], rows: [
             [L10n.text("数据来源"), record.source],
             [L10n.text("采样频率"), "\(record.samplingFrequency.integerText) Hz"],
@@ -176,6 +178,22 @@ import HeartProCore
                 layout.paragraph(segment.measurementDetails)
             }
         }
+    }
+
+    private static func drawReferences(layout: PDFReportLayout) {
+        layout.begin(L10n.text("健康信息与来源"))
+        layout.paragraph(HealthInformation.intendedUseNotice)
+        layout.paragraph(HealthInformation.referenceNotice)
+        layout.paragraph(HealthInformation.implementationNotice)
+        layout.paragraph(L10n.text("原始波形与来源分类见 [A1] [A2]；系统 SDNN 见 [A3]；波段定义与计算方法见 [E1] [E2] [E3]；短时 HRV 见 [H1] [H2] [H3]；心搏与心率概念见 [R1] [R2]。"))
+        for reference in HealthReference.allCases {
+            layout.section("[\(reference.id)] \(reference.title)", reserve: 100)
+            layout.paragraph(reference.citation, size: 8)
+            layout.link(reference.url)
+        }
+        layout.section(L10n.text("数据保护"), reserve: 160)
+        layout.paragraph(HealthInformation.privacySummary)
+        layout.paragraph(HealthInformation.privacyChoices)
     }
 
     private static func reportTitle(_ beat: RhythmBeat) -> String {

@@ -176,6 +176,7 @@ struct InsightsView: View {
                         }.frame(height: 160).chartYAxisLabel("bpm").accessibilityIdentifier("dailyHeartRateChart")
                         Text(L10n.text("圆点表示时段平均值，竖线表示最低到最高；活动和休息都会影响心率。"))
                             .font(.caption).foregroundStyle(.secondary)
+                        HealthReferenceLinks(references: [.heartRate], showsNotice: false)
                     }
                 }
             }
@@ -258,6 +259,7 @@ struct InsightsView: View {
             if metric == .hrv {
                 if !model.isDemo { Button(L10n.text("重新读取")) { Task { await load() } }.disabled(loadingHealth).buttonStyle(.bordered).buttonBorderShape(.capsule) }
                 Text(L10n.text("系统 SDNN 单独展示，不与短时 ECG 的 RR 波动混算。记录时长、姿势、呼吸和来源都会影响结果。")).font(.caption).foregroundStyle(.secondary)
+                HealthReferenceLinks(references: [.healthKitHRV, .hrv])
             } else {
                 Label(L10n.text("空缺保留为空，不补零、不推测未记录的时间。"), systemImage: "info.circle").font(.caption).foregroundStyle(.secondary)
             }

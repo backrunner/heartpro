@@ -30,6 +30,7 @@ struct UsageNoticeView: View {
                         }
                     }
                     emergencyNotice
+                    HealthReferenceLinks(references: [.appleECG], showsNotice: false)
                 }
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(24).frame(maxWidth: 560, alignment: .leading).frame(maxWidth: .infinity)
@@ -64,7 +65,7 @@ struct UsageNoticeView: View {
                 Text(L10n.text("使用前，请先了解"))
                     .font(.system(.largeTitle, design: .rounded, weight: .bold))
                     .accessibilityAddTraits(.isHeader).accessibilityIdentifier("usageNoticeTitle")
-                Text(L10n.text("HeartPro 用于整理、浏览和比较已有记录。自动测量、候选标记、参考值及评分只供回看，不构成医疗建议。"))
+                Text(HealthInformation.intendedUseNotice)
                     .font(.body).foregroundStyle(.primary.opacity(0.78)).lineSpacing(3)
             }
         }

@@ -85,6 +85,10 @@ final class LocalizationUITests: XCTestCase {
             help.tap()
             XCTAssertTrue(app.buttons[language.done].waitForExistence(timeout: 5))
             capture("\(language.code)-hrv-help")
+            let hrvReference = app.descendants(matching: .any)["healthReference-H3"].firstMatch
+            scrollTo(hrvReference, app: app)
+            XCTAssertTrue(hrvReference.isHittable, language.code)
+            capture("\(language.code)-hrv-citations")
             app.buttons[language.done].tap()
             let health = app.buttons["healthHRV"]
             scrollTo(health, app: app); health.tap()
@@ -100,8 +104,10 @@ final class LocalizationUITests: XCTestCase {
 
     @MainActor private func scrollTo(_ element: XCUIElement, app: XCUIApplication) {
         for _ in 0..<22 {
-            if element.isHittable { return }
-            app.swipeUp()
+            let frame = element.frame
+            if element.isHittable && frame.minY > 115 && frame.maxY < app.frame.maxY - 60 { return }
+            if element.exists && frame.maxY < 115 { app.swipeDown() }
+            else { app.swipeUp() }
         }
         XCTAssertTrue(element.isHittable)
     }

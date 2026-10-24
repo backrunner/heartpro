@@ -36,21 +36,6 @@ public enum ECGSegment: String, Codable, CaseIterable, Sendable, Identifiable {
         case .u: L10n.text("T 波之后重复出现的小波形，可能是 U 波。这里只显示与 T 波和下一次 P 波分开的候选，仍需结合原图确认。")
         }
     }
-    public var reference: String {
-        switch self {
-        case .p: L10n.text("成人 P 波常用参考为短于 120 ms。波峰的大小还与记录的导联有关。")
-        case .pr: L10n.text("成人常用参考为 120–200 ms。年龄、心率和测量方法都会影响结果。")
-        case .prSegment: L10n.text("PR 段通常接近参考水平线。参考线的位置和信号处理方式会影响测量。")
-        case .qrs: L10n.text("成人 QRS 常用参考为短于 120 ms。Q、R、S 的识别还需要结合原波形复核。")
-        case .st: L10n.text("接触、姿势和信号处理都可能改变 ST 的样子。单导联记录的局限性较大，解读需结合多方面信息。")
-        case .t: L10n.text("从不同导联看，T 波的方向和大小可能不同，不能只凭一个数值判断是否正常。")
-        case .qt: L10n.text("QT 会随心率变化，不能用一个固定范围判断所有记录。")
-        case .qtc: L10n.text("心率很快或很慢时，校正的偏差可能更大。解读还需结合年龄、性别和所用方法。")
-        case .tp: L10n.text("心跳较快时，这段间隔可能很短，甚至难以与相邻波形分开。")
-        case .rr: L10n.text("这些数字描述心跳间隔的变化，尚未区分正常心跳与其他类型，不能直接当作 HRV。")
-        case .u: L10n.text("小波形也可能来自干扰或 T 波的另一部分；候选不代表已经确认 U 波。")
-        }
-    }
     public var measurementDetails: String {
         switch self {
         case .p: L10n.text("测量 P 波的开始、结束和峰值位置。波形太小、起止位置不清，或与旁边的波形重叠时，会留空相应数值。")

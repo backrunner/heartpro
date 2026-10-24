@@ -40,7 +40,7 @@ struct SettingsView: View {
             }
             Section(L10n.text("帮助")) {
                 Link(destination: URL(string: "https://heartpro.alkinum.com/\(L10n.language == "zh-Hans" ? "zh/" : "")support/")!) {
-                    Label(L10n.text("支持与联系"), systemImage: "envelope")
+                    Label(L10n.text("支持与联系"), systemImage: "questionmark.circle")
                 }
                     .accessibilityIdentifier("supportWebsite")
                 Button { showGuide = true } label: { Label(L10n.text("使用指南"), systemImage: "book.closed") }
@@ -55,6 +55,8 @@ struct SettingsView: View {
                 Link(L10n.text("隐私政策"), destination: URL(string: "https://heartpro.alkinum.com/\(L10n.language == "zh-Hans" ? "zh/" : "")privacy/")!)
                     .accessibilityIdentifier("privacyPolicy")
                 NavigationLink(L10n.text("分析能力与限制")) { methods }
+                NavigationLink { HealthReferencesView() } label: { Label(L10n.text("健康信息与来源"), systemImage: "books.vertical") }
+                    .accessibilityIdentifier("openHealthReferences")
                 NavigationLink(L10n.text("数据保护与管理")) { privacy }
                 LabeledContent(L10n.text("应用版本"), value: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.6.0")
             }
@@ -73,6 +75,7 @@ struct SettingsView: View {
     private var methods: some View {
         List {
             Section(L10n.text("当前提供")) {
+                Text(HealthInformation.intendedUseNotice)
                 Text(L10n.text("查看 Apple 健康中的心电图、分类和心率，按日期回看历史与趋势。你也可以添加备忘、选择将症状保存到健康 App，或导出 PDF。"))
                 Text(L10n.text("应用会估算每次心跳的波峰、间隔和波形变化。你可以按段查看结果、回到原图核对，也可以自己选两个点测量时间和电压差。"))
             }
@@ -81,9 +84,9 @@ struct SettingsView: View {
                 Text(L10n.text("单导联不能可靠识别或排除心梗、心肌缺血。应用不能用于医疗用途，不能替代医生诊断。"))
             }
             Section(L10n.text("参考依据")) {
-                Link(L10n.text("Apple Watch ECG 使用说明"), destination: URL(string: "https://support.apple.com/en-us/120278")!)
-                Link(L10n.text("HealthKit 心电数据说明"), destination: URL(string: "https://developer.apple.com/documentation/healthkit/hkelectrocardiogram")!)
-                Link(L10n.text("HRV 指标与参考值综述"), destination: URL(string: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5624990/")!)
+                Text(HealthInformation.implementationNotice)
+                HealthReferenceLinks(references: [.appleECG, .healthKitECG, .ecg])
+                NavigationLink(L10n.text("健康信息与来源")) { HealthReferencesView() }
             }
         }.navigationTitle(L10n.text("分析方法")).navigationBarTitleDisplayMode(.inline)
     }
@@ -91,11 +94,12 @@ struct SettingsView: View {
     private var privacy: some View {
         List {
             Section(L10n.text("留在设备上")) {
-                Text(L10n.text("心电分析和备忘留在此设备上，HeartPro 不会上传这些数据。"))
-                Text(L10n.text("无需账号，没有广告或跟踪。健康数据不通过 HeartPro 同步到 iCloud，也不会用于营销。"))
+                Text(HealthInformation.privacySummary)
+                Text(HealthInformation.privacyChoices)
                 Text(L10n.text("你可以随时在 Apple 健康中更改授权。已导入的记录可在这里清空。"))
             }
             Section(L10n.text("你的选择")) {
+                Text(L10n.text("支持页面仅提供只读帮助，不接收消息、文件或个人资料。请勿提交任何个人或健康信息。"))
                 Text(L10n.text("只有你选择保存到 Apple 健康时，症状才会写入；文字备忘留在 HeartPro。"))
                 Text(L10n.text("报告由你选择是否分享，请留意接收人。"))
                 Text(L10n.text("临时报告在下次打开应用时清理超过 24 小时的副本；清空本地数据也会删除这些副本。已分享的文件由接收人管理。"))

@@ -237,6 +237,7 @@ struct ReferenceFooter: View {
             Label(L10n.text("仅供记录参考，不构成医疗建议，不能替代专业医疗服务。"), systemImage: "cross.case")
             Text(L10n.text("不提供医疗建议，也不能判断心脏是否健康"))
             Text(L10n.text("请在作出医疗决定前咨询医生。"))
+            HealthReferencesButton()
         }.font(.caption2).foregroundStyle(.secondary).frame(maxWidth: .infinity).padding(.vertical, 15)
     }
 }

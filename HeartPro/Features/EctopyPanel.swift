@@ -41,6 +41,7 @@ struct EctopyPanel: View {
                     Text(assessment.coverageText)
                     Text(assessment.scoreBasis)
                     Text(L10n.text("分数表示未被规则标记的心跳比例，不代表健康程度。"))
+                    Text(HealthInformation.implementationNotice)
                     if assessment.limitation != .sourceClassification && !assessment.flagged.isEmpty {
                         DisclosureGroup(L10n.text("可以回看的变化")) {
                             ForEach(assessment.flagged) { beat in
@@ -60,6 +61,7 @@ struct EctopyPanel: View {
                             Text(L10n.text("规则版本：\(assessment.version)")).foregroundStyle(.secondary)
                         }.font(.caption).padding(.top, 10)
                     }.disclosureGroupStyle(AnalysisDisclosureStyle(identifier: "rhythmDetailedRules"))
+                    HealthReferenceLinks(references: [.prematureBeats, .ecg, .appleECG])
                 }
             }
     }

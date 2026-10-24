@@ -109,6 +109,9 @@ struct ECGDetailView: View {
                     MetricValue(value: record.bpm?.integerText ?? "—", unit: "bpm", label: L10n.text("平均心率"))
                     MetricValue(value: heartRateRange, unit: "bpm", label: L10n.text("本次心率范围"))
                 }
+                DisclosureGroup(L10n.text("数据来源")) {
+                    HealthReferenceLinks(references: [.appleECG, .healthKitECG], showsNotice: false)
+                }.font(.subheadline)
                 if let failure = record.failure {
                     Text(AnalysisText.readable(failure)).font(.caption).foregroundStyle(.secondary)
                     Button(L10n.text("重新分析")) { Task { await model.retry(record) } }.disabled(model.isSyncing)
@@ -193,6 +196,8 @@ struct ECGDetailView: View {
                     Text(L10n.text("应用估算波峰位置、心跳间隔和波形差异，供你结合原图回看；不据此判断疾病、健康风险或治疗方案。"))
                     Text(L10n.text("Apple Watch 只有一个观察心脏电活动的角度，也就是单导联，不能可靠识别或排除心梗、心肌缺血。自动测量尚未经过真实 Watch 数据的准确度验证，不用于判断心电是否正常。"))
                     Text(L10n.text("分析版本：\(record.analysis?.version ?? L10n.text("未分析"))"))
+                    Text(HealthInformation.implementationNotice)
+                    HealthReferenceLinks(references: [.appleECG, .healthKitECG])
                 }.font(.caption).foregroundStyle(.secondary).padding(.top, 12)
             }.font(.subheadline.weight(.semibold))
                 .disclosureGroupStyle(AnalysisDisclosureStyle(inset: 18))

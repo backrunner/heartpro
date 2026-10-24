@@ -7,8 +7,8 @@ struct UsageGuideView: View {
     @State private var page = 0
 
     private var titles: [String] {
-        [L10n.text("先看今天，再看趋势"), L10n.text("找到一条心电，读懂一次测量"),
-         L10n.text("看懂心跳的细节"), L10n.text("看懂心跳变化，记下测量时的状态")]
+        [L10n.text("查看当日记录与趋势"), L10n.text("按日期打开一条心电"),
+         L10n.text("浏览波形与分析模块"), L10n.text("添加备忘与分享报告")]
     }
     private let icons = ["heart.text.clipboard", "calendar", "waveform.path.ecg", "chart.dots.scatter"]
 
@@ -28,20 +28,21 @@ struct UsageGuideView: View {
                     VStack(alignment: .leading, spacing: 24) {
                         switch page {
                         case 0:
-                            lesson("heart", L10n.text("今日记录"), L10n.text("快速了解今天的心率、HRV 和心电记录。轻点卡片可查看每日详情。"))
+                            lesson("heart", L10n.text("今日记录"), L10n.text("轻点当日概览，查看这一天的心率、HRV 和心电记录。"))
                             lesson("chart.xyaxis.line", L10n.text("趋势"), L10n.text("按日、周或月汇总，观察近两周、近一季度或近一年的变化。"))
                         case 1:
                             lesson("calendar", L10n.text("按日期查找"), L10n.text("在心电记录上方轻点日历，直接找到某一天，再切换前一天或后一天。"))
                             lesson("arrow.up.right", L10n.text("打开记录"), L10n.text("轻点整张卡片查看详情。右上角的箭头表示可以进入下一页。"))
-                            lesson("exclamationmark.circle", L10n.text("记录中的来源分类"), L10n.text("卡片注明 Apple 原始分类或合成示例分类，供你回看来源记录；这些标签不是 HeartPro 的诊断。"))
+                            lesson("exclamationmark.circle", L10n.text("记录中的来源分类"), L10n.text("在卡片上查看来源标签；分类说明与来源可在详情和设置中打开。"))
                         case 2:
-                            lesson("waveform.path.ecg", L10n.text("原始心电图"), L10n.text("轻点右上角可横屏全屏查看。顶部标出测得的波段与间隔，轻点可查看时长；也能放大或用尺子选择两点测量。"))
+                            lesson("waveform.path.ecg", L10n.text("原始心电图"), L10n.text("轻点全屏按钮查看波形，使用缩放或两点测量工具；轻点顶部标签查看对应位置。"))
                             lesson("plus", L10n.text("分段测量与波形对比"), L10n.text("轻点模块右上角的加号展开。分段测量展示本次记录的数值分布和测量方法；波形对比展示形状差异。"))
-                            lesson("heart.text.clipboard", L10n.text("节律分析"), L10n.text("查看心跳间隔、节奏变化和提前出现的心跳线索。自动分析只能帮助回看，不能代替诊断。"))
+                            lesson("heart.text.clipboard", L10n.text("节律分析"), L10n.text("轻点候选条目回到原始波形；轻点信息按钮查看规则、限制与参考来源。"))
                         default:
-                            lesson("chart.dots.scatter", L10n.text("本次 ECG 的 HRV"), L10n.text("30 秒心电也能估算 HRV。聚集图中每个点代表相邻的两次心跳间隔；越集中，间隔越接近，并非越集中就越健康。"))
-                            lesson("note.text", L10n.text("备忘与分享"), L10n.text("记下运动、睡眠或不适，帮助理解测量时的状态。需要时可导出报告。"))
+                            lesson("chart.dots.scatter", L10n.text("本次 ECG 的 HRV"), L10n.text("向下滚动到 HRV 模块，轻点信息按钮查看计算说明、限制和文献。"))
+                            lesson("note.text", L10n.text("备忘与分享"), L10n.text("轻点添加备忘记录当时的状态。轻点分享按钮生成 PDF，再选择分享目的地。"))
                             lesson("info.circle", L10n.text("随时再看"), L10n.text("模块旁的信息按钮有更详细的说明。也可以在设置中重新打开使用指南。"))
+                            HealthReferencesButton()
                         }
                     }
                 }.padding(24).frame(maxWidth: 600, alignment: .leading).frame(maxWidth: .infinity)

@@ -34,6 +34,7 @@
 		969D84BF87E2398110A5B960 /* UsageNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60839D6B6DF3CBC683910546 /* UsageNoticeView.swift */; };
 		9AD62BEDCE85E1EBEC8F85AF /* AppStoreScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222337F81F3550F2902508F /* AppStoreScreenshotTests.swift */; };
 		A107C533DC3BC3991EE375A9 /* AnalysisPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A48E5DDDE85725718F4961 /* AnalysisPanels.swift */; };
+		B0340D6C3B2E598AD91041A2 /* HealthReferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A78D2FFB5E9CEC2F5887B /* HealthReferencesView.swift */; };
 		C70D2DB7BF2477BAA1647CF9 /* HealthKitGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5586D6BF2372B267BD59AF53 /* HealthKitGateway.swift */; };
 		C7D0104A96097799F45DD16F /* FullWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24013C506B7D117F9B066A21 /* FullWaveformView.swift */; };
 		CB459A5C90F700BB13C019C0 /* HeartProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB48BACB953C8DFEF38BA31 /* HeartProApp.swift */; };
@@ -87,6 +88,7 @@
 		5FE7AAF0EA31C6EAFAD12281 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		60839D6B6DF3CBC683910546 /* UsageNoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageNoticeView.swift; sourceTree = "<group>"; };
 		7F6E58FC3DFBFA0635F64DAB /* UsageGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGuideUITests.swift; sourceTree = "<group>"; };
+		8B1A78D2FFB5E9CEC2F5887B /* HealthReferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthReferencesView.swift; sourceTree = "<group>"; };
 		93D623D86F0BB61E72D9D525 /* UsageGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGuideView.swift; sourceTree = "<group>"; };
 		98E9F48A33904E3741F7C9B2 /* ECGNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGNotes.swift; sourceTree = "<group>"; };
 		9985D58A5404F535419EA6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				175752BFD2CE1C1F6DB9E39A /* ECGDetailView.swift */,
 				98E9F48A33904E3741F7C9B2 /* ECGNotes.swift */,
 				F4DAA3B61A4A3529CBD728B3 /* EctopyPanel.swift */,
+				8B1A78D2FFB5E9CEC2F5887B /* HealthReferencesView.swift */,
 				298BF578CC29E8E0BC8EAD9F /* InsightsView.swift */,
 				FA8B7D1857DEA2D21DB5F72C /* SegmentAnalysisPanel.swift */,
 				13CAE2210088C24645D7D92A /* SettingsView.swift */,
@@ -391,6 +394,7 @@
 				4E81262945317B6C4EC53144 /* EctopyPanel.swift in Sources */,
 				C7D0104A96097799F45DD16F /* FullWaveformView.swift in Sources */,
 				C70D2DB7BF2477BAA1647CF9 /* HealthKitGateway.swift in Sources */,
+				B0340D6C3B2E598AD91041A2 /* HealthReferencesView.swift in Sources */,
 				CB459A5C90F700BB13C019C0 /* HeartProApp.swift in Sources */,
 				0752C8A037663933F9050D80 /* InsightsView.swift in Sources */,
 				F9D601484B3BAC1455D46982 /* OnboardingDesign.swift in Sources */,

@@ -44,8 +44,9 @@ struct SegmentAnalysisPanel: View {
                 if let analysis {
                     Text(L10n.text("这条记录大约每 \(1000 / analysis.samplingFrequency, specifier: "%.1f") ms 采样一次。采样间隔不等于测量误差。"))
                 }
-                Text(L10n.text("参考范围用于帮助理解，不能直接套用来判断手表心电是否正常。没有测量结果，也不代表这段波形不存在。"))
-                Link(L10n.text("阅读 MSD 的心电图介绍"), destination: URL(string: "https://www.msdmanuals.com/professional/cardiovascular-disorders/cardiovascular-tests-and-procedures/electrocardiography")!)
+                Text(L10n.text("没有测量结果，也不代表这段波形不存在。"))
+                Text(HealthInformation.implementationNotice)
+                HealthReferenceLinks(references: [.ecg, .pWave, .qt, .heartRate])
             }
         }
         .sheet(item: $selection, onDismiss: {
@@ -119,12 +120,6 @@ private struct SegmentCard: View {
 
     private var details: some View {
         VStack(alignment: .leading, spacing: 18) {
-            let reference = segment.adultReference
-            VStack(alignment: .leading, spacing: 8) {
-                Label(reference.range, systemImage: "ruler").font(.subheadline.weight(.medium))
-                Text(reference.context).font(.caption).foregroundStyle(.secondary)
-            }.padding(12).background(HP.teal.opacity(0.06), in: RoundedRectangle(cornerRadius: 12))
-                .accessibilityIdentifier("segmentReference-\(segment.rawValue)")
             if let analysis {
                 VStack(spacing: 12) {
                     ForEach(segment.metrics) { item in
@@ -195,8 +190,8 @@ private struct SegmentCard: View {
             DisclosureGroup(L10n.text("如何理解与测量")) {
                 VStack(alignment: .leading, spacing: 10) {
                     Text(segment.explanation)
-                    Text(segment.reference)
                     Text(segment.measurementDetails)
+                    HealthReferenceLinks(references: segment.references)
                 }.font(.caption).foregroundStyle(.secondary)
             }
         }.font(.subheadline).disclosureGroupStyle(AnalysisDisclosureStyle())
@@ -300,6 +295,7 @@ private struct SegmentBeatDetail: View {
                     Button(L10n.text("在完整心电图中查看"), systemImage: "scope") { selectTime(observation.start ?? beat.rTime) }
                         .hpGlassButton().tint(.primary).accessibilityIdentifier("locateSegmentBeat")
                     Text(segment.explanation).font(.caption).foregroundStyle(.secondary)
+                    HealthReferenceLinks(references: segment.references)
                     DisclosureGroup(L10n.text("测量方法")) {
                         Text(segment.measurementDetails).font(.caption).foregroundStyle(.secondary).padding(.top, 8)
                     }.font(.subheadline)

@@ -33,7 +33,7 @@ final class HeartProUITests: XCTestCase {
         app.buttons["下一次心跳"].tap()
         let locate = app.buttons["locateSegmentBeat"]
         scrollTo(locate, app: app); locate.tap()
-        XCTAssertTrue(app.navigationBars["心电详情"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.navigationBars["记录详情"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "定位 ")).firstMatch.waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons["measureWaveform"].isHittable)
         attachment(app, name: "23-segment-locate-full-waveform")
@@ -103,7 +103,7 @@ final class HeartProUITests: XCTestCase {
         XCTAssertFalse(app.tabBars.buttons["备忘"].exists)
         attachment(app, name: "01-timeline")
         app.buttons["ecgRecord-0"].tap()
-        XCTAssertTrue(app.navigationBars["心电详情"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.navigationBars["记录详情"].waitForExistence(timeout: 10))
         XCTAssertTrue(app.otherElements["voltageAxis"].exists)
         attachment(app, name: "02-ecg-detail")
         app.buttons["measureWaveform"].tap()
@@ -117,7 +117,7 @@ final class HeartProUITests: XCTestCase {
         scrollTo(coffee, app: app); coffee.tap()
         attachment(app, name: "04-note-editor")
         app.buttons["saveNote"].tap()
-        XCTAssertTrue(app.navigationBars["心电详情"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.navigationBars["记录详情"].waitForExistence(timeout: 5))
         let edit = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "editNote-")).firstMatch
         scrollTo(edit, app: app)
         XCTAssertTrue(edit.exists)
@@ -136,7 +136,7 @@ final class HeartProUITests: XCTestCase {
         scrollTo(edit, app: app); edit.tap()
         let delete = app.buttons["删除本地备忘"]; scrollTo(delete, app: app); delete.tap()
         app.sheets.buttons["删除本地备忘"].tap()
-        XCTAssertTrue(app.navigationBars["心电详情"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.navigationBars["记录详情"].waitForExistence(timeout: 5))
         XCTAssertFalse(edit.exists)
     }
 
@@ -192,10 +192,10 @@ final class HeartProUITests: XCTestCase {
         // Bring the heading back into view after reaching the bottom of the panel.
         if !info.isHittable { app.swipeDown() }
         info.tap()
-        XCTAssertTrue(app.staticTexts["本次 ECG 的 HRV"].firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["本次记录的 HRV"].firstMatch.waitForExistence(timeout: 5))
         attachment(app, name: "29-hrv-explanation-dark")
         app.buttons["完成"].tap()
-        XCTAssertTrue(app.navigationBars["心电详情"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.navigationBars["记录详情"].waitForExistence(timeout: 5))
     }
 
     @MainActor private func launch(_ arguments: [String]) -> XCUIApplication {

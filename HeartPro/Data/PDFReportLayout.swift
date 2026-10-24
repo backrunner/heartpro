@@ -133,6 +133,16 @@ import HeartProCore
         }
     }
 
+    /// Keep a readable printed URL as well as a tappable PDF annotation.
+    func link(_ url: URL) {
+        let value = url.absoluteString
+        let linkHeight = height(value, width: width, size: 8)
+        ensure(linkHeight + 8)
+        text(value, x: margin, y: y, width: width, size: 8, color: Self.accent)
+        pdf.setURL(url, for: CGRect(x: margin, y: y, width: width, height: linkHeight))
+        y += linkHeight + 8
+    }
+
     @discardableResult func text(_ value: String, x: Double, y: Double, width: Double, size: Double,
                                 weight: UIFont.Weight = .regular, color: UIColor = PDFReportLayout.ink,
                                 alignment: NSTextAlignment = .left) -> Double {

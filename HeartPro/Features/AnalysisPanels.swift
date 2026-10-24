@@ -72,12 +72,13 @@ struct RRVariabilityPanel: View {
                     Text(L10n.text("使用 \(estimate.duration.integerText) 秒清晰信号，\(estimate.intervals.count) 个心跳间隔"))
                 }
                 Text(L10n.text("SDNN 描述间隔的总体分散程度；RMSSD 描述相邻间隔的变化。SD1 和 SD2 分别表示聚集图横跨和沿着对角线的分散程度。"))
-                Text(L10n.text("30 秒心电也能估算 HRV。排除干扰和有变化的心跳后，SDNN 使用本次保留的全部间隔；RMSSD 和聚集图只使用原本相邻的间隔，不跨空缺连接。"))
+                Text(HealthInformation.shortHRVNotice)
+                Text(L10n.text("HeartPro 排除干扰和被规则标记的心跳后，使用保留的间隔计算 SDNN；RMSSD 和聚集图只使用原本相邻的间隔，不跨空缺连接。"))
                 Text(L10n.text("每个点连接前后两次心跳间隔；点越集中，间隔越相近。虚线椭圆表示一个标准差的分布，不是正常范围。"))
-                Text(L10n.text("超短时 HRV 没有统一正常区间。呼吸、姿势、睡眠和压力都会影响数值，建议在相似条件下比较。"))
                 Text(L10n.text("筛选规则不能确认正常心跳，也可能漏检不规则节律；这些结果是研究性估算，不能用于诊断或与标准五分钟 HRV 等同。"))
                 Text(L10n.text("Apple 健康中的 HRV 使用 SDNN。你可以单独查看它的趋势；它与本次心电的计算来源不同。"))
-                Link(L10n.text("HRV 指标与参考值综述"), destination: URL(string: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5624990/")!)
+                Text(HealthInformation.implementationNotice)
+                HealthReferenceLinks(references: HealthReference.ecgHRV + [.healthKitHRV])
             }
         }
     }
@@ -145,6 +146,8 @@ struct MorphologyPanel: View {
                 Text(L10n.text("把每次心跳的 R 峰对齐，就可以比较附近波形的高度和形状。参考波形取各位置的中位数，帮助你看清这条记录的典型形状。"))
                 Text(L10n.text("对比范围是 R 峰前 120 ms 到后 160 ms，不包含完整的 P、T 波，也不是 QRS 持续时间的测量。"))
                 Text(L10n.text("接触和姿势变化也可能改变波形。波形相似或不同，都不能单独用来判断心电是否正常。"))
+                Text(HealthInformation.implementationNotice)
+                HealthReferenceLinks(references: [.appleECG, .ecg])
             }
         }
     }

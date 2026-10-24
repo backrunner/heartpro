@@ -56,8 +56,7 @@ final class ReportTests: XCTestCase {
                 let content = try XCTUnwrap(pdf.string)
                 let compact = content.components(separatedBy: .whitespacesAndNewlines).joined()
                 for notice in [
-                    "仅供记录参考，不构成医疗建议，不能替代专业医疗服务。",
-                    "参考值仅作一般资料，不根据本次测量推断病因或给出用药、治疗建议。单导联估算可能有误差，不能用于判断健康状况。"
+                    "仅供记录参考，不构成医疗建议，不能替代专业医疗服务。"
                 ] {
                     XCTAssertTrue(compact.contains(L10n.lookup(notice).components(separatedBy: .whitespacesAndNewlines).joined()), language)
                 }
@@ -69,6 +68,23 @@ final class ReportTests: XCTestCase {
                 XCTAssertTrue(content.contains(L10n.text("暂时无法测量")), language)
                 XCTAssertTrue(compact.contains("USERNOTEcafé日本語한글"), language)
                 XCTAssertFalse(content.contains("{0}"), language)
+                for clinicalRange in ["120–200", "350–450", "360–460", "600–1000"] {
+                    XCTAssertFalse(compact.contains(clinicalRange), "Clinical reference range in exported report: \(language)")
+                }
+                let links = (0..<pdf.pageCount).flatMap { index in
+                    pdf.page(at: index)?.annotations.compactMap(\.url) ?? []
+                }
+                for reference in HealthReference.allCases {
+                    XCTAssertTrue(links.contains(reference.url), "Missing tappable citation \(reference.id) in \(language)")
+                    XCTAssertTrue(content.contains("[\(reference.id)]"), language + " " + reference.id)
+                }
+                XCTAssertTrue(compact.contains(HealthInformation.privacySummary.components(separatedBy: .whitespacesAndNewlines).joined()), language)
+                for index in 0..<pdf.pageCount {
+                    let page = try XCTUnwrap(pdf.page(at: index))
+                    for link in page.annotations where link.url != nil {
+                        XCTAssertTrue(page.bounds(for: .mediaBox).contains(link.bounds), "Citation outside page in \(language)")
+                    }
+                }
                 XCTAssertTrue(compact.contains(L10n.text("早搏候选与节律").components(separatedBy: .whitespacesAndNewlines).joined()), language)
                 if ["en", "de", "es", "ko"].contains(language) {
                     XCTAssertFalse(content.contains("心电"), language)
@@ -118,6 +134,7 @@ final class ReportTests: XCTestCase {
         let unwrapped = content.components(separatedBy: .whitespacesAndNewlines).joined()
         // PDFKit may reorder underscore glyphs as separate lines; use an alphanumeric sentinel.
         XCTAssertTrue(unwrapped.contains("ENDOFMEMO123456789"), "Long notes must not be clipped. Extracted tail: \(content.suffix(100))")
+        XCTAssertTrue(content.contains("[A1]"), "Waveform-only exports must also include health-information sources")
         let bounds = try XCTUnwrap(pdf.page(at: 0)).bounds(for: .mediaBox)
         XCTAssertEqual(bounds.width, 595.28, accuracy: 0.1)
         for (index, strips) in [5, 4].enumerated() {

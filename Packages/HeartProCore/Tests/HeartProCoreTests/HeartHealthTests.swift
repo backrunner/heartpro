@@ -99,32 +99,6 @@ import Testing
     #expect(fragmented.pairs.isEmpty && fragmented.sdnn == nil)
 }
 
-@Test func adultReferencesRespectLimitsAndAvoidUnsupportedRanges() {
-    #expect(ECGSegment.p.adultReference.position(119) == .within)
-    #expect(ECGSegment.p.adultReference.position(120) == .above)
-    #expect(ECGSegment.qrs.adultReference.position(120) == .above)
-    #expect(ECGSegment.pr.adultReference.position(119) == .below)
-    #expect(ECGSegment.pr.adultReference.position(120) == .within)
-    #expect(ECGSegment.pr.adultReference.position(200) == .within)
-    #expect(ECGSegment.pr.adultReference.position(201) == .above)
-    #expect(ECGSegment.qtc.adultReference.position(455) == .contextRequired)
-    #expect(ECGSegment.st.adultReference.position(0.2) == .contextRequired)
-    #expect(ECGSegment.pr.adultReference.position(.nan) == .contextRequired)
-}
-
-@Test func referenceCopyNeverUsesPersonalMeasurementsToSuggestCausesOrTreatment() {
-    for language in L10n.languages {
-        L10n.withLanguage(language) {
-            for segment in ECGSegment.allCases {
-                let reference = segment.adultReference
-                for value: Double? in [nil, -100, 0, 120, 201, 455, 2_000, .nan] {
-                    #expect(reference.explanation(value) == reference.context)
-                }
-            }
-        }
-    }
-}
-
 @Test func dailyHealthPreservesMissingValuesAndCalendarDays() throws {
     var calendar = Calendar(identifier: .gregorian)
     calendar.timeZone = try #require(TimeZone(identifier: "America/New_York"))
