@@ -17,9 +17,11 @@ The ECG tab opens history and a daily overview. Open the overview for daily summ
 ## Open an ECG
 Tap a record to view its original waveform, source classification, measurements and notes. Scroll horizontally to review the full recording. Zoom preserves the time/voltage scale ratio. The expand control opens the waveform full screen; the ruler lets you select two points to compare time and voltage. Displayed screen sizes are not physical paper measurements.
 
-Automatic annotations and measurements are estimates. See [methods and limitations](/docs/methods) before interpreting them. Apple's stored classification is distinct from HeartPro's own calculations.
+Automatic annotations and measurements are estimates. See [methods, limitations and cited sources](/docs/methods) before interpreting them. Apple's stored classification is distinct from HeartPro's own calculations. In the app, open **Settings → Health information and sources**, or use the source links beside an explanation. ECG PDFs include a bibliography with tappable links.
 
 ## Keep context and export
 Use the note button to record context or symptoms. Saving symptoms to Health is optional and creates separate entries. Generate a PDF with the share button, then choose where to send it. Your notes may appear in that report.
 
 Manage [data and permissions](/docs/data), or [get support](/support).
+
+The first-use guide describes app controls. Health explanations and their sources are provided separately in the app and in [methods and limitations](/docs/methods). For Apple's ECG capabilities and safety limitations, see [Apple Support](https://support.apple.com/en-us/120278).

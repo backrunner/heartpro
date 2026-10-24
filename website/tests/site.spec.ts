@@ -33,7 +33,7 @@ for (const language of ['en', 'zh']) {
     await expect(image).toHaveAttribute('src', /trends/);
     const primary = page.locator('.hp-actions a').first();
     await expect(primary).toHaveAttribute('href', language === 'en' ? '/docs/' : '/docs/zh/');
-    await page.getByRole('button', { name: language === 'en' ? 'ECG' : '心电波形', exact: true }).click();
+    await page.getByRole('button', { name: language === 'en' ? 'Waveform' : '记录波形', exact: true }).click();
     await page.screenshot({ path: `.svedocs/qa/${language}-desktop.png`, fullPage: true });
     await page.getByRole('button', { name: /Switch to .* theme|切换到.*主题/ }).click();
     await page.screenshot({ path: `.svedocs/qa/${language}-dark.png`, fullPage: true });

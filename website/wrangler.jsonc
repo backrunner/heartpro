@@ -14,8 +14,7 @@
     "not_found_handling": "404-page",
     "binding": "ASSETS",
     "run_worker_first": [
-      "/api/support",
-      "/api/support/"
+      "/api/support*"
     ]
   },
   "main": "worker.ts",
@@ -23,19 +22,5 @@
   "preview_urls": false,
   "observability": {
     "enabled": false
-  },
-  "vars": {
-    "ONFIRE_PRODUCT_ID": "50cf5042-9ae8-42eb-b0f8-926bbed56735",
-    "ONFIRE_TICKET_TYPES": "{\"problem\":\"e4cbecc7-09c5-40dd-8464-14c53d51bebf\",\"feature\":\"d4c03398-b987-4513-8cfe-5f0bdff80e92\",\"question\":\"292a1c8e-e883-48e2-b4ad-f56ae1002b99\",\"privacy\":\"96d9997c-387f-4aa3-b29c-7d96de665740\"}"
-  },
-  "ratelimits": [
-    {
-      "name": "SUPPORT_RATE_LIMIT",
-      "namespace_id": "26101101",
-      "simple": {
-        "limit": 5,
-        "period": 60
-      }
-    }
-  ]
+  }
 }

@@ -1,31 +1,29 @@
 # HeartPro website
 
-The English / Simplified Chinese product site at [heartpro.alkinum.com](https://heartpro.alkinum.com), built with SvelteKit and svedocs. Cloudflare serves the static site and a Worker handles support requests.
+English / Simplified Chinese product and read-only help site at [heartpro.alkinum.com](https://heartpro.alkinum.com), built with SvelteKit and svedocs. The help pages do not accept support messages, personal information or files.
 
-## Local development
+## Development
 
-Use Node.js and pnpm 12.3.4. From this directory:
+Use the configured Node.js and pnpm. From this directory:
 
 ```sh
 rtk proxy pnpm install --frozen-lockfile
 rtk proxy pnpm dev --host 127.0.0.1 --port 48620
 ```
 
-For a production preview, run `rtk proxy pnpm build`, then `rtk proxy pnpm preview --host 127.0.0.1 --port 48622`. Do not run dev and build together; both use `.svelte-kit`. Restart dev after building.
+Production preview: build, then `rtk proxy pnpm preview --host 127.0.0.1 --port 48622`. Do not run dev and build together; both use `.svelte-kit`.
 
-## Structure
+## Structure and privacy boundary
 
-- `content/pages/{en,zh}`: landing, support, privacy, terms and availability pages.
-- `content/docs/{en,zh}`: usage, data management and analysis methods.
-- `src/lib`: shared page layout, theme and bilingual support form.
-- `src/lib/server/support-intake.ts` and `worker.ts`: server-side OnFire integration.
-- `static/screenshots`: native simulator captures with labelled synthetic examples; `provenance.json` records versions, sources and hashes.
-- `svedocs.config.ts`: site metadata, navigation, search, translations and static build.
-- `wrangler.jsonc`: production domain, public routing IDs and rate-limit bindings.
+- `content/pages/{en,zh}`: product, static help, privacy, terms and availability.
+- `content/docs/{en,zh}`: record controls, data handling, calculation methods and cited sources.
+- `worker.ts`: serves static assets and rejects the former `/api/support` endpoint with 410, without reading or forwarding the body. Non-read requests handled by the Worker are rejected.
+- `wrangler.jsonc`: asset binding, disabled observability and retired-endpoint routing. No support-provider configuration, rate limiter or ticket integration.
+- `static/screenshots`: synthetic native previews with recorded provenance; not evidence of a newly uploaded build.
 
-English routes start at `/`, Chinese at `/zh/`; guides use `/docs/` and `/docs/zh/`. The framework provides search, theme switching, sitemap, Markdown twins and `llms.txt`.
+The support form, OnFire client, customer identification, Turnstile widget and support routing bindings were removed on 2026-10-24. Deploying this source prevents new intake but does not itself delete historical messages or remote credentials. Builds do not need support secrets. Do not restore collection by accepting legacy credentials from local or deployed environments. Cloudflare necessarily processes network requests to deliver and protect the site; the privacy policy discloses that separately.
 
-## Checks
+## Verification and deployment
 
 ```sh
 rtk proxy pnpm check
@@ -34,18 +32,9 @@ rtk proxy pnpm test:support
 rtk proxy pnpm build
 rtk proxy pnpm test
 rtk proxy pnpm check:deploy
+rtk proxy pnpm run deploy
 ```
 
-Browser tests cover both languages, navigation, screenshots, support interactions and mobile layouts. Support tests use mock services and do not create production tickets. Deployment checks perform a dry run.
+The support tests assert that retired endpoints do not access request bodies or headers and do not forward requests. Browser tests cover both help languages, no form or mail submission, no ticket/CAPTCHA requests, responsive layouts and help without JavaScript. Verify deployed GET and synthetic POST requests return 410 without supplying personal data. Do not create production tickets as a test.
 
-## Secrets and deployment
-
-Local development and static builds do not need production credentials. The support endpoint returns an unavailable response until configured. Use `.env.example` for variable names and keep local secrets in the ignored `.dev.vars`, with file permissions `600`.
-
-The OnFire product credential belongs only in the Worker secret `ONFIRE_API_KEY`. Never put it in `PUBLIC_*`, browser code, tracked files or command-line arguments. Public Turnstile site keys and routing IDs are configuration, not secrets. OnFire owns CAPTCHA verification; the website must not consume the same token twice. The server checks origin and input bounds, owns product/type routing, rejects redirects and does not retry uncertain ticket writes.
-
-Maintainers with deployment access can build, run checks, then use `rtk proxy pnpm run deploy`. A fork must configure its own domain, bindings, product IDs and credentials before deploying. `run` is required here because pnpm has a separate built-in `deploy` command.
-
-Production support tests create real tickets and require explicit authorization. The site does not accept health-record, file or diagnostic-log uploads. Verify support-email delivery separately from a successful ticket submission. Server logs must not contain request bodies, email addresses, credentials or raw upstream responses.
-
-Source is covered by the repository’s [GPL-3.0-or-later license](../LICENSE); see [third-party notices](../THIRD_PARTY_NOTICES.md).
+The deployment is separate from App Store/TestFlight distribution. It does not upload an app or resubmit Apple review. Source is [GPL-3.0-or-later](../LICENSE).

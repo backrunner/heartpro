@@ -3,10 +3,15 @@ title: "Privacy policy"
 description: "How HeartPro handles health records, notes, reports, website visits and support requests."
 ---
 
-**Effective date: 11 October 2026.** HeartPro is operated under the Alkinum brand. Privacy and support: [support form](/support).
+**Effective date: 24 October 2026.** HeartPro is operated under the Alkinum brand. Read-only help: [support page](/support).
 
 ## Scope
-This policy covers the HeartPro iOS/iPadOS app (`com.alkinum.heartpro`), this product website and voluntary support correspondence. The app and website handle data differently as explained below.
+This policy covers the HeartPro iOS/iPadOS app (`com.alkinum.heartpro`), this product website and its read-only help pages. The app and website handle data differently as explained below.
+
+## App data is not collected
+HeartPro does not collect your health records, notes or analysis results. They are processed and stored only on your device and are not automatically uploaded to developer or third-party servers. There are no accounts, ads, tracking or third-party analytics SDKs.
+
+Only your explicit actions share a report with your chosen destination through the system share sheet or save selected symptoms to Apple Health. HeartPro does not sync health data through iCloud; Apple Health's own synchronization is controlled by system settings. Website delivery and Apple's TestFlight services have the separate disclosures below. This statement does not mean that no information is ever transmitted by your device.
 
 ## Health data stays on your device
 With your permission, HeartPro reads ECG records and waveforms, heart rate and heart rate variability (SDNN) from Apple Health to display records, summaries and trends and perform local analysis. Record metadata can include dates, duration, source-device information and Apple's source classification. These records, derived measurements and your notes are stored and processed locally; HeartPro does not upload them to us or an analysis service.
@@ -28,19 +33,20 @@ Regenerable waveform cache files may be evicted to limit storage. Temporary PDF 
 ## Sharing is your choice
 Reports are created locally. The system share sheet sends a PDF only to the destination you choose. That destination may be another app, a cloud service or a recipient; its own terms and protections apply. HeartPro cannot recall or delete shared copies. Review the recipient and the contents before sharing.
 
-## Website and support correspondence
-The website has no analytics, advertising, hosted AI, health upload form or external font service. Search runs in your browser using a downloaded index. A theme preference may be saved locally in your browser. The website is hosted and delivered through Cloudflare. Cloudflare processes IP addresses, browser and request information to deliver pages, protect the service and operate its infrastructure. HeartPro has no separately configured visitor-log storage or profiling. Cloudflare service logs are retained under its applicable service policies.
+## Website delivery
+The website has no analytics, advertising, hosted AI, external font service or health-data upload feature. Search runs in your browser using a downloaded index. A theme preference may be saved locally in your browser. Cloudflare hosts and delivers the site and necessarily processes IP addresses and browser/request information to deliver pages and protect its infrastructure. We do not maintain a visitor database, user profiles or a separately configured visitor-log store. Worker observability is disabled. These controls do not mean Cloudflare never processes network data.
 
-The [support form](/support) sends your email address, selected topic, subject, message, preferred reply language, and any app version, iOS/iPadOS version or device model you choose to enter to our OnFire support system, hosted on Cloudflare. Authorized support staff use this information to handle your request. The form has no file upload and does not automatically access Health records, device diagnostics or app data. Do not include health records, ECG PDFs, health screenshots or Apple ID credentials. Entering an email does not grant access to previous tickets; customer session credentials remain on the server.
+Cloudflare uses global infrastructure. Its processing and applicable rights are described in [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/) and [customer data processing addendum](https://www.cloudflare.com/cloudflare-customer-dpa/).
 
-Only the support page loads Cloudflare Turnstile, which processes network and browser information to prevent abuse. The server also uses your IP address to limit submission attempts. Support requests and follow-up correspondence remain in OnFire for as long as needed to handle your request and meet applicable legal obligations; closing a ticket does not automatically delete it. Choose **Privacy request** on the support page to request access, correction or deletion. Clearing HeartPro's local data does not delete support tickets.
+## Read-only support, no personal submissions
+The [support page](/support) provides static troubleshooting guidance only. It has no contact form, email submission, attachments, account or ticket system. No Turnstile widget or support-provider script loads. We do not ask you to submit any personal information and do not create or manage new support records through this website.
 
-If you choose to email support, your email provider and our Cloudflare services process your address, message and any attachments. We use this correspondence only to handle support and privacy requests. Do not send health data unnecessarily. Correspondence is retained for as long as needed to handle your request, resolve the issue and meet applicable legal obligations. You may request deletion through the support address, except for information needed for an ongoing dispute or required by law. The app does not automatically collect or send email.
+The former support endpoint returns a disabled response. The Worker does not read, parse, log, store or forward its request body, identify a customer or contact a ticket provider. Infrastructure may still receive network requests as described above. Please do not attempt to send names, email addresses, identifiers, messages, health records, screenshots or files.
 
-Cloudflare uses global infrastructure; website requests and support correspondence may be processed outside your country or region. See [Cloudflare’s privacy policy](https://www.cloudflare.com/privacypolicy/) and [customer data processing addendum](https://www.cloudflare.com/cloudflare-customer-dpa/) for its processing, retention and cross-border safeguards.
+Disabling intake prevents new support collection; it does not itself erase any correspondence previously sent through former channels. This policy does not claim that historical records have been deleted.
 
-## Requests, rights and updates
-Revoke Health consent through Apple Health and delete local data in HeartPro. We cannot remotely retrieve or erase app data that stays only on your device. For support correspondence or privacy questions, contact the address above. Health access and optional writes depend on your authorization. Support correspondence is used to handle your request; website request information is used to deliver and protect the service. Under applicable law, you may request access, correction, deletion or restriction of relevant processing, withdraw consent and complain to your competent local data protection authority. We handle requests under applicable law; withdrawal does not affect earlier lawful processing. Material changes will be reflected here with an effective date.
+## Local controls and updates
+Revoke Health consent through Apple Health and delete local data in HeartPro. We cannot remotely retrieve or erase app data that stays only on your device. Health access and optional writes depend on your authorization. Website request information is processed for page delivery and protection as described above, not used to build support tickets or user profiles. Applicable legal rights remain unaffected. Material changes will be reflected here with an effective date.
 
 ## TestFlight testing
 When installed through TestFlight, Apple processes tester, installation, usage and crash information under its TestFlight terms and privacy disclosures. Feedback and screenshots you choose to submit may also be available to the developer. This is separate from HeartPro itself not uploading health records. Avoid including unnecessary personal health information in feedback or attachments. See [Apple’s TestFlight privacy information](https://www.apple.com/legal/privacy/data/en/test-flight/).

@@ -12,7 +12,7 @@
     "test": "playwright test",
     "check:deploy": "wrangler deploy --dry-run",
     "deploy": "wrangler deploy",
-    "test:support": "node --test tests/support-intake.test.ts",
+    "test:support": "node --test tests/support-privacy.test.ts",
     "preview:worker": "wrangler dev"
   },
   "dependencies": {
